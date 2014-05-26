@@ -5,7 +5,7 @@ The relayr Authorization Doc provides information about the two OAuth methods im
 # A Few Words about OAuth
 *OAuth* is an open standard for authorization.
 
-Prior to explaining the main concept of OAuth, here are a few key concepts
+Prior to explaining the main concept of OAuth, here are a few key roles
 necessary for understanding the standard:
 
 **Resource Server** - The server hosting user-owned resources such as photos, 
@@ -17,7 +17,7 @@ stored on the resource server.
 
 **Client** - An Application. In the OAuth context, this application would issue API
 requests in order to perform actions on protected resources on 
-behalf of the resource owner
+behalf of the resource owner.
 
 **Authorization Server** - The authorization server receives concent from the resource
 owner and in return issues access tokens to clients, enabling them to access protected
@@ -30,9 +30,9 @@ It specifies a process for the owners of the resources, to authorize
 third-party access to their resources without having to share their credentials.
 
 
-Instead of using the explicit credentials of the resource owner, OAuth allows *access
-tokens* to be issued to third-party clients by an authorization server, 
-upon approval from the resource owner.
+Instead of using the explicit credentials of the resource owner, OAuth allows for *access
+tokens* to be issued to third-party clients by an authorization server. 
+the latter are issued upon approval from the resource owner.
 The client then uses the access token to access the protected resources
 hosted by the resource server. 
 
@@ -61,7 +61,7 @@ for your app `clientId` and `clientSecret`.
 
 In this Authorization flow, once the resource owner grants access to their data
 on the resource server, they are redirected back to the application with an
-authorization code as a query parameter in the URL. This code is then exchanged for 
+authorization code as a query parameter in the URL (as a # fragment). This code is then exchanged for 
 an access token by the application. This exchange is done in a server to server manner
 and requires the application's *clientId* and *clientSecret*. 
 This flow ensures that not even the resource owner can obtain the access token and 
@@ -69,31 +69,31 @@ hence allows for extremely long-lived tokens.
 
 #### The Authorization Code in the relayr Context 
 
-In the relayr context, a user wishing to grant access to an application will be
-redirected to a relayr page where they would be prompted to enter their relayr credentials.
+In the relayr context, a user wishing to grant access to an application is
+redirected to a relayr page where they are prompted to enter their relayr credentials.
 Once the credentials are entered, the user is redirected back to the application page
 with the parameter `code` in the URL. This parameter is only valid for 5 minutes during
-which the Authentication process takes place. The application side server exchanges
+which the Authentication process takes place. The application-side server exchanges
 the combination of the `code` parameter along with the specific application 
-`clientId` and `clientSecret` for an access token which is valid indefinitely.
+`clientId` and `clientSecret`, for an access token, which is valid indefinitely.
 
 
 ## Implicit Grant for Browser-Based Client-Side Applications
 
-In this Authorization flow once the resource owner grants an application access to their
+In this Authorization flow, once the resource owner grants an application, access to their
 data, they are automatically redirected to an application page which includes the 
-access token in a #hash fragment in the URL. The application can extract the token
-from the hash fragment using JavaScript, and send API requests. This flow allows for
+access token in a # (hash) fragment, in the URL. The application can extract the token
+from the hash fragment using JavaScript and use it for issuing further API requests. This flow allows for
 short-lived tokens only.
 
 
 #### The Implicit Grant in the relayr Context 
 
-In the relayr context, a user wishing to grant access to an application will be
-redirected to a relayr page where they would be prompted to enter their relayr credentials.
+In the relayr context, a user wishing to grant access to an application is
+redirected to a relayr page where they are prompted to enter their relayr credentials.
 Once the credentials are entered, the user is redirected back to the application page
-with the parameter `accessToken` in the URL. The application can then
-parse the URL to exctract the clientToken. This token will only be valid for two weeks.
+with the parameter `access_token` in the URL. The application can then
+parse the URL to exctract the token. This token will only be valid for two weeks.
 
 
 ## How does it all work?
