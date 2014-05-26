@@ -97,11 +97,11 @@ with the parameter `accessToken` in the URL. The application can then
 parse the URL to exctract the clientToken. This token will only be valid for two weeks.
 
 
-## How Does it All Work?
+## How does it all work?
 
 The initial call which sets both authorization flows in motion is:
 
-`http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope}`
+[GET] `http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope}`
 
 Where: 
 
@@ -115,5 +115,12 @@ Following this call, two scenarios are expected:
 #### Applications utilizing Access Code:
 
 Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
-This URL will also include a fragment denoted by a `#`. 
+This URL will also include the parameter `code` as a fragment, denoted by a `#`. For example:
+
+`https://mycoolrelayrapp.com/hello#code=4papf.tjzRM2iLtaEaPm`
+
+The code value is only valid for 5 minuted during which, it would need to be exchagned for an access token.
+
+
+
 
