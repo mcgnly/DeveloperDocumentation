@@ -97,22 +97,23 @@ with the parameter `accessToken` in the URL. The application can then
 parse the URL to exctract the clientToken. This token will only be valid for two weeks.
 
 
-### How Does it All Work?
+## How Does it All Work?
 
 The initial call which sets both authorization flows in motion is:
 
-http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope} 
+`http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope}`
 
 Where: 
 
-   * **redirect_uri** (string): The URI of the page where the user is redirected upon successful login.
-   * **response_type** (string): The type of response to be returned according to the type of authorization innitiated. The two         available values are `code` and `token`. 
-   * **clientId** (string): The clientId assigned to the app upon registration.
-   * **scope** (string): A list of permissions the application is to be granted. List items should be separated by a space.
+   * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login.
+   * `response_type` (string): The type of response to be returned according to the type of authorization innitiated. The two             available values are `code` and `token`. 
+   * `clientId` (string): The clientId assigned to the app upon registration.
+   * `scope` (string): A list of permissions the application is to be granted. List items should be separated by a space.
     
 Following this call, two scenarios are expected:
 
 #### Applications utilizing Access Code:
 
-
+Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
+This URL will also include a fragment denoted by a `#`. 
 
