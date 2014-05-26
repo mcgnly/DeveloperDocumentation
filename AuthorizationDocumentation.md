@@ -44,7 +44,7 @@ credentials being compromised.
 
 For further reading about OAuth, please visit - `/link to be added`
 
-# OAuth on the relayr Platform
+### OAuth on the relayr Platform
 
 The core OAuth 2.0 protocol defines four main grant types - or *authorization flows*,
 used for obtaining authorization. The relayr platform has implemented two of them:
@@ -78,24 +78,6 @@ which the Authentication process takes place. The application side server exchan
 the combination of the `code` parameter along with the specific application 
 `clientId` and `clientSecret` for an access token which is valid indefinitely.
 
-+ Parameters
-    + redirect_uri (string) ... the application page a user is to be redirected to
-    + response_type (string, `code`) ... the two response types available on the relayr platform are `code` and `token`
-    + clientId (string) ... the clientId which was assigned to the app upon registration
-    + scope (string, ) ...
-        
-
-### First Call [GET]
-+ Response 200 (application/json)
-    
-    + Body
-            
-            [{
-              "id": 1, "title": "Jogging in park"
-            }, {
-              "id": 2, "title": "Pick-up posters from post-office"
-            }]
-
 
 ## Implicit Grant for Browser-Based Client-Side Applications
 
@@ -114,21 +96,17 @@ Once the credentials are entered, the user is redirected back to the application
 with the parameter `accessToken` in the URL. The application The application can then
 parse the URL to exctract the clientToken. This token will only be valid for two weeks.
 
-+ Parameters
-    + redirect_uri (string) ... the application page a user is to be redirected to
-    + response_type (string, `code`) ... the two response types available on the relayr platform are `code` and `token`
-    + clientId (string) ... the clientId which was assigned to the app upon registration
-    + scope (string, ) ...
-    
 
-### Retrieve a Note [GET]
-+ Response 200 (application/json)
+#### The initial URL which sets both Authorization flows in motion is:
 
-        [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
+http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope} 
+
+Where: 
+
+    - **redirect_uri** (string):  A correctly formed URI of the page where the user is redirected upon successful login.
+    - **response_type** (string):  The type of response to be returned according to the type of authorization innitiated 
+    - **clientId** (string): The clientId assigned to the app upon registration
+    - **scope** (string, ): 
     
 
 
