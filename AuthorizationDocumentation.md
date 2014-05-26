@@ -3,7 +3,7 @@ The relayr Authorization mechanism utilizes the OAuth 2.0 standard.
 The relayr Authorization API provides programmatic acces to the two OAuth 2.0 
 Authorization methods implemented on the relayr platform.
 
-# Group A Few Words about OAuth
+# A Few Words about OAuth
 *OAuth* is an open standard for authorization.
 
 Prior to explaining the main concept of OAuth, here are a few key concepts
@@ -44,7 +44,7 @@ credentials being compromised.
 
 For further reading about OAuth, please visit - `/link to be added`
 
-# Group OAuth on the relayr Platform
+# OAuth on the relayr Platform
 
 The core OAuth 2.0 protocol defines four main grant types - or *authorization flows*,
 used for obtaining authorization. The relayr platform has implemented two of them:
@@ -56,9 +56,9 @@ As the final stage of the registration of an app, you will receive two unique id
 for your app `clientId` and `clientSecret`.
 
 
-# Group Authorization Flows 
+# Authorization Flows 
 
-## Authorization Code [/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope}] 
+## Authorization Code 
 
 In this Authorization flow, once the resource owner grants access to their data
 on the resource server, they are redirected back to the application with an
