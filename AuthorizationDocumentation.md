@@ -103,10 +103,10 @@ http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={res
 
 Where: 
 
-    - **redirect_uri** (string):  A correctly formed URI of the page where the user is redirected upon successful login.
-    - **response_type** (string):  The type of response to be returned according to the type of authorization innitiated 
-    - **clientId** (string): The clientId assigned to the app upon registration
-    - **scope** (string, ): 
+   * **redirect_uri** (string): The URI of the page where the user is redirected upon successful login.
+   * **response_type** (string): The type of response to be returned according to the type of authorization innitiated. The two         available values are `code` and `token`. 
+   * **clientId** (string): The clientId assigned to the app upon registration.
+   * **scope** (string): A list of permissions the application is to be granted. List items should be separated by a space.
     
 
 
