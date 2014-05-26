@@ -1,5 +1,5 @@
 # Authorization API
-The relayr Authorization mechanism utilizes the OAuth 2.0 standard.
+The relayr authorization mechanism utilizes the OAuth 2.0 standard.
 The relayr Authorization API provides programmatic acces to the two OAuth 2.0 
 Authorization methods implemented on the relayr platform.
 
@@ -139,4 +139,13 @@ The response received is a JSON responnse. For example:
       }
 
 #### Applications utilizing Implicit Grant:
+
+Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
+This URL will also include the parameters `access_token` and `token_type` as a fragment, denoted by a `#`. For example:
+
+`https://mycoolrelayrapp.com/hello#access_token=KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj&token_type=Bearer`   
+
+The access token could then be parsed from the URL and used in the header of further API requests. For example
+
+`Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
 
