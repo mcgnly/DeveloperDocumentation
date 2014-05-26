@@ -93,11 +93,13 @@ short-lived tokens only.
 In the relayr context, a user wishing to grant access to an application will be
 redirected to a relayr page where they would be prompted to enter their relayr credentials.
 Once the credentials are entered, the user is redirected back to the application page
-with the parameter `accessToken` in the URL. The application The application can then
+with the parameter `accessToken` in the URL. The application can then
 parse the URL to exctract the clientToken. This token will only be valid for two weeks.
 
 
-#### The initial URL which sets both Authorization flows in motion is:
+### How Does it All Work?
+
+The initial call which sets both authorization flows in motion is:
 
 http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope} 
 
@@ -108,5 +110,9 @@ Where:
    * **clientId** (string): The clientId assigned to the app upon registration.
    * **scope** (string): A list of permissions the application is to be granted. List items should be separated by a space.
     
+Following this call, two scenarios are expected:
+
+#### Applications utilizing Access Code:
+
 
 
