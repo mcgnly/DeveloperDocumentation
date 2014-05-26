@@ -1,7 +1,6 @@
 # Authorization API
 The relayr authorization mechanism utilizes the OAuth 2.0 standard.
-The relayr Authorization API provides programmatic acces to the two OAuth 2.0 
-Authorization methods implemented on the relayr platform.
+The relayr Authorization Doc provides information about the two OAuth methods implemented on the relayr platform.
 
 # A Few Words about OAuth
 *OAuth* is an open standard for authorization.
@@ -68,7 +67,7 @@ and requires the application's *clientId* and *clientSecret*.
 This flow ensures that not even the resource owner can obtain the access token and 
 hence allows for extremely long-lived tokens.
 
-### Authorization Code in the relayr Context 
+#### The Authorization Code in the relayr Context 
 
 In the relayr context, a user wishing to grant access to an application will be
 redirected to a relayr page where they would be prompted to enter their relayr credentials.
@@ -88,7 +87,7 @@ from the hash fragment using JavaScript, and send API requests. This flow allows
 short-lived tokens only.
 
 
-### The Implicit Grant in the relayr Context 
+#### The Implicit Grant in the relayr Context 
 
 In the relayr context, a user wishing to grant access to an application will be
 redirected to a relayr page where they would be prompted to enter their relayr credentials.
@@ -112,7 +111,7 @@ Where:
     
 Following this call, two scenarios are expected:
 
-#### Applications utilizing Authorization Code:
+#### Applications utilizing The *Authorization Code*:
 
 Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
 This URL will also include the parameter `code` as a fragment, denoted by a `#`. For example:
@@ -138,14 +137,14 @@ The response received is a JSON responnse. For example:
         "token_type":  “bearer"
       }
 
-#### Applications utilizing Implicit Grant:
+#### Applications utilizing The *Implicit Grant*:
 
 Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
 This URL will also include the parameters `access_token` and `token_type` as a fragment, denoted by a `#`. For example:
 
 `https://mycoolrelayrapp.com/hello#access_token=KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj&token_type=Bearer`   
 
-The access token could then be parsed from the URL and used in the header of further API requests. For example
+The access token could then be parsed from the URL and used in the header of further API requests. For example:
 
 `Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
 
