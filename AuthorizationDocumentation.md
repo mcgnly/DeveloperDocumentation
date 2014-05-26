@@ -112,15 +112,31 @@ Where:
     
 Following this call, two scenarios are expected:
 
-#### Applications utilizing Access Code:
+#### Applications utilizing Authorization Code:
 
 Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
 This URL will also include the parameter `code` as a fragment, denoted by a `#`. For example:
 
 `https://mycoolrelayrapp.com/hello#code=4papf.tjzRM2iLtaEaPm`
 
-The code value is only valid for 5 minuted during which, it would need to be exchagned for an access token.
+The code value is only valid for 5 minuted during which, it would need to be sent to the relayr server along with the `clientId` and `clientSecret`:
 
+[POST] `http://api.relayr.io/oauth2`
 
+      { 
+        "clientId" = "{clientId}",
+        "clientSecret" = "{clientSecret}",
+        "code" = "4papf.tjzRM2iLtaEaPm" 
+      }
+      
+Another option of sending the `clientId` and `clientSecret` parameters is as authorization header parameters rather than form parameters.
 
+The response received is a JSON responnse. For example:
+
+      {
+        "access_token": “your_shiny_access_token",
+        "token_type":  “bearer"
+      }
+
+#### Applications utilizing Implicit Grant:
 
