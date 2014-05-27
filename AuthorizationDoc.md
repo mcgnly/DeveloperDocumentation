@@ -52,7 +52,7 @@ used for obtaining authorization. The relayr platform has implemented two of the
 During the registration process, when registering as an Application Publisher (developer)
 you could choose which of these flows best fits your application type.
 As the final stage of the registration of an app, you will receive two unique identifiers
-for your app `clientId` and `clientSecret`.
+for your app `client_id` and `client_secret`.
 
 
 # Authorization Flows 
@@ -75,7 +75,7 @@ Once the credentials are entered, the user is redirected back to the application
 with the parameter `code` in the URL. This parameter is only valid for 5 minutes during
 which the Authentication process takes place. The application-side server exchanges
 the combination of the `code` parameter along with the specific application 
-`clientId` and `clientSecret`, for an access token, which is valid indefinitely.
+`client_id` and `client_secret`, for an access token, which is valid indefinitely.
 
 
 ## Implicit Grant for Browser-Based Client-Side Applications
@@ -106,7 +106,7 @@ Where:
 
    * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login.
    * `response_type` (string): The type of response to be returned according to the type of authorization innitiated. The two             available values are `code` and `token`. 
-   * `clientId` (string): The clientId assigned to the app upon registration.
+   * `client_id` (string): The clientId assigned to the app upon registration.
    * `scope` (string): A list of permissions the application is to be granted. List items should be separated by a space.
     
 Following this call, two scenarios are expected:
@@ -118,17 +118,17 @@ This URL will also include the parameter `code` as a fragment, denoted by a `#`.
 
 `https://mycoolrelayrapp.com/hello#code=4papf.tjzRM2iLtaEaPm`
 
-The code value is only valid for 5 minuted during which, it would need to be sent to the relayr server along with the `clientId` and `clientSecret`:
+The code value is only valid for 5 minuted during which, it would need to be sent to the relayr server along with the `client_id` and `client_secret`:
 
 [POST] `http://api.relayr.io/oauth2`
 
       { 
-        "clientId" = "{clientId}",
-        "clientSecret" = "{clientSecret}",
+        "client_id" = "{client_id}",
+        "client_secret" = "{client_secret}",
         "code" = "4papf.tjzRM2iLtaEaPm" 
       }
       
-Another option of sending the `clientId` and `clientSecret` parameters is as authorization header parameters rather than form parameters.
+Another option of sending the `client_id` and `client_secret` parameters is as authorization header parameters rather than form parameters.
 
 The response received is a JSON responnse. For example:
 
