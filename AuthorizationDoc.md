@@ -148,10 +148,11 @@ The access token could then be parsed from the URL and used in the header of fur
 
 `Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
 
-## A Short OAuth Demo
+## A Short OAuth Example
 
+### Access Code Scenario
 
-### 1. Access the [OAuthPlayGround URL](https://developers.google.com/oauthplayground/#step1&scopes=access-own-user-info&auth_code=sBCSndPuYsTLqxsPHz_f&access_token_field=_JP_JurFCl9xfVF3MZP_k5JZTL_MdPUy&url=https%3A//api.relayr.io/oauth2/user-info&content_type=application/json&http_method=GET&useDefaultOauthCred=unchecked&oauthEndpointSelect=Custom&oauthAuthEndpointValue=http%3A//api.relayr.io/oauth2/auth&oauthTokenEndpointValue=http%3A//api.relayr.io/oauth2/token&oauthClientId=YZMPclj.lRwF1kGvDAOIORwSvLBPviQw&oauthClientSecret=s-VqLywcrGp3r7f__1p8ddhBBI7NhomT&access_token_issue_date=1400774322&for_access_token=_JP_JurFCl9xfVF3MZP_k5JZTL_MdPUy&includeCredentials=checked&accessTokenType=bearer&autoRefreshToken=unchecked&accessType=offline&forceAprovalPrompt=checked&response_type=code) 
+#### 1. Access the [OAuthPlayGround URL](https://developers.google.com/oauthplayground/#step1&scopes=access-own-user-info&auth_code=sBCSndPuYsTLqxsPHz_f&access_token_field=_JP_JurFCl9xfVF3MZP_k5JZTL_MdPUy&url=https%3A//api.relayr.io/oauth2/user-info&content_type=application/json&http_method=GET&useDefaultOauthCred=unchecked&oauthEndpointSelect=Custom&oauthAuthEndpointValue=http%3A//api.relayr.io/oauth2/auth&oauthTokenEndpointValue=http%3A//api.relayr.io/oauth2/token&oauthClientId=YZMPclj.lRwF1kGvDAOIORwSvLBPviQw&oauthClientSecret=s-VqLywcrGp3r7f__1p8ddhBBI7NhomT&access_token_issue_date=1400774322&for_access_token=_JP_JurFCl9xfVF3MZP_k5JZTL_MdPUy&includeCredentials=checked&accessTokenType=bearer&autoRefreshToken=unchecked&accessType=offline&forceAprovalPrompt=checked&response_type=code) 
 
 
 #### 2. The context of the action is predefined:
@@ -181,3 +182,16 @@ The access token could then be parsed from the URL and used in the header of fur
 #### 8. The token is received as a JSON snippet in the response.
 
 ![](/OAuth/step7.jpg)
+
+### Implocit Grant Scenario
+
+#### 1. Access the [OAuthPlayGround URL](https://developers.google.com/oauthplayground/#step1&scopes=access-own-user-info&auth_code=sBCSndPuYsTLqxsPHz_f&access_token_field=_JP_JurFCl9xfVF3MZP_k5JZTL_MdPUy&url=https%3A//api.relayr.io/oauth2/user-info&content_type=application/json&http_method=GET&useDefaultOauthCred=unchecked&oauthEndpointSelect=Custom&oauthAuthEndpointValue=http%3A//api.relayr.io/oauth2/auth&oauthTokenEndpointValue=http%3A//api.relayr.io/oauth2/token&oauthClientId=YZMPclj.lRwF1kGvDAOIORwSvLBPviQw&oauthClientSecret=s-VqLywcrGp3r7f__1p8ddhBBI7NhomT&access_token_issue_date=1400774322&for_access_token=_JP_JurFCl9xfVF3MZP_k5JZTL_MdPUy&includeCredentials=checked&accessTokenType=bearer&autoRefreshToken=unchecked&accessType=offline&forceAprovalPrompt=checked&response_type=code) 
+
+
+#### 2. The context of the action is predefined:
+
+![](/OAuth/step1.jpg)
+
+#### 3. Click the settings menu on the top right corner.
+
+![](/OAuth/step2.jpg)
