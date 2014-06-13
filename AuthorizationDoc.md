@@ -96,7 +96,7 @@ with the parameter `access_token` in the URL. The application can then
 parse the URL to exctract the token. This token will only be valid for two weeks.
 
 
-## How does it all work?
+# How does it all work?
 
 The initial call which sets both authorization flows in motion is:
 
@@ -148,3 +148,6 @@ The access token could then be parsed from the URL and used in the header of fur
 
 `Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
 
+## A Short OAuth Demo
+
+![this is an...](step1.jpg)
