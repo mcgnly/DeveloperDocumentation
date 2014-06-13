@@ -160,7 +160,7 @@ The access token could then be parsed from the URL and used in the header of fur
 
 ### 3. Click the settings menu on the top right corner.
 
-![](/Oauth/step2.jpg)
+![](/OAuth/step2.jpg)
 
 ### 4. Click 'Authorize APIs'.
 
@@ -180,4 +180,4 @@ The access token could then be parsed from the URL and used in the header of fur
 
 ### 8. The token is received as a JSON snippet in the response.
 
-![](/oauth/step7.jpg)
+![](/OAuth/step7.jpg)
