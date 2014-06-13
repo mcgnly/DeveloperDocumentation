@@ -150,7 +150,7 @@ The access token could then be parsed from the URL and used in the header of fur
 
 ## A Short OAuth Example
 
-The example below provides a step by step clarification of the process which takes place when OAuth authorization tokens are issued on the relayr platform.
+The example below provides a step by step interactive demonstration of the process which takes place when OAuth authorization tokens are issued on the relayr platform.
 
 ### The Access Code Scenario
 
