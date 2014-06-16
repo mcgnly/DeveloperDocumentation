@@ -156,28 +156,28 @@ The access token could then be parsed from the URL and used in the header of fur
 
 ### 2. The context of the action is predefined:
 
-![](/OAuth/step1.jpg)
+![](/Take2/step1.jpg)
 
 ### 3. Click the settings menu on the top right corner.
 
-![](/OAuth/step2.jpg)
+![](/Take2/step2.jpg)
 
 ### 4. Click 'Authorize APIs'.
 
-![](/OAuth/step3.jpg)
+![](/Take2/step3.jpg)
 
 ### 5. You will be prompted to enter your relayr User credentials.
 
-![](/OAuth/step4.jpg) 
+![](/Take2/step4.jpg) 
 
 ### 6. Enter your credentials and click to sign in.
 
-![](/OAUth/step5.jpg)
+![](/Take2/step5.jpg)
 
 ### 7. Click Exchange Authorization code for tokens.
 
-![](/OAuth/step6.png)
+![](/Take2/step6.jpg)
 
 ### 8. The token is received as a JSON snippet in the response.
 
-![](/OAuth/step7.jpg)
+![](/Take2/step7.jpg)
