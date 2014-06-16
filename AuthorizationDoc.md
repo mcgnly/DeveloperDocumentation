@@ -175,26 +175,17 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 6. Enter your credentials and click to sign in.
 
-<<<<<<< HEAD
 ![](/Take2/step5.jpg)
-=======
-![](/OAuth/step5.jpg)
->>>>>>> origin/master
 
 #### 7. Click Exchange Authorization code for tokens.
 
-<<<<<<< HEAD
+
 ![](/Take2/step6.jpg)
-=======
-![](/OAuth/step6.jpg)
->>>>>>> origin/master
 
 #### 8. The token is received as a JSON snippet in the response.
 
-<<<<<<< HEAD
+
 ![](/Take2/step7.jpg)
-=======
-![](/OAuth/step7.jpg)
 
 ### The Implicit Grant Scenario
 
@@ -203,9 +194,6 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 2. The context of the action is predefined:
 
-![](/OAuth/step1.jpg)
 
 #### 3. Click the settings menu on the top right corner.
 
-![](/OAuth/step2.jpg)
->>>>>>> origin/master
