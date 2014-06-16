@@ -195,5 +195,24 @@ The example below provides a step by step interactive demonstration of the proce
 #### 2. The context of the action is predefined:
 
 
-#### 3. Click the settings menu on the top right corner.
+#### 3. Click the settings menu on the top right corner. Select the Client Side scenario from the drop down 
 
+![](/Take2/client1.jpg)
+
+
+#### 4. Click 'Authorize APIs'.
+
+![](/Take2/step3.jpg)
+
+#### 5. You will be prompted to enter your relayr User credentials.
+
+![](/Take2/step4.jpg) 
+
+#### 6. Enter your credentials and click to sign in. 
+
+![](/Take2/step5.jpg)
+
+
+#### 7. The token is received as part of the URL and on the left hand side
+
+![](/Take2/client2.jpg)
