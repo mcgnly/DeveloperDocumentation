@@ -1,0 +1,82 @@
+{
+    "menu": [
+        {
+            "directory": "Welcome",
+            "title": "Welcome",
+            "submenus": [
+                {
+                    "file": "Introduction",
+                    "title": "Introduction"
+                }
+            ]
+        },
+        {
+            "directory": "Authorization",
+            "title": "Authorization",
+            "submenus": [
+                {
+                    "file": "Refrence",
+                    "title": "Refrence"
+                }
+            ]
+        },
+        {
+            "directory": "Registration",
+            "title": "Registration",
+            "submenus": [
+                {
+                    "file": "Refrence",
+                    "title": "Refrence"
+                },
+                {
+                    "file": "How To's",
+                    "title": "How To's"
+                }
+            ]
+        },
+        {
+            "directory": "Android",
+            "title": "Android",
+            "submenus": [
+                {
+                    "file": "Refrence",
+                    "title": "Refrence"
+                },
+                {
+                    "file": "Tutorials",
+                    "title": "Tutorials"
+                },
+                {
+                    "file": "How To's",
+                    "title": "How To's"
+                },
+                {
+                    "file": "Sample Projects",
+                    "title": "Sample Projects"
+                }
+            ]
+        },
+        {
+            "directory": "iOS",
+            "title": "iOS",
+            "submenus": [
+                {
+                    "file": "Refrence",
+                    "title": "Refrence"
+                },
+                {
+                    "file": "Tutorials",
+                    "title": "Tutorials"
+                },
+                {
+                    "file": "How To's",
+                    "title": "How To's"
+                },
+                {
+                    "file": "Sample Projects",
+                    "title": "Sample Projects"
+                }
+            ]
+        }
+    ]
+}
