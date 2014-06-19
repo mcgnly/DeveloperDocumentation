@@ -41,7 +41,7 @@ users to log into third party web sites using their Google,
 Facebook or Twitter accounts, without worrying about their access
 credentials being compromised. 
 
-For further reading about OAuth, please visit - http://tools.ietf.org/html/rfc6749
+For further reading about OAuth, please visit - [http://tools.ietf.org/html/rfc6749](http://tools.ietf.org/html/rfc6749)
 
 ### OAuth on the relayr Platform
 
@@ -159,33 +159,33 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 2. The context of the action is predefined:
 
-![](/Take2/step1.jpg)
+![](/assets/step1.jpg)
 
 #### 3. Click the settings menu on the top right corner.
 
-![](/Take2/step2.jpg)
+![](/assets/step2.jpg)
 
 #### 4. Click 'Authorize APIs'.
 
-![](/Take2/step3.jpg)
+![](/assets/step3.jpg)
 
 #### 5. You will be prompted to enter your relayr User credentials.
 
-![](/Take2/step4.jpg) 
+![](/assets/step4.jpg) 
 
 #### 6. Enter your credentials and click to sign in.
 
-![](/Take2/step5.jpg)
+![](/assets/step5.jpg)
 
 #### 7. Click Exchange Authorization code for tokens.
 
 
-![](/Take2/step6.jpg)
+![](/assets/step6.jpg)
 
 #### 8. The token is received as a JSON snippet in the response.
 
 
-![](/Take2/step7.jpg)
+![](/assets/step7.jpg)
 
 ### The Implicit Grant Scenario
 
@@ -197,22 +197,22 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 3. Click the settings menu on the top right corner. Select the Client Side scenario from the drop down 
 
-![](/Take2/client1.jpg)
+![](/assets/client1.jpg)
 
 
 #### 4. Click 'Authorize APIs'.
 
-![](/Take2/step3.jpg)
+![](/assets/step3.jpg)
 
 #### 5. You will be prompted to enter your relayr User credentials.
 
-![](/Take2/step4.jpg) 
+![](/assets/step4.jpg) 
 
 #### 6. Enter your credentials and click to sign in. 
 
-![](/Take2/step5.jpg)
+![](/assets/step5.jpg)
 
 
 #### 7. The token is received as part of the URL and on the left hand side
 
-![](/Take2/client2.jpg)
+![](/assets/client2.jpg)
