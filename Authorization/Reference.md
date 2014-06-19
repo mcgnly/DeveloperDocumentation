@@ -159,7 +159,7 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 2. The context of the action is predefined:
 
-![](/assets/step1.jpg)
+![](assets/step1.jpg)
 
 #### 3. Click the settings menu on the top right corner.
 
