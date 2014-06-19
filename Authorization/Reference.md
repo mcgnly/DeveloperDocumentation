@@ -159,33 +159,33 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 2. The context of the action is predefined:
 
-![](assets/step1.jpg)
+![](/assets/step1.jpg)
 
 #### 3. Click the settings menu on the top right corner.
 
-![](assets/step2.jpg)
+![](/assets/step2.jpg)
 
 #### 4. Click 'Authorize APIs'.
 
-![](assets/step3.jpg)
+![](/assets/step3.jpg)
 
 #### 5. You will be prompted to enter your relayr User credentials.
 
-![](assets/step4.jpg) 
+![](/assets/step4.jpg) 
 
 #### 6. Enter your credentials and click to sign in.
 
-![](assets/step5.jpg)
+![](/assets/step5.jpg)
 
 #### 7. Click Exchange Authorization code for tokens.
 
 
-![](assets/step6.jpg)
+![](/assets/step6.jpg)
 
 #### 8. The token is received as a JSON snippet in the response.
 
 
-![](assets/step7.jpg)
+![](/assets/step7.jpg)
 
 ### The Implicit Grant Scenario
 
@@ -197,22 +197,22 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 3. Click the settings menu on the top right corner. Select the Client Side scenario from the drop down 
 
-![](assets/client1.jpg)
+![](/assets/client1.jpg)
 
 
 #### 4. Click 'Authorize APIs'.
 
-![](assets/step3.jpg)
+![](/assets/step3.jpg)
 
 #### 5. You will be prompted to enter your relayr User credentials.
 
-![](assets/step4.jpg) 
+![](/assets/step4.jpg) 
 
 #### 6. Enter your credentials and click to sign in. 
 
-![](assets/step5.jpg)
+![](/assets/step5.jpg)
 
 
 #### 7. The token is received as part of the URL and on the left hand side
 
-![](assets/client2.jpg)
+![](/assets/client2.jpg)
