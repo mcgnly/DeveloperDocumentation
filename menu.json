@@ -28,7 +28,8 @@
             "color": "blue",
             "submenus": [
                 {
-                    "file": "Reference",
+                    "file": "Reference", 
+                    "source": "http://docs.wunderbarregistration.apiary.io/",
                     "title": "Reference"
                 },
                 {
