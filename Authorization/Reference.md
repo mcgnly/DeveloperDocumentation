@@ -120,15 +120,17 @@ This URL will also include the parameter `code` as a fragment, denoted by a `#`.
 
 The code value is only valid for 5 minuted during which, it would need to be sent to the relayr server along with the `client_id` and `client_secret`:
 
-[POST] `https://api.relayr.io/oauth2`
+[POST] `https://api.relayr.io/oauth2/token`
 
-      { 
-        "client_id" = "{client_id}",
-        "client_secret" = "{client_secret}",
-        "code" = "4papf.tjzRM2iLtaEaPm" 
-      }
+**For Example**
+
+      	POST /oauth2/token HTTP/1.1
+		Host: api.relayr.io
+		Content-length: 219
+		content-type: application/x-www-form-urlencoded
+		code=hSCQRLDr.i1T9xTZw4uP&redirect_uri=https%3A%2F%2Fdevelopers.google.com%2Foauthplayground&client_id=YZMPclj.lRwF1kGvDAOIORwSvLBPviQw&scope=&client_secret=s-VqLywcrGp3r7f__1p8ddhBBI7NhomT&grant_type=authorization_code
       
-Another option of sending the `client_id` and `client_secret` parameters is as authorization header parameters rather than form parameters.
+Another option of sending the `client_id` and `client_secret` parameters is as authorization header parameters rather than as form parameters.
 
 The response received is a JSON response. For example:
 
