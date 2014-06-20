@@ -19,7 +19,7 @@ stored on the resource server.
 requests in order to perform actions on protected resources on 
 behalf of the resource owner.
 
-**Authorization Server** - The authorization server receives concent from the resource
+**Authorization Server** - The authorization server receives consent from the resource
 owner and in return issues access tokens to clients, enabling them to access protected
 resources hosted by the resource server.
 
@@ -93,27 +93,27 @@ In the relayr context, a user wishing to grant access to an application is
 redirected to a relayr page where they are prompted to enter their relayr credentials.
 Once the credentials are entered, the user is redirected back to the application page
 with the parameter `access_token` in the URL. The application can then
-parse the URL to exctract the token. This token will only be valid for two weeks.
+parse the URL to extract the token. This token will only be valid for two weeks.
 
 
 # How does it all work?
 
 The initial call which sets both authorization flows in motion is:
 
-[GET] `http://api.relayr.io/oauth2/auth/?redirect_uri={redirect_uri}&response_type={response_type}&clientId={clientId}&scope={scope}`
+[GET] `https://api.relayr.io/oauth2/auth?redirect_uri={redirect_uri}&response_type={response_type}&client_id={clientId}&scope={scope}`
 
 Where: 
 
-   * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login.
-   * `response_type` (string): The type of response to be returned according to the type of authorization innitiated. The two             available values are `code` and `token`. 
+   * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login. The URI *must* include the protocol used e.g. 'http'
+   * `response_type` (string): The type of response to be returned according to the type of authorization initiated. The two available values are `code` and `token`. 
    * `client_id` (string): The clientId assigned to the app upon registration.
-   * `scope` (string): A list of permissions the application is to be granted. List items should be separated by a space.
+   * `scope` (string): A list of permissions the application is to be granted. List items should be separated by a space. The scope which is currently available for app developers is the _access-own-user-info_ scope. 
     
 Following this call, two scenarios are expected:
 
 #### Applications utilizing The *Authorization Code*:
 
-Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
+Once a user successfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
 This URL will also include the parameter `code` as a fragment, denoted by a `#`. For example:
 
 `https://mycoolrelayrapp.com/hello#code=4papf.tjzRM2iLtaEaPm`
@@ -130,7 +130,7 @@ The code value is only valid for 5 minuted during which, it would need to be sen
       
 Another option of sending the `client_id` and `client_secret` parameters is as authorization header parameters rather than form parameters.
 
-The response received is a JSON responnse. For example:
+The response received is a JSON response. For example:
 
       {
         "access_token": “your_shiny_access_token",
@@ -139,7 +139,7 @@ The response received is a JSON responnse. For example:
 
 #### Applications utilizing The *Implicit Grant*:
 
-Once a user sucessfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
+Once a user successfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
 This URL will also include the parameters `access_token` and `token_type` as a fragment, denoted by a `#`. For example:
 
 `https://mycoolrelayrapp.com/hello#access_token=KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj&token_type=Bearer`   

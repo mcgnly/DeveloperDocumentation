@@ -29,7 +29,7 @@
             "submenus": [
                 {
                     "file": "Reference", 
-                    "source": "http://docs.wunderbarregistration.apiary.io/",
+                    "apiarySource": "wunderbarregistration",
                     "title": "Reference"
                 },
                 {
