@@ -3,6 +3,7 @@
         {
             "directory": "Welcome",
             "title": "Welcome",
+            "color": "orange",
             "submenus": [
                 {
                     "file": "Introduction",
@@ -13,20 +14,22 @@
         {
             "directory": "Authorization",
             "title": "Authorization",
+            "color": "purple",
             "submenus": [
                 {
-                    "file": "Refrence",
-                    "title": "Refrence"
+                    "file": "Reference",
+                    "title": "Reference"
                 }
             ]
         },
         {
             "directory": "Registration",
             "title": "Registration",
+            "color": "blue",
             "submenus": [
                 {
-                    "file": "Refrence",
-                    "title": "Refrence"
+                    "file": "Reference",
+                    "title": "Reference"
                 },
                 {
                     "file": "How To's",
@@ -37,10 +40,12 @@
         {
             "directory": "Android",
             "title": "Android",
+            "color": "green",
+            "icon": "fa-android",
             "submenus": [
                 {
-                    "file": "Refrence",
-                    "title": "Refrence"
+                    "file": "Reference",
+                    "title": "Reference"
                 },
                 {
                     "file": "Tutorials",
@@ -59,10 +64,12 @@
         {
             "directory": "iOS",
             "title": "iOS",
+            "color": "yellow",
+            "icon" : "fa-apple",
             "submenus": [
                 {
-                    "file": "Refrence",
-                    "title": "Refrence"
+                    "file": "Reference",
+                    "title": "Reference"
                 },
                 {
                     "file": "Tutorials",
