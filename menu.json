@@ -26,15 +26,27 @@
             "directory": "Registration",
             "title": "Registration",
             "color": "blue",
+            "apiarySource": "wunderbarregistration",
             "submenus": [
                 {
-                    "file": "Reference", 
-                    "apiarySource": "wunderbarregistration",
-                    "title": "Reference"
+                    "file": "Users", 
+                    "title": "Users"
                 },
                 {
-                    "file": "How To's",
-                    "title": "How To's"
+                    "file": "Publishers",
+                    "title": "Publishers"
+                },
+                {
+                    "file": "Apps",
+                    "title": "Apps"
+                },
+                {
+                    "file": "Devices",
+                    "title": "Devices"
+                },
+                {
+                    "file": "Transmitters",
+                    "title": "Transmitters"
                 }
             ]
         },
