@@ -120,7 +120,7 @@ This URL will also include the parameter `code` as a fragment, denoted by a `#`.
 
 The code value is only valid for 5 minuted during which, it would need to be sent to the relayr server along with the `client_id` and `client_secret`:
 
-[POST] `http://api.relayr.io/oauth2`
+[POST] `https://api.relayr.io/oauth2`
 
       { 
         "client_id" = "{client_id}",
