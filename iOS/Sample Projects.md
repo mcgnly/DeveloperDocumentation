@@ -1,185 +1,20 @@
-# The relayr iOS Framework 
+# Sample Projects
 
-The relayr iOS SDK provides iOS app developers with a number of programmatic access points into the relayr API.
+Here you'll find links to some sample iOS projects which would get you inspired to create your own iOS apps. 
 
-## Setup
+## The Hot Plate App
 
-* Download the Relayr.framework from [https://github.com/relayr/ios-sdk/releases](https://github.com/relayr/ios-sdk/releases)
-* Create a new project in XCode
-* Drag and drop the following frameworks/libraries into XCode:
-	
-	* Relayr.framework
-	* libz.dylib
-	* PubNub.framework
-	* SystemConfiguration.framework
-	* CFNetwork.framework
-	* CoreBluetooth.framework
-	* CoreGraphics.framework
-	* UIKit.framework
-	* Foundation.framework
+The purpose of the HotPlate app is to send you a notification about a forgotten oven or stove prior to your closing your bedroom door and going to sleep. The two sensors which are used in this project are the HTU sensor and the GYRO sensor. 
+The app, in this scenario, utilizes the direct connection model, it connects to the sensors directly without the mediation of the relayr cloud.
 
-![](/assets/frameworks.png)
+Here's a link to the project on GitHub: [https://github.com/relayr/iOSDemoHotPlate/](https://github.com/relayr/iOSDemoHotPlate/ "https://github.com/relayr/iOSDemoHotPlate/")
 
-#### Alternatively:
+![](assets/Foto4.JPG)
 
-* Place an import statemtent in the Prefix.pch file
-* Create a new project in XCode
+## The Spider App
 
-#### This is an example of a Prefix.pch containing the statement:
+Our Spider app makes sure that our little spider robot never stops moving around. The app utilizes the direct connection and uses the Grove connector in order to connect to two motors which are in turn connected to two sets of arms. The app controls the velocity and direction of the robot's motion and for extra fun, when a little button is tapped, it starts dancing!
 
-	
-			
-			#import <Availability.h>
-		
-			#ifndef __IPHONE_5_0
-			#warning "This project uses features only available in iOS SDK 5.0 and later."
-			#endif
-			
-			#ifdef __OBJC__
-			  #import <UIKit/UIKit.h>
-			  #import <Foundation/Foundation.h>
-			  #import <Relayr/Relayr.h>
-			#endif
-	
-## Basic Endpoints
+Here's a link to the project on GitHub: [https://github.com/relayr/iOSDemoRobot](https://github.com/relayr/iOSDemoRobot "https://github.com/relayr/iOSDemoRobot") 
 
-API methods: [https://github.com/relayr/ios-sdk/tree/development](https://github.com/relayr/ios-sdk/tree/development)
-
-The two main classes facilitated by the iOS framework are the _RLARemoteUser_ and the _RLALocalUser_.
-
-**_RLARemoteUser_** refers to a user connecting their app to a device, via the relayr platform.
-
-**_RLALocalUser_**  refers to a user connecting their app to a device directly, without the mediation of the relayr platform. When this scenario is utilized, all BLE communication with the device is handled by the framework, making it transparent to the app developer. 
-
-The main difference between the two classes is the Authentication Endpoint. For the remote user scenario, authentication is necessary. For the direct connection, i.e. the local user scenario, authentication is not required. In the latter scenario, the user object is retrieved without authentication.
-
-The other endpoints are identical, for both classes.
-
-
-### 1. User Authentication
-
-#### Class: RLALocalUser
-
-In this scenario the user object is fetched rather than being authenticated.
-
-**Example**
-
-		self.RLA_user = [RLALocalUser user];
-
-
-#### Class: RLARemoteUser
-
-In this scenario, authentication is required.
-The variables required for this method are the `appID` and `secret`. These are attributed to the application during its registration on the relayr platform.
-
-
-**Example**
-
-
-		  // Start relayr authentication
-		  NSString *appID = @"rWd8mwESapYzR2UOZAvXm7jFMp38L_BY";
-		  NSString *secret = @"IJHUNvQ4fzSY3syVBZAbI57.rCYaRdIV";
-		  __block typeof(self) weakSelf = self;
-		  [RLARemoteUser
-		   authenticateLocalUserWithAppID:appID
-		   appSecret:secret
-		   presentingViewController:self
-		   completionHandler:^(RLARemoteUser *user, NSError *error) {
-		     
-		     // User authenticated
-		     if (user) {
-		       typeof(weakSelf) strongSelf = weakSelf;
-		       [strongSelf RLA_presentMenuViewControllerWithUser:user];
-		     }
-		     
-		     // Authentication failed
-		     if (error) {
-		       
-		       // Present error
-		       NSString *message = [error localizedDescription];
-		       if (!message) message = @"Unknown error";
-		       [[[UIAlertView alloc] initWithTitle:@"Authentication error"
-		                                   message:message
-		                                  delegate:nil
-		                         cancelButtonTitle:@"OK"
-		                         otherButtonTitles:nil] show];
-		     }   }];
-   
-   
-
-
-
-### 2. Registered Devices
-
-Returns an array of the devices registered under a user. 
-
-
-**Example**
-
-		// Fetch devices
-	    [self.RLA_user devicesWithCompletionHandler:^(NSArray *devices, NSError *error) {
-	    
-	    	// Data Manipulation
-	    }];
-
-
-
-
-### 3. Device Readings
-
-Subscribes the app to a specific device (sensor) channel as to enable it to receive data from it. This endpoint should be preceded by two initial methods:
-
-1. Device Selection - Select device out of the registered devices.
-2. Sensor Selection - As a device may include multiple sensors, one should be selected for data collection.
-
-**Example**
-		
-		// Fetch devices
-	    [self.RLA_user devicesWithCompletionHandler:^(NSArray *devices, NSError *error) {
-	    
-	    	// Cancel on error
-	    	if (error) return;
-	    
-	    	// Devices found: Start data collection
-			RLADevice *device = [devices lastObject];
-		    [device startMonitoringWithSuccessHandler:^(NSError *error) {
-	
-				// Data Manipulation
-				// ....
-		    }];
-	    }];
-
-
-
-### 4. View Sensor Data
-
-Displays the readings sent by the device. This endpoint is preceded by the folowing methods:
-
-1. Device Selection - Select device out of the registered devices.
-2. Sensor Selection - As a device may include multiple sensors, one should be selected for data collection.
-3. Initiate Data Collection - Subscribing the app to the specific device (sensor) channel.
-
-
-**Example**
-	
-		// Fetch devices
-	    [self.RLA_user devicesWithCompletionHandler:^(NSArray *devices, NSError *error) {
-	    
-	    	// Cancel on error
-	    	if (error) return;
-	    
-	    	// Devices found: Start data collection
-			RLADevice *device = [devices lastObject];
-		    [device startMonitoringWithSuccessHandler:^(NSError *error) {
-				
-				// In this example a temperature sensor is assumed
-				// Get the temperature readings
-				NSArray *sensors = [device sensors];
-				RLATemperatureSensor *sensor = [sensors lastObject];
-				RLATemperatureSensorValue  *value = [sensor value];
-				NSNumber *temperature = [value temperature];
-		    }];
-	    }];
-
-
-
+![](assets/FotoRobot.jpg) 
