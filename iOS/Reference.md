@@ -18,7 +18,7 @@ The relayr iOS SDK provides iOS app developers with a number of programmatic acc
 	* UIKit.framework
 	* Foundation.framework
 
-![](/assets/frameworks.png)
+![](assets/frameworks.png)
 
 #### Alternatively:
 
