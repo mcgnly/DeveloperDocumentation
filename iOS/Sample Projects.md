@@ -1,6 +1,6 @@
 # Sample Projects
 
-Here you'll find links to some sample iOS projects which would get you inspired to create your own iOS apps. 
+Here you'll find links to some sample iOS projects which would hopefully inspire to create your own apps. 
 
 ## The Hot Plate App
 
@@ -13,7 +13,7 @@ Here's a link to the project on GitHub: [https://github.com/relayr/iOSDemoHotPla
 
 ## The Spider App
 
-Our Spider app makes sure that our little spider robot never stops moving around. The app utilizes the direct connection and uses the Grove connector in order to connect to two motors which are in turn connected to two sets of arms. The app controls the velocity and direction of the robot's motion and for extra fun, when a little button is tapped, it starts dancing!
+Our Spider app makes sure that our little spider robot never stops moving around. The app utilizes the direct connection and uses the Grove Connector in order to connect to two motors which are in turn connected to two sets of arms. The app controls the velocity and direction of the robot's motion and for extra fun, when a little button is tapped, it starts dancing!
 
 Here's a link to the project on GitHub: [https://github.com/relayr/iOSDemoRobot](https://github.com/relayr/iOSDemoRobot "https://github.com/relayr/iOSDemoRobot") 
 
