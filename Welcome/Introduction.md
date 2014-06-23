@@ -7,10 +7,10 @@ Check out our [Registration API](https://developer.relayr.io/documents/Registrat
 
 <table>
 <tr>
-<td><img src="assets/6.jpg" alt="The WB in action" style="width: auto margin: 10px;"/></td><td><img src="assets/2.jpg" alt="The WB in action" style="width: auto margin: 10px;"/></td>
+<td><img src="assets/6.jpg" alt="The WB in action" style="width: auto margin: 20px;"/></td><td><img src="assets/2.jpg" alt="The WB in action" style="width: auto margin: 20px;"/></td>
 </tr>
 <tr>
-<td><img src="assets/7.jpg" alt="The WB in action" style="width: auto margin: 10px;"/></td><td><img src="assets/3.jpg" alt="The WB in action" style="width: auto margin: 10px;"/></td>
+<td><img src="assets/7.jpg" alt="The WB in action" style="width: auto margin: 20px;"/></td><td><img src="assets/3.jpg" alt="The WB in action" style="width: auto margin: 20px;"/></td>
 </tr>
 </table>
 
