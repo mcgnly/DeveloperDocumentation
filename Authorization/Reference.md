@@ -132,7 +132,9 @@ The code value is only valid for 5 minuted during which, it would need to be sen
       
 Another option of sending the `client_id` and `client_secret` parameters is as authorization header parameters rather than as form parameters.
 
-The response received is a JSON response. For example:
+The response received is a JSON response. 
+
+**For example**
 
       {
         "access_token": “your_shiny_access_token",
@@ -149,6 +151,15 @@ This URL will also include the parameters `access_token` and `token_type` as a f
 The access token could then be parsed from the URL and used in the header of further API requests. For example:
 
 `Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
+
+### The *User Info* Call
+
+The first authorization call which you would probably want to initiate is the 
+
+`[GET].../oauth2/user-info` 
+
+The call returns information about the user initiating the request.
+The authentication header of the request must include the specific user access token otherwise the user information will not be returned.
 
 ## A Short OAuth Example
 
