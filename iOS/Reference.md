@@ -142,7 +142,7 @@ Subscribes the app to a specific device (sensor) channel as to enable it to rece
 	    
 	    	// Devices found: Start data collection
 			RLADevice *device = [devices lastObject];
-		    [device startMonitoringWithSuccessHandler:^(NSError *error) {
+		    [device connectWithSuccessHandler:^(NSError *error) {
 	
 				// Data Manipulation
 				// ....
@@ -170,7 +170,7 @@ Displays the readings sent by the device. This endpoint is preceded by the folow
 	    
 	    	// Devices found: Start data collection
 			RLADevice *device = [devices lastObject];
-		    [device startMonitoringWithSuccessHandler:^(NSError *error) {
+		    [device connectWithSuccessHandler:^(NSError *error) {
 				
 				// In this example a temperature sensor is assumed
 				// Get the temperature readings
