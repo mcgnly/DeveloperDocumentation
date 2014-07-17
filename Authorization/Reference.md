@@ -104,7 +104,7 @@ The initial call which sets both authorization flows in motion is:
 
 Where: 
 
-   * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login. The URI *must* include the protocol used e.g. 'http'
+   * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login. The URI *must* include the protocol used e.g. 'http'. **The redirect URI is set when an application is registered on the relayr Platform.** 
    * `response_type` (string): The type of response to be returned according to the type of authorization initiated. The two available values are `code` and `token`. 
    * `client_id` (string): The clientId assigned to the app upon registration.
    * `scope` (string): A list of permissions the application is to be granted. List items should be separated by a space. The scope which is currently available for app developers is the _access-own-user-info_ scope. 
