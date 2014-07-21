@@ -43,7 +43,7 @@ The relayr iOS SDK provides iOS app developers with a number of programmatic acc
 	
 ## Basic Endpoints
 
-API methods: [https://github.com/relayr/ios-sdk/tree/development](https://github.com/relayr/ios-sdk/tree/master)
+API methods: [https://github.com/relayr/ios-sdk/tree/master](https://github.com/relayr/ios-sdk/tree/master)
 
 The two main classes facilitated by the iOS framework are the _RLARemoteUser_ and the _RLALocalUser_.
 
