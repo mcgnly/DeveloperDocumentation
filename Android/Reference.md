@@ -25,13 +25,15 @@ Returns the current version of the SDK
 
 **Example:**
 
-	public void getVersion(View v) {
-		try {
-			Toast.makeText(MainActivity.this, Relayr_SDK.getVersion(), Toast.LENGTH_LONG).show();
-		} catch (Relayr_Exception e) {
-			e.printStackTrace();
-		}
+```java
+public void getVersion(View v) {
+	try {
+		Toast.makeText(MainActivity.this, Relayr_SDK.getVersion(), Toast.LENGTH_LONG).show();
+	} catch (Relayr_Exception e) {
+		e.printStackTrace();
 	}
+}
+```
 	
 # Users
 
