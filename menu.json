@@ -97,6 +97,17 @@
                     "title": "Sample Projects"
                 }
             ]
+        },
+        {
+            "directory": "PubNub",
+            "title": "PubNub Integration",
+            "color": "purple",
+            "submenus": [
+                {
+                    "file": "Reference",
+                    "title": "Reference"
+                }
+            ]
         }
     ]
 }
