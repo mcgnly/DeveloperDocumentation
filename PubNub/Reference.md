@@ -14,12 +14,22 @@ Where `appId` and `deviceId` are the IDs of the application and the device to be
 #### Implementation Example (JavaScript):
 
 	
-	    $.post("https://api.relayr.io/devices/"+ device.id +"/subscription", function(credentials){
-	
-	      //create a new instance of pubNub and pass the credentials to the function
-	      var pubnubClient = new PubnubClient(credentials, device.id);
-	    });
-	  	}
+	    $.ajax({
+		    url: "https://api.relayr.io/apps/"+appId+ "/devices/"+ deviceId,
+		    type: 'post',
+		    headers: {
+		      "Authorization": 'Bearer '+ token 
+		    },
+		    dataType: 'application/json',
+		    success: function (credentials) {
+		 
+		      var pubnub = PUBNUB.init({
+		        ssl: true,
+		        subscribe_key : credentials.pubSub,
+		        cipher_key: credentials.cipherKey,
+		        auth_key: credentials.authKey
+		 
+		      });
 
 
 The call results in the delivery of the channel and the specific PubNub credentials for the channel (`cipherKey` and `authKey`).
@@ -36,65 +46,47 @@ The call results in the delivery of the channel and the specific PubNub credenti
 
 The example below is a simple step by step walk through the process of subscription to a device channel, data retrieval and display. 
 
+**NOTE**: The code below relates to *private* devices, i.e. devices which have been registered under a specific user. The code below assumes that the credentials for the device have already been obtained. For additional information about device registration please see our [API](https://developer.relayr.io/documents/Registration/Devices).
+To register your App please visit the [Apps section on the Developer Dashboard ](https://developer.relayr.io/dashboard/apps)
+
+
 #### 1. Make sure to download the PubNub [SDK](http://www.pubnub.com/developers/) and incorporate it in your project.
 
-#### 2. Start by getting a list of the available public devices on the relayr platform. In case you have a registered device, you may skip this stage.
+#### 2. The example assumes the following parameters are known:
 
-		//Main Call
-	  		
-		function getPublicDevices(){
-	
-		    //You can use Jquery GET to retrieve a list of public devices from the relayr API
-		    $.get("https://api.relayr.io/devices/public", function(publicDevices){
-		     
-		      //Iterate through the first 5 devices found
-		      publicDevices.slice(0, 5).forEach(function(device){
-		        //Get the credentials for
-		        subscribeDevice(device);
+		var appId= "YOUR APP ID";
+		var deviceId= "YOUR DEVICE ID";
+		var token ="YOUR TOKEN";
+
+#### 3. Initiate the API call which subscribes the App to the Device and returns PubNub credentials.
+
 		
+	    $.ajax({
+		    url: "https://api.relayr.io/apps/"+appId+ "/devices/"+ deviceId,
+		    type: 'post',
+		    headers: {
+		      "Authorization": 'Bearer '+ token 
+		    },
+		    dataType: 'application/json',
+		    success: function (credentials) {
+		 
+		      var pubnub = PUBNUB.init({
+		        ssl: true,
+		        subscribe_key : credentials.pubSub,
+		        cipher_key: credentials.cipherKey,
+		        auth_key: credentials.authKey
+		 
 		      });
-		    });
-	  	} 
 
-#### 3. Initiate the call which returns PubNub Credentials from the relayr API. 
+#### 4. Subscribe to the channel by passing the channel ID and output the data.
 
-		//Returns credentials for a device
-			function subscribeDevice(device){
-	
-	    
-	    //POST to the API with the device id in the url to receive the credentials for Pubnub
-	    	$.post("https://api.relayr.io/devices/"+ device.id +"/subscription", function(credentials){
-	
-	      //create a new instance of pubNub and pass the credentials to the function
-		      var pubnubClient = new PubnubClient(credentials);
-		    });
-		  }
-	
-	
-	  	
-	    
-#### 4. Initialize the PubNub SDK *init* using the relayr credentials received.
-	    
-		//It can also be an instance for a number of devices
-	 	 function PubnubClient(credentials){		
-			var pubnub = PUBNUB.init({
-		      ssl: true,
-		      subscribe_key : credentials.pubSub,
-		      cipher_key: credentials.cipherKey,
-		      auth_key: credentials.authKey
-		
-		 	});
-
-#### 5. Subscribe to the device's channel by passing the channel ID and display the data received.
-	
-			pubnub.subscribe({
-	      		channel : credentials.channel,
-	      
-	      		message : function(data){
-	
-				document.write(data)
-
-      		});
-		}
-
-
+		 		pubnub.subscribe({
+		        channel : credentials.channel,
+		        
+		        message : function(data){
+		          //Output the realtime data coming from the device
+		          document.write(data)
+		        }
+		      }); 
+		    }
+		});
