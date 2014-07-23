@@ -42,20 +42,18 @@ The example below is a simple step by step walk through the process of subscript
 
 		//Main Call
 	  		
-			function getPublicDevices(){
+		function getPublicDevices(){
 	
-	    //You can use Jquery GET to retrieve a list of public devices from the relayr API
-	    $.get("https://api.relayr.io/devices/public", function(publicDevices){
-	     
-	      //Iterate through the first 5 devices found
-	      publicDevices.slice(0, 5).forEach(function(device){
-	        //Get the credentials for
-	        subscribeDevice(device);
-	
-	        //Visualization Option: create a container for each device
-	        $("body").append("<div id='container' device-id='"+device.id+"'><h3>Device: "+device.id+"</h3></div>");
-	      });
-	    });
+		    //You can use Jquery GET to retrieve a list of public devices from the relayr API
+		    $.get("https://api.relayr.io/devices/public", function(publicDevices){
+		     
+		      //Iterate through the first 5 devices found
+		      publicDevices.slice(0, 5).forEach(function(device){
+		        //Get the credentials for
+		        subscribeDevice(device);
+		
+		      });
+		    });
 	  	} 
 
 #### 3. Initiate the call which returns PubNub Credentials from the relayr API. 
@@ -68,33 +66,35 @@ The example below is a simple step by step walk through the process of subscript
 	    	$.post("https://api.relayr.io/devices/"+ device.id +"/subscription", function(credentials){
 	
 	      //create a new instance of pubNub and pass the credentials to the function
-		      var pubnubClient = new PubnubClient(credentials, device.id);
+		      var pubnubClient = new PubnubClient(credentials);
 		    });
 		  }
 	
 	
-	  	//It can also be an instance for a number of devices
-	 	 function PubnubClient(credentials, id){
+	  	
 	    
 #### 4. Initialize the PubNub SDK *init* using the relayr credentials received.
-	    var pubnub = PUBNUB.init({
-	      ssl: true,
-	      subscribe_key : credentials.pubSub,
-	      cipher_key: credentials.cipherKey,
-	      auth_key: credentials.authKey
-	
-	    });
+	    
+		//It can also be an instance for a number of devices
+	 	 function PubnubClient(credentials){		
+			var pubnub = PUBNUB.init({
+		      ssl: true,
+		      subscribe_key : credentials.pubSub,
+		      cipher_key: credentials.cipherKey,
+		      auth_key: credentials.authKey
+		
+		 	});
 
 #### 5. Subscribe to the device's channel by passing the channel ID and display the data received.
+	
+			pubnub.subscribe({
+	      		channel : credentials.channel,
+	      
+	      		message : function(data){
+	
+				document.write(data)
 
-		pubnub.subscribe({
-      	channel : credentials.channel,
-      
-      	message : function(data){
-
-        //Visualization Option: Print the incoming data
-        $("div#container[device-id='"+id+"']").append("<p>"+ data+"</p>");
-
-      	} 
+      		});
+		}
 
 
