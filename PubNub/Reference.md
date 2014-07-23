@@ -32,7 +32,9 @@ The call results in the delivery of the channel and the specific PubNub credenti
 		    "channel": "v1:6854bb1c-64ed-4d46-99b4-6cf28b72ad1d:data"
 		}
 
-## Example: Receiving Data from PubNub and Displaying it (JavaScript) 
+## Example: Receiving Data from PubNub and Displaying it (JavaScript)
+
+The example below is a simple step by step walk through the process of subscription to a device channel, data retrieval and display. 
 
 #### 1. Make sure to download the PubNub [SDK](http://www.pubnub.com/developers/) and incorporate it in your project.
 
@@ -83,7 +85,7 @@ The call results in the delivery of the channel and the specific PubNub credenti
 	
 	    });
 
-#### 5. Subscribe to the device's channel by passing the channel ID
+#### 5. Subscribe to the device's channel by passing the channel ID and display it
 
 		pubnub.subscribe({
       	channel : credentials.channel,
