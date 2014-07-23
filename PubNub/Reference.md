@@ -38,7 +38,7 @@ The example below is a simple step by step walk through the process of subscript
 
 #### 1. Make sure to download the PubNub [SDK](http://www.pubnub.com/developers/) and incorporate it in your project.
 
-#### 2. Start by getting a list of the available public devices on the relayr platform. In case you have a registered device, you may skip this stage
+#### 2. Start by getting a list of the available public devices on the relayr platform. In case you have a registered device, you may skip this stage.
 
 		//Main Call
 	  		
@@ -76,7 +76,7 @@ The example below is a simple step by step walk through the process of subscript
 	  	//It can also be an instance for a number of devices
 	 	 function PubnubClient(credentials, id){
 	    
-#### 4. Initialize the PubNub SDK *init* using the relayr credentials recived
+#### 4. Initialize the PubNub SDK *init* using the relayr credentials received.
 	    var pubnub = PUBNUB.init({
 	      ssl: true,
 	      subscribe_key : credentials.pubSub,
@@ -85,7 +85,7 @@ The example below is a simple step by step walk through the process of subscript
 	
 	    });
 
-#### 5. Subscribe to the device's channel by passing the channel ID and display it
+#### 5. Subscribe to the device's channel by passing the channel ID and display the data received.
 
 		pubnub.subscribe({
       	channel : credentials.channel,
