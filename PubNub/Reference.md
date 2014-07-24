@@ -47,10 +47,10 @@ The call results in the delivery of the channel and the specific PubNub credenti
 The example below is a simple step by step walk through the process of subscription to a device channel, data retrieval and display. 
 
 **NOTE**: The code below relates to *private* devices, i.e. devices which have been registered under a specific user. The code below assumes that the credentials for the device have already been obtained. For additional information about device registration please see our <a href="https://developer.relayr.io/documents/Registration/Devices" target="_blank"> API </a>.
-To register your App please visit the [Apps section on the Developer Dashboard ](https://developer.relayr.io/dashboard/apps)
+To register your App please visit the <a href="https://developer.relayr.io/dashboard/apps" target="_blank"> Apps section on the Developer Dashboard </a>
 
 
-#### 1. Make sure to download the PubNub [SDK](http://www.pubnub.com/developers/) and incorporate it in your project.
+#### 1. Make sure to download the PubNub <a href="http://www.pubnub.com/developers/" target="_blank"> SDK </a> and incorporate it in your project.
 
 #### 2. The example assumes the following parameters are known:
 

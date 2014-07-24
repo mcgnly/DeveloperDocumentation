@@ -3,9 +3,9 @@
 
 The example below is a simple step by step walk through the process of subscription to a public device channel, data retrieval and display. 
 
-**For a complete code sample of the above process for *public* devices please see [this project on GitHub](https://gist.github.com/SmbatYeranyan/a2861a59248aa87a1187)** 
+**For a complete code sample of the above process for *public* devices please see <a href="https://gist.github.com/SmbatYeranyan/a2861a59248aa87a1187" target="_blank"> this project on GitHub </a>** 
 
-#### 1. Make sure to download the PubNub [SDK](http://www.pubnub.com/developers/) and incorporate it in your project.
+#### 1. Make sure to download the PubNub <a href="http://www.pubnub.com/developers/" target="_blank"> SDK </a> and incorporate it in your project.
 
 #### 2. Start by getting a list of the available public devices on the relayr platform. 
 

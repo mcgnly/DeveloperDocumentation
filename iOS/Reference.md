@@ -4,7 +4,7 @@ The relayr iOS SDK provides iOS app developers with a number of programmatic acc
 
 ## Setup
 
-* Download the Relayr.framework from [https://github.com/relayr/ios-sdk/releases](https://github.com/relayr/ios-sdk/releases)
+* Download the Relayr.framework from <a href="https://github.com/relayr/ios-sdk/releases" target="_blank"> https://github.com/relayr/ios-sdk/releases </a> 
 * Create a new project in XCode
 * Drag and drop the following frameworks/libraries into XCode:
 	
@@ -43,7 +43,7 @@ The relayr iOS SDK provides iOS app developers with a number of programmatic acc
 	
 ## Basic Endpoints
 
-API methods: [https://github.com/relayr/ios-sdk/tree/master](https://github.com/relayr/ios-sdk/tree/master)
+API methods: <a href="https://github.com/relayr/ios-sdk/tree/master" target="_blank"> https://github.com/relayr/ios-sdk/tree/master </a> 
 
 The two main classes facilitated by the iOS framework are the _RLARemoteUser_ and the _RLALocalUser_.
 

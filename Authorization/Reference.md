@@ -42,7 +42,7 @@ Facebook or Twitter accounts, without worrying about their access
 credentials being compromised. 
 
 
-For further reading about OAuth, please visit - [http://tools.ietf.org/html/rfc6749](http://tools.ietf.org/html/rfc6749)
+For further reading about OAuth, please visit - <a href="http://tools.ietf.org/html/rfc6749" target="_blank"> http://tools.ietf.org/html/rfc6749 </a>
 
 ### OAuth on the relayr Platform
 
@@ -168,7 +168,7 @@ The example below provides a step by step interactive demonstration of the proce
 
 ### The Access Code Scenario
 
-#### 1. Access the [OAuthPlayGround URL](http://goo.gl/FW1zFb) 
+#### 1. Access the <a href="http://goo.gl/FW1zFb" target="_blank"> OAuthPlayGround URL </a> 
 
 
 #### 2. The context of the action is predefined:
@@ -203,7 +203,7 @@ The example below provides a step by step interactive demonstration of the proce
 
 ### The Implicit Grant Scenario
 
-#### 1. Access the [OAuthPlayGround URL](http://goo.gl/FW1zFb) 
+#### 1. Access the <a href="http://goo.gl/FW1zFb" target="_blank"> OAuthPlayGround URL </a> 
 
 
 #### 2. The context of the action is predefined:

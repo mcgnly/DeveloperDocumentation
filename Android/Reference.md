@@ -3,7 +3,7 @@
 The relayr Android SDK provides Android app developers with a number of programmatic access points into the relayr API
 
 ##Setup
-- Download the SDK from https://github.com/relayr/android-sdk/releases
+- Download the SDK from <a href="https://github.com/relayr/android-sdk/releases" target="_blank"> https://github.com/relayr/android-sdk/releases </a> 
 - Extract the *android-sdk* or the tar.gz file.
 - Import the Relayr SDK into Eclipse: File -> Import -> Existing Android code into workspace.
 - Link the Relayr SDK to your project: Project -> Properties -> Android -> Library -> Add
