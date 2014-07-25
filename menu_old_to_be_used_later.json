@@ -18,7 +18,7 @@
             "submenus": [
                 {
                     "file": "Reference",
-                    "title": "Overview"
+                    "title": "Reference"
                 }
             ]
         },
@@ -58,19 +58,15 @@
             "submenus": [
                 {
                     "file": "Reference",
-                    "title": "Getting Started"
+                    "title": "Reference"
                 },
                 {
-                    "file": "Users",
-                    "title": "User Endpoints"
+                    "file": "Tutorials",
+                    "title": "Tutorials"
                 },
                 {
-                    "file": "Devices",
-                    "title": "Device Endpoints"
-                },
-                {
-                    "file": "DeviceModels",
-                    "title": "Device Model Endpoints"
+                    "file": "How To's",
+                    "title": "How To's"
                 },
                 {
                     "file": "Sample Projects",
@@ -86,11 +82,15 @@
             "submenus": [
                 {
                     "file": "Reference",
-                    "title": "Getting Started"
+                    "title": "Reference"
                 },
                 {
-                    "file": "Endpoints",
-                    "title": "Framework Endpoints"
+                    "file": "Tutorials",
+                    "title": "Tutorials"
+                },
+                {
+                    "file": "How To's",
+                    "title": "How To's"
                 },
                 {
                     "file": "Sample Projects",
@@ -105,7 +105,7 @@
             "submenus": [
                 {
                     "file": "Reference",
-                    "title": "Overview"
+                    "title": "Reference"
                 },
                 {
                     "file": "Sample Projects",
