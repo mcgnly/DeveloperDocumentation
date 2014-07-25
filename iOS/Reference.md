@@ -1,6 +1,6 @@
 # The relayr iOS Framework 
 
-The relayr iOS SDK provides iOS app developers with a number of programmatic access points into the relayr API. Simpy follow the steps below to install the framework and integrate it into your project. For the complete list of endpoints please see 
+The relayr iOS SDK provides iOS app developers with a number of programmatic access points into the relayr API. Simpy follow the steps below to install the framework and integrate it into your project. For the complete list of endpoints please see  <a href="https://developer.relayr.io/documents/iOS/Endpoints" target="_blank"> https://developer.relayr.io/documents/iOS/Endpoints </a>
 
 ## Setup
 
