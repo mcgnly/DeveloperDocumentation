@@ -1,4 +1,4 @@
-# OAuth on the relayr Platform
+# OAuth Implementation on the relayr Platform
 
 The core OAuth 2.0 protocol defines four main grant types - or *authorization flows*,
 used for obtaining authorization. The relayr platform has implemented two of them:
