@@ -14,33 +14,33 @@ Where `appId` and `deviceId` are the IDs of the application and the device to be
 #### Implementation Example (JavaScript):
 
 	
-	    $.ajax({
-		    url: "https://api.relayr.io/apps/"+appId+ "/devices/"+ deviceId,
-		    type: 'post',
-		    headers: {
-		      "Authorization": 'Bearer '+ token 
-		    },
-		    dataType: 'application/json',
-		    success: function (credentials) {
-		 
-		      var pubnub = PUBNUB.init({
-		        ssl: true,
-		        subscribe_key : credentials.pubSub,
-		        cipher_key: credentials.cipherKey,
-		        auth_key: credentials.authKey
-		 
-		      });
+    $.ajax({
+	    url: "https://api.relayr.io/apps/"+appId+ "/devices/"+ deviceId,
+	    type: 'post',
+	    headers: {
+	      "Authorization": 'Bearer '+ token 
+	    },
+	    dataType: 'application/json',
+	    success: function (credentials) {
+      		var pubnub = PUBNUB.init({
+        		ssl: true,
+        		subscribe_key : credentials.pubSub,
+        		cipher_key: credentials.cipherKey,
+        		auth_key: credentials.authKey
+      		});
+		}
+	});
 
 
 The call results in the delivery of the channel and the specific PubNub credentials for the channel (`cipherKey` and `authKey`).
 
 #### For Example:
 
-		{
-		    "authKey": "8a292336-23d2-4f16-b7e1-1c17be11a532",
-		    "cipherKey": "2d4589958e2f51ad6c590a6b0a4382c50c6713eef3d578210d2d135214b05eed",
-		    "channel": "v1:6854bb1c-64ed-4d46-99b4-6cf28b72ad1d:data"
-		}
+	{
+	    "authKey": "8a292336-23d2-4f16-b7e1-1c17be11a532",
+	    "cipherKey": "2d4589958e2f51ad6c590a6b0a4382c50c6713eef3d578210d2d135214b05eed",
+	    "channel": "v1:6854bb1c-64ed-4d46-99b4-6cf28b72ad1d:data"
+	}
 
 ## Example: Receiving Data from PubNub and Displaying it (JavaScript)
 
@@ -61,32 +61,32 @@ To register your App please visit the <a href="https://developer.relayr.io/dashb
 #### 3. Initiate the API call which subscribes the App to the Device and returns PubNub credentials.
 
 		
-	    $.ajax({
-		    url: "https://api.relayr.io/apps/"+appId+ "/devices/"+ deviceId,
-		    type: 'post',
-		    headers: {
-		      "Authorization": 'Bearer '+ token 
-		    },
-		    dataType: 'application/json',
-		    success: function (credentials) {
-		 
-		      var pubnub = PUBNUB.init({
-		        ssl: true,
-		        subscribe_key : credentials.pubSub,
-		        cipher_key: credentials.cipherKey,
-		        auth_key: credentials.authKey
-		 
-		      });
+    $.ajax({
+	    url: "https://api.relayr.io/apps/"+appId+ "/devices/"+ deviceId,
+	    type: 'post',
+	    headers: {
+	      "Authorization": 'Bearer '+ token 
+	    },
+	    dataType: 'application/json',
+	    success: function (credentials) {
+	 
+      var pubnub = PUBNUB.init({
+        ssl: true,
+        subscribe_key : credentials.pubSub,
+        cipher_key: credentials.cipherKey,
+        auth_key: credentials.authKey
+ 
+      });
 
 #### 4. Subscribe to the channel by passing the channel ID and output the data.
 
-		 		pubnub.subscribe({
-		        channel : credentials.channel,
-		        
-		        message : function(data){
-		          //Output the realtime data coming from the device
-		          document.write(data)
-		        }
-		      }); 
-		    }
-		});
+ 		pubnub.subscribe({
+        channel : credentials.channel,
+        
+        message : function(data){
+          //Output the realtime data coming from the device
+          document.write(data)
+	        }
+	      }); 
+	    }
+	});

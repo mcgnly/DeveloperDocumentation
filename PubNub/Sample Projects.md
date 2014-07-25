@@ -27,15 +27,14 @@ The example below is a simple step by step walk through the process of subscript
 
 #### 3. Initiate the call which returns PubNub Credentials from the relayr API. 
 
-		//Returns credentials for a device
+			//Returns credentials for a device
 			function subscribeDevice(device){
 	
 	    
-	    //POST to the API with the device id in the url to receive the credentials for Pubnub
+	    	//POST to the API with the device id in the url to receive the credentials for Pubnub
 	    	$.post("https://api.relayr.io/devices/"+ device.id +"/subscription", function(credentials){
-	
-	      //create a new instance of pubNub and pass the credentials to the function
-		      var pubnubClient = new PubnubClient(credentials);
+	      		//create a new instance of pubNub and pass the credentials to the function
+		      	var pubnubClient = new PubnubClient(credentials);
 		    });
 		  }
 	
@@ -55,13 +54,13 @@ The example below is a simple step by step walk through the process of subscript
 
 #### 5. Subscribe to the device's channel by passing the channel ID and display the data received.
 	
-			pubnub.subscribe({
-	      		channel : credentials.channel,
-	      
-	      		message : function(data){
-	
-				document.write(data)
+		pubnub.subscribe({
+      		channel : credentials.channel,
+      
+      		message : function(data){
 
-      		});
-		}
+			document.write(data)
+
+  		});
+	}
 
