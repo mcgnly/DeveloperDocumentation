@@ -18,7 +18,15 @@
             "submenus": [
                 {
                     "file": "Reference",
-                    "title": "Overview"
+                    "title": "Introduction"
+                },
+                {
+                    "file": "OAuthAndRelayr",
+                    "title": "OAuth on relayr"
+                },
+                {
+                    "file": "Example",
+                    "title": "Example"
                 }
             ]
         },
