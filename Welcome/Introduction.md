@@ -14,7 +14,7 @@
  
 #### We've also included information about how we've integrated with our data distribution service - PubNub. To read all about it, have a look at our [PubNub Introduction](https://developer.relayr.io/documents/PubNub/Reference)
 
-
+#### And most importantly, have fun while you're at it!
 
 ![](assets/overview.png)
 
