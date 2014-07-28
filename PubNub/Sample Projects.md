@@ -3,6 +3,8 @@
 
 The example below is a simple step by step walk through the process of subscription to a public device channel, data retrieval and display. 
 
+**NOTE**: The API calls referenced below are integrated in the [Android SDK](https://developer.relayr.io/documents/Android/Reference) and [iOS Framework](https://developer.relayr.io/documents/iOS/Reference), the below example is a suggestion for implementation in a JavaScript based client.
+
 **For a complete code sample of the above process for *public* devices please see <a href="https://gist.github.com/SmbatYeranyan/a2861a59248aa87a1187" target="_blank"> this project on GitHub </a>** 
 
 #### 1. Make sure to download the PubNub <a href="http://www.pubnub.com/developers/" target="_blank"> SDK </a> and incorporate it in your project.
