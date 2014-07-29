@@ -38,7 +38,8 @@
             "submenus": [
                 {
                     "file": "Introduction",
-                    "title": "Introduction"
+                    "title": "Introduction",
+                    "bypassSource": true
                 },
                 {
                     "file": "Users", 
