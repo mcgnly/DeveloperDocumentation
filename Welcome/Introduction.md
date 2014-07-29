@@ -6,7 +6,7 @@
 
 
 <div class="category"> 
-<a href="https://developer.relayr.io/documents/Authorization/Reference">;
+<a href="https://developer.relayr.io/documents/Authorization/Reference">
 <img src="assets/OAuth_logo.png" alt="" title=""></a>
 <h4>
     You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
@@ -15,7 +15,7 @@
 
 
 <div class="category"> 
-<a href="https://developer.relayr.io/documents/Android/Reference">;
+<a href="https://developer.relayr.io/documents/Android/Reference">
 <img src="assets/Android_logo.png" alt="" title=""></a>
 <h4>
     You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
@@ -24,7 +24,7 @@
 
 
 <div class="category"> 
-<a href="https://developer.relayr.io/documents/iOS/Reference">;
+<a href="https://developer.relayr.io/documents/iOS/Reference">
 <img src="assets/Apple_logo.png" alt="" title=""></a>
 <h4>
     You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
@@ -33,7 +33,7 @@
 
 
 <div class="category"> 
-<a href="https://developer.relayr.io/documents/Registration/Introduction">;
+<a href="https://developer.relayr.io/documents/Registration/Introduction">
 <img src="assets/Registration_icon.png" alt="" title=""></a>
 <h4>
     You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
@@ -42,7 +42,7 @@
 
 
 <div class="category"> 
-<a href="https://developer.relayr.io/documents/PubNub/Reference">;
+<a href="https://developer.relayr.io/documents/PubNub/Reference">
 <img src="assets/PubNub_logo.png" alt="" title=""></a>
 <h4>
     You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
