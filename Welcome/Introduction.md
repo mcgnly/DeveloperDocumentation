@@ -50,7 +50,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
   </p>
  </div>
 
-And most importantly, have fun while you're at it!
+<p style="text-align:right;width:100%"> And most importantly, have fun while you're at it!</p>
 
 
 
