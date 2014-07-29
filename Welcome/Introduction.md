@@ -4,17 +4,52 @@
 
 ### We've made it as easy as possible for you to start integrating your awesome apps with the relayr platform. Here are a few tips to get you started:
 
-#####[![](assets/OAuth_logo.png)](https://developer.relayr.io/documents/Authorization/Reference) You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
 
-#####[![](assets/Android_logo.png)](https://developer.relayr.io/documents/Android/Reference) If you are an Android developer, be sure to get inspired by our Android SDK which provides all the tools you need in order to integrate your Android projects with our platform. All available Endpoints and code samples just waiting to be implemented.
+<div class="category"> 
+<a href="https://developer.relayr.io/documents/Authorization/Reference">;
+<img src="assets/OAuth_logo.png" alt="" title=""></a>
+<h4>
+    You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
+  </h4>
+ </div>
 
-##### [![](assets/Apple_logo.png)](https://developer.relayr.io/documents/iOS/Reference)If your passion is iOS - don't worry, we have not forgotten you. You are more than welcome to check out our iOS Framework for available Endpoints, code samples and all you need to integrate your iOS project with the relayr platform.
 
-##### [![](assets/Registration_icon.png)](https://developer.relayr.io/documents/Registration/Introduction) Our Registration API includes a detailed list of all endpoints and use cases of the relayr Registration API. 
- 
-##### [![](assets/Pubnub_logo.png)](https://developer.relayr.io/documents/PubNub/Reference) We've also included information about how we've integrated with our data distribution service - PubNub. To read all about it, have a look at our PubNub Introduction
+<div class="category"> 
+<a href="https://developer.relayr.io/documents/Android/Reference">;
+<img src="assets/Android_logo.png" alt="" title=""></a>
+<h4>
+    You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
+  </h4>
+ </div>
 
-##### And most importantly, have fun while you're at it!
+
+<div class="category"> 
+<a href="https://developer.relayr.io/documents/iOS/Reference">;
+<img src="assets/Apple_logo.png" alt="" title=""></a>
+<h4>
+    You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
+  </h4>
+ </div>
+
+
+<div class="category"> 
+<a href="https://developer.relayr.io/documents/Registration/Introduction">;
+<img src="assets/Registration_icon.png" alt="" title=""></a>
+<h4>
+    You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
+  </h4>
+ </div>
+
+
+<div class="category"> 
+<a href="https://developer.relayr.io/documents/PubNub/Reference">;
+<img src="assets/PubNub_logo.png" alt="" title=""></a>
+<h4>
+    You may want to start by having a look at our Authorization Protocol which provides a general overview of OAuth as well as an explanation how the protocol has been implemented on the relayr platform.
+  </h4>
+ </div>
+
+#### And most importantly, have fun while you're at it!
 
 
 
