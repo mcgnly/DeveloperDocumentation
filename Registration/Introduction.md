@@ -1,4 +1,4 @@
-# The relayr Registration API - Introduction
+# The relayr Registration API 
 
 The relayr Registration API provides programmatic access to all entities on the relayr platform. These include users, devices, device models, publishers, transmitters and apps. 
 The relayr iOS Framework and Android SDK provide wrapped versions of the API calls, therefore, developers using the latter do not need to use the bare API endpoints. 
