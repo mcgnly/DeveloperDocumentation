@@ -28,7 +28,7 @@ Once the credentials are entered, the user is redirected back to the application
 with the parameter `code` in the URL. This parameter is only valid for 5 minutes during
 which the Authentication process takes place. The application-side server exchanges
 the combination of the `code` parameter along with the specific application 
-`client_id` and `client_secret`, for an access token, **which is valid indefinitely****.
+`client_id` and `client_secret`, for an access token, **which is valid indefinitely**.
 
 
 ## Implicit Grant for Browser-Based Client-Side Applications
