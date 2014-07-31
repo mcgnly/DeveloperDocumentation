@@ -1,6 +1,6 @@
-# Introduction to OAuth 
+# Introduction to OAuth 2.0
 
-*OAuth* is an open standard for authorization.
+*OAuth 2.0* is an open standard for authorization.
 
 Prior to explaining the main concept of OAuth, here are a few key roles
 necessary for understanding the standard:
