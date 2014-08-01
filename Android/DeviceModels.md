@@ -1,6 +1,6 @@
 ## Device Model Endpoints
 
-The following endpoints concern the Device Model entity. The device model holds information about the type of readings a device collects and its manufacturer.
+The following endpoints concern the *Device Model* entity. The device model holds information about the type of readings a device collects and its manufacturer.
 
 ### Get Device Models
 
