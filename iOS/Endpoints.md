@@ -30,40 +30,45 @@ In this scenario the user object is fetched rather than being authenticated.
 #### Class: RLARemoteUser
 
 In this scenario, authentication is required.
-The variables required for this method are the `appID` and `secret`. These are attributed to the application during its registration on the relayr platform.
+The variables required for this method are the `appID`, `clientID`, `redirectURI` and `secret`. These are attributed to the application during its registration on the relayr platform.
 
 
 **Example**
 
 
 		  // Start relayr authentication
-		  NSString *appID = @"rWd8mwESapYzR2UOZAvXm7jFMp38L_BY";
-		  NSString *secret = @"IJHUNvQ4fzSY3syVBZAbI57.rCYaRdIV";
-		  __block typeof(self) weakSelf = self;
-		  [RLARemoteUser
-		   authenticateLocalUserWithAppID:appID
-		   appSecret:secret
-		   presentingViewController:self
-		   completionHandler:^(RLARemoteUser *user, NSError *error) {
-		     
-		     // User authenticated
-		     if (user) {
-		       typeof(weakSelf) strongSelf = weakSelf;
-		       [strongSelf RLA_presentMenuViewControllerWithUser:user];
-		     }
-		     
-		     // Authentication failed
-		     if (error) {
-		       
-		       // Present error
-		       NSString *message = [error localizedDescription];
-		       if (!message) message = @"Unknown error";
-		       [[[UIAlertView alloc] initWithTitle:@"Authentication error"
-		                                   message:message
-		                                  delegate:nil
-		                         cancelButtonTitle:@"OK"
-		                         otherButtonTitles:nil] show];
-		     }   }];
+			NSString *clientID = @"PNSNWcI41nePIXw0rNsqh.JoWW-rDgA2";
+			NSString *appID = @"1304b478-f438-4a0f-bd6a-1884355f7835";
+			NSString *secret = @"oJM0st_iJec66vAR2IvjxZxhC6Ds9uvr";
+			NSString *redirectURI = @"https://relayr.io";
+			__block typeof(self) weakSelf = self;
+			[RLARemoteUser
+			  authenticateUserWithClientID:clientID
+			  appID:appID
+			  appSecret:secret
+			  redirectURI:redirectURI
+			  presentingViewController:self
+			  completionHandler:^(RLARemoteUser *user, NSError *error) {
+			
+			  // User authenticated
+			  if (user) {
+			    typeof(weakSelf) strongSelf = weakSelf;
+			    [strongSelf RLA_presentMenuViewControllerWithUser:user];
+			  }
+			  
+			  // Authentication 
+			failed
+			  if (error) {
+			    
+			    // Present error
+			    NSString *message = [error localizedDescription];
+			    if (!message) message = @"Unknown error";
+			    [[[UIAlertView alloc] initWithTitle:@"Authentication error"
+			                                message:message
+			                                delegate:nil
+			                      cancelButtonTitle:@"OK"
+			                      otherButtonTitles:nil] show];
+			  }  }];
    
    
 
@@ -83,9 +88,27 @@ Returns an array of the devices registered under a user.
 	    }];
 
 
+To retrieve only devices which meet a certain criteria you would need to use the following method:
+
+		 [self.RLA_user devicesWithSensorsAndOutputsOfClasses:@[[RLATemperatureSensor class]]
+		  completion:^(NSArray *foundDevices, NSError *error) {
+		
+		  }];
+
+The above call returns an array of devices of class **RLATemperatureSensor**
+
+#### Optional sensor classes: 
+
+- RLAColorSensor
+- RLAProximitySensor
+- RLAGyroscopeSensor
+- RLAAccelerometerSensor
+- RLATemperatureSensor
+- RLAHumiditySensor
+- RLANoiseSensor
 
 
-## 3. Device Readings
+## 4. Device Readings
 
 Subscribes the app to a specific device (sensor) channel as to enable it to receive data from it. This endpoint should be preceded by two initial methods:
 
@@ -111,9 +134,9 @@ Subscribes the app to a specific device (sensor) channel as to enable it to rece
 
 
 
-## 4. View Sensor Data
+## 5. View Sensor Data
 
-Displays the readings sent by the device. This endpoint is preceded by the folowing methods:
+Displays the readings sent by the device. This endpoint is preceded by the following methods:
 
 1. Device Selection - Select device out of the registered devices.
 2. Sensor Selection - As a device may include multiple sensors, one should be selected for data collection.

@@ -10,7 +10,6 @@ The relayr iOS SDK provides iOS app developers with a number of programmatic acc
 	
 	* Relayr.framework
 	* libz.dylib
-	* PubNub.framework
 	* SystemConfiguration.framework
 	* CFNetwork.framework
 	* CoreBluetooth.framework
@@ -18,14 +17,11 @@ The relayr iOS SDK provides iOS app developers with a number of programmatic acc
 	* UIKit.framework
 	* Foundation.framework
 
-![](assets/frameworks.png)
+![](assets/framework.png)
 
-#### Alternatively:
+In addition, place an import statemtent in the Prefix.pch file
 
-* Place an import statemtent in the Prefix.pch file
-* Create a new project in XCode
-
-#### This is an example of a Prefix.pch containing the statement:
+**This is an example of a Prefix.pch containing the statement:**
 
 	
 			
