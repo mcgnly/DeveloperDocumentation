@@ -31,8 +31,8 @@
             ]
         },
         {
-            "directory": "Registration",
-            "title": "Registration",
+            "directory": "relayr API",
+            "title": "relayr API",
             "color": "blue",
             "apiarySource": "wunderbarregistration",
             "submenus": [
