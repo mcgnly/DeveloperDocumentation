@@ -35,7 +35,7 @@ The OnBoarding stage enables you to establish the pairing between your devices a
 
 To give you a small taste of the way the platform works, here's a high-level description of the **Device > Cloud Platform > App** data flow
 
-<img src="assets/image3.png" width=700px/>
+<img src="assets/image3.png" width=900px/>
 
 1. The Sensor Module delivers its readings over BLE to the Master Module which serves as a transmitter. The Master Module is the only module capable of communicating over WIFI. 
  
