@@ -25,7 +25,7 @@ In case you are a device manufacturer you can also enjoy the simplicity enabled 
 ### Registration
 The first stage that enables you to step into the relayr world is the ***registration***. In this stage all basic entities such as the User, App, Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
 
-<img src="assets/image2.png" width=500px/> 
+<img src="assets/image2.png" width=700px/> 
 
 
 ### OnBoarding 
