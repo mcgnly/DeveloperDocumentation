@@ -23,13 +23,13 @@ In case you are a device manufacturer you can also enjoy the simplicity enabled 
 ## How does it work?
 
 ### Registration
-The first stage that enables you to step into the relayr world is the ***registration***. In this stage all basic entities such as the User, App, Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
-
-<img src="assets/image2.png" width=700px/> 
+The first stage that enables you to step into the relayr world is the ***registration***. In this stage all basic entities such as a User, an App and a Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
 
 
 ### OnBoarding 
-The OnBoarding stage enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API.  
+The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API. 
+
+<img src="assets/image2.png" width=700px float="right"/>  
 
 ### Flow
 
