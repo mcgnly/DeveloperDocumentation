@@ -10,7 +10,7 @@ We would like to introduce the benefits of using the cloud platform and help you
 
 As opposed to directly connecting an app  to the sensor modules over BLE (Bluetooth Low Energy), using the platform to connect to sensor modules and other devices can be achieved regardless of location and distance, it ensures that data is securely stored and is then available for further manipulation. 
 
-<img src="assets/image1.png" width=700px/>
+<img src="assets/image1.png" width=700px class="center"/>
 
 The platform receives data from the devices, stores it and distributes it only to the applications which incorporate the relayr SDK and meet the authorization criteria established when first registering on the platform.
 
@@ -22,6 +22,7 @@ In case you are a device manufacturer you can also enjoy the simplicity enabled 
 
 ## How does it work?
 
+<div class="column">
 ### Registration
 The first stage that enables you to step into the relayr world is the ***registration***. In this stage all basic entities such as a User, an App and a Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
 
@@ -29,13 +30,14 @@ The first stage that enables you to step into the relayr world is the ***registr
 ### OnBoarding 
 The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API. 
 
-<img src="assets/image2.png" width=700px float="right"/>  
+<img src="assets/image2.png" width=700px />  
 
+</div>
 ### Flow
 
 To give you a small taste of the way the platform works, here's a high-level description of the **Device > Cloud Platform > App** data flow
 
-<img src="assets/image3.png" width=900px/>
+<img src="assets/image3.png" width=900px class="center"/>
 
 1. The Sensor Module delivers its readings over BLE to the Master Module which serves as a transmitter. The Master Module is the only module capable of communicating over WIFI. 
  
