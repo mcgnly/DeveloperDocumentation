@@ -4,6 +4,8 @@ The relayr API provides programmatic access to all entities on the relayr platfo
 The relayr iOS Framework and Android SDK provide wrapped versions of the API calls, therefore, developers using the latter do not need to use the bare API endpoints. 
 If you are planning on using other frameworks, we recommend that you start by getting to know the available API endpoints. 
 
+**Our API calls are currently available for download to Postman. Simply log in to the Postman console and import the calls from the following link: [https://www.getpostman.com/collections/65008c7fc1137e6664b5](https://www.getpostman.com/collections/65008c7fc1137e6664b5)**
+
 ## API Entities
 
 ### Users
