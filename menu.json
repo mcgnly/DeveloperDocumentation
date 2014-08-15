@@ -68,6 +68,11 @@
                 {
                     "file": "Transmitters",
                     "title": "Transmitters"
+                },
+                {
+                    "file": "ImportAPI",
+                    "title": "Importing the API",
+                    "bypassSource": true
                 }
             ]
         },
