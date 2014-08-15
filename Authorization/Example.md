@@ -9,33 +9,33 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 2. The context of the action is predefined:
 
-![](assets/step1.jpg)
+<img src="assets/step1.jpg" class="center" width=800px>
 
 #### 3. Click the settings menu on the top right corner.
 
-![](assets/step2.jpg)
+<img src="assets/step2.jpg" class="center" width=800px>
 
 #### 4. Click 'Authorize APIs'.
 
-![](assets/step3.jpg)
+<img src="assets/step3.jpg" class="center" width=800px>
 
 #### 5. You will be prompted to enter your relayr User credentials.
 
-![](assets/step4.jpg) 
+<img src="assets/step4.jpg" class="center" width=800px> 
 
 #### 6. Enter your credentials and click to sign in.
 
-![](assets/step5.jpg)
+<img src="assets/step5.jpg" class="center" width=800px>
 
 #### 7. Click Exchange Authorization code for tokens.
 
 
-![](assets/step6.jpg)
+<img src="assets/step6.jpg" class="center" width=800px>
 
 #### 8. The token is received as a JSON snippet in the response.
 
 
-![](assets/step7.jpg)
+<img src="assets/step7.jpg" class="center" width=800px>
 
 ## The Implicit Grant Scenario
 
@@ -44,26 +44,26 @@ The example below provides a step by step interactive demonstration of the proce
 
 #### 2. The context of the action is predefined:
 
-![](assets/step1.jpg)
+<img src="assets/step1.jpg" class="center" width=800px>
 
 #### 3. Click the settings menu on the top right corner. Select the Client Side scenario from the drop down 
 
-![](assets/client1.jpg)
+<img src="assets/client1.jpg" class="center" width=800px>
 
 
 #### 4. Click 'Authorize APIs'.
 
-![](assets/step3.jpg)
+<img src="assets/step3.jpg" class="center" width=800px>
 
 #### 5. You will be prompted to enter your relayr User credentials.
 
-![](assets/step4.jpg) 
+<img src="assets/step4.jpg" class="center" width=800px> 
 
 #### 6. Enter your credentials and click to sign in. 
 
-![](assets/step5.jpg)
+<img src="assets/step5.jpg" class="center" width=800px>
 
 
 #### 7. The token is received as part of the URL and on the left hand side
 
-![](assets/client2.jpg)
+<img src="assets/client2.jpg" class="center" width=800px>
