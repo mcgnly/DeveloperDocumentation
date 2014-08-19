@@ -14,12 +14,14 @@ The relayr Android SDK consists of 4 main classes:
 
 **The WebSocketClient Class** - This class incorporates all calls which are related to retrieval of sensor readings.
 
+----------
+
 ##Setup
 
 #### Create an Android Project 
 See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/commit/3e33f01c7e693e5ee0f9884dea8218731b8c9c8b) for instructions. 
 
-----------
+
 
 #### Create an empty Git repository or re-initialize an existing one:
 	    
