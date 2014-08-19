@@ -45,5 +45,7 @@ You'd be able to retrieve data directly from your sensors straight into your app
 <p>Showcase your smart solutions on the relayr gallery. relayr is where you draw attention to what you’ve built.</p>
 </div>
 
-
-<p style="text-align:center;width:100%">This is just a part of what we have in store for you. Stay tuned for more relayr innovation.</p> 
+<div class="floatBox">
+<h2>Stay tuned...</h2>
+<p>This is just a part of what we have in store for you. Stay tuned for more relayr innovation.</p> 
+</div>
