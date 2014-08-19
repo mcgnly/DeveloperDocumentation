@@ -9,6 +9,12 @@ You’d be able to receive data update messages based on a set of rules which yo
 </div>
 
 <div class="floatBox">
+<h2>Bluetooth LE Direct Connection</h2>
+<p>
+You'd be able to retrieve data directly from your sensors straight into your app. Live data streaming without the need to go through the relayr cloud.</p>
+</div>
+
+<div class="floatBox">
 <h2>Outsource Board Designs</h2>
 <p>Yes, you too will be able to print out your very own WunderBar based on our designs.</p>
 </div>
