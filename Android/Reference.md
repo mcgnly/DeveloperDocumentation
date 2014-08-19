@@ -1,6 +1,6 @@
 # The relayr Android SDK 
 
-The relayr Android SDK provides Android app developers with a number of programmatic access points into the relayr API. API. Simpy follow the steps below to install the framework and integrate it into your project. 
+The relayr Android SDK provides Android app developers with a number of programmatic access points into the relayr API. Simpy follow the steps below to install the framework and integrate it into your project. 
 
 ## A Few Words of Introduction
 
@@ -16,34 +16,41 @@ The relayr Android SDK consists of 4 main classes:
 
 ##Setup
 
-####1. Create an Android Project 
-See Thermometer demo for [instructions](https://github.com/relayr/android-demo-apps/commit/3e33f01c7e693e5ee0f9884dea8218731b8c9c8b)
-####2. Create an empty Git repository or reinitialize an existing one:
+#### Create an Android Project 
+See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/commit/3e33f01c7e693e5ee0f9884dea8218731b8c9c8b) for instructions. 
+
+----------
+
+#### Create an empty Git repository or re-initialize an existing one:
 	    
 	    git init
 	    
-####3.  Add the android relayr sdk as a git submodule: 
+#### Click [here](https://developer.relayr.io/dashboard/sdk) to download the relayr Android SDK.
 
-Click [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a20f0c0e1f12cf8c38c2afd5ed4449d) to download  relayr Android Sdk
-	    
+####  Add the android relayr SDK as a git sub-module: 
+  
 	    git submodule add https://github.com/relayr/android-sdk.git libraries/relayr-sdk
+
+See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a20f0c0e1f12cf8c38c2afd5ed4449d) 
 	   
-####4.  Reference the relayr SDK project in your settings.gradle file: 
+####  Reference the relayr SDK project in your settings.gradle file: 
 	    
 	    include ':app' ':libraries:relayr-sdk:android-sdk'
 	    
-####5.  Reference the relayr SDK project in your build.gradle inside your app folder:
+####  Reference the relayr SDK project in the build.gradle file inside your app folder:
 	    
 	    dependencies {
 	        compile project(':libraries:relayr-sdk:android-sdk')
 	    }
 	    
-####6.  Create a relayr [app](https://developer.relayr.io/dashboard/apps/myApps)
-Download the application key once the app is created
+####  Create a relayr app on the [Developer Dashboard](https://developer.relayr.io/dashboard/apps/myApps). 
+Download the application (the relayrsdk.properties file)  once the app is created
  
-####7.  Save the application key (relayrsdk.properties) file inside **src/main/assets** [see here](https://github.com/relayr/android-demo-apps/commit/06b85d467fdf6300367d6d997a0f89fc3b9a184c) 
+####  Save the application key (relayrsdk.properties) inside *src/main/assets* 
+
+See reference [here](https://github.com/relayr/android-demo-apps/commit/06b85d467fdf6300367d6d997a0f89fc3b9a184c) 
  
-####8. Subclass an Android Application inside your app and [initialize the Sdk](https://github.com/relayr/android-demo-apps/commit/27bef2e3c588c0e2351294a7fdc6418240af4bd4)
+#### Subclass an 'Android Application' inside your app and [initialize the Sdk](https://github.com/relayr/android-demo-apps/commit/27bef2e3c588c0e2351294a7fdc6418240af4bd4)
 	    
 	    public class MyApplication extends Application {
 	        @Override
@@ -53,7 +60,7 @@ Download the application key once the app is created
 	        }
 	    }
 	    
-####9.  Reference your Application and add Internet permission in the Android Manifest
+####  Reference your Application and add Internet permissions in the Android Manifest
     
     <uses-permission android:name="android.permission.INTERNET" />
     <application
@@ -63,18 +70,16 @@ Download the application key once the app is created
         android:theme="@style/AppTheme"
         android:name=".MyApplication">
     
-####10.  Log the user into the app. [See reference here](https://github.com/relayr/android-demo-apps/commit/19bf3578de9fd2c20e2ebab50c5a280500d411c9) 
-
+####  Log the user into the app 
   
 		RelayrSdk.logIn(this, this);
 
-####11. You are all set!
+[See reference here](https://github.com/relayr/android-demo-apps/commit/19bf3578de9fd2c20e2ebab50c5a280500d411c9) 
+
+#### You are all set!
 	    
-    
-##Examples
-
-Take a look at our [Android Demos](https://github.com/relayr/android-demo-apps) to get started.
-
+----------------------------------------
+   
 ### SDK Version
 
 Returns a string with the current version of the SDK
@@ -86,10 +91,15 @@ Returns a string with the current version of the SDK
 
 	 public static String getVersion();
 	
+-------------------------------------------------------------
 
+## SDK Methods 
 
+For a full list of the relayr SDK methods click [here]() 
 
-	
+## Sample Projects
+
+Click [here](https://github.com/relayr/android-demo-apps) to get inspired	
 
 
 
