@@ -84,11 +84,19 @@
             "submenus": [
                 {
                     "file": "Reference",
+                    "title": "Introduction"
+                },
+                {
+                    "file": "GettingStarted",
                     "title": "Getting Started"
                 },
                 {
+                    "file": "AndroidEnvironment",
+                    "title": "Setting up your Environment"
+                },
+                {
                     "file": "SDK Documentation",
-                    "title": "SDK Documentation",
+                    "title": "SDK Reference",
                     "jdoc": "/rendered-doc/javadoc/index.html"
                 },
                 {
