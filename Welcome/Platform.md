@@ -24,7 +24,7 @@ In case you are a device manufacturer you can also enjoy the simplicity enabled 
 
 <div class="column">
 <h3>Registration</h3>
-The first stage that enables you to step into the relayr world is the ***registration***. In this stage all basic entities such as a User, an App and a Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
+The first stage that enables you to step into the relayr world is the <em>registration</em>. In this stage all basic entities such as a User, an App and a Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
 
 
 <h3>OnBoarding </h3>
