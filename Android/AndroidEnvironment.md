@@ -54,4 +54,4 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a
 
 ----------
 
-#### Now that you are done setting up your environment, click [here](/GettingStarted) to go back to the Getting Started page.
+#### Now that you are done setting up your environment, click [here](https://developer.relayr.io/documents/Android/GettingStarted) to go back to the Getting Started page.
