@@ -87,16 +87,9 @@
                     "title": "Getting Started"
                 },
                 {
-                    "file": "Users",
-                    "title": "User Endpoints"
-                },
-                {
-                    "file": "Devices",
-                    "title": "Device Endpoints"
-                },
-                {
-                    "file": "DeviceModels",
-                    "title": "Device Model Endpoints"
+                    "file": "SDK Documentation",
+                    "title": "SDK Documentation",
+                    "jdoc": "/rendered-doc/javadoc/index.html"
                 },
                 {
                     "file": "Sample Projects",
