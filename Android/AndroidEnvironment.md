@@ -8,6 +8,8 @@ Here are a few preliminary steps you would need to follow in order to get your d
 
 #### Create an Android Project 
 
+The minimum supported version for the Android project is 15 (4.0.3).
+
 See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/commit/3e33f01c7e693e5ee0f9884dea8218731b8c9c8b) for detailed instructions. 
 
 ----------
@@ -29,7 +31,6 @@ See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/c
   
 	    git submodule add https://github.com/relayr/android-sdk.git libraries/relayr-sdk
 
-See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a20f0c0e1f12cf8c38c2afd5ed4449d) 
 
 
 ----------
@@ -37,7 +38,7 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a
 	   
 ####  Reference the relayr SDK project in your settings.gradle file: 
 	    
-	    include ':app' ':libraries:relayr-sdk:android-sdk'
+	    include ':app', ':libraries:relayr-sdk:android-sdk'
 
 
 ----------
@@ -49,7 +50,8 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a
 	        compile project(':libraries:relayr-sdk:android-sdk')
 	    }
 
+See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a20f0c0e1f12cf8c38c2afd5ed4449d) 
 
 ----------
 
-#### Now that you are done setting up your environment, click [here](http://t) to go back to the Getting Started page.
+#### Now that you are done setting up your environment, click [here](/GettingStarted) to go back to the Getting Started page.

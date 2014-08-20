@@ -6,26 +6,26 @@ Here are the first steps to get you started in the relayr world. Follow them and
 
 ----------
 
+#### Set up your environment for your first relayr Android project - See instructions [here](/AndroidEnvironment)
+
+----------
+
 ####  Create a relayr app on the [app page](https://developer.relayr.io/dashboard/apps/myApps). 
 Download the key file once the app is created
  
-
 ----------
 
-#### Set up your environment for your first relayr Android project - See instructions [here](/AndroidEnvironment)
+####  Place the application key (relayrsdk.properties) inside *src/main/assets* 
 
-
-----------
-
-####  Save the application key (relayrsdk.properties) inside *src/main/assets* 
+If the *assets* folder does not exist, create it in the above path.
 
 See example [here](https://github.com/relayr/android-demo-apps/commit/06b85d467fdf6300367d6d997a0f89fc3b9a184c) 
  
 
 ----------
 
-#### Subclass an 'Android Application' inside your app and [initialize the Sdk](https://github.com/relayr/android-demo-apps/commit/27bef2e3c588c0e2351294a7fdc6418240af4bd4)
-	    
+#### Create a java class inside *src/main/java/path/to/your/package* and extend the android.app.Application; Provide an onCreate method which initializes the SDK 
+   
 	    public class MyApplication extends Application {
 	        @Override
 	        public void onCreate() {
@@ -37,7 +37,7 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/06b85d467f
 ----------
 
 	    
-####  Reference your Application and add Internet permissions in the Android Manifest
+####  Inside *src/main/AndroidManifest.xml*: Reference your Application by adding the android:name to the application element and add Internet permissions as shown below
     
     <uses-permission android:name="android.permission.INTERNET" />
     <application
@@ -50,13 +50,10 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/06b85d467f
 ----------
 
     
-####  Log the user into the app 
+####  Create a Login Sequence
+
+In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](/LoginSequence) to learn more about how to create a login sequence.   
   
-		RelayrSdk.logIn(this, this);
-
-Not quite sure how to do that? - See example [here](https://github.com/relayr/android-demo-apps/commit/19bf3578de9fd2c20e2ebab50c5a280500d411c9) 
-
-
 ----------
 
 You are all set now to start building your relayr Android app! Have a look at our [SDK reference](/rendered-doc/javadoc) to learn more about our SDK	
