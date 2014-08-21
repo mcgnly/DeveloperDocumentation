@@ -49,7 +49,7 @@
                 },
                 {
                     "file": "relayrAPI", 
-                    "title": "The relayr API".
+                    "title": "The relayr API",
                     "external": "/dashboard/api",
                     "newTab": true
                 },
