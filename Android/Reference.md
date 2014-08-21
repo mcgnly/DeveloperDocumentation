@@ -8,7 +8,7 @@ We realize that you probably want to skip introductions and get down to building
 
 ## SDK Reference 
 
-Click [here](https://developer.relayr.io/rendered-doc/javadoc/index.html) for a detailed list of the relayr SDK methods
+Click <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank">here</a> for a detailed list of the relayr SDK methods
 
 ## Sample Project
 

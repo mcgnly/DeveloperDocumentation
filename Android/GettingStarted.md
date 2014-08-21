@@ -56,4 +56,4 @@ In order for your app to allow users to see their devices, you would need to add
   
 ----------
 
-You are all set now to start building your relayr Android app! Have a look at our [SDK reference](https://developer.relayr.io/rendered-doc/javadoc/index.html) to learn more about our SDK	
+You are all set now to start building your relayr Android app! Have a look at our <a href= "https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank">SDK reference</a> to learn more about our SDK	
