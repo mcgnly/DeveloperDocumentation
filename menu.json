@@ -42,37 +42,20 @@
             "directory": "relayr API",
             "title": "relayr API",
             "color": "blue",
-            "apiarySource": "wunderbarregistration",
             "submenus": [
                 {
                     "file": "Introduction",
-                    "title": "Introduction",
-                    "bypassSource": true
+                    "title": "Introduction"
                 },
                 {
-                    "file": "Users", 
-                    "title": "Users"
-                },
-                {
-                    "file": "Publishers",
-                    "title": "Publishers"
-                },
-                {
-                    "file": "Apps",
-                    "title": "Apps"
-                },
-                {
-                    "file": "Devices",
-                    "title": "Devices"
-                },
-                {
-                    "file": "Transmitters",
-                    "title": "Transmitters"
+                    "file": "relayrAPI", 
+                    "title": "The relayr API".
+                    "external": "/dashboard/api",
+                    "newTab": true
                 },
                 {
                     "file": "ImportAPI",
-                    "title": "Importing the API into Postman",
-                    "bypassSource": true
+                    "title": "Importing the API into Postman"
                 }
             ]
         },
