@@ -71,7 +71,7 @@
                 },
                 {
                     "file": "ImportAPI",
-                    "title": "Importing the API",
+                    "title": "Importing the API into Postman",
                     "bypassSource": true
                 }
             ]
@@ -101,7 +101,8 @@
                 {
                     "file": "SDK Documentation",
                     "title": "SDK Reference",
-                    "jdoc": "/rendered-doc/javadoc/index.html"
+                    "external": "/rendered-doc/javadoc/index.html",
+                    "newTab": true
                 },
                 {
                     "file": "Sample Projects",
@@ -113,7 +114,7 @@
             "directory": "iOS",
             "title": "iOS",
             "color": "yellow",
-            "icon" : "fa-apple",
+            "icon" : "",
             "submenus": [
                 {
                     "file": "Reference",
@@ -130,17 +131,33 @@
             ]
         },
         {
+            "directory": "WEB",
+            "title": "Web Development",
+            "color": "yellow",
+            "icon" : "fa-apple",
+            "submenus": [
+                {
+                    "file": "Introduction",
+                    "title": "Introduction"
+                },
+                {
+                    "file": "WebDevelopers",
+                    "title": "relayr for Web Developers"
+                },
+                {
+                    "file": "Sample Project",
+                    "title": "Sample Project"
+                }
+            ]
+        },
+        {
             "directory": "PubNub",
-            "title": "PubNub Integration",
+            "title": "Why do we use PubNub?",
             "color": "purple",
             "submenus": [
                 {
                     "file": "Reference",
                     "title": "Overview"
-                },
-                {
-                    "file": "Sample Projects",
-                    "title": "Sample Projects"
                 }
             ]
         }
