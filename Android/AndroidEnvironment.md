@@ -14,43 +14,14 @@ See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/c
 
 ----------
 
-
-#### Create an empty Git repository or re-initialize an existing one:
-	    
-	    git init
-
-----------
-
-	    
-#### Download the [relayr Android SDK](https://developer.relayr.io/dashboard/sdk) 
-
-----------
-
-
-####  Add the android relayr SDK as a git sub-module: 
-  
-	    git submodule add https://github.com/relayr/android-sdk.git libraries/relayr-sdk
-
-
-
-----------
-
-	   
-####  Reference the relayr SDK project in your settings.gradle file: 
-	    
-	    include ':app', ':libraries:relayr-sdk:android-sdk'
-
-
-----------
-
-	    
+   
 ####  Reference the relayr SDK project in the build.gradle file inside your app folder:
 	    
 	    dependencies {
-	        compile project(':libraries:relayr-sdk:android-sdk')
+	        compile 'io.relayr:android-sdk:0.0.1'
 	    }
 
-See example [here](https://github.com/relayr/android-demo-apps/commit/f2c17c6a9a20f0c0e1f12cf8c38c2afd5ed4449d) 
+See example [here](https://github.com/relayr/android-demo-apps/commit/2276441f7636e60e4f6a2d8cffb001d5011dd713) 
 
 ----------
 
