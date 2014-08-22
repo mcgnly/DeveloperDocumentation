@@ -2,24 +2,48 @@
 
 Here are a few preliminary steps you would need to follow in order to get your development environment all ready for building you first app. 
 
-#### Download [Android Studio](https://developer.android.com/sdk/installing/studio.html)
+### Download [Android Studio](https://developer.android.com/sdk/installing/studio.html)
 
 ----------
 
-#### Create an Android Project 
+### Create an Android Project on Android Studio 
 
-The minimum supported version for the Android project is 15 (4.0.3).
+#### Give your project a name
+<img src="assets/Project.png" class="center">
 
-See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/commit/3e33f01c7e693e5ee0f9884dea8218731b8c9c8b) for detailed instructions. 
+#### Set the minimum supported version
+The minimum supported version for the relayr Android project is 15 (4.0.3).
 
+<img src="assets/Version.png" class="center">
+
+#### Select an Android activity
+
+<img src="assets/Activity.png" class="center">
+
+#### Choose your activity options
+
+<img src="assets/ActivityOpt.png" class="center">
+
+#### Click "Finish" to start the building process of your initial project
+
+<img src="assets/Building.png" class="center"> 
 ----------
 
    
-####  Reference the relayr SDK project in the build.gradle file inside your app folder:
+###  Enabling the relayr Android SDK 
+
+We have made the relayr Android SDK available on Maven as to simplify the inclusion process.
+
+#### Open the *build.gradle* file inside your app folder (*app/build.gradle*)
+
+<img src="assets/SDKInclusion.png" class="center">
+
+#### Add the following to your dependencies:
 	    
 	    dependencies {
 	        compile 'io.relayr:android-sdk:0.0.1'
 	    }
+#### Click to save the file or compile to ensure that everything is in order.
 
 ----------
 
