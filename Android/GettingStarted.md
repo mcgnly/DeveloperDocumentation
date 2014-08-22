@@ -24,7 +24,7 @@ Open *app/src/main/java*. You should find your created activity as shown below:
 
 Right click the activity name, select 'New' from the drop down list and then select Java class:
 
-<img src="assets/class.png" class="center">
+<img src="assets/Class.png" class="center">
 
 you will be asked to give your new class a Name. 
 
