@@ -24,7 +24,11 @@ Of course! Don't worry, we haven't forgotten you. Check out our <a href="https:/
 
 We are using PubNub as our data distribution service. You can learn more about our usage of PubNub <a href="https://developer.relayr.io/documents/PubNub/Reference" target="_blank">here</a>.
 
-## OnBoarding 
+## OnBoarding
+
+### I'm trying to onBoard my WunderBar but no WunderBar is found. What could be the cause?
+
+The most common cause for this is Bluetooth being turned off. We use Bluetooth LE in the OnBoarding process. Make sure it is enabled on your phone, before attempting to onboard. 
 
 ### I would like to Onboard my WunderBar - Should I break the sensor modules off the main board?
 
@@ -56,10 +60,48 @@ This is also a result of the limitations of Bluetooth LE. Try logging out of the
 
 ### I am using the *iOS* relayr OnBoarding app. I have successfully onboarded my WunderBar but I still can't see data on all channels
 
-This is a known issue which has already been fixed in the next version of the app. To resolve this issue, remove the app completely from the background tray. Keep the WunderBar plugged and restart the application. 
+This is a known issue which has already been fixed in the next version of the app. To resolve this issue, remove the app completely from the background tray. Keep the WunderBar plugged and restart the application.
+
+### I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?
+
+When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. 
 
 
 ## Hardware and Firmware
+
+### Those blinking LEDs, what do they mean?
+
+We realize that the on and off blinking and flashing statuses can be quite confusing, so here is a little guide to help you distinguish one blink from the other.
+
+**Master Module LEDs**
+The Master Module includes 3 LEDs:
+
+1. **The WiFi LED**: Located at the edge of the board, between the USB connector and the Inductor marked with a **K**:
+   When it is ON, the Master Module is NOT connected to WiFi. When this LED is off it is an indication that the Master Module has successfully connected to the WIFi network.
+
+2. **The Battery charger LED**: located between the reset button and battery IC. It indicates the state of	the battery charging circuit. This LED will blink after 4 hours of use, if no battery is connected. When the battery is being charged this LED will stay on.
+
+3. **The Master Module Mode Indicator**: Located next to the Kinetis chip.
+ 
+	**Blinking once per second**: During Onboarding Mode indicating that the WunderBar is waiting to be onboarded.
+   
+	**Constantly ON**: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.
+
+   	**OFF**: The common state of this LED. When the Master Module is connected to the platform (broker), this LED will stay off most of the time, and will only shortly blink every time a sensor publishes data.
+
+
+**Sensor Module LED**
+
+All sensor modules have one led each:
+
+**LED Blinking once a second**: During Onboarding Mode. The module is advertising the Onboarding service, to be written to by the Onboarding App.
+
+**LED ON**: Indicating that the sensor is in Over The Air- Device Firmware Update (OTA-DFU) mode. The DeviceFirmwareUpdate application is running, waiting for the Android/iOS app to send new firwmare.
+
+**LED OFF**: Normal operation.
+ 
+**Short Blink**: The sensor module will blink once when to indicate that it is connected to the App or the Master Module.
+
 
 ### How can I upgrade the Firmware on my Sensor Modules?
 
