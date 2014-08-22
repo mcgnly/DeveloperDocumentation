@@ -6,7 +6,7 @@ Here are the first steps to get you started in the relayr world. Follow them and
 
 ----------
 
-#### Set up your environment for your first relayr Android project - See instructions [here](/AndroidEnvironment)
+#### Set up your environment for your first relayr Android project - See instructions [here](https://developer.relayr.io/documents/Android/AndroidEnvironment)
 
 ----------
 
@@ -18,9 +18,6 @@ Download the key file once the app is created
 ####  Place the application key (relayrsdk.properties) inside *src/main/assets* 
 
 If the *assets* folder does not exist, create it in the above path.
-
-See example [here](https://github.com/relayr/android-demo-apps/commit/06b85d467fdf6300367d6d997a0f89fc3b9a184c) 
- 
 
 ----------
 
@@ -52,7 +49,7 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/06b85d467f
     
 ####  Create a Login Sequence
 
-In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](/LoginSequence) to learn more about how to create a login sequence.   
+In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](https://developer.relayr.io/documents/Android/LoginSequence) to learn more about how to create a login sequence.   
   
 ----------
 
