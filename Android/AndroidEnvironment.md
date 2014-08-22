@@ -26,7 +26,7 @@ The minimum supported version for the relayr Android project is 15 (4.0.3).
 
 #### Click "Finish" to start the building process of your initial project
 
-<img src="assets/Building.png"> 
+<img src="assets/Building.png" class="center"> 
 ----------
 
    
