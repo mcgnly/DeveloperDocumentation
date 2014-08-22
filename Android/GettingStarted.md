@@ -20,11 +20,11 @@ If the *assets* folder does not exist, create it in the above path.
 
 Open *app/src/main/java*. You should find your created activity as shown below:
 
-<img src="/assets/Activity2.png" class="center">
+<img src="assets/Activity2.png" class="center">
 
 Right click the activity name, select 'New' from the drop down list and then select Java class:
 
-<img src="/assets/class.png" class="center">
+<img src="assets/class.png" class="center">
 
 you will be asked to give your new class a Name. 
 
@@ -69,7 +69,7 @@ import statement which you can select by typing opt+Enter.
 ----------
 
 	    
-####  Grant your app Internet connection capability
+####  Include the app in the Android Manifest and add Internet permissions
 
 Inside *src/main/AndroidManifest.xml*: Reference your Application by adding the **android:name** to the application element: 
     
