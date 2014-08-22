@@ -92,8 +92,10 @@
                     "newTab": true
                 },
                 {
-                    "file": "Sample Projects",
-                    "title": "Sample Projects"
+                    "file": "Sample Project",
+                    "title": "Sample Project",
+                    "external": "https://github.com/relayr/android-demo-apps/tree/master/thermometer",
+                    "newTab": true
                 }
             ]
         },
@@ -133,7 +135,9 @@
                 },
                 {
                     "file": "Sample Project",
-                    "title": "Sample Project"
+                    "title": "Sample Project",
+                    "external": "https://github.com/relayr/cantTouchThis",
+                    "newTab": true
                 }
             ]
         },
