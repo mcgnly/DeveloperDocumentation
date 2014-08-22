@@ -14,15 +14,21 @@ OnBoarding is currently only available via one of our onboarding apps- iOS or An
 What essentially takes place during the onboarding process is the following:
 The OnBoarding app posts a request to the relayr API, to register a new WunderBar.The API processes the request and returns a set of IDs and Secrets to be written to the Master Module and the six Sensor Modules. The IDs and Secrets ensure that only the specific Master Modules is then able to receive data from the specific sensors and further transmit it. 
 
-<img src="assets/1.png" width=300px class="floatBox"> <img src="assets/2.png" width=300px class="floatBox">
-<img src="assets/3.png" width=300px class="floatBox">
+<div class="floatBox">
+<img src="assets/1.png" width=300px></div>
+<div class="floatBox">
+<img src="assets/2.png" width=300px></div>
+<div class="floatBox">
+<img src="assets/3.png" width=300px></div>
  
 
 ## Ready to OnBoard?
 Whether you are an Android developer an iOS developer or a Web developer eager to create amazing apps, based on the WunderBar sensor modules, your first step in the relayr world is  onBoarding. Once your sensors and Master Module are onboarded you will be able to receive the first sensor readings which will be displayed in the app. 
 
-<img src="assets/5.png" width=300px class="floatBox"> 
-<img src="assets/34.png" width=300pxclass="floatBox">  
+<div class="floatBox">
+<img src="assets/5.png" width=300px></div>
+<div class="floatBox"> 
+<img src="assets/34.png" width=300px></div>  
 
 So... Are you ready to OnBoard? - Great! 
 
