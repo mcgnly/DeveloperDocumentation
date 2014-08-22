@@ -18,7 +18,7 @@ OnBoarding is your way of introducing your WunderBar to the relayr platform. Cli
 
 ### I am a Web developer. Can I still use the relayr platform?
 
-Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WEB/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you getting started.
+Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WEB/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.
 
 ### Which service is relayr using for data distribution?
 
