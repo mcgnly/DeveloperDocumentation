@@ -63,6 +63,7 @@ Our menu has only a single item, the title of that item is the
 one we defined earlier in the *strings.xml* file.
 
 ## Adding a Logout Menu
+
 This is the evil twin brother of login. We'll call it *thermometer_demo_logged_in.xml*, and copy the following content into it:
 
     <menu xmlns:android="http://schemas.android.com/apk/res/android"

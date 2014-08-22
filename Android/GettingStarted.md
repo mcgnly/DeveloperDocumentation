@@ -11,32 +11,69 @@ Here are the first steps to get you started in the relayr world. Follow them and
 ----------
 
 ####  Create a relayr app on the [app page](https://developer.relayr.io/dashboard/apps/myApps). 
-Download the key file once the app is created
- 
-----------
-
-####  Place the application key (relayrsdk.properties) inside *src/main/assets* 
-
+At the end of the app creation process you will be given the option to download the key file. The key file is used by the SDK to tell the relayr Platform which app you are.
+Place the application key (relayrsdk.properties) inside *src/main/assets* 
 If the *assets* folder does not exist, create it in the above path.
 
 ----------
+#### Create your Application Java class
 
-#### Create a java class inside *src/main/java/path/to/your/package* and extend the android.app.Application; Provide an onCreate method which initializes the SDK 
-   
-	    public class MyApplication extends Application {
-	        @Override
-	        public void onCreate() {
-	            super.onCreate();
-	            RelayrSdk.init(this);
-	        }
-	    }
+Open *app/src/main/java*. You should find your created activity as shown below:
+
+<img src="/assets/Activity2.png" class="center">
+
+Right click the activity name, select 'New' from the drop down list and then select Java class:
+
+<img src="/assets/class.png" class="center">
+
+you will be asked to give your new class a Name. 
+
+Now, you want your Application to be a type of android.app.Application. Otherwise Android won't be able to recognise it.
+To achieve this we **extend** the android Application class. Extending means
+including everything which is in the Android Application class, and what you add to the class.
+
+	public class MyApplication extends Application [...]
+
+Start Typing 'extends' after the class name, Android Studio will suggest
+'autcompleting' this for you, which makes it fatser. Start typing 'Application' and again it will suggest app.android.Application. Android also adds an **import** statement at the top, which tells java which 'Application' you mean.
+
+
+----------
+
+
+#### Add an onCreate Handler
+
+As we are interested in our app being launched, the next step will be to create a handler for the 'create' event takes place. We therefore create an *onCreate* handler. You can
+choose events already defined in the Application class by choosing 'Override
+methods' from the Code menu, or just copy and paste the following:
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
+
+This method doesn't do anything yet. We will add a single line
+which sets up the relayr SDK so we can use it:
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        RelayrSdk.initSdk(this);
+    }
+
+At this point, the class doesn't recognize the RelayrSdk so it marks it
+in red, as an error. you will need to add another import statement so that Studio can
+find the relevant class. The easiest way is to select the word, Studio suggests the
+import statement which you can select by typing opt+Enter.  
 
 ----------
 
 	    
-####  Inside *src/main/AndroidManifest.xml*: Reference your Application by adding the android:name to the application element and add Internet permissions as shown below
+####  Grant your app Internet connection capability
+
+Inside *src/main/AndroidManifest.xml*: Reference your Application by adding the **android:name** to the application element: 
     
-    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -44,12 +81,16 @@ If the *assets* folder does not exist, create it in the above path.
         android:theme="@style/AppTheme"
         android:name=".MyApplication">
 
+And add Internet permissions as shown below:
+
+	<uses-permission android:name="android.permission.INTERNET" />
+
 ----------
 
     
 ####  Create a Login Sequence
 
-In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](https://developer.relayr.io/documents/Android/LoginSequence) to learn more about how to create a login sequence.   
+In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](https://developer.relayr.io/documents/Android/LoginSequence) to learn more about how to create a *Login* sequence.   
   
 ----------
 
