@@ -12,7 +12,7 @@ Click <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" targ
 
 ## Sample Project
 
-We've built an easy to implement, quick and simple thermometer application to get you introduced to the relayr Android world. Have a look [here](https://github.com/relayr/android-demo-apps) to get inspired	
+We've built an easy to implement, quick and simple thermometer application to get you introduced to the relayr Android world. Have a look <a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer">here</a> to get inspired	
 
 
 
