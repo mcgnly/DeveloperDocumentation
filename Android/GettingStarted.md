@@ -30,7 +30,7 @@ See example [here](https://github.com/relayr/android-demo-apps/commit/06b85d467f
 	        @Override
 	        public void onCreate() {
 	            super.onCreate();
-	            RelayrSdk.initSdk(this);
+	            RelayrSdk.init(this);
 	        }
 	    }
 
