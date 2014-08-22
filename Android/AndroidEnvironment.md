@@ -21,8 +21,6 @@ See the Android [Thermometer demo](https://github.com/relayr/android-demo-apps/c
 	        compile 'io.relayr:android-sdk:0.0.1'
 	    }
 
-See example [here](https://github.com/relayr/android-demo-apps/commit/2276441f7636e60e4f6a2d8cffb001d5011dd713) 
-
 ----------
 
 #### Now that you are done setting up your environment, click [here](https://developer.relayr.io/documents/Android/GettingStarted) to go back to the Getting Started page.
