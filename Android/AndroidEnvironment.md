@@ -27,6 +27,8 @@ The minimum supported version for the relayr Android project is 15 (4.0.3).
 #### Click "Finish" to start the building process of your initial project
 
 <img src="assets/Building.png" class="center"> 
+
+
 ----------
 
    
@@ -43,6 +45,7 @@ We have made the relayr Android SDK available on Maven as to simplify the inclus
 	    dependencies {
 	        compile 'io.relayr:android-sdk:0.0.1'
 	    }
+
 #### Click to save the file or compile to ensure that everything is in order.
 
 ----------

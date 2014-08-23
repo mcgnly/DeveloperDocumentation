@@ -2,21 +2,21 @@
 
 Here are the first steps to get you started in the relayr world. Follow them and you'd be building your first app in no time!
 
-#### Create a [relayr User](https://api.relayr.io/oauth2/auth?client_id=D-aSJGtuUeQPwIgos1Xt_xAhXzo9RpiR&redirect_uri=https://developer.relayr.io/dashboard/scrape&response_type=token&scope=access-own-user-info+configure-devices) in case you don't have one already
+### Create a [relayr User](https://api.relayr.io/oauth2/auth?client_id=D-aSJGtuUeQPwIgos1Xt_xAhXzo9RpiR&redirect_uri=https://developer.relayr.io/dashboard/scrape&response_type=token&scope=access-own-user-info+configure-devices) in case you don't have one already
 
 ----------
 
-#### Set up your environment for your first relayr Android project - See instructions [here](https://developer.relayr.io/documents/Android/AndroidEnvironment)
+### Set up your environment for your first relayr Android project - See instructions [here](https://developer.relayr.io/documents/Android/AndroidEnvironment)
 
 ----------
 
-####  Create a relayr app on the [app page](https://developer.relayr.io/dashboard/apps/myApps). 
+###  Create a relayr app on the [app page](https://developer.relayr.io/dashboard/apps/myApps). 
 At the end of the app creation process you will be given the option to download the key file. The key file is used by the SDK to tell the relayr Platform which app you are.
 Place the application key (relayrsdk.properties) inside *src/main/assets* 
 If the *assets* folder does not exist, create it in the above path.
 
 ----------
-#### Create your Application Java class
+### Create your Application Java class
 
 Open *app/src/main/java*. You should find your created activity as shown below:
 
@@ -28,24 +28,22 @@ Right click the activity name, select 'New' from the drop down list and then sel
 
 you will be asked to give your new class a Name. 
 
-Now, you want your Application to be a type of android.app.Application. Otherwise Android won't be able to recognise it.
-To achieve this we **extend** the android Application class. Extending means
-including everything which is in the Android Application class, and what you add to the class.
+Now, you want your Application to be a type of *android.app.Application*. Otherwise Android won't be able to recognize it.
+To achieve you will need to **extend** the android Application class. Extending means
+including everything which is in the Android Application class, and whatever you add to the class.
 
 	public class MyApplication extends Application [...]
 
 Start Typing 'extends' after the class name, Android Studio will suggest
-'autcompleting' this for you, which makes it fatser. Start typing 'Application' and again it will suggest app.android.Application. Android also adds an **import** statement at the top, which tells java which 'Application' you mean.
+'autcompleting' this for you, which makes it fatser. Start typing 'Application' and again it will suggest app.android.Application. Android also adds an **import** statement at the top, which indicated to 'java' which 'Application' you mean.
 
 
 ----------
 
 
-#### Add an onCreate Handler
+### Add an onCreate Handler
 
-As we are interested in our app being launched, the next step will be to create a handler for the 'create' event takes place. We therefore create an *onCreate* handler. You can
-choose events already defined in the Application class by choosing 'Override
-methods' from the Code menu, or just copy and paste the following:
+As we are interested in our app being launched, the next step will be to create a handler for the 'create' event. The create event is the one fired when the app is launched. We therefore create an *onCreate* handler. You can choose events already defined in the Application class by choosing 'Override methods' from the Code menu, or just copy and paste the following:
 
     @Override
     public void onCreate() {
@@ -69,7 +67,7 @@ import statement which you can select by typing opt+Enter.
 ----------
 
 	    
-####  Include the app in the Android Manifest and add Internet permissions
+###  Include the app in the Android Manifest and add Internet permissions
 
 Inside *src/main/AndroidManifest.xml*: Reference your Application by adding the **android:name** to the application element: 
     
@@ -88,7 +86,7 @@ And add Internet permissions as shown below:
 ----------
 
     
-####  Create a Login Sequence
+###  Create a Login Sequence
 
 In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](https://developer.relayr.io/documents/Android/LoginSequence) to learn more about how to create a *Login* sequence.   
   

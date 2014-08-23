@@ -44,7 +44,7 @@ Add the following to link between the view and the activity you've defined when 
 
     </menu>
 
-The first new attribute loads android tools, and in the second we indicate that it should run in "the Context" of the Activity we had defined.
+The first new attribute loads android tools, and in the second we indicate that it should run in "the Context" of the Activity we have defined.
 
 
 Now we can add the content to the menu.
@@ -64,7 +64,7 @@ one we defined earlier in the *strings.xml* file.
 
 ## Adding a Logout Menu
 
-This is the evil twin brother of login. We'll call it *thermometer_demo_logged_in.xml*, and copy the following content into it:
+The evil twin brother of login. We'll call it *thermometer_demo_logged_in.xml*, and copy the following content into it:
 
     <menu xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -104,7 +104,7 @@ The following code is used to build the logic behind the activity. It's a bit lo
 
 
         /**
-         * Once the Activity has been started the onCreate method will be called
+         * Once the Activity has been started, the onCreate method will be called
          * @param savedInstanceState
          */
         @Override
@@ -118,8 +118,7 @@ The following code is used to build the logic behind the activity. It's a bit lo
             //caling the isUserLoggedIn function
             if (!RelayrSdk.isUserLoggedIn()) {
 
-                //if the user isn't logged in (the little exclamation mark
-                //is the same as saying not) then we call the logIn method
+                //if the user isn't logged in, we call the logIn method
                 RelayrSdk.logIn(this, this);
             }
         }
@@ -134,13 +133,13 @@ The following code is used to build the logic behind the activity. It's a bit lo
         @Override
         public boolean onPrepareOptionsMenu(Menu menu) {
 
-            //remove any previous stuff in the menu
+            //remove any previous items from the menu
             menu.clear();
 
             //Check to see if the user is logged in
             if (RelayrSdk.isUserLoggedIn()) {
 
-                //if the user is logged in we ask Android to draw the menu
+                //if the user is logged in, we ask Android to draw the menu
                 //we defined earlier in the thermometer_demo_logged_in.xml
                 //file
                 getMenuInflater().inflate(R.menu.thermometer_demo_logged_in, menu);
@@ -158,7 +157,7 @@ The following code is used to build the logic behind the activity. It's a bit lo
 
         /**
           * When a menu item is selected, we see which item was called and
-          * decide what to do upon it.
+          * decide what to do according to the item.
           */
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
@@ -197,14 +196,14 @@ The following code is used to build the logic behind the activity. It's a bit lo
 
         /**
           * When a user successfuly logs in, the SuccessUserLogin event is
-          * fired, and we handle it here:
+          * fired, and is handled here:
           */
         @Override
         public void onSuccessUserLogIn() {
 
             //use the Toast library to display a message to the user
             Toast.makeText(this, R.string.successfully_logged_in, Toast.LENGTH_SHORT).show();
-            //call the invalidateOptionsMenu this is defined in the
+            //call the invalidateOptionsMenu, which is defined in the
             //Activity class and is used to reset the menu option
             invalidateOptionsMenu();
         }
