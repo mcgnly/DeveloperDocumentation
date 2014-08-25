@@ -62,6 +62,10 @@ This is also a result of the limitations of Bluetooth LE. Try logging out of the
 
 This is a known issue which has already been fixed in the next version of the app. To resolve this issue, remove the app completely from the background tray. Keep the WunderBar plugged and restart the application.
 
+### The onboarding app cannot locate one of the sensors. What should I do?
+
+If The onboarding app fails to locate one of the sensors it will asks you if the LED on the sensor is blinking. In this case, press the button on the relevant sensor (taking it out of onboarding mode) then press it a second time (putting it back in onboarding mode) and hit retry on the app.	
+
 ### I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?
 
 When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. 
