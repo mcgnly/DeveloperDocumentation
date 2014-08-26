@@ -83,35 +83,39 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <p>We realize that the on and off blinking and flashing statuses can be quite confusing, so here is a little guide to help you distinguish one blink from the other.</p>
 
-<p><strong>Master Module LEDs</strong></p>
+<h4>Master Module LEDs</h4>
 <p>The Master Module includes 3 LEDs:</p>
 
-<p>1. <strong>The WiFi LED</strong>: Located at the edge of the board, between the USB connector and the Inductor marked with a <strong>K</strong>:
-   When it is ON, the Master Module is NOT connected to WiFi. When this LED is off it is an indication that the Master Module has successfully connected to the WIFi network.</p>
+<ol>
+<li><p><strong>The WiFi LED</strong>: Located at the edge of the board, between the USB connector and the Inductor marked with a <strong>K</strong>:
+   When it is ON, the Master Module is NOT connected to WiFi. When this LED is off it is an indication that the Master Module has successfully connected to the WIFi network.</p></li>
 
-<p>2. <strong>The Battery charger LED</strong>: located between the reset button and battery IC. It indicates the state of	the battery charging circuit. This LED will blink after 4 hours of use, if no battery is connected. When the battery is being charged this LED will stay on.</p>
+<li><p><strong>The Battery charger LED</strong>: located between the reset button and battery IC. It indicates the state of	the battery charging circuit. This LED will blink after 4 hours of use, if no battery is connected. When the battery is being charged this LED will stay on.</p></li>
 
-<p>3. <strong>The Master Module Mode Indicator</strong>: Located next to the Kinetis chip.
+<li><p><strong>The Master Module Mode Indicator</strong>: Located next to the Kinetis chip.</p>
  
-	<p><strong>Blinking once per second</strong>: During Onboarding Mode indicating that the WunderBar is waiting to be onboarded.</p>
+	<ul>
+	<li><p><strong>Blinking once per second</strong>: During Onboarding Mode indicating that the WunderBar is waiting to be onboarded.</p></li>
    
-	<p><strong>Constantly ON</strong>: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.</p>
+	<li><p><strong>Constantly ON</strong>: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.</p></li>
 
-   	<p><strong>OFF</strong>: The common state of this LED. When the Master Module is connected to the platform (broker), this LED will stay off most of the time, and will only shortly blink every time a sensor publishes data.</p></p>
+   	<li><p><strong>OFF</strong>: The common state of this LED. When the Master Module is connected to the platform (broker), this LED will stay off most of the time, and will only shortly blink every time a sensor publishes data.</p></li></ul></li>
+</ol>
 
 
-<strong>Sensor Module LED</strong>
+<h4>Sensor Module LED</h4>
 
 <p>All sensor modules have one led each:</p>
 
-<p><strong>LED Blinking once a second</strong>: During Onboarding Mode. The module is advertising the Onboarding service, to be written to by the Onboarding App.</p>
+<ul>
+<li><p><strong>LED Blinking once a second</strong>: During Onboarding Mode. The module is advertising the Onboarding service, to be written to by the Onboarding App.</p></li>
 
-<p><strong>LED ON</strong>: Indicating that the sensor is in Over The Air- Device Firmware Update (OTA-DFU) mode. The DeviceFirmwareUpdate application is running, waiting for the Android/iOS app to send new firwmare.</p>
+<li><p><strong>LED ON</strong>: Indicating that the sensor is in Over The Air- Device Firmware Update (OTA-DFU) mode. The DeviceFirmwareUpdate application is running, waiting for the Android/iOS app to send new firwmare.</p></li>
 
-<p><strong>LED OFF</strong>: Normal operation.</p>
+<li><p><strong>LED OFF</strong>: Normal operation.</p></li>
  
-<p><strong>Short Blink</strong>: The sensor module will blink once when to indicate that it is connected to the App or the Master Module.</p>
-
+<li><p><strong>Short Blink</strong>: The sensor module will blink once when to indicate that it is connected to the App or the Master Module.</p></li>
+</ul>
 
 <h3> How can I upgrade the Firmware on my Sensor Modules?</h3>
 
@@ -120,6 +124,10 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> The Master Module comes with a battery - Does it have to be connected to a power supply at all times?</h3>
 
 <p>We've discovered that due to a bug in the firmware, the battery charger of the Master Module, which also serves as a voltage regulator, enters an erratic state every ~4 hours, when not connected to a power supply - which eventually results in it disconnecting the WunderBar and breaking off any data transmission. This is why we are currently shipping the Master Modules with a battery, which will prevent it from getting to this state.</p>
+
+<h3> Can I send audio to the relayr cloud, using the noise sensor?</h3>
+
+<p>Our noise sensor is unable to send audio to the cloud as it is <em>not</em> a microphone. The output of this sensor is the relative level of noise at the location measured </p>
 
 </div>
 
