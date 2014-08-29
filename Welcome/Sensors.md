@@ -5,7 +5,7 @@
 
 <div class="category"> 
 <h2>The Accelerometer/Gyroscope Module</h2>
-<img src="assets/Gyro.png" alt="" title="" style= width:450px></a>
+<img src="assets/Gyro.png" alt="" title="" style= width:500px></a>
 <p>
 This module incorporates the <a href="http://www.invensense.com/mems/gyro/mpu6500.html">MPU-6500 chip</a> manufactured by InvenSense, combining a 3-axis accelerometer with a 3-axis gyroscope.
 </p>
@@ -24,7 +24,7 @@ The sensor includes user-programmable ranges of -2g to +2g, -4g to +4g, ±8g, an
 <h3>The Gyroscope</h3>
 <p>
 A <a href="http://en.wikipedia.org/wiki/Gyroscope">gyroscope</a> measures the angular rate of movement, i.e. the speed of the change in the angle of an object - across all axes. The output of a gyroscope is indicated in degrees per second (°/sec).<br/>
-<img src="assets/Rotation.png" width=300px class="center" style= width:300px>
+<img src="assets/Rotation.png" class="center" style= width:300px>
 <br/>	 
 The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2000 °/sec. The default configured sensitivity is ±250 °/sec.
 </div>
@@ -57,7 +57,7 @@ In a similar manner, the color sensor produces a set of values which are then tr
 
 <div class="category">
 <h2>The Temperature/Humidity Module</h2> 
-<img src="assets/Temp.png" alt="" title="" style= width:450px></a>
+<img src="assets/Temp.png" alt="" title="" style= width:500px></a>
 
 <p> This module integrates the <a href="http://www.meas-spec.com/product/humidity/HTU21D.aspx">HTU21D chip</a>, manufactured by Measurement Specialties™. The HTU21D is a digital Relative Humidity Sensor with Temperature Output.</p>
 
@@ -79,7 +79,7 @@ As the temperature sensor, the humidity resolution can be configured from to a 8
 
 <div class="category"> 
 <h2>The Sound Sensor Module </h2>
-<img src="assets/Mic.png" alt="" title="" style= width:450px></a>
+<img src="assets/Mic.png" alt="" title="" style= width:500px></a>
 <p>
 This sensor measures the average <a href="http://en.wikipedia.org/wiki/Ambient_noise_level">ambient noise level</a>. It is based on the <a href="http://www.knowles.com/Products/Microphones/Surface-mount-MEMS">SPU0410HR5H chip</a> manufactured by Knowles, a MEMS microphone and its associated analog and digital circuitry. 
 The MEMS microphone transforms air pressure variations into a low voltage analog signal, which is then amplified by about 100 times and conducted to a converter, which averages the analog signal and provides an RMS output value that can be measured with the ADC (analog-to-digital converter). <br/>
@@ -91,7 +91,7 @@ Note that the output provided by the sensor is <em>not</em> presented in decibel
 
 <div class="category"> 
 <h2>The InfraRed Module </h2>
-<img src="assets/IR.png" alt="" title="" style= width:450px></a>
+<img src="assets/IR.png" alt="" title="" style= width:500px></a>
 <p>
 This module is based on the <a href"http://www.osram-os.com/osram_os/en/products/product-catalog/infrared-emitters%2c-detectors-andsensors/infrared-emitters/power-emitter-gt40mw/emitter-with-940-nm/sfh-4441/index.jsp">SFH4441 chip </a> manufactured by OSRAM GmbH and 
 is a high efficiency, high power infrared emitter. 
@@ -107,7 +107,7 @@ In future releases we plan to implement additional IR protocols to be used by th
 
 <div class="category"> 
 <h2>The Bridge Module </h2>
-<img src="assets/Bridge.png" alt="" title="" style= width:450px></a>
+<img src="assets/Bridge.png" alt="" title="" style= width:550px></a>
 <p>
 This module includes 8 exposed General-purpose input/output points (GPIOs), as well as a 4-pin connector, compatible with Grove modules from <a href="http://www.seeedstudio.com/depot/?gclid=CLT_q6Ous8ACFfOhtAod3T4Adw">SeeedStudios </a>. This connector incorporates two 3.3V to 5V compatible GPIOs, that can be used as Digital Inputs and Outputs, as <a href="http://en.wikipedia.org/wiki/I%C2%B2C">I2Cs</a> or as <a href="http://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter">UART ports</a>.<br/>
 The firmware on the Bridge Module is intended to control some of the digital modules of the Seeed Grove family, such as the <a href="http://www.seeedstudio.com/wiki/Grove_-_Solid_State_Relay">Solid State Relay</a> , or the <a href="http://www.seeedstudio.com/wiki/Grove_-_Vibration_Motor">Vibration Motor</a> with a simple command from the relayr SDKs or the Developer Dashboard.<br/>
