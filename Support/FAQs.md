@@ -77,7 +77,7 @@ What you will need to do to get started, is first onboard your WunderBar using t
 </div>
 
 <h2 class="CollapseHeader"> Sensor Data </h2>
-<div>
+<div class="collapse">
 <h3> In which units is Noise Level measured? </h3>
 <p>
 Our sensor essentially provides a reading representing the change in noise level over a period of time. The number is a representation of a level rather than a measurement of noise. The output number will increase as the noise level increases and vice versa. In order to provide a reading of the level of noise in decibels a much more elaborate set of tools is required.    
