@@ -1,4 +1,5 @@
-# FAQs 
+
+<h1 fullpage>FAQs </h1>
 
 <h2 class="CollapseHeader">Getting Started</h2>
 <div class="collapse">
