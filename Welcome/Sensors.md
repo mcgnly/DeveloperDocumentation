@@ -14,7 +14,7 @@ This module incorporates the <a href="http://www.invensense.com/mems/gyro/mpu650
 An accelerometer is an electromechanical device used to measure <em>proper</em> acceleration ("g-force") as opposed to <em>coordinate</em> acceleration (the rate of the change in velocity). 
 <br/>
 The MPU-6500 integrates a 3-axis micro-electro-mechanical system (MEMS) accelerometer, which which consists of 3 sensors measuring acceleration on the X, Y and Z axes. The acceleration can be either positive or negative depending on the direction of deviation.
-<img src="assets/Axis.png" width=300px class="center">
+<img src="assets/Axis.png" style= width:300px class="center">
 <br/>
 The accelerometer outputs a raw 16-bit figure which is then converted either by the Master Module or, in the future case of Bluetooth LE direct connection (a scenario in which an app is directly connected to the sensor, without the mediation of the relayr Cloud), by the SDK incorporated in the app.
 <br/>
@@ -24,7 +24,7 @@ The sensor includes user-programmable ranges of -2g to +2g, -4g to +4g, ±8g, an
 <h3>The Gyroscope</h3>
 <p>
 A <a href="http://en.wikipedia.org/wiki/Gyroscope">gyroscope</a> measures the angular rate of movement, i.e. the speed of the change in the angle of an object - across all axes. The output of a gyroscope is indicated in degrees per second (°/sec).<br/>
-<img src="assets/Rotation.png" width=300px class="center">
+<img src="assets/Rotation.png" width=300px class="center" style= width:300px>
 <br/>	 
 The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2000 °/sec. The default configured sensitivity is ±250 °/sec.
 </div>
