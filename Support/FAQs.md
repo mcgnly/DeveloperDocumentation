@@ -26,7 +26,7 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <p>We are using PubNub as our data distribution service. You can learn more about our usage of PubNub <a href="https://developer.relayr.io/documents/PubNub/Reference" target="_blank">here</a>.</p>
 </div>
 
-<h2 class="CollapseHeader"> OnBoarding</h2>
+<h2 class="CollapseHeader"> The OnBoarding Process</h2>
 
 <div class="collapse">
 
@@ -74,6 +74,18 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?</h3>
 
 <p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
+</div>
+
+<h2 class="CollapseHeader"> Sensor Data </h2>
+<div>
+<h3> In which units is Noise Level measured? </h3>
+<p>
+Our sensor essentially provides a reading representing the change in noise level over a period of time. The number is a representation of a level rather than a measurement of noise. The output number will increase as the noise level increases and vice versa. In order to provide a reading of the level of noise in decibels a much more elaborate set of tools is required.    
+</p>
+<h3> Why does the percentage go up when I get close to the proximity sensor? </h3>
+<p>The proximity measurement is translated to a percentage in the OnBoarding apps and the Developer Dashboard. The closer an object is to the sensor the higher the percentage is.
+</p>
+For additional reading about the WunhderBar sensors and a review of the manner in which data is collected please see our <a href="https://developer.relayr.io/documents/Welcome/Sensors">Making Sense of Sensors page</a>
 </div>
 
 <h2 class="CollapseHeader">Hardware and Firmware</h2>
