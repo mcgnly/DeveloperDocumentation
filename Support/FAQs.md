@@ -1,7 +1,7 @@
 
 <h1 fullpage>FAQs </h1>
 
-<h2 class="CollapseHeader">Getting Started</h2>
+<h2 class="collapseHeader">Getting Started</h2>
 <div class="collapse">
 <h3> Ok I got the WunderBar, what do I do now?</h3>
 
@@ -26,7 +26,7 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <p>We are using PubNub as our data distribution service. You can learn more about our usage of PubNub <a href="https://developer.relayr.io/documents/PubNub/Reference" target="_blank">here</a>.</p>
 </div>
 
-<h2 class="CollapseHeader"> The OnBoarding Process</h2>
+<h2 class="collapseHeader"> The OnBoarding Process</h2>
 
 <div class="collapse">
 
@@ -76,7 +76,7 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
 </div>
 
-<h2 class="CollapseHeader"> Sensor Data </h2>
+<h2 class="collapseHeader"> Sensor Data </h2>
 <div class="collapse">
 <h3> In which units is Noise Level measured? </h3>
 <p>
@@ -88,7 +88,7 @@ Our sensor essentially provides a reading representing the change in noise level
 For additional reading about the WunhderBar sensors and a review of the manner in which data is collected please see our <a href="https://developer.relayr.io/documents/Welcome/Sensors">Making Sense of Sensors page</a>
 </div>
 
-<h2 class="CollapseHeader">Hardware and Firmware</h2>
+<h2 class="collapseHeader">Hardware and Firmware</h2>
 <div class="collapse">
 <h3> Those blinking LEDs, what do they mean?</h3>
 
