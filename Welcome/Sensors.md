@@ -10,7 +10,7 @@
 This module incorporates the <a href="http://www.invensense.com/mems/gyro/mpu6500.html">MPU-6500 chip</a> manufactured by InvenSense, combining a 3-axis accelerometer with a 3-axis gyroscope.
 </p>
 
-<div class="floatBox">
+<div>
 <h3>The Accelerometer</h3>
 <img src="assets/Axis.png" style= width:300px>
 <p>
@@ -24,7 +24,7 @@ The accelerometer outputs a raw 16-bit figure which is then converted either by 
 The sensor includes user-programmable ranges of -2g to +2g, -4g to +4g, ±8g, and ±16g. The default scale according to which the raw values are currently converted, by the Master Module, is the ±2g scale. <br/>  
 </p></div>
 
-<div class="floatBox">
+<div>
 <h3>The Gyroscope</h3>
 <img src="assets/Rotation.png" style= width:300px>
 <p>
