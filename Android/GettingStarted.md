@@ -28,14 +28,14 @@ Right click the activity name, select 'New' from the drop down list and then sel
 
 you will be asked to give your new class a Name. 
 
-Now, you want your Application to be a type of *android.app.Application*. Otherwise Android won't be able to recognize it.
-To achieve you will need to **extend** the android Application class. Extending means
-including everything which is in the Android Application class, and whatever you add to the class.
+Now, you want your Application to be a type of *android.app.Application*, otherwise Android won't be able to recognize it.
+To achieve this you will need to **extend** the android Application class. Extending means
+including everything which is in the Android Application class, and whatever you add to it.
 
 	public class MyApplication extends Application [...]
 
 Start Typing 'extends' after the class name, Android Studio will suggest
-'autcompleting' this for you, which makes it fatser. Start typing 'Application' and again it will suggest app.android.Application. Android also adds an **import** statement at the top, which indicated to 'java' which 'Application' you mean.
+'autcompleting' this for you, which makes it faster. Start typing 'Application' and again it will suggest app.android.Application. Android also adds an **import** statement at the top, which indicates to 'java' which 'Application' you mean.
 
 
 ----------
@@ -60,7 +60,7 @@ which sets up the relayr SDK so we can use it:
     }
 
 At this point, the class doesn't recognize the RelayrSdk so it marks it
-in red, as an error. you will need to add another import statement so that Studio can
+in red, as an error. you will need to add another import statement, so that Studio can
 find the relevant class. The easiest way is to select the word, Studio suggests the
 import statement which you can select by typing opt+Enter.  
 

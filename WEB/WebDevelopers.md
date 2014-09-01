@@ -1,6 +1,6 @@
 # relayr for Web Developers - Introduction
 
-We don't want to teach you how to create a web app. We are quite positive that you know your way around web development tools. Below you will find code samples which will allow you to use our [data distribution service](https://developer.relayr.io/documents/PubNub/Reference) in your web app. 
+We don't want to teach you how to create a web app. We are quite positive that you know your way around web development tools. Below you will find code samples which will allow you to use PubNub, our [data distribution service](https://developer.relayr.io/documents/PubNub/Reference) in your web app. 
 
 ## Subscribing an App to a Device Channel
 
@@ -109,4 +109,4 @@ To register your App please visit the <a href="https://developer.relayr.io/dashb
 
 ----------
 
-Now that you understand how to incorporate receiving data via the relayr platform. You can go ahead and create your first web project. Check out our simple and quick  [Don't Touch This sample project](/WEB/SampleProject) to get inspired.
+Now that you understand how to incorporate receiving data via the relayr platform. You can go ahead and create your first web project. Check out our simple and quick <a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer" target="_blank">Don't Touch This sample project</a> to get inspired.

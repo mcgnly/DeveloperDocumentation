@@ -2,11 +2,11 @@
 
 In order to enable your app to connect to your onboarded devices (or those of the
 user) you'll need to be able to login. 
-Though we have wrapped a lot of complications away in the SDK, you'll still have to create the views that use that logic. 
+Though we have wrapped a lot of complications away in the SDK, you'll still have to create the views that use this Login logic. 
 
 ## Adding String Names
 
-In the Project panel open up app/src/main/res/values/strings.xml
+In the Project panel open app/src/main/res/values/strings.xml
 
 After the existing `<string>` tags add the following:
 
@@ -34,7 +34,9 @@ It will create a file with the following code:
 
     </menu>
 
-Add the following to link between the view and the activity you've defined when creating the project. In our example below, the Activity that was defined was `ThermometerDemoActivity`
+Add the following to link between the view and the activity you've defined when creating the project. In our example below, the Activity that was defined was 
+
+`ThermometerDemoActivity`
 
     <?xml version="1.0" encoding="utf-8"?>
 
@@ -220,4 +222,4 @@ The following code is used to build the logic behind the activity. It's a bit lo
     }
 
 
-So, now that you are en expert in building Login sequences, get back to the <a href="https://developer.relayr.io/documents/Android/GettingStarted"> Getting Started </a> menu to continue building your app.
+So, now that you are an expert in building Login sequences, get back to the <a href="https://developer.relayr.io/documents/Android/GettingStarted"> Getting Started </a> menu to continue building your app.

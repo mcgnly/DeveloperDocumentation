@@ -44,9 +44,10 @@ To give you a small taste of the way the platform works, here's a high-level des
 1. The Master Module delivers the data to the Device Integration Layer. The latter is essentially a Redis Cluster based PubSub server. The data is delivered over secure MQTT (MQTT/TLS). 
  
 1. The data is distributed throughout the different cluster nodes and is either pushed to available subscribers or maintained in the cluster.
-1. The relayr Routing Component, which  subscribes to the specific device channel during the onBoarding process receives the data from the Device Integration Layer and encrypts it before sending it further.
+
+1. The relayr Routing Component, which subscribes to the specific device channel during the onBoarding process, receives the data from the Device Integration Layer and encrypts it before sending it further.
  
-1. The encrypted data is then delivered over WSS (Secure Web Sockets) to PubNub - an external service which serves as a distributor only. PubNub delivers the data received to the application subscribed to the specific device channel; a subscription which is also performed during the onBoarding process.
+1. The encrypted data is then delivered over WSS (Secure Web Sockets) to PubNub - an external service which serves as a distributor only. PubNub pushes the data received to the application subscribed to the specific device channel; 
 
 
 Now that we've raised your curiosity about the relayr platform, check out our [Android SDK](https://developer.relayr.io/documents/Android/Reference) and [iOS framework](https://developer.relayr.io/documents/iOS/Reference) to learn how to make it work for you! 
