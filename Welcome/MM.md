@@ -2,9 +2,10 @@
 
 The Master Module is the master mind behind the WunderBar. It is the only module capable of connecting to Wifi and is responsible for delivering data from the sensors to the cloud and from the cloud to the sensors. We'd like to give you a some insight into the relayr Master Module. 
 
-<img src="assets/Master.png" class="center">
 
 The Master Module consists of three main parts, each responsible for a different aspect of its overall functionality: 
+
+<img src="assets/Master.png" class="center">
 
 ### The Gainspan module 
 
