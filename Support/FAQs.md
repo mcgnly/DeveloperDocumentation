@@ -32,10 +32,12 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <h3> I'm trying to onboard my WunderBar and I experience difficulties - what should I check?</h3>
 
+<p>
 OnBoarding could be severely impacted by the environment in which you choose to onboard, more precisely by the state of the WiFi network you choose to use when onboarding.<br/>
 Optimal conditions for onboarding are a <em><strong>stable WiFi network and one which is not utilized by a large number of users</strong></em> - Trying to onboard in a lecture room with 100 people all using the .WiFi network is probably not your best choice for securing a successful onboarding process.<br/>
 The second factor critical for a successful onboarding is <em><strong>maintaining the the board unbroken</strong></em>. We recommend not to break any of the sensors off the board prior to successfully unboarding it. 
 When the above two conditions are met the things that you should make sure is that the Master Module and all other sensors are in OnBoarding mode and making sure that the Master Module is connected to WiFi. Please note that in case it is not connected the WiFi LED (Located at the edge of the board, between the USB connector and the Inductor marked with a K) will be on.    
+</p>
 
 <h3> I'm trying to onBoard my WunderBar but no WunderBar is found. What could be the cause?</h3>
 
