@@ -110,7 +110,7 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 
 <li><p><strong>The Battery charger LED</strong>: located between the reset button and battery IC. It indicates the state of	the battery charging circuit. This LED will blink after 4 hours of use, if no battery is connected. When the battery is being charged this LED will stay on.</p></li>
 
-<li><p><strong>The Master Module Mode Indicator</strong>: Located next to the Kinetis chip.</p>
+<li><p><strong>The Master Module Mode Indicator</strong>: Located next to the <a href="https://developer.relayr.io/documents/Welcome/MM"> Kinetis </a> chip.</p>
  
 	<ul>
 	<li><p><strong>Blinking once per second</strong>: During Onboarding Mode indicating that the WunderBar is waiting to be onboarded.</p></li>
