@@ -64,7 +64,7 @@ In a similar manner, the color sensor produces a set of values which are then tr
 
 <div class="category">
 <h2>The Temperature/Humidity Module</h2> 
-<img src="assets/Temp.png" alt="" title="" style= width:550px></a>
+<img src="assets/Temp.png" alt="" title="" style= width:450px></a>
 
 <p> This module integrates the <a href="http://www.meas-spec.com/product/humidity/HTU21D.aspx">HTU21D chip</a>, manufactured by Measurement Specialties™. The HTU21D is a digital Relative Humidity Sensor with Temperature Output.</p>
 
