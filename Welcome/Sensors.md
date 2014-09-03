@@ -39,7 +39,7 @@ The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2
 
 <div class="category">
 <h2>The Light/Color/Proximity Module</h2> 
-<img src="" alt="" title="" style= width:650px></a>
+<img src="assets/Light.png" alt="" title="" style= width:450px></a>
 	
 <p>This module integrates the <a href="http://www.ams.com/eng/Products/Light-Sensors/Color-Sensor-Proximity-Detection/TCS37717"> TCS3771 IC </a>, manufactured by AMS AG. (formerly TAOS Inc.). This IC integrates RGB Color Sensing and Proximity Detection in a single device. In addition, the module has an Infrared LED, used for proximity detection and a white LED used to illuminate targets when the color sensor is measuring. </p>
 
