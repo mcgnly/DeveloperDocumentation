@@ -5,7 +5,7 @@
 
 <div class="category"> 
 <h2>The Accelerometer/Gyroscope Module</h2>
-<img src="assets/Gyro.png" alt="" title="" style= width:500px></a>
+<img src="assets/Gyro.png" alt="" title="" style= width:400px></a>
 <p>
 This module incorporates the <a href="http://www.invensense.com/mems/gyro/mpu6500.html">MPU-6500 chip</a> manufactured by InvenSense, combining a 3-axis accelerometer with a 3-axis gyroscope.
 </p>
@@ -39,7 +39,7 @@ The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2
 
 <div class="category">
 <h2>The Light/Color/Proximity Module</h2> 
-<img src="assets/Light.png" alt="" title="" style= width:450px></a>
+<img src="" alt="" title="" style= width:650px></a>
 	
 <p>This module integrates the <a href="http://www.ams.com/eng/Products/Light-Sensors/Color-Sensor-Proximity-Detection/TCS37717"> TCS3771 IC </a>, manufactured by AMS AG. (formerly TAOS Inc.). This IC integrates RGB Color Sensing and Proximity Detection in a single device. In addition, the module has an Infrared LED, used for proximity detection and a white LED used to illuminate targets when the color sensor is measuring. </p>
 
@@ -64,7 +64,7 @@ In a similar manner, the color sensor produces a set of values which are then tr
 
 <div class="category">
 <h2>The Temperature/Humidity Module</h2> 
-<img src="assets/Temp.png" alt="" title="" style= width:500px></a>
+<img src="assets/Temp.png" alt="" title="" style= width:550px></a>
 
 <p> This module integrates the <a href="http://www.meas-spec.com/product/humidity/HTU21D.aspx">HTU21D chip</a>, manufactured by Measurement Specialties™. The HTU21D is a digital Relative Humidity Sensor with Temperature Output.</p>
 
@@ -86,7 +86,7 @@ Much like the temperature sensor, the humidity resolution can be configured to a
 
 <div class="category"> 
 <h2>The Sound Sensor Module </h2>
-<img src="assets/Mic.png" alt="" title="" style= width:500px></a>
+<img src="assets/Mic.png" alt="" title="" style= width:400px></a>
 <p>
 This sensor measures the average <a href="http://en.wikipedia.org/wiki/Ambient_noise_level">ambient noise level</a>. It is based on the <a href="http://www.knowles.com/Products/Microphones/Surface-mount-MEMS">SPU0410HR5H chip</a> manufactured by Knowles, a MEMS microphone and its associated analog and digital circuitry. 
 The MEMS microphone transforms air pressure variations into a low voltage analog signal, which is then amplified by about 100 times and conducted to a converter, which averages the analog signal and provides an RMS output value that can be measured with the ADC (analog-to-digital converter). <br/>
