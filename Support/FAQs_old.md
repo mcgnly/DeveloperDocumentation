@@ -30,10 +30,6 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <div class="collapse">
 
-<h2 class="collapseHeader"> General</h2>
-
-<div class="collapse">
-
 <h3> I'm trying to onboard my WunderBar and I experience difficulties - what should I check?</h3>
 
 <p>
@@ -56,28 +52,6 @@ When the above two conditions are met the things that you should make sure is th
 
 <p>Unfortunately at this time, onboarding multiple WunderBars <strong>at the same time</strong> is not an available option. On the <em>Android</em> app you have the option to onboard multiple WunderBars, just not simultaneously. On the <em>iOS</em> app, this feature, is not yet available. It will be implemented in the next release of the app.</p>
 
-<h3> Can I have multiple WunderBars onboarded and view their readings?</h3>
-
-<p>The answer to this question depends on the specific OnBoarding app you are using.</p> 
-
-<p>On the <strong>Android</strong> app this feature has been implemented and you are able to toggle between your onboarded WunderBars. </p>
-
-<p>On the <strong>iOS</strong> app, since multiple OnBoarding is currently not available, you will only be able to view one WunderBar.</p>
-
-
-<h3> I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?</h3>
-
-<p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
-
-</div>
-
-
-
-<h2 class="collapseHeader"> Android</h2>
-
-<div class="collapse">
-
-
 <h3> I am using the <em>Android</em> relayr OnBoarding app and I get a web error after log in - is this normal?</h3>
 
 <p>Well... every app has its tiny bugs. This is unfortunately one of them. The web error message will show up for less than a second. It does not affect the onboarding process. Already fixed in the next version of the app.</p>
@@ -86,37 +60,29 @@ When the above two conditions are met the things that you should make sure is th
 
 <p>This could happen due to Bluetooth Low Energy which we utilize in order to connect to the sensor modules during the onboarding process. To resolve this issue you may need to disconnect your WunderBar from its power supply, connect it again and start the onboarding process again by clicking the onboarding button as indicated by the app.</p>
 
-<h3> The onboarding app cannot locate one of the sensors. What should I do?</h3>
-<p>If The onboarding app fails to locate one of the sensors it will asks you if the LED on the sensor is blinking. In this case, press the button on the relevant sensor (taking it out of onboarding mode) then press it a second time (putting it back in onboarding mode) and hit retry on the app.</p>
+<h3> Can I have multiple WunderBars onboarded and view their readings?</h3>
 
-</div>
+<p>The answer to this question depends on the specific OnBoarding app you are using.</p> 
 
-<h2 class="collapseHeader"> Device Specific Issues</h2>
+<p>On the <strong>Android</strong> app this feature has been implemented and you are able to toggle between your onboarded WunderBars. </p>
 
-<div class="collapse">
+<p>On the <strong>iOS</strong> app, since multiple OnBoarding is currently not available, you will only be able to view one WunderBar.</p>
 
-<h3>
-I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. what could be the issue?</h3>
-
-You may have a specific setting on - which interferes with Onboarding. Click <a href="">here </a> for a troubleshooting guide.
-
-
-
-</div>
-
-<h2 class="collapseHeader">iOS</h2>
-
-<div class="collapse">
 <h3> I am using the <em>iOS</em> relayr OnBoarding app but my sensors are not all detected</h3>
 
 <p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
 
 <h3> I am using the <em>iOS</em> relayr OnBoarding app. I have successfully onboarded my WunderBar but I still can't see data on all channels</h3>
 
-<p>This is a known issue which has already been fixed in the next version of the app. To resolve this issue, remove the app completely from the background tray. Keep the WunderBar plugged and restart the application.</p></div>
+<p>This is a known issue which has already been fixed in the next version of the app. To resolve this issue, remove the app completely from the background tray. Keep the WunderBar plugged and restart the application.</p>
 
+<h3> The onboarding app cannot locate one of the sensors. What should I do?</h3>
 
+<p>If The onboarding app fails to locate one of the sensors it will asks you if the LED on the sensor is blinking. In this case, press the button on the relevant sensor (taking it out of onboarding mode) then press it a second time (putting it back in onboarding mode) and hit retry on the app.</p>	
 
+<h3> I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?</h3>
+
+<p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
 </div>
 
 <h2 class="collapseHeader"> Sensor Data </h2>
