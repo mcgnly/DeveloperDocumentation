@@ -1,167 +1,80 @@
-# The relayr iOS Framework - Endpoints
+# Basic Classes
 
+The `Relayr.framework` includes a small subset of useful classes, which allow you to communicate with the relayr cloud, receive sensor data and manage users, devices transmitters and other entities. At the moment The BLE Direct Connection Classes are not fully implemented but they should be available in upcoming releases. The classes indicated below are all related to App > Cloud > Device communication.  
+All calls are asynchronous and the server response time is proportional to the quality of your connection and the size of the response requested.
 
-**Reference for API methods**: <a href="https://github.com/relayr/ios-sdk/tree/master" target="_blank"> https://github.com/relayr/ios-sdk/tree/master </a> 
+#### `RelayrCloud.h`
 
-## Main Classes
+Used as a static class to receive several statuses on the relayr servers.
 
-The two main classes facilitated by the iOS framework are the _RLARemoteUser_ and the _RLALocalUser_.
+  
+	  [RelayrCloud isReachable:^(NSError* error, NSNumber* isReachable){
+	      if (isReachable.boolValue) {
+	          NSLog(@"The Relayr Cloud is reachable!")
+	      }
+	  }];
+ 
 
-**_RLARemoteUser_** refers to a user connecting their app to a device, via the relayr platform.
+###`RelayrApp.h`
 
-**_RLALocalUser_**  refers to a user connecting their app to a device directly, without the mediation of the relayr platform. When this scenario is utilized, all BLE communication with the device is handled by the framework, making it transparent to the app developer. 
+A representation of your iOS/OSX app on the Relayr Cloud. 
 
-The main difference between the two classes is the Authentication Endpoint. For the remote user scenario, authentication is necessary. For the direct connection, i.e. the local user scenario, authentication is not required. In the latter scenario, the user object is retrieved without authentication.
+You create an object with the respective *appID*, *OAuthClientID*, *OAuthClientSecret*, and *redirectURI* generated when you first create your application on [the Developer Dashboard Apps section](https://developer.relayr.io/dashboard/apps/myApps).
 
-The other endpoints are identical, for both classes.
+  
+	  [RelayrApp appWithID:@"..." OAuthClientID:@"..." OAuthClientSecret:@"..." redirectURI:@"..." completion:^(NSError* error, RelayrApp* app){
+	      if (app) {
+	          NSLog(@"Application with name: %@ and description: %@" app.name, app.description);
+	          self.app = app;
+	      }
+	  }];
+  
+  
+  You can check your app's properties, query the server for information related to it, or sign users in and out of it.
+  
+	  
+	  [self.app signInUser:^(NSError* error, RelayrUser* user){
+	      if (user) {
+	          [self.users addObject user];
+	      }
+	  }];
+	  
 
+### `RelayrUser.h` 
 
-## 1. User Authentication
+Represents a logged-in user. 
+Users can access device data. They can query transmitters/devices they own, bookmark favorite devices and become app publishers. 
+You can have as many logged in users as you want.
 
-#### Class: RLALocalUser
+  
+	  RelayrUser* user = ...;
+	  NSLog(@"User with name: %@ and email: %@", user.name, user.email);
+	  
+	  // Lets ask the cloud for all the transmitters/devices own by this specific user.
+	  [user queryCloudForIoTs:^(NSError* error, NSNumber* isThereChanges){
+	      if (error) { return; }
+	      
+	      for (RelayrTransmitter* tran in user.transmitters)
+	      {
+	          NSLog(@"Transmitter's name: %@", tran.name);
+	      }
+	      
+	      for (RelayrDevice* dev in user.devices)
+	      {
+	          NSLog(@"Device's name: %@", dev.name);
+	      }
+	  }]
+  
 
-In this scenario the user object is fetched rather than being authenticated.
+### `RelayrTransmitter.h` 
 
-**Example**
+An instance representing a *Transmitter*. A transmitter is one of the basic relayr entities. 
+A transmitter, contrary to a device does not gather data but is only used to *relay* the data from the devices to the relayr cloud platform. The transmitter is also used to authenticate the different devices that transmit data via it.
+In the case of the relayr WunderBar, the transmitter is the Master Module in the Cloud Platform scenario (data being sent from the sensors by the Master Module to the relayr cloud over MQTT/SSL). In the future case of direct connection the an app running on your phone could serve as a transmitter.
 
-		self.RLA_user = [RLALocalUser user];
+### `RelayrDevice.h` 
 
-
-#### Class: RLARemoteUser
-
-In this scenario, authentication is required.
-The variables required for this method are the `appID`, `clientID`, `redirectURI` and `secret`. These are attributed to the application during its registration on the relayr platform.
-
-
-**Example**
-
-
-		  // Start relayr authentication
-			NSString *clientID = @"PNSNWcI41nePIXw0rNsqh.JoWW-rDgA2";
-			NSString *appID = @"1304b478-f438-4a0f-bd6a-1884355f7835";
-			NSString *secret = @"oJM0st_iJec66vAR2IvjxZxhC6Ds9uvr";
-			NSString *redirectURI = @"https://relayr.io";
-			__block typeof(self) weakSelf = self;
-			[RLARemoteUser
-			  authenticateUserWithClientID:clientID
-			  appID:appID
-			  appSecret:secret
-			  redirectURI:redirectURI
-			  presentingViewController:self
-			  completionHandler:^(RLARemoteUser *user, NSError *error) {
-			
-			  // User authenticated
-			  if (user) {
-			    typeof(weakSelf) strongSelf = weakSelf;
-			    [strongSelf RLA_presentMenuViewControllerWithUser:user];
-			  }
-			  
-			  // Authentication 
-			failed
-			  if (error) {
-			    
-			    // Present error
-			    NSString *message = [error localizedDescription];
-			    if (!message) message = @"Unknown error";
-			    [[[UIAlertView alloc] initWithTitle:@"Authentication error"
-			                                message:message
-			                                delegate:nil
-			                      cancelButtonTitle:@"OK"
-			                      otherButtonTitles:nil] show];
-			  }  }];
-   
-   
-
-
-
-## 2. Registered Devices
-
-Returns an array of the devices registered under a user. 
-
-
-**Example**
-
-		// Fetch devices
-	    [self.RLA_user devicesWithCompletionHandler:^(NSArray *devices, NSError *error) {
-	    
-	    	// Data Manipulation
-	    }];
-
-
-To retrieve only devices which meet a certain criteria you would need to use the following method:
-
-		 [self.RLA_user devicesWithSensorsAndOutputsOfClasses:@[[RLATemperatureSensor class]]
-		  completion:^(NSArray *foundDevices, NSError *error) {
-		
-		  }];
-
-The above call returns an array of devices of class **RLATemperatureSensor**
-
-#### Optional sensor classes: 
-
-- RLAColorSensor
-- RLAProximitySensor
-- RLAGyroscopeSensor
-- RLAAccelerometerSensor
-- RLATemperatureSensor
-- RLAHumiditySensor
-- RLANoiseSensor
-
-
-## 4. Device Readings
-
-Subscribes the app to a specific device (sensor) channel as to enable it to receive data from it. This endpoint should be preceded by two initial methods:
-
-1. Device Selection - Select device out of the registered devices.
-2. Sensor Selection - As a device may include multiple sensors, one should be selected for data collection.
-
-**Example**
-		
-		// Fetch devices
-	    [self.RLA_user devicesWithCompletionHandler:^(NSArray *devices, NSError *error) {
-	    
-	    	// Cancel on error
-	    	if (error) return;
-	    
-	    	// Devices found: Start data collection
-			RLADevice *device = [devices lastObject];
-		    [device connectWithSuccessHandler:^(NSError *error) {
-	
-				// Data Manipulation
-				// ....
-		    }];
-	    }];
-
-
-
-## 5. View Sensor Data
-
-Displays the readings sent by the device. This endpoint is preceded by the following methods:
-
-1. Device Selection - Select device out of the registered devices.
-2. Sensor Selection - As a device may include multiple sensors, one should be selected for data collection.
-3. Initiate Data Collection - Subscribing the app to the specific device (sensor) channel.
-
-
-**Example**
-	
-		// Fetch devices
-	    [self.RLA_user devicesWithCompletionHandler:^(NSArray *devices, NSError *error) {
-	    
-	    	// Cancel on error
-	    	if (error) return;
-	    
-	    	// Devices found: Start data collection
-			RLADevice *device = [devices lastObject];
-		    [device connectWithSuccessHandler:^(NSError *error) {
-				
-				// In this example a temperature sensor is assumed
-				// Get the temperature readings
-				NSArray *sensors = [device sensors];
-				RLATemperatureSensor *sensor = [sensors lastObject];
-				RLATemperatureSensorValue  *value = [sensor value];
-				NSNumber *temperature = [value temperature];
-		    }];
-	    }];
-
-
+An instance representing a *Device*. A device is another basic relayr entity. 
+A device is any external entity capable of producing measurements 
+and sending them to a transmitter to be further sent to the relayr platform, or one which is capable of receiving information from the relayr platform. 
+Since a single relayr device can produce more than one reading at the same time, you should always first query device capabilities.

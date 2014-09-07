@@ -109,7 +109,7 @@
         },
         {
             "directory": "iOS",
-            "title": "iOS",
+            "title": "Apple",
             "color": "yellow",
             "icon" : "",
             "submenus": [
@@ -119,7 +119,7 @@
                 },
                 {
                     "file": "Endpoints",
-                    "title": "Framework Endpoints"
+                    "title": "Basic Classes"
                 },
                 {
                     "file": "Sample Projects",
