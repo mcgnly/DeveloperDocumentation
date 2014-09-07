@@ -108,7 +108,7 @@
             ]
         },
         {
-            "directory": "iOS",
+            "directory": "Apple",
             "title": "Apple",
             "color": "yellow",
             "icon" : "",
@@ -118,7 +118,7 @@
                     "title": "Getting Started"
                 },
                 {
-                    "file": "Endpoints",
+                    "file": "Classes",
                     "title": "Basic Classes"
                 },
                 {

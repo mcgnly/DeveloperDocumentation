@@ -16,7 +16,7 @@ You can view and download the complete project from our <a href="https://github.
 There are currently two methods of including the `Relayr.framework` in your project:
 
 #### Method 1: 
-#####Getting the *.framework* file and dragging and dropping it into your project.
+#### Getting the *.framework* file and dragging and dropping it into your project.
 
   * Download or generate the `Relayr.framework` file:
      
@@ -27,7 +27,7 @@ There are currently two methods of including the `Relayr.framework` in your proj
      ![Second step of the build process](assets/BuildProcess02.gif)
 
 #### Method 2: 
-#####Integrating the *RelayrSDK* project as a subproject of your workspace and then dragging and dropping the `Relayr.framework` product into the *Embedded Binaries* tab:
+#### Integrating the *RelayrSDK* project as a subproject of your workspace and then dragging and dropping the `Relayr.framework` product into the *Embedded Binaries* tab:
 
   ![Method 2 of the build process](assets/BuildProcess03.gif)
 
