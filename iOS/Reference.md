@@ -1,9 +1,9 @@
-# Introduction
+Introduction
 ------------
 Welcome to the relayr Apple-SDK repository.
 This repository contains the code which allows you to build the relayr Framework for iOS and MAC OS X. The *RelayrSDK* project generates a product called `Relayr.framework`, which, depending on your use purpose, can be run on a mac or on an iOS device.
 
-Currently, the only dependecy of the project is the PUBNUB library. 
+Currently, the only dependency of the project is the PUBNUB library. 
 If you are interested in building the framework *for iOS devices*, you will require **Xcode 6 and iOS 8**, since embedded frameworks have only been introduced in iOS 8 enable devices. 
 For Mac applications, you can use Xcode 5.
 
@@ -30,19 +30,19 @@ There are currently two methods of including the `Relayr.framework` in your proj
 ## Usage
 
 The `Relayr.framework` includes a small subset of useful classes, which allow you to communicate with the relayr cloud, receive sensor data and manage users, devices transmitters and other entities. At the moment The BLE Direct Connection Classes are not fully implemented but they should be available in upcoming releases. The classes indicated below are all related to App > Cloud > Device communication.  
-All calls are asynchronous and the server response time is proportional to the quality of your connection and the size of the response requetsed.
+All calls are asynchronous and the server response time is proportional to the quality of your connection and the size of the response requested.
 
 #### `RelayrCloud.h`
 
 Used as a static class to receive several statuses on the relayr servers.
 
-  ```objective-c
-  [RelayrCloud isReachable:^(NSError* error, NSNumber* isReachable){
-      if (isReachable.boolValue) {
-          NSLog(@"The Relayr Cloud is reachable!")
-      }
-  }];
-  ```
+  
+	  [RelayrCloud isReachable:^(NSError* error, NSNumber* isReachable){
+	      if (isReachable.boolValue) {
+	          NSLog(@"The Relayr Cloud is reachable!")
+	      }
+	  }];
+ 
 
 ####`RelayrApp.h`
 
@@ -50,24 +50,24 @@ A representation of your iOS/OSX app on the Relayr Cloud.
 
 You create an object with the respective *appID*, *OAuthClientID*, *OAuthClientSecret*, and *redirectURI* generated when you first create your application on [the Developer Dashboard Apps section](https://developer.relayr.io/dashboard/apps/myApps).
 
-  ```objective-c
-  [RelayrApp appWithID:@"..." OAuthClientID:@"..." OAuthClientSecret:@"..." redirectURI:@"..." completion:^(NSError* error, RelayrApp* app){
-      if (app) {
-          NSLog(@"Application with name: %@ and description: %@" app.name, app.description);
-          self.app = app;
-      }
-  }];
-  ```
+  
+	  [RelayrApp appWithID:@"..." OAuthClientID:@"..." OAuthClientSecret:@"..." redirectURI:@"..." completion:^(NSError* error, RelayrApp* app){
+	      if (app) {
+	          NSLog(@"Application with name: %@ and description: %@" app.name, app.description);
+	          self.app = app;
+	      }
+	  }];
+  
   
   You can check your app's properties, query the server for information related to it, or sign users in and out of it.
   
-  ```objective-c
-  [self.app signInUser:^(NSError* error, RelayrUser* user){
-      if (user) {
-          [self.users addObject user];
-      }
-  }];
-  ```
+	  
+	  [self.app signInUser:^(NSError* error, RelayrUser* user){
+	      if (user) {
+	          [self.users addObject user];
+	      }
+	  }];
+	  
 
 #### `RelayrUser.h` 
 
@@ -75,25 +75,25 @@ Represents a logged-in user.
 Users can access device data. They can query transmitters/devices they own, bookmark favorite devices and become app publishers. 
 You can have as many logged in users as you want.
 
-  ```objective-c
-  RelayrUser* user = ...;
-  NSLog(@"User with name: %@ and email: %@", user.name, user.email);
   
-  // Lets ask the cloud for all the transmitters/devices own by this specific user.
-  [user queryCloudForIoTs:^(NSError* error, NSNumber* isThereChanges){
-      if (error) { return; }
-      
-      for (RelayrTransmitter* tran in user.transmitters)
-      {
-          NSLog(@"Transmitter's name: %@", tran.name);
-      }
-      
-      for (RelayrDevice* dev in user.devices)
-      {
-          NSLog(@"Device's name: %@", dev.name);
-      }
-  }]
-  ```
+	  RelayrUser* user = ...;
+	  NSLog(@"User with name: %@ and email: %@", user.name, user.email);
+	  
+	  // Lets ask the cloud for all the transmitters/devices own by this specific user.
+	  [user queryCloudForIoTs:^(NSError* error, NSNumber* isThereChanges){
+	      if (error) { return; }
+	      
+	      for (RelayrTransmitter* tran in user.transmitters)
+	      {
+	          NSLog(@"Transmitter's name: %@", tran.name);
+	      }
+	      
+	      for (RelayrDevice* dev in user.devices)
+	      {
+	          NSLog(@"Device's name: %@", dev.name);
+	      }
+	  }]
+  
 
 #### `RelayrTransmitter.h` 
 
