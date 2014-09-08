@@ -5,7 +5,7 @@ All calls are asynchronous and the server response time is proportional to the q
 
 ### `RelayrCloud.h`
 
-Used as a static class to receive several statuses on the relayr servers.
+Used as a static class to receive various statuses from the relayr servers.
 
   
 	  [RelayrCloud isReachable:^(NSError* error, NSNumber* isReachable){
@@ -70,11 +70,11 @@ You can have as many logged in users as you want.
 
 An instance representing a *Transmitter*. A transmitter is one of the basic relayr entities. 
 A transmitter, contrary to a device does not gather data but is only used to *relay* the data from the devices to the relayr cloud platform. The transmitter is also used to authenticate the different devices that transmit data via it.
-In the case of the relayr WunderBar, the transmitter is the Master Module in the Cloud Platform scenario (data being sent from the sensors by the Master Module to the relayr cloud over MQTT/SSL). In the future case of direct connection the an app running on your phone could serve as a transmitter.
+In the case of the relayr WunderBar, the transmitter is the Master Module in the Cloud Platform scenario (data being sent from the sensors by the Master Module to the relayr cloud over MQTT/SSL). In the future case of direct connection an app running on your phone could serve as a transmitter.
 
 ### `RelayrDevice.h` 
 
 An instance representing a *Device*. A device is another basic relayr entity. 
 A device is any external entity capable of producing measurements 
 and sending them to a transmitter to be further sent to the relayr platform, or one which is capable of receiving information from the relayr platform. 
-Since a single relayr device can produce more than one reading at the same time, you should always first query device capabilities.
+Since a single relayr device can produce more than one reading at the same time, you should always query device capabilities prior to executing any other commands.
