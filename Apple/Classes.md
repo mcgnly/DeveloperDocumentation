@@ -3,7 +3,7 @@
 The `Relayr.framework` includes a small subset of useful classes, which allow you to communicate with the relayr cloud, receive sensor data and manage users, devices transmitters and other entities. At the moment The BLE Direct Connection Classes are not fully implemented but they should be available in upcoming releases. The classes indicated below are all related to App > Cloud > Device communication.  
 All calls are asynchronous and the server response time is proportional to the quality of your connection and the size of the response requested.
 
-#### `RelayrCloud.h`
+### `RelayrCloud.h`
 
 Used as a static class to receive several statuses on the relayr servers.
 

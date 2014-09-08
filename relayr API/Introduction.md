@@ -1,7 +1,7 @@
 # The relayr API 
 
 The relayr API provides programmatic access to all entities on the relayr platform. These include users, devices, device models, publishers, transmitters and apps. 
-The relayr iOS Framework and Android SDK provide wrapped versions of the API calls, therefore, developers using the latter do not need to use the bare API endpoints. 
+The relayr Apple Framework and Android SDK provide wrapped versions of the API calls, therefore, developers using the latter do not need to use the bare API endpoints. 
 If you are planning on using other frameworks, we recommend that you start by getting to know the available API endpoints. 
 
 **Our API calls are currently available for download to your Postman console. Click [here](https://developer.relayr.io/documents/relayr%20API/ImportAPI) to learn more about this option.**

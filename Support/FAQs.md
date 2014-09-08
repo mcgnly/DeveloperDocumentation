@@ -7,7 +7,7 @@
 
 <p>We are happy to hear that you are ready to bring some things to life!
 
-What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/iOS/Reference">iOS SDK</a> instructions in order to build your first App!</p> 
+What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/Apple/Reference">Apple SDK</a> instructions in order to build your first App!</p> 
 
 <h3> Where can I get some information about the relayr architecture? </h3>
 
@@ -179,7 +179,7 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 
 <p>We've discovered that due to a bug in the firmware, the battery charger of the Master Module, which also serves as a voltage regulator, enters an erratic state every ~4 hours, when not connected to a power supply - which eventually results in it disconnecting the WunderBar and breaking off any data transmission. This is why we are currently shipping the Master Modules with a battery, which will prevent it from getting to this state.</p>
 
-<h3> Can I send audio to the relayr cloud, using the noise sensor?</h3>
+<h3> Can I send audio to the relayr cloud, using the noise-level sensor?</h3>
 
 <p>Our noise sensor is unable to send audio to the cloud as it is <em>not</em> a microphone. The output of this sensor is the relative level of noise at the location measured </p>
 
