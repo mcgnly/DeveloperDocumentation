@@ -50,4 +50,4 @@ To give you a small taste of the way the platform works, here's a high-level des
 1. The encrypted data is then delivered over WSS (Secure Web Sockets) to PubNub - an external service which serves as a distributor only. PubNub pushes the data received to the application subscribed to the specific device channel; 
 
 
-Now that we've raised your curiosity about the relayr platform, check out our [Android SDK](https://developer.relayr.io/documents/Android/Reference) and [Apple framework](https://developer.relayr.io/documents/Apple/Reference) to learn how to make it work for you! 
+Now that we've raised your curiosity about the relayr platform, check out our [Android SDK](https://developer.relayr.io/documents/Android/Reference) and [iOS&OSX SDK](https://developer.relayr.io/documents/Apple/Reference) to learn how to make it work for you! 

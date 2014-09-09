@@ -30,9 +30,9 @@ We've made it as easy as possible for you to start integrating your awesome apps
 <a href="https://developer.relayr.io/documents/Apple/Reference">
 <img src="assets/Apple_logo.png" alt="" title=""></a>
 <p>
-    If your passion is iOS - don't worry, we have not forgotten you. You are more than welcome to check out our <b>Apple Framework</b> for available Endpoints, code samples and all you need to integrate your iOS project with the relayr platform.
+    If your passion is iOS - don't worry, we have not forgotten you. You are more than welcome to check out our <b>iOS&OSX SDK</b> for available Endpoints, code samples and all you need to integrate your iOS project with the relayr platform.
   </p>
-	<a class="button" href="https://developer.relayr.io/documents/Apple/Reference">View Apple Framework</a>
+	<a class="button" href="https://developer.relayr.io/documents/Apple/Reference">View iOS&OSX SDK</a>
  </div>
 
 
