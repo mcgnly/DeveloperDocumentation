@@ -9,6 +9,11 @@
 
 What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/Apple/Reference">iOS&OSX SDK</a> instructions in order to build your first App!</p> 
 
+<h3> Where can I get my User Id? </h3>
+
+<p> To get your user Id simply log in to the dashboard, hover over your user name in the header menu > Select Account > Other. You will find your user ID there.</p>
+
+
 <h3> Where can I get some information about the relayr architecture? </h3>
 
 <p>We are so glad you asked! check out our <a href="https://developer.relayr.io/documents/Welcome/Platform" target="_blank"> Cloud Platform introduction </a> for an overview of our architecture.</p>
@@ -16,6 +21,9 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> What is OnBoarding? why do I need it?</h3>
 
 <p>OnBoarding is your way of introducing your WunderBar to the relayr platform. Click <a href="https://developer.relayr.io/documents/Welcome/OnBoarding" target="_blank">here</a> to read more about the process.</p>
+
+<h3> Where can I get my Device Id? </h3>
+<p>Once you've onboarded your WunderBar, to get your Device Ids, go to the Devices section and click on the small 'settings' icon of any of your sensors to get its Id</p>
 
 <h3> I am a Web developer. Can I still use the relayr platform?</h3>
 

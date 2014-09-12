@@ -23,10 +23,10 @@ Where `appId` and `deviceId` are the IDs of the application and the device to be
 	      "Authorization": 'Bearer '+ token 
 	    },
 	    dataType: 'application/json',
-	    success: function (credentials) {
+	    complete: function (credentials) {
       		var pubnub = PUBNUB.init({
         		ssl: true,
-        		subscribe_key : credentials.pubSub,
+        		subscribe_key : credentials.subscribeKey,
         		cipher_key: credentials.cipherKey,
         		auth_key: credentials.authKey
       		});
@@ -83,7 +83,7 @@ To register your App please visit the <a href="https://developer.relayr.io/dashb
 	 
       var pubnub = PUBNUB.init({
         ssl: true,
-        subscribe_key : credentials.pubSub,
+        subscribe_key : credentials.subscribeKey,
         cipher_key: credentials.cipherKey,
         auth_key: credentials.authKey
  
