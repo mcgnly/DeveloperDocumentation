@@ -1,6 +1,6 @@
-# OAuth Example
+# Getting your relayr OAuth Token via the Oauth Playground
 
-The example below provides a step by step interactive demonstration of the process which takes place when OAuth authorization tokens are issued on the relayr platform.
+The following steps will enable you to get an OAuth token for your relayr App. To read more about the relayr implementation of the OAuth protocol please visit our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth reference </a>. 
 
 ## The Access Code Scenario
 
