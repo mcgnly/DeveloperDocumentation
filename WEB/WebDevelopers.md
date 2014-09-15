@@ -44,6 +44,7 @@ The call results in the delivery of the channel and the specific PubNub credenti
 	    "channel": "v1:6854bb1c-64ed-4d46-99b4-6cf28b72ad1d:data"
 	}
 
+
 ## Example: Receiving Data from PubNub and Displaying it (JavaScript)
 
 The example below is a simple step by step walk through the process of subscription to a device channel, data retrieval and display. 
@@ -53,18 +54,30 @@ The example below is a simple step by step walk through the process of subscript
 To register your App please visit the <a href="https://developer.relayr.io/dashboard/apps/myApps" target="_blank"> Apps section on the Developer Dashboard </a>
 
 
-#### 1. Make sure to download the PubNub <a href="http://www.pubnub.com/docs/javascript/javascript-sdk.html" target="_blank"> SDK </a> and incorporate it in your project.
+#### 1. Make sure to download the PubNub <a href="http://www.pubnub.com/docs/javascript/javascript-sdk.html" target="_blank"> SDK/Library </a> and incorporate it in your project.
 
 ----------
 
 
-#### 2. The example assumes the following parameters are known:
+#### 2. You will need three variables in order to connect your app to your onboarded device:
 
-		var appId= "YOUR APP ID";
+		var appId= "YOUR APP ID"; 
 		var deviceId= "YOUR DEVICE ID";
 		var token ="YOUR TOKEN";
 
-**The above are credentials received during the app registration stage and the device OnBoarding process.**
+
+
+ 
+
+- To get your `appId` visit the <a href="https://developer.relayr.io/dashboard/apps/myApps" target="_blank">Apps section in the Developer Dashboard </a>
+
+ 
+
+- To get your `deviceId`, once you've onboarded your WunderBar,  go to the <a href="https://developer.relayr.io/dashboard/devices">Devices section on the Developer Dashboard </a> and click on the small 'settings' icon of any of your sensors to get its Id.
+
+ 
+
+- To get your `token` please follow the instructions on the <a href="https://developer.relayr.io/documents/WEB/OAuthToken">Getting your OAuth token page </a>
 
 ----------
 
@@ -104,7 +117,7 @@ To register your App please visit the <a href="https://developer.relayr.io/dashb
 	        }
 	      }); 
 	    }
-	});
+	
 
 
 ----------

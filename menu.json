@@ -128,7 +128,7 @@
             ]
         },
         {
-            "directory": "WEB",
+            "directory": "Web",
             "title": "Web Development",
             "color": "yellow",
             "icon" : "fa-apple",
@@ -140,6 +140,10 @@
                 {
                     "file": "WebDevelopers",
                     "title": "relayr for Web Developers"
+                },
+                {
+                    "file": "OAuthToken",
+                    "title": "Getting your OAuth App Token"
                 },
                 {
                     "file": "Sample Project",

@@ -7,7 +7,15 @@
 
 <p>We are happy to hear that you are ready to bring some things to life!
 
-What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/Apple/Reference">iOS&OSX SDK</a> instructions in order to build your first App!</p> 
+What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/Apple/Reference">iOS&OSX SDK</a> instructions in order to build your first App!</p>
+
+<h3> Where can I get my App Id? </h3> 
+
+<p>Once you've created an app on the <a href="https://developer.relayr.io/dashboard/apps/myApps">Apps section</a>, you can always return to the Apps section and see the credentials of your app.</p>
+
+<h3> How do I generate an OAuth token for my App? </h3>
+
+<p>To generate a token for your app you can simply follow the instructions in our <a href="https://developer.relayr.io/documents/Authorization/Example">OAuth Example </a></p>
 
 <h3> Where can I get my User Id? </h3>
 
@@ -23,7 +31,7 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <p>OnBoarding is your way of introducing your WunderBar to the relayr platform. Click <a href="https://developer.relayr.io/documents/Welcome/OnBoarding" target="_blank">here</a> to read more about the process.</p>
 
 <h3> Where can I get my Device Id? </h3>
-<p>Once you've onboarded your WunderBar, to get your Device Ids, go to the Devices section and click on the small 'settings' icon of any of your sensors to get its Id</p>
+<p>Once you've onboarded your WunderBar, to get your Devices Ids, go to the Devices section and click on the small 'settings' icon of any of your sensors to get its Id</p>
 
 <h3> I am a Web developer. Can I still use the relayr platform?</h3>
 
@@ -129,6 +137,7 @@ You may have a specific setting on - which interferes with Onboarding. Click <a 
 
 <h2 class="collapseHeader"> Sensor Data </h2>
 <div class="collapse">
+
 <h3> In which units is Noise Level measured? </h3>
 <p>
 Our sensor essentially provides a reading representing the change in noise level over a period of time. The number is a representation of a level rather than a measurement of noise. The output number will increase as the noise level increases and vice versa. In order to provide a reading of the level of noise in decibels a much more elaborate set of tools is required.    
