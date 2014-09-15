@@ -45,13 +45,10 @@
                     "title": "Introduction"
                 },
                 {
-                    "file": "OAuthAndRelayr",
-                    "title": "OAuth on the relayr Platform"
-                },
-                {
-                    "file": "Example",
-                    "title": "Example"
+                    "file": "OAuthToken",
+                    "title": "Getting your OAuth Token"
                 }
+                
             ]
         },
         {
@@ -132,7 +129,7 @@
             ]
         },
         {
-            "directory": "Web",
+            "directory": "WebDev",
             "title": "Web Development",
             "color": "yellow",
             "icon" : "fa-apple",

@@ -11,28 +11,38 @@ The following steps will enable you to get an OAuth token for your relayr App. T
 
 <img src="assets/step1.jpg" class="center" width=800px>
 
-#### 3. Click the settings menu on the top right corner.
+#### 3. Click the settings menu on the top right corner. Leave the first three fields as indicated:
 
-<img src="assets/step2.jpg" class="center" width=800px>
+<img src="assets/step2_1.jpg" class="center" width=800px>
 
-#### 4. Click 'Authorize APIs'.
+#### 4. For the two settings at the bottom, copy your App Id and OAuth Client Secret from the [App section in the Developer Dashboard](https://developer.relayr.io/dashboard/apps/myApps): 
+
+<img src="assets/step2_2.jpg" class="center" width=800px>
+
+<img src="assets/step2_4.jpg" class="center" width=300px>
+
+#### Make sure to set the redirect URI in the app settings to https://developers.google.com/oauthplayground
+
+<img src="assets/step2_3.jpg" class="center" width=300px>
+
+#### 5. Click 'Authorize APIs'.
 
 <img src="assets/step3.jpg" class="center" width=800px>
 
-#### 5. You will be prompted to enter your relayr User credentials.
+#### 6. You will be prompted to enter your relayr User credentials.
 
 <img src="assets/step4.jpg" class="center" width=800px> 
 
-#### 6. Enter your credentials and click to sign in.
+#### 7. Enter your credentials and click to sign in.
 
 <img src="assets/step5.jpg" class="center" width=800px>
 
-#### 7. Click Exchange Authorization code for tokens.
+#### 8. Click Exchange Authorization code for tokens.
 
 
 <img src="assets/step6.jpg" class="center" width=800px>
 
-#### 8. The token is received as a JSON snippet in the response.
+#### 9. The token is received as a JSON snippet in the response.
 
 
 <img src="assets/step7.jpg" class="center" width=800px>
