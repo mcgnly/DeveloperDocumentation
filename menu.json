@@ -26,6 +26,10 @@
                     "title": "Mastering the Master (Module)"
                 },
                 {
+                    "file": "OAuthReference",
+                    "title": "OAuth Reference"
+                },
+                {
                     "file": "Roadmap",
                     "title": "What's ahead? - Roadmap"
                 }
