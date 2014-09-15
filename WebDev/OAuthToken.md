@@ -19,8 +19,6 @@ The following steps will enable you to get an OAuth token for your relayr App. T
 
 <img src="assets/step2_2.jpg" class="center" width=800px>
 
-<img src="assets/step2_4.jpg" class="center" width=300px>
-
 #### Make sure to set the redirect URI in the app settings to https://developers.google.com/oauthplayground
 
 <img src="assets/step2_3.jpg" class="center" width=300px>
@@ -29,11 +27,7 @@ The following steps will enable you to get an OAuth token for your relayr App. T
 
 <img src="assets/step3.jpg" class="center" width=800px>
 
-#### 6. You will be prompted to enter your relayr User credentials.
-
-<img src="assets/step4.jpg" class="center" width=800px> 
-
-#### 7. Enter your credentials and click to sign in.
+#### 6. You will be prompted to enter your relayr User credentials. Enter your credentials and click to sign in.
 
 <img src="assets/step5.jpg" class="center" width=800px>
 
@@ -52,28 +46,22 @@ The following steps will enable you to get an OAuth token for your relayr App. T
 #### 1. Access the <a href="http://goo.gl/FW1zFb" target="_blank"> OAuthPlayGround URL </a> 
 
 
-#### 2. The context of the action is predefined:
-
-<img src="assets/step1.jpg" class="center" width=800px>
-
 #### 3. Click the settings menu on the top right corner. Select the Client Side scenario from the drop down 
 
 <img src="assets/client1.jpg" class="center" width=800px>
 
 
-#### 4. Click 'Authorize APIs'.
+#### 4.  Enter the OAuth Client ID as it appears in the App Section of the Developer dashboard and Click 'Authorize APIs':
+
+<img src="assets/client3.jpg" class="center" width=800px>
 
 <img src="assets/step3.jpg" class="center" width=800px>
 
-#### 5. You will be prompted to enter your relayr User credentials.
-
-<img src="assets/step4.jpg" class="center" width=800px> 
-
-#### 6. Enter your credentials and click to sign in. 
+#### 5. You will be prompted to enter your relayr User credentials. Enter your credentials and click to sign in. 
 
 <img src="assets/step5.jpg" class="center" width=800px>
 
 
-#### 7. The token is received as part of the URL and on the left hand side
+#### 6. The token is received as part of the URL and on the left hand side
 
 <img src="assets/client2.jpg" class="center" width=800px>
