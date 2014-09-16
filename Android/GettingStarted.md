@@ -89,7 +89,12 @@ And add Internet permissions as shown below:
 ###  Create a Login Sequence
 
 In order for your app to allow users to see their devices, you would need to add a login sequence. Click [here](https://developer.relayr.io/documents/Android/LoginSequence) to learn more about how to create a *Login* sequence.   
-  
+
+    
 ----------
 
-You are all set now to start building your relayr Android app! Have a look at our <a href= "https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank">SDK reference</a> to learn more about our SDK	
+You are all set now to start building your relayr Android app! Have a look at our <a href= "https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank">SDK reference</a> to learn more about our SDK.
+
+If you would like to learn more about what the Android SDK is capable of, have a look at our <strong><a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer" target="_blank">Thermometer Sample Project </a></strong>
+As well as our <strong><a href="https://developer.relayr.io/documents/Android/DeviceChannel">Subscribing to a Device Channel Example</a></strong>	
+
