@@ -87,30 +87,30 @@
                     "title": "Getting Started"
                 },
                 {
-                    "file": "AndroidEnvironment",
-                    "title": "Setting up your Environment"
-                },
-                {
                     "file": "LoginSequence",
                     "title": "Creating a Login Sequence"
                 },
                 {
-                    "file": "SDK Documentation",
-                    "title": "SDK Reference",
-                    "external": "/rendered-doc/javadoc/index.html",
-                    "newTab": true
+                    "file": "DeviceChannel",
+                    "title": "Subscribing to a Device Channel"
                 },
                 {
                     "file": "Sample Project",
                     "title": "Sample Project - Thermometer",
                     "external": "https://github.com/relayr/android-demo-apps/tree/master/thermometer",
                     "newTab": true
+                },
+                {
+                    "file": "SDK Documentation",
+                    "title": "SDK Reference",
+                    "external": "/rendered-doc/javadoc/index.html",
+                    "newTab": true
                 }
             ]
         },
         {
             "directory": "Apple",
-            "title": "Apple",
+            "title": "iOS/OSX",
             "color": "yellow",
             "icon" : "",
             "submenus": [
