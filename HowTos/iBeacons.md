@@ -68,4 +68,4 @@ Below is a step by step tutorial of the way the modules could be turned into iBe
 8. Click "Select Device" - the module should appear in the list of available BLE devices.
 9. Select "Upload" to upload the firmware onto the sensor module
 
-<img src="assets/fifth.png" class="center" width=300px>
+<img src="assets/fifth.PNG" class="center" width=300px>
