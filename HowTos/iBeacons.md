@@ -27,45 +27,15 @@ Is a calibrated value that indicates how strong the received signal (RSSI) is at
 
 **Note**: The accuracy of the distance estimation might be different for different devices, the signal received on an iPhone 5S could be from the one received on a Samsung Galaxy tablet for example. The approximation will be mostly affected by objects between the beacon and the scanning device such as walls, furniture, and by the presence of human beings.
 
-## Setting up the Sensor Modules as iBeacons
+## Setting up Sensor Modules as iBeacons
 
-Below is a step by step tutorial of the way the modules could be turned into iBeacons. The applications which are used by Android and iOS are different, however, the overall process is identical. 
-
-### For Android Users
+Below are instructions for turning the sensor modules into iBeacons. 
 
 1. Download the relayr iBeacon Firmware from <a href="">this link</a>
 2. In case you have not downloaded the firmware to your phone, copy it to your phone.
-3. Install the Nordic DFU (Device Firmware Update) application. The application compatible with Android is the **nRF Master Control Panel (BLE)**, which can be downloaded from the <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp">Play Store</a>
-4. Put the Sensor Module which you would like to use as an iBeacon in *DFU Mode*. You can do this by pressing the button on the module and holding for 3 seconds. The LED will be constantly on when the DFU mode is activated.
-5. Connect to the Module and open the DFU pane.
-6. Press to scan. The module should then appear in the list of available BLE devices. The Device Name is "*Dfu{module_name}*". For example: DfuMIC for the Noise Level Sensor:
+3. Follow our step by step tutorial for flashing a sensor module and replacing its firmware. The applications which are used by Android and iOS are different, however, the overall process is identical. 
 
-<img src="assets/first.jpg" class="center" width=300px>
-
-7. The app will detect the DFU service and the DFU button will appear. 
-
-<img src="assets/second.jpg" class="center" width=300px>
-
-8. Press the button and select the Application option. Then select the firmware file downloaded in step 2 (relayrBeacon.bin). 
-
-<img src="assets/third.jpg" class="center" width=300px>
+4. The module will now be broadcasting the Beacon packet. You can verify this using any iBeacon compatible application.
 
 
-9. The module will now be broadcasting the Beacon packet. You can verify this using any iBeacon compatible application.
-
-### For iOS Users 
-
-1. Download the relayr iBeacon Firmware from <a href="">this link</a>
-2. In case you have not downloaded the firmware to your phone, copy it to your phone.
-3. Install the Nordic DFU (Device Firmware Update) application. The application compatible with Android is the **nRF Toolbox**, which can be downloaded from the <a href="https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8">Apple Store</a>
-4. Put the Sensor Module which you would like to use as an iBeacon in *DFU Mode*. You can do this by pressing the button on the module and holding for 3 seconds. The LED will be constantly on when the DFU mode is activated.
-5. Connect to the Module and open the DFU pane.
-6. In the nRF Toolbox, open the DFU Utility. 
-
-<img src="assets/fourth.png" class="center" width=300px>
-
-7. Select "Application" in the Select File Type setting.
-8. Click "Select Device" - the module should appear in the list of available BLE devices.
-9. Select "Upload" to upload the firmware onto the sensor module
-
-<img src="assets/fifth.PNG" class="center" width=300px>
+That is it! You are good to go. Start using our modules as iBeacons and don't forget, if you change your mind and decide that you would like to revert to the original sensor functionality- you could do so by flashing the modules and reinstalling the original sensor firmware.
