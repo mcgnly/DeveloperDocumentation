@@ -12,7 +12,8 @@ Here's a quick way to add the relayr API calls to your Postman collections
 <img src="assets/postman2.png" class="center" width=700px>
 
 #### You will be prompted with the import screen. 
-#### Add the following URL to the Import section: https://www.getpostman.com/collections/65008c7fc1137e6664b5 and click "Import".
+#### Add the following URL to the Import section: *https://www.getpostman.com/collections/95067b603e5e9e7f76cc* "Import".
+
 
 <img src="assets/postman3.png" class="center" width=700px>
 
@@ -28,4 +29,4 @@ Here's a quick way to add the relayr API calls to your Postman collections
 #### See Example:
 <img src="assets/PostmanEnvironment.png" class="center" width=700px>
 
-You will find the tokens required for the application related calls in your [Apps Page](https://developer.relayr.io/dashboard/apps/myApps) 
+You will find the information required  in your [Apps Page](https://developer.relayr.io/dashboard/apps/myApps), and your [Devices Page](https://developer.relayr.io/dashboard/devices). To Generate your OAuth token, please see instructions [here](https://developer.relayr.io/documents/WebDev/OAuthToken) 

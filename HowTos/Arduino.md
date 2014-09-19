@@ -13,7 +13,7 @@ There are two methods of installing the library:
 
 #### Method 1: Importing the *zip* file
 
-* Download the repository as a **.zip** file from [here](https://github.com/relayr/Arduino-Bridge-Library/archive/master.zip)
+* Download the repository as a **.zip** file from [here](https://github.com/relayr/Arduino-Bridge-Library/archive/master.zip) and unzip it.
 * In the *[Arduino IDE software](http://arduino.cc/en/main/software)*, navigate to *"Sketch > Import Library"*. At the top of the drop down list, select the option to *"Add Library''*.
 * You will be prompted to select the library you would like to add. Navigate to the *.zip* file's location and open it.
 * Restart the *Arduino IDE* and go to the *"Sketch > Import Library"* menu. You should now see the library at the bottom of the drop-down menu. It is ready to be used in your sketch. The *Wunderbar Bridge* example should also be available in the list.
