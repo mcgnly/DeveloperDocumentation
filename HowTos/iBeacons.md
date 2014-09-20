@@ -31,11 +31,11 @@ Is a calibrated value that indicates how strong the received signal (RSSI) is at
 
 Below are instructions for turning the sensor modules into iBeacons. 
 
-1. Download the relayr iBeacon Firmware from <a href="">this link</a>
+1. Download the relayr iBeacon Firmware from <a href="https://s3-eu-west-1.amazonaws.com/relayr-firmware/BLEModulesFirmware-20140910.zip">this link</a>. The relevant file is the **iBeaconRelayr600ms.hex** file, located under *\BLEModulesFirmware-20140910/BLEModulesFirmware*
 2. In case you have not downloaded the firmware to your phone, copy it to your phone.
 3. Follow our step by step tutorial for [flashing a sensor module and replacing its firmware](https://developer.relayr.io/documents/HowTos/Flashing). The applications which are used by Android and iOS are different, however, the overall process is identical. 
 
 4. The module will now be broadcasting the Beacon packet. You can verify this using any iBeacon compatible application.
 
 
-That is it! You are good to go. Start using our modules as iBeacons and don't forget, if you change your mind and decide that you would like to revert to the original sensor functionality- you could do so by flashing the modules and reinstalling the original sensor firmware.
+That is it! You are good to go. Start using our modules as iBeacons and don't forget, if you change your mind and decide that you would like to revert to the original sensor functionality- you could do so by flashing the modules and re-installing the original sensor firmware. The original firmware for each of the sensor modules is a part of the zip file downloaded in the above section. 

@@ -37,3 +37,4 @@ Since some of our extra Sensor Module functionalities require that the current f
 9. Select "Upload" to upload the new firmware onto the sensor module
 
 
+Remember, you can always revert to the original sensor functionality by flashing the modules and re-installing the original sensor firmware. The original firmware for each of the sensor modules can be downloaded from <a href="https://s3-eu-west-1.amazonaws.com/relayr-firmware/BLEModulesFirmware-20140910.zip"> this link </a>. 

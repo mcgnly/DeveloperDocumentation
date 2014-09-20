@@ -151,13 +151,21 @@
             ]
         },
         {
-            "directory": "PubNub",
-            "title": "Why do we use PubNub?",
+            "directory": "HowTos",
+            "title": "How To's",
             "color": "purple",
             "submenus": [
                 {
-                    "file": "Reference",
-                    "title": "Overview"
+                    "file": "Flashing",
+                    "title": "Replacing the Firmware on a Sensor Module"
+                },
+                {
+                    "file": "iBeacons",
+                    "title": "Using Sensor Modules and iBeacons"
+                },
+                {
+                    "file": "Arduino",
+                    "title": "Connecing the relayr Bridge to Arduino"
                 }
             ]
         }
