@@ -156,6 +156,10 @@
             "color": "purple",
             "submenus": [
                 {
+                    "file": "Introduction",
+                    "title": "Introduction"
+                },
+                {
                     "file": "Flashing",
                     "title": "Replacing the Firmware on a Sensor Module"
                 },
