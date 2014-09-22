@@ -12,7 +12,7 @@ Here's a quick way to add the relayr API calls to your Postman collections
 <img src="assets/postman2.png" class="center" width=700px>
 
 #### You will be prompted with the import screen. 
-#### Add the following URL to the Import section: *https://www.getpostman.com/collections/90fa388f68ac0eccd356* "Import".
+#### Add the following URL to the Import section: *https://www.getpostman.com/collections/90fa388f68ac0eccd356* and click "Import".
 
 
 <img src="assets/postman3.png" class="center" width=700px>
