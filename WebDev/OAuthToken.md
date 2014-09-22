@@ -1,4 +1,14 @@
-# Getting your relayr OAuth Token via the Oauth Playground
+# Getting your relayr OAuth Token via the relayr API 
+
+It is possible to issue your OAuth Application Token by issuing the following API call: 
+
+	https://api.relayr.io/oauth2/appdev-token/{appId}
+
+Where `appId` is the ID of your application. It may be obtained from the [Apps section](https://developer.relayr.io/dashboard/apps/myApps) in the Developer Dashboard.
+
+Please note that this call is included in the API calls which may be imported into your [Postman collections](https://developer.relayr.io/documents/relayr%20API/ImportAPI)
+
+# Legacy - Getting your relayr OAuth Token via the Oauth Playground 
 
 The following steps will enable you to get an OAuth token for your relayr App. To read more about the relayr implementation of the OAuth protocol please visit our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth reference </a>. 
 
