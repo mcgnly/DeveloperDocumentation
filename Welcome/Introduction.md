@@ -1,15 +1,22 @@
 # Welcome to the relayr Documentation Center 
 
-<p class="large"> relayr is all about bringing things to life, it's about allowing app developers access to the physical world around them. 
+<p> relayr is all about bringing things to life, it's about allowing app developers access to the physical world around them. 
 
 <br />
 We've made it as easy as possible for you to start integrating your awesome apps with the relayr platform and we hope that you'd start moving those programming fingers in no time! <br/></p>
+
+----------
+
 
 ## Getting Started
 
 <p>Before you start we'd like to recommend that you go over some of our high level documentation. <br/>
 Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a>, become an expert on our <a href="https://developer.relayr.io/documents/Welcome/Sensors">WunderBar Sensors</a> and master our <a href="https://developer.relayr.io/documents/Welcome/MM">Master Module</a>. <br/><br/>
 Your first step is Onboarding so be sure to have a look at our <a href="https://developer.relayr.io/documents/Welcome/OnBoarding">Onboarding introduction</a> and don't forget to have a peek at our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth implementation reference</a>, just to make sure you have all you need to get started.  </p>
+
+
+----------
+
 
 ## Development Tools
 
@@ -52,6 +59,9 @@ Your first step is Onboarding so be sure to have a look at our <a href="https://
   </p>
 	<a class="button" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Development SDK</a>
  </div>
+
+
+----------
 
 
 ## Extra Features
