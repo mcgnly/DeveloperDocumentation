@@ -149,6 +149,12 @@
                     "title": "The JavaScript SDK",
                     "external": "https://github.com/relayr/browser-sdk",
                     "newTab": true
+                },
+                {
+                    "file": "Sample Project",
+                    "title": "Sample Project - CantTouchThis",
+                    "external": "https://github.com/relayr/cantTouchThis",
+                    "newTab": true
                 }
             ]
         },
