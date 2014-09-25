@@ -1,7 +1,8 @@
-#  relayr for Web Developers - Introduction
+#  relayr for Web Developers
 
 We don't want to teach you how to create a web app. We are quite positive that you know your way around web development tools. We've created an easy to use **JavaScript SDK** with the basic relayr related functionalities to get you started with your very first relayr Web Application.
 
+Please note that this SDK is meant for web browser applications only. 
 
 ## Implementing the relayr JavaScript SDK
 
@@ -10,6 +11,10 @@ In order to start using the SDK all you would need to do is to include the `rela
 	<script src="/assets/scripts/relayr.js"></script>
 
 **Download the `relayr.js` file from our [JavaScript SDK repository](https://github.com/relayr/browser-sdk)**
+
+You could follow the guidelines for using the SDK on the repository's [README](https://github.com/relayr/browser-sdk/blob/master/README.md) or simply continue reading below.
+
+----------
 
 ## Using the SDK
 
