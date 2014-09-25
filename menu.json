@@ -141,14 +141,14 @@
                     "title": "Web Browser Development"
                 },
                 {
-                    "file": "OAuthToken",
-                    "title": "Getting your OAuth App Token"
-                },
-                {
                     "file": "The JavaScript SDK",
                     "title": "The JavaScript SDK",
                     "external": "https://github.com/relayr/browser-sdk",
                     "newTab": true
+                },
+                {
+                    "file": "OAuthToken",
+                    "title": "Getting your OAuth App Token"
                 },
                 {
                     "file": "Sample Project",
