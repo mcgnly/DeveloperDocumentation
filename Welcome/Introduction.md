@@ -53,7 +53,7 @@ Your first step is Onboarding so be sure to have a look at our <a href="https://
 
 <div class="category"> 
 <a href="https://developer.relayr.io/documents/WebDev/Introduction">
-<img src="assets/Registration_icon.png" alt="" title=""></a>
+<img src="assets/Web.png" alt="" title=""></a>
 <p>
     Yes, we know not everyone is a mobile developer. This is why we offer our <b>Web Development Documentation</b> for those of you whose passion is Web Development. 
   </p>
