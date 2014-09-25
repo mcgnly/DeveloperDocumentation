@@ -120,7 +120,9 @@
                 },
                 {
                     "file": "Sample Projects",
-                    "title": "Sample Projects"
+                    "title": "Sample Projects",
+                    "external": "https://github.com/relayr/apple-sample-apps",
+                    "newTab": true
                 }
             ]
         },
@@ -136,16 +138,16 @@
                 },
                 {
                     "file": "WebDevelopers",
-                    "title": "relayr for Web Developers"
+                    "title": "Web Browser Development"
                 },
                 {
                     "file": "OAuthToken",
                     "title": "Getting your OAuth App Token"
                 },
                 {
-                    "file": "Sample Project",
-                    "title": "Sample Project - cantTouchThis",
-                    "external": "https://github.com/relayr/cantTouchThis",
+                    "file": "The JavaScript SDK",
+                    "title": "The JavaScript SDK",
+                    "external": "https://github.com/relayr/browser-sdk",
                     "newTab": true
                 }
             ]
