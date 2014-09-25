@@ -59,7 +59,7 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 <li>Optimal conditions for onboarding are a <em><strong>stable WiFi network and one which is not utilized by a large number of users</strong></em> - Trying to onboard in a lecture room with 100 people all using the .WiFi network is probably not your best choice for securing a successful onboarding process.</li>
 <li>The second factor critical for a successful onboarding is <em><strong>maintaining the the board unbroken</strong></em>. We recommend not to break any of the sensors off the board prior to successfully onboarding it. </li>
-<li>Another aspect which should be examined prior to onboarding is the WiFi password of the Network used during the Onboarding process. The password should not exceed 18 characters and all characters should be <a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a> characters.</li>
+<li>Another aspect which should be examined prior to onboarding is the <em><strong>WiFi password</strong></em> of the Network used during the Onboarding process. The password should not exceed 18 characters and all characters should be <a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a> characters.</li>
 <li>When the above conditions are met the things that you should make sure is that the <em><strong>Master Module and all other sensors are in OnBoarding mode</strong></em> and that the Master Module is connected to the WiFi network. Please note that in case it is not connected, the WiFi LED (Located at the edge of the board, between the USB connector and the Inductor marked with a K) will be on.</li>
 
 </ul>    
