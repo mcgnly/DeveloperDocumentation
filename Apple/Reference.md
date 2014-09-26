@@ -1,34 +1,38 @@
-Introduction
-------------
-Welcome to the relayr Apple SDK.
-The code introduced here, allows you to build the relayr Framework for iOS and MAC OS X. 
+# Introduction
 
-The *RelayrSDK* project generates a product called `Relayr.framework`, which, depending on your use purpose, can be run on a mac or on an iOS device.
+Welcome to the relayr iOS&OSX SDK (*Beta*).
 
-Currently, the only dependency of the project is the PUBNUB library. 
-If you are interested in building the framework *for iOS devices*, you will require **Xcode 6 and iOS 8**, since embedded frameworks have only been introduced in iOS 8 enable devices. 
-For Mac applications, you can use Xcode 5.
+This repository contains the code which allows you to build the Relayr Framework for iOS and Mac OS X. The *RelayrSDK* project generates a product called `Relayr.framework` which, depending on your use purpose, can be run on a mac or on an iOS device.
 
-You can view and download the complete project from our <a href="https://github.com/relayr/apple-sdk">apple-sdk repository on GitHub</a>.
+The Relayr SDK requires:
 
-## Getting Started - The Build process
+* For iOS applications: Xcode 6+ and iOS 8+ (since the framework is released in the *Cocoa Touch Framework* form).
+* For OSX applications: Xcode 5+ and OSX 10.9+.
 
-There are currently two methods of including the `Relayr.framework` in your project:
+Getting Started
+---------------
 
-#### Method 1: 
-#### Getting the *.framework* file and dragging and dropping it into your project.
+### Obtaining the Framework
 
-  * Download or generate the `Relayr.framework` file:
-     
-     ![First step of the build process](assets/BuildProcess01.gif)
-  
-  * Drag and drop the file into your project and make sure that the framework appears both in *Embedded Binaries* and in *Linked Frameworks and Libraries*:
-     
-     ![Second step of the build process](assets/BuildProcess02.gif)
+The framework can be obtained in the following manner:
+Generate the binary `.framework` file from this Xcode project. Just select the platform you want from the project's targets and click *build* (⌘+B).
 
-#### Method 2: 
-#### Integrating the *RelayrSDK* project as a subproject of your workspace and then dragging and dropping the `Relayr.framework` product into the *Embedded Binaries* tab:
+  ![Generating the framework file](./assets/BuildProcess01.gif)
 
-  ![Method 2 of the build process](assets/BuildProcess03.gif)
+### Using the Framework
+
+The framework can be used in two different manners:
+
+#### 1. Dragging and Dropping the Framework
+
+Drag & Drop the `.framework` file onto your project and make sure that the framework appears both in *Embedded Binaries* and in *Linked Frameworks and Libraries*; 
+
+  ![Drag & Drop the framework](./assets/BuildProcess02.gif)
+
+#### 2. Using the Framework as a Sub-Project:
+
+* Drag & Drop the `Relayr.xcodeproj` onto your project and add the *Relayr* project product as *Embedded Binaries* (and therefore also *Linked Frameworks and Libraries*).
+
+  ![Use as subproject](./assets/BuildProcess03.gif)
 
 
