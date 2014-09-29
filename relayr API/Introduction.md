@@ -59,3 +59,22 @@ Transmitters are the fifth basic entity on the relayr platform. A transmitter co
 to a device does not gather data but is only used to relay the data from the devices
 to the relayr platform. The transmitter is also used to authenticate the different
 devices that transmit data via it.
+
+## HTTP Status Codes
+
+For each request made to the relayr API an HTTP response code with either a JSON Body or without one is returned.
+We use standard HTTP response codes which include the following:
+
+- ***200 OK*** - Indicates a successful operation or transaction. Is returned with a message body. For example as a response for a successful "GET" requests. 
+ 
+- ***201 Created***  Denotes a successful creation of an object or entity. Is returned with a JSON representation of the object created.
+
+- ***204 No Content*** Indicates a successful operation without content. Is returned when an object or an entity is deleted off the relayr platform.
+
+- ***401 Unauthorized*** Returned when a user doesn't have the required permission to view specific data. This response is returned for example, when a request lacks the required OAuth token.
+
+- ***403 Forbidden*** - Returned when the information requested should not be accessed by the user.
+
+- ***400 Bad Request*** - Returned when a misformatted request is sent to the server. Is usually returned with a message body indicating the problematic formatting.
+
+- ***500 Internal Server Error*** - Returned when an issue is detected on the server. 
