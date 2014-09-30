@@ -5,7 +5,7 @@
 
 ----------
 
-<h1>Dos</h1>
+<h1>DO's</h1>
 
 <div class="floatBox">
 <h3>1. Make sure the Master Module is connected to a power supply via the USB cable <em>and</em> that it is also connected to the battery.
@@ -37,10 +37,11 @@
 
 ----------
 
-<h1>Don'ts</h1>
+<h1>DONT's</h1>
 
 <div class="floatBox">
-<h3>1. Don’t onboard in an extremely crowded place with a WiFi network used by a large number of people. This could cause the process to fail</h3>
+<h2>1.</h2>
+<h3>Don’t onboard in an extremely crowded place with a WiFi network used by a large number of people. This could cause the process to fail</h3>
 <img src="assets/DON'T-1.png">
 </div>
 
