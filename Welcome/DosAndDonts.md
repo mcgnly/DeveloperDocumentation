@@ -5,7 +5,7 @@
 
 ----------
 
-<h1>DO's</h1>
+<h1 style="color:green">DO's</h1>
 
 <div class="floatBox">
 <h2>1.</h2>
@@ -40,7 +40,7 @@
 
 ----------
 
-<h1>DONT's</h1>
+<h1 style="color:red">DONT's</h1>
 
 <div class="floatBox">
 <h2>1.</h2>

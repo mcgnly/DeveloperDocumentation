@@ -53,13 +53,16 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> I'm trying to onboard my WunderBar and I experience difficulties - what should I check?</h3>
 
 <p>
-<strong>Before initiating the OnBoarding process make sure the board is plugged to a power supply <em>and</em> that the external battery is connected </strong>.<br/>
+Before initiating the OnBoarding process please see our <a href="https://developer.relayr.io/documents/Welcome/DosAndDonts"><strong>OnBoarding Do's and Dont's </strong></a> page for valuable information which could save you a lot of frustration and ensure that your onboarding is successful .
+
+<br/>
 OnBoarding could be severely impacted by the environment in which you choose to onboard, more precisely by the state of the WiFi network you choose to use when onboarding.<br/>
 <ul>
 
-<li>Optimal conditions for onboarding are a <em><strong>stable WiFi network and one which is not utilized by a large number of users</strong></em> - Trying to onboard in a lecture room with 100 people all using the .WiFi network is probably not your best choice for securing a successful onboarding process.</li>
+<li>Optimal conditions for onboarding are a <em><strong>stable WiFi network and one which is not utilized by a large number of users</strong></em> - Trying to onboard in a lecture room with 100 people all using the WiFi network is probably not your best choice for securing a successful onboarding process.</li>
 <li>The second factor critical for a successful onboarding is <em><strong>maintaining the the board unbroken</strong></em>. We recommend not to break any of the sensors off the board prior to successfully onboarding it. </li>
-<li>Another aspect which should be examined prior to onboarding is the <em><strong>WiFi password</strong></em> of the Network used during the Onboarding process. The password should not exceed 18 characters and all characters should be <a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a> characters.</li>
+<li>A Third aspect which should be examined prior to onboarding is the <em><strong>WiFi password</strong></em> of the Network used during the Onboarding process. The password should not exceed 18 characters and all characters should be <a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a> characters.</li>
+<li>Another WiFi related issue which should be verified is that <strong><em>the WiFi network used is a 2.4 GHz one</em></strong>.</li>
 <li>When the above conditions are met the things that you should make sure is that the <em><strong>Master Module and all other sensors are in OnBoarding mode</strong></em> and that the Master Module is connected to the WiFi network. Please note that in case it is not connected, the WiFi LED (Located at the edge of the board, between the USB connector and the Inductor marked with a K) will be on.</li>
 
 </ul>    

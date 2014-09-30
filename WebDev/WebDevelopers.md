@@ -6,11 +6,12 @@ Please note that this SDK is meant for web browser applications only.
 
 ## Implementing the relayr JavaScript SDK
 
-In order to start using the SDK all you would need to do is to include the `relayr.js` file in your project:
+In order to start using the SDK all you would need to do is to include the `relayr-browser-sdk.min.js` file in your project:
 
-	<script src="/assets/scripts/relayr.js"></script>
+	<script src="https://developer.relayr.io/relayr-browser-sdk.min.js"></script>
 
-**Download the `relayr.js` file from our [JavaScript SDK repository](https://github.com/relayr/browser-sdk)**
+
+**Download the `relayr-browser-sdk.min.js` file from our [JavaScript SDK repository](https://github.com/relayr/browser-sdk)**
 
 You could follow the guidelines for using the SDK on the repository's [README](https://github.com/relayr/browser-sdk/blob/master/README.md) or simply continue reading below.
 

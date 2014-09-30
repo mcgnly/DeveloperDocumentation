@@ -32,4 +32,4 @@ Whether you are an Android developer an iOS developer or a Web developer eager t
 
 So... Are you ready to OnBoard? - Great! 
 
-Go to the <a href="https://developer.relayr.io/dashboard/onboarding" target="_blank">OnBoarding app Download page </a> 
+Start by reading our <a href="https://developer.relayr.io/documents/Welcome/DosAndDonts"> OnBoarding Do's and Dont's page</a> and then go to the <a href="https://developer.relayr.io/dashboard/onboarding" target="_blank">OnBoarding app Download page </a> to download our OnBoarding app. 
