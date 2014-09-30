@@ -1,8 +1,11 @@
-# OnBoarding Dos and Don'ts 
+<h1>OnBoarding Dos and Don'ts</h1> 
 
-Here is a quick walk through our 10 OnBoarding Dos and Don'ts. Follow them and you'll be onboarded in no time!
+<p>Here is a quick walk through our 10 OnBoarding Dos and Don'ts. Follow them and you'll be onboarded in no time!</p>
 
-## Dos
+
+----------
+
+<h1>Dos</h1>
 
 <div class="floatBox">
 <h3>1. Make sure the Master Module is connected to a power supply via the USB cable <em>and</em> that it is also connected to the battery.
@@ -31,7 +34,10 @@ Here is a quick walk through our 10 OnBoarding Dos and Don'ts. Follow them and y
 <img src="assets/DO-5.png">
 </div>
 
-## Don'ts
+
+----------
+
+<h1>Don'ts</h1>
 
 <div class="floatBox">
 <h3>1. Don’t onboard in an extremely crowded place with a WiFi network used by a large number of people. This could cause the process to fail</h3>
