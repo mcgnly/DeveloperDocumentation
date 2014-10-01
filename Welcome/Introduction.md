@@ -24,26 +24,26 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 
 ## Development Tools
 
-<div class="floatbox">
+<div class="floatBox">
 <p>If you are an Android developer, be sure to get inspired by our <b> Android SDK </b> which provides all the tools you need in order to integrate your Android projects with our platform. All available Endpoints and code samples just waiting to be implemented</p> 
 <img src="assets/Android_logo.png" alt="" title="">
 <a class="button" href="https://developer.relayr.io/documents/Android/Reference">View Android Documentation</a>
 </div>
 
 
-<div class="floatbox"> 
+<div class="floatBox"> 
 <p>If your passion is iOS - don't worry, we have not forgotten you. You are more than welcome to check out our <b>iOS&OSX SDK</b> for available Endpoints, code samples and all you need to integrate your iOS project with the relayr platform.</p>
 <img src="assets/Apple_logo.png" alt="" title="">
 <a class="button" href="https://developer.relayr.io/documents/Apple/Reference">View iOS&OSX Documentation</a>
  </div>
 
-<div class="floatbox"> 
+<div class="floatBox"> 
 <p>Yes, we know not everyone is a mobile developer. This is why we offer our <b>Web Development Documentation</b> for those of you whose passion is Web Development.</p>
 <a class="button" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 <img src="assets/Web2.png" alt="" title="">
 </div>
 
-<div class="category"> 
+<div class="floatBox"> 
 <p>You may want to have a look at our <b>API Documentation</b>. It includes a detailed list of all endpoints and use cases of the relayr  API. These have all been wrapped for you in the above SDKs</p>
 <a class="button" href="https://developer.relayr.io/documents/relayr%20API/Introduction">View API</a>
 <img src="assets/Registration_icon.png" alt="" title="">
