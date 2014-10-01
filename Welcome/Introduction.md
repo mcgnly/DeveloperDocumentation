@@ -16,7 +16,7 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 
 ## Getting Started with Building your relayr App
 
-1. Start by OnBoarding your WunderBar. Make sure to go over our <a href="">OnBoarding Do's and Dont's </a>
+1. Start by OnBoarding your WunderBar. Make sure to go over our <a href="https://developer.relayr.io/documents/Welcome/DosAndDonts">OnBoarding Do's and Dont's </a>
 2. Next, create an app on the <a href="https://developer.relayr.io/dashboard/apps/myApps">App Section</a>
 3. Use our Web/Android/iOS OSX development tools below to start building your app
 
