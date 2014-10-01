@@ -10,7 +10,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
 ## Overview
 
 <p>Before you start we'd like to recommend that you go over some of our high level documentation. <br/>
-Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a>, become an expert on our <a href="https://developer.relayr.io/documents/Welcome/Sensors">WunderBar Sensors</a> and master our <a href="https://developer.relayr.io/documents/Welcome/MM">Master Module</a>. don't forget to have a peek at our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth implementation reference</a>, just to make sure you have all you need to get started.  </p>
+Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a>, become an expert on our <a href="https://developer.relayr.io/documents/Welcome/Sensors">WunderBar Sensors</a> and master our <a href="https://developer.relayr.io/documents/Welcome/MM">Master Module</a>. Don't forget to have a peek at our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth implementation reference</a>, just to make sure you have all you need to get started.  </p>
 ----------
 
 ## Getting Started

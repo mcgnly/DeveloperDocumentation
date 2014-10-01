@@ -56,7 +56,7 @@ which sets up the relayr SDK so we can use it:
     @Override
     public void onCreate() {
         super.onCreate();
-        RelayrSdk.initSdk(this);
+        RelayrSdk.init(this);
     }
 
 At this point, the class doesn't recognize the RelayrSdk so it marks it
