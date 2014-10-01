@@ -39,6 +39,7 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 
 <div class="floatBox"> 
 <p>Yes, we know not everyone is a mobile developer. This is why we offer our <b>Web Development Documentation</b> for those of you whose passion is Web Development.</p>
+<br/>
 <img src="assets/Web2.png" alt="" title="">
 <a class="button" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 </div>
