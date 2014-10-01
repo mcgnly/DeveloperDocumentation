@@ -10,7 +10,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
 ## How does relayr work?
 
 <p>Before you start we'd like to recommend that you go over some of our high level documentation. <br/>
-Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a> for a better understanding of what we offer.
+Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a> for a better understanding of what we offer.</p>
 
 ----------
 
