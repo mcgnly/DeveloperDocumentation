@@ -7,15 +7,18 @@ We've made it as easy as possible for you to start integrating your awesome apps
 
 ----------
 
-## Overview
+## How does relayr work?
 
 <p>Before you start we'd like to recommend that you go over some of our high level documentation. <br/>
-Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a>, become an expert on our <a href="https://developer.relayr.io/documents/Welcome/Sensors">WunderBar Sensors</a> and master our <a href="https://developer.relayr.io/documents/Welcome/MM">Master Module</a>. Don't forget to have a peek at our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth implementation reference</a>, just to make sure you have all you need to get started.  </p>
+Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a> for a better understanding of what we offer.
+
 ----------
 
-## Getting Started
+## Getting Started with Building your relayr App
 
-Your first step is **Onboarding** so be sure to have a look at our <a href="https://developer.relayr.io/documents/Welcome/OnBoarding">Onboarding introduction</a> and don't forget to go over our <a href="https://developer.relayr.io/documents/Welcome/DosAndDonts"> <strong>OnBoarding Do's and Dont's</strong> </a> to make sure your onboarding is successful 
+1. Start by OnBoarding your WunderBar. Make sure to go over our <a href="">OnBoarding Do's and Dont's </a>
+2. Next, create an app on the <a href="https://developer.relayr.io/dashboard/apps/myApps">App Section</a>
+3. Use our Web/Android/iOS OSX development tools below to start building your app
 
 ----------
 
@@ -23,15 +26,6 @@ Your first step is **Onboarding** so be sure to have a look at our <a href="http
 ## Development Tools
 
 <p> Now that you know all about our high level functionalities, here is what you'll need to get down to the programming</p>
-
-<div class="category"> 
-<a href="https://developer.relayr.io/documents/relayr%20API/Introduction">
-<img src="assets/Registration_icon.png" alt="" title=""></a>
-<p>
-    You may want to start with our <b>API Documentation</b>. It includes a detailed list of all endpoints and use cases of the relayr  API. 
-  </p>
-	<a class="button" href="https://developer.relayr.io/documents/relayr%20API/Introduction">View API</a>
- </div>
 
 
 <div class="category"> 
@@ -62,12 +56,29 @@ Your first step is **Onboarding** so be sure to have a look at our <a href="http
 	<a class="button" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Development SDK</a>
  </div>
 
+<div class="category"> 
+<a href="https://developer.relayr.io/documents/relayr%20API/Introduction">
+<img src="assets/Registration_icon.png" alt="" title=""></a>
+<p>
+    You may want to have a look at our <b>API Documentation</b>. It includes a detailed list of all endpoints and use cases of the relayr  API. These have all been wrapped for you in the above SDKs
+  </p>
+	<a class="button" href="https://developer.relayr.io/documents/relayr%20API/Introduction">View API</a>
+ </div>
+----------
+
+## The Master Module and Sensors - Technical Specs
+
+become an expert on our <a href="https://developer.relayr.io/documents/Welcome/Sensors">WunderBar Sensors</a> and master our <a href="https://developer.relayr.io/documents/Welcome/MM">Master Module</a>. 
+
+----------
+
+## Extra Features
+
+<p>Want to do make the most of the relayr platform and the WunderBar sensors? Check out some cool and exciting extra features on our <a href="https://developer.relayr.io/documents/HowTos/Introduction"> How To's section </a></p>
 
 ----------
 
 
-## Extra Features
+## OAuth Reference
 
-<p>Want to do make the most of the relayr platform and the WunderBar sensors? Check out some cool and exciting extra features on our <a href="https://developer.relayr.io/documents/HowTos/Introduction"> How To's section </a>
-
-
+<p>Don't forget to have a peek at our <a href="https://developer.relayr.io/documents/Welcome/OAuthReference">OAuth implementation reference</a>, just to make sure you have all you need to get started.  </p>
