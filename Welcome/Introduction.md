@@ -39,15 +39,14 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 
 <div class="floatBox"> 
 <p>Yes, we know not everyone is a mobile developer. This is why we offer our <b>Web Development Documentation</b> for those of you whose passion is Web Development.</p>
-<a class="button" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 <img src="assets/Web2.png" alt="" title="">
+<a class="button" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 </div>
 
-<div class="floatBox"> 
-<p>You may want to have a look at our <b>API Documentation</b>. It includes a detailed list of all endpoints and use cases of the relayr  API. These have all been wrapped for you in the above SDKs</p>
-<a class="button" href="https://developer.relayr.io/documents/relayr%20API/Introduction">View API</a>
-<img src="assets/Registration_icon.png" alt="" title="">
-</div>
+## The relayr API
+ 
+You may want to have a look at our <a href="https://developer.relayr.io/documents/relayr%20API/Introduction">API Documentation</a>. It includes a detailed list of all endpoints and use cases of the relayr API. These have all been wrapped for you in the above SDKs
+
 ----------
 
 ## The Master Module and Sensors - Technical Specs
