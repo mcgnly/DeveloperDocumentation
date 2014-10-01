@@ -22,13 +22,9 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 
 ----------
 
-
 ## Development Tools
 
-<p> Now that you know all about our high level functionalities, here is what you'll need to get down to the programming</p>
-
-
-<div class="category"> 
+<div class="floatbox"> 
 <a href="https://developer.relayr.io/documents/Android/Reference">
 <img src="assets/Android_logo.png" alt="" title=""></a>
 <p>
@@ -38,7 +34,7 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
  </div>
 
 
-<div class="category"> 
+<div class="floatbox"> 
 <a href="https://developer.relayr.io/documents/Apple/Reference">
 <img src="assets/Apple_logo.png" alt="" title=""></a>
 <p>
@@ -47,7 +43,7 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 	<a class="button" href="https://developer.relayr.io/documents/Apple/Reference">View iOS&OSX SDK</a>
  </div>
 
-<div class="category"> 
+<div class="floatbox"> 
 <a href="https://developer.relayr.io/documents/WebDev/Introduction">
 <img src="assets/Web2.png" alt="" title=""></a>
 <p>
