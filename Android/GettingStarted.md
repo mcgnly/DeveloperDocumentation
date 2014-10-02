@@ -11,8 +11,12 @@ Here are the first steps to get you started in the relayr world. Follow them and
 ----------
 
 ###  Create a relayr app on the [app page](https://developer.relayr.io/dashboard/apps/myApps). 
-At the end of the app creation process you will be given the option to download the key file. The key file is used by the SDK to tell the relayr Platform which app you are.
-Place the application key (relayrsdk.properties) inside *src/main/assets* 
+
+### Download the *Key file* at the end of the app creation process 
+The key file is used by the SDK to tell the relayr Platform which app you are.
+
+### Place the application key (*relayrsdk.properties*) inside *src/main/assets* 
+
 If the *assets* folder does not exist, create it in the above path.
 
 ----------
