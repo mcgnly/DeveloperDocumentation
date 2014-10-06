@@ -102,6 +102,8 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 <div class="collapse">
 
+<h3>I have Bluetooth enabled but the onboarding app keeps  telling me it is off - Why?</h3>
+<p>This is most probably due to the version of Android you have on your phone. Please note that <strong><em>onboarding the WunderBar is only available on phones running Android 4.3 and up</em></strong>. In case you are using a phone with an earlier version you could still see the data from the sensors, however, the actual onboarding would need to be done on a phone with the above version. </p>
 
 <h3> I am using the <em>Android</em> relayr OnBoarding app and I get a web error after log in - is this normal?</h3>
 
