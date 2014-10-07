@@ -61,7 +61,7 @@ become an expert on our <a href="https://developer.relayr.io/documents/Welcome/S
 
 ## Extra Features
 
-<p>Want to do make the most of the relayr platform and the WunderBar sensors? Check out some cool and exciting extra features on our <a href="https://developer.relayr.io/documents/HowTos/Introduction"> How To's section </a></p>
+<p>Want to do make the most of the relayr platform and the WunderBar sensors? Check out some cool and exciting extra features on our <a href="https://developer.relayr.io/documents/HowTos/Introduction"> Extras section </a></p>
 
 ----------
 
