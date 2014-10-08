@@ -167,7 +167,7 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 
 <h4>Master Module LEDs</h4>
 <p>The Master Module includes 3 LEDs:</p>
-
+<img src="assets/Master2.png" class="center" width=700px>
 <ol>
 <li><p><strong>The WiFi LED</strong>: Located at the edge of the board, between the USB connector and the Inductor marked with a <strong>K</strong>:
    When it is ON, the Master Module is NOT connected to WiFi. When this LED is off it is an indication that the Master Module has successfully connected to the WIFi network.</p></li>
@@ -179,7 +179,8 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 	<ul>
 	<li><p><strong>Blinking once per second</strong>: During Onboarding Mode indicating that the WunderBar is waiting to be onboarded.</p></li>
    
-	<li><p><strong>Constantly ON</strong>: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.</p></li>
+	<li><p><strong>Constantly ON</strong>: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.<br/>
+	<strong>In case the Master Module detects a problem connecting to the relayr Cloud</strong> platform, this LED will also be constantly on.</p></li>
 
    	<li><p><strong>OFF</strong>: The common state of this LED. When the Master Module is connected to the platform (broker), this LED will stay off most of the time, and will only shortly blink every time a sensor publishes data.</p></li></ul></li>
 </ol>

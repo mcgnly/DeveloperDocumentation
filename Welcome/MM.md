@@ -5,7 +5,7 @@ The Master Module is the master mind behind the WunderBar. It is the only module
 
 The Master Module consists of three main parts, each responsible for a different aspect of its overall functionality: 
 
-<img src="assets/Master.png" class="center">
+<img src="assets/Master2.png" class="center">
 
 ### The Gainspan module 
 
@@ -40,7 +40,9 @@ Incorporating the <a href="https://www.nordicsemi.com/eng/Products/Bluetooth-Sma
 	<ul>
 	<li><p><strong>Blinking once per second</strong>: During Onboarding Mode indicating that the WunderBar is waiting to be onboarded.</p></li>
    
-	<li><p><strong>Constantly ON</strong>: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.</p></li>
+	<li><p><strong>Constantly ON</strong>: Indicating that the Master Module is in Device Firmware Update (DFU) Bootloader Mode and that it is waiting for new firmware. This mode can be initiated with a long press on the onboarding button.<br/>
+	<strong>In case the Master Module detects a problem connecting to the relayr Cloud</strong> platform, this LED will also be constantly on.
+	</p></li>
 
    	<li><p><strong>OFF</strong>: The common state of this LED. When the Master Module is connected to the platform (broker), this LED will stay off most of the time, and will only shortly blink every time a sensor publishes data.</p></li></ul></li>
 </ol>
