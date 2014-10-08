@@ -7,7 +7,7 @@
             "submenus": [
                 {
                     "file": "Introduction",
-                    "title": "Introduction"
+                    "title": "Getting Started"
                 },
                 {
                     "file": "Platform",
@@ -160,7 +160,7 @@
         },
         {
             "directory": "HowTos",
-            "title": "How To's",
+            "title": "Extras",
             "color": "purple",
             "submenus": [
                 {

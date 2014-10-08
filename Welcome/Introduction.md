@@ -44,7 +44,7 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 <br/><br/>
 <img src="assets/Web6e.png" alt="" title="" width=200px class="center">
 <br/>
-<a class="button center" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Dev. Documentation</a>
+<a class="button center" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 </div>
 
 ## The relayr API
