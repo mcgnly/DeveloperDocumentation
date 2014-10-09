@@ -167,7 +167,7 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 
 <h4>Master Module LEDs</h4>
 <p>The Master Module includes 3 LEDs:</p>
-<img src="assets/Master2.png" class="center" width=700px>
+<img src="assets/Master3.png" width=700px>
 <ol>
 <li><p><strong>The WiFi LED</strong>: Located at the edge of the board, between the USB connector and the Inductor marked with a <strong>K</strong>:
    When it is ON, the Master Module is NOT connected to WiFi. When this LED is off it is an indication that the Master Module has successfully connected to the WIFi network.</p></li>
