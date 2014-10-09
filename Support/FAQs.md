@@ -50,6 +50,10 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <div class="collapse">
 
+<h3> Can I onboard a WunderBar using a <em>WPA2-Enterprise</em> Network?</h3>
+
+The short answer is no. The Master Module can only connect to a <strong>WPA2-Personal</strong> network.
+
 <h3> I'm trying to onboard my WunderBar and I experience difficulties - what should I check?</h3>
 
 <p>
