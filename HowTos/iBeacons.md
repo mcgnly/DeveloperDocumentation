@@ -1,7 +1,7 @@
 # Using the WunderBar Sensor Modules as iBeacons
 
 We are very excited to introduce another way of using the WunderBar Sensor Modules.
-Every sensor could be used as an iBeacon compatible device in a few small steps. What you will need to do is simply replace the existing firmware on the module with the iBecon firmware and you are good to go. Below you will find a step by step tutorial for turning your sensors into iBeacons but first, here are a few words about iBeacons.
+Every sensor could be used as an iBeacon compatible device in a few small steps. What you will need to do is simply replace the existing firmware on the module with the iBeacon firmware and you are good to go. Below you will find a step by step tutorial for turning your sensors into iBeacons but first, here are a few words about iBeacons.
 
 ## A Few Words about iBeacons
 
