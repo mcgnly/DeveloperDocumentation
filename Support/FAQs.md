@@ -1,4 +1,5 @@
 
+
 <h1 fullpage>FAQs </h1>
 
 <h2 class="collapseHeader">Getting Started</h2>
@@ -71,6 +72,18 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 </ul>    
 </p>
+
+<h3> I've accidentally broken the board- can I still onboard?</h3>
+<p> We recommend not to break the board prior to onboarding, however, we have been successful at onboarding abroken board as well. Please follow the instructions below in order to onboard your broken board:
+
+<ol>
+<li>Insert the batteries to all sensors (all but the Grove module, which does not have such a slot. I'm afraid you will be able to onboard all but the Grove module at this stage precisely for this reason)</li>
+
+<li>Connect the Master Module to a power supply via the USB cable <em>and</em> to the battery shipped with the board. It is vital that both are connected.</li>
+
+<li>Place the sensors as close to the Master Module as possible and in very close proximity to your phone and commence the OnBoarding process - by starting up the OnBoarding app and following the instructions in it.</li>
+
+</ol>
 
 <h3> I'm trying to onBoard my WunderBar but no WunderBar is found. What could be the cause?</h3>
 
