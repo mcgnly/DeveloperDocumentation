@@ -5,7 +5,7 @@ The Master Module is the master mind behind the WunderBar. It is the only module
 
 The Master Module consists of three main parts, each responsible for a different aspect of its overall functionality: 
 
-<img src="assets/Master2.png" class="center">
+<img src="assets/Master.png" class="center">
 
 ### The Gainspan module 
 
@@ -28,6 +28,8 @@ Incorporating the <a href="https://www.nordicsemi.com/eng/Products/Bluetooth-Sma
 ### The Master Module LEDs 
 
 <p>The Master Module includes 3 LEDs:</p>
+
+<img src="assets/Master3.png" class="center">
 
 <ol>
 <li><p><strong>The WiFi LED</strong>: Located at the edge of the board, between the USB connector and the Inductor marked with a <strong>K</strong>:
