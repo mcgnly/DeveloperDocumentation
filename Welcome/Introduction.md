@@ -6,14 +6,6 @@
 We've made it as easy as possible for you to start integrating your awesome apps with the relayr platform and we hope that you'd start moving those programming fingers in no time! <br/></p>
 
 ----------
-
-## How does relayr work?
-
-<p>Before you start we'd like to recommend that you go over some of our high level documentation. <br/>
-Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a> for a better understanding of what we offer.</p>
-
-----------
-
 ## Getting Started with Building your relayr App
 
 1. Start by OnBoarding your WunderBar. Make sure to go over our <a href="https://developer.relayr.io/documents/Welcome/DosAndDonts">OnBoarding Do's and Dont's </a>
@@ -46,6 +38,17 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 <br/>
 <a class="button center" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 </div>
+
+
+----------
+
+
+## How does relayr work?
+
+<p>Before you start we'd like to recommend that you go over some of our high level documentation. <br/>
+Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform</a> for a better understanding of what we offer.</p>
+
+----------
 
 ## The relayr API
  
