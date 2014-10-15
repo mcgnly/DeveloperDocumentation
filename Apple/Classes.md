@@ -140,7 +140,24 @@ These are object abstractions of a device's inputs and outputs, and a connection
 You can query their properties for the following information:
 
 * `RelayrInput` ***for data received from the device***. The type of data received is listed as a `meaning` and is measured in `unit` units.
+
+	
+		  RelayrDevice* device = ...;
+		  for (RelayrInput* input in device.inputs)
+		  {
+		      NSLog(@"The measurement for %@ is: %@", input.meaning, input.value);
+		  }
+	  
+
 * `RelayrOutput` ***for signals that the device can receive***. It can be infrared, or Grove signals.
+
+		  RelayrDevice* device = ...;
+		  for (RelayrOutput* output in device.outputs)
+		  {
+		      NSLog(@"");
+		  }
+  
+
 * `RelayrConnection` to query the connection state (connected, disconnected, resetting, etc.), and the connection type (BLE, Wifi, etc.). You can even subscribe to changes in the connection channel (for example, be informed when you are in close proximity to a device or when the WiFi connection of your device is interrupted).
 
 The `RelayrConnection` and `RelayrOutput` have not yet been implemented. These are currently being implemented and will be availbled in an upcoming release.
