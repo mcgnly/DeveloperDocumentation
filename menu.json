@@ -48,7 +48,7 @@
             ]
         },
         {
-            "directory": "relayr API",
+            "directory": "relayrAPI",
             "title": "relayr API",
             "color": "blue",
             "submenus": [
