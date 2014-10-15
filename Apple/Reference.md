@@ -18,7 +18,11 @@ Getting Started
 ### Obtaining the Framework
 
 The framework can be obtained in the following manner:
-Generate the binary `.framework` file from this Xcode project. Just select the platform you want from the project's targets and click *build* (⌘+B).
+
+
+- Download the repository from [GitHub](https://github.com/relayr/apple-sdk)
+
+- Generate the binary `.framework` file from this Xcode project. Just select the platform 	you want from the project's targets and click *build* (⌘+B).
 
   ![Generating the framework file](./assets/BuildProcess01.gif)
 
