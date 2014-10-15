@@ -52,7 +52,7 @@ Get to know our <a href="https://developer.relayr.io/documents/Welcome/Platform"
 
 ## The relayr API
  
-You may want to have a look at our <a href="https://developer.relayr.io/documents/relayr%20API/Introduction">API Documentation</a>. It includes a detailed list of all endpoints and use cases of the relayr API. These have all been wrapped for you in the above SDKs
+You may want to have a look at our <a href="https://developer.relayr.io/documents/relayrAPI/Introduction">API Documentation</a>. It includes a detailed list of all endpoints and use cases of the relayr API. These have all been wrapped for you in the above SDKs
 
 ----------
 
