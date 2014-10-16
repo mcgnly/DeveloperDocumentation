@@ -152,11 +152,12 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <h2 class="collapseHeader">iOS</h2>
 
+<div class="collapse">
 <h3>What is the earliest iOS version I could use the OnBoarding app on?</h3>
 
 The earliest version you could use the iOS OnBoarding app is version 8. Please note: The <strong>Bluetooth version on the device must be 4.0</strong> (Bluetooth Smart). Onboarding is not possible with an earlier Bluetooth version.</strong>
 
-<div class="collapse">
+
 <h3> I am using the <em>iOS</em> relayr OnBoarding app but my sensors are not all detected</h3>
 
 <p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
