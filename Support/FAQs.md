@@ -155,7 +155,7 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 <div class="collapse">
 <h3>What is the earliest iOS version I could use the OnBoarding app on?</h3>
 
-The earliest version you could use the iOS OnBoarding app is version 8. Please note: The <strong>Bluetooth version on the device must be 4.0</strong> (Bluetooth Smart). Onboarding is not possible with an earlier Bluetooth version.</strong>
+<p>The earliest version you could use the iOS OnBoarding app is version 8. Please note: The <strong>Bluetooth version on the device must be 4.0</strong> (Bluetooth Smart). Onboarding is not possible with an earlier Bluetooth version.</strong></p>
 
 
 <h3> I am using the <em>iOS</em> relayr OnBoarding app but my sensors are not all detected</h3>
