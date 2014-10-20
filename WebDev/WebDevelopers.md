@@ -13,8 +13,6 @@ In order to start using the SDK all you would need to do is to include the `rela
 
 **Download the `relayr-browser-sdk.min.js` file from our [JavaScript micro SDK repository](https://github.com/relayr/browser-sdk)**
 
-You could follow the guidelines for using the SDK on the repository's [README](https://github.com/relayr/browser-sdk/blob/master/README.md) or simply continue reading below.
-
 ----------
 
 ## Using the SDK
