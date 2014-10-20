@@ -117,12 +117,6 @@
                 {
                     "file": "Classes",
                     "title": "Basic Classes"
-                },
-                {
-                    "file": "Sample Projects",
-                    "title": "Sample Projects",
-                    "external": "https://github.com/relayr/apple-sample-apps",
-                    "newTab": true
                 }
             ]
         },
