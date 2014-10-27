@@ -34,7 +34,7 @@
 <div class="floatBox">
 <h2>5.</h2>
 <p>Make sure your WiFi password includes not more than 18 characters and that it consists of characters which are <strong> A-Z, a-z, or 0-9 </strong></p>
-<br/><br/> 
+<br/><br/><br/> 
 <img src="assets/DO-5.png"/>
 </div>
 
