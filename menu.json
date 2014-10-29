@@ -121,6 +121,24 @@
             ]
         },
         {
+            "directory": "Python",
+            "title": "Python",
+            "color": "yellow",
+            "icon" : "",
+            "submenus": [
+                {
+                    "file": "Introduction",
+                    "title": "Getting Started"
+                },
+                {
+                    "file": "Python Reference",
+                    "title": "Full Reference",
+                    "external": "/rendered-doc/javadoc/index.html",
+                    "newTab": true
+                }
+            ]
+        },
+        {
             "directory": "WebDev",
             "title": "Web Development",
             "color": "yellow",
