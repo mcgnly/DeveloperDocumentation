@@ -85,11 +85,6 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 </ol>
 
-<h3> I'm trying to onBoard my WunderBar but no WunderBar is found. What could be the cause?</h3>
-
-<p>The most common cause for this is Bluetooth being turned off. We use Bluetooth LE in the OnBoarding process. Make sure it is enabled on your phone, before attempting to onboard. 
-</p>
-
 <h3> I would like to Onboard my WunderBar - Should I break the sensor modules off the main board?</h3>
 
 <p>As a rule of thumb we recommend <strong>not to</strong> break the sensor modules off the main circuit until specifically indicated to do so in the steps of the OnBoarding app. Just sit back and let the app tell you exactly what to do</p>
@@ -106,10 +101,9 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 <p>On the <strong>iOS</strong> app, since multiple OnBoarding is currently not available, you will only be able to view one WunderBar.</p>
 
+<h3>Are there any debugging tools which I could use to see why the OnBoarding process is unsuccessful?</h3>
 
-<h3> I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?</h3>
-
-<p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
+<p>At the moment, we unfortunately do not provide any debugging tools for any of the applications. We are still at the early stages of development and these will be integrated in the upcoming versions of the app. We apologize in advanced for this limitation.</p>
 
 </div>
 
@@ -132,6 +126,10 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 <h3> The onboarding app cannot locate one of the sensors. What should I do?</h3>
 <p>If The onboarding app fails to locate one of the sensors it will asks you if the LED on the sensor is blinking. In this case, press the button on the relevant sensor (taking it out of onboarding mode) then press it a second time (putting it back in onboarding mode) and hit retry on the app.</p>
+
+<h3> I seem to have lost my WiFi connection after trying to onBoard. What could be the cause?</h3>
+
+<p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
 
 </div>
 
@@ -158,20 +156,23 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 <p>The earliest version you could use the iOS OnBoarding app is version 8. Please note: The <strong>Bluetooth version on the device must be 4.0</strong> (Bluetooth Smart). Onboarding is not possible with an earlier Bluetooth version.</strong></p>
 
 
+<h3> How do I use the iOS Onboarding App</h3>
+
+<p>Since our Beta currently only includes very limited functionality, please see <a href="https://forum.relayr.io/t/problem-onboarding-ios/176/2?u=dana_relayr">this forum post</a> for instructions how to use the app in order to onboard.</p>
+
 <h3> I am using the <em>iOS</em> relayr OnBoarding app but my sensors are not all detected</h3>
 
 <p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
-
-<h3> I am using the <em>iOS</em> relayr OnBoarding app. I have successfully onboarded my WunderBar but I still can't see data on all channels</h3>
-
-<p>This is a known issue which has already been fixed in the next version of the app. To resolve this issue, remove the app completely from the background tray. Keep the WunderBar plugged and restart the application.</p></div>
-
-
-
 </div>
 
 <h2 class="collapseHeader"> Sensor Data </h2>
 <div class="collapse">
+
+<h3>I have successfully onboarded my WunderBar sensors and was able to receive data. All of a sudden, I stopped receiving data from some of them. What could be the cause?</h3>
+
+<p>We are aware of a phenomenon whereby one or some of the sensors, after having been successfully onboarded and having successfully published data, randomly stop publishing data. We are monitoring our servers in order to pinpoint the root cause of this behavior.
+</p><p>
+If you encounter this phenomenon, please supply us with the IDs of the sensors which have stopped publishing as well as the exact time this behavior was encountered. You can do so by posting to <a href="https://forum.relayr.io/t/sensors-randomly-stop-publishing-data/254">this Forum Topic</a></p>
 
 <h3> In which units is Noise Level measured? </h3>
 <p>
