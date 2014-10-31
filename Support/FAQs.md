@@ -164,6 +164,7 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
 </div>
+</div>
 
 <h2 class="collapseHeader"> Sensor Data </h2>
 <div class="collapse">
