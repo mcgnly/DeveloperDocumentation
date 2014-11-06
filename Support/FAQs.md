@@ -167,11 +167,11 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <h3>Where can I get the Android SDK from?</h3>
 
-<p> Please visit our <a href"https://developer.relayr.io/documents/Android/Reference">Android Section</a> to get started with Android Development </p>
+<p> Please visit our <a href="https://developer.relayr.io/documents/Android/Reference"> Android Section</a> to get started with Android Development </p>
 
-<h3>Where can I get the iOS SDK from?</h3>
+<h3>Where can I get the iOS/OSX SDK from?</h3>
 
-<p> Please visit our <a href"https://developer.relayr.io/documents/Apple/Reference">Android Section</a> to get started with Android Development </p>
+<p> Please visit our <a href="https://developer.relayr.io/documents/Apple/Reference">iOS/OSX Section</a> to get started with iOS/OSX Development </p>
 
 <h3> I am a Web developer. Can I still use the relayr platform?</h3>
 
