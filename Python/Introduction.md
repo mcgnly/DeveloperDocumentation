@@ -13,7 +13,7 @@ You can install the library using one of the following methods, using Pip:
 
     	pip install git+https://github.com/relayr/python-sdk
 
-2. Once the package is on the [Python Package Index](https://pypi.python.org/pypi) you may us the following to install it:
+2. You may use the following to install the package from the [Python Package Index](https://pypi.python.org/pypi) 
 
     
 		pip install relayr
@@ -48,9 +48,9 @@ You can install the library using one of the following methods, using Pip:
 
 The full reference of the package could be obtained in one of the following methods: 
 
-1. The documentation may be found in the ***Docs*** sub directory in the Github repository and it can be rendered in various formats. Please see instructions on how to achieve this [here](http://) 
+1. The documentation may be found in the ***Docs*** sub directory in the Github repository and it can be rendered in various formats using a helper script named [`make_docs.sh`](https://github.com/relayr/python-sdk/blob/master/make_docs.sh).
 
 
-2. You may access the full reference on the [Read the Docs](http://https://readthedocs.org/) website.
+2. You may access the full reference on the [Read the Docs](https://readthedocs.org/) website.
 
 
