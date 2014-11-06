@@ -1,6 +1,7 @@
 # The relayr Android SDK 
 
 Welcome to the relayr Android SDK, we are genuinely excited to have you on board!
+All references in this section are to the [relayr Android SDK Repository](https://github.com/relayr/android-sdk)
 
 The Android SDK provides you with programmatic access points to the relayr API, it allows you to use the relayr [Cloud Platform](https://developer.relayr.io/documents/Welcome/Platform) in your application and in the future - handle Bluetooth LE connection to your sensor modules. 
 

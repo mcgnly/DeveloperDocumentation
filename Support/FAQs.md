@@ -34,10 +34,6 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> Where can I get my Device Id? </h3>
 <p>Once you've onboarded your WunderBar, to get your Devices Ids, go to the Devices section and click on the small 'settings' icon of any of your sensors to get its Id</p>
 
-<h3> I am a Web developer. Can I still use the relayr platform?</h3>
-
-<p>Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WEB/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.</p>
-
 <h3> Which service is relayr using for data distribution?</h3>
 
 <p>We are using PubNub as our data distribution service. You can learn more about our usage of PubNub <a href="https://developer.relayr.io/documents/PubNub/Reference" target="_blank">here</a>.</p>
@@ -164,6 +160,30 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
 </div>
+</div>
+
+<h2 class="collapseHeader"> Development Tools </h2>
+<div class="collapse">
+
+<h3>Where can I get the Android SDK from?</h3>
+
+<p> Please visit our <a href"https://developer.relayr.io/documents/Android/Reference">Android Section</a> to get started with Android Development </p>
+
+<h3>Where can I get the iOS SDK from?</h3>
+
+<p> Please visit our <a href"https://developer.relayr.io/documents/Apple/Reference">Android Section</a> to get started with Android Development </p>
+
+<h3> I am a Web developer. Can I still use the relayr platform?</h3>
+
+<p>Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WEB/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.</p>
+
+<h3>Do you have anything for Python developers?</h3>
+
+<p>We sure do! Check out our shiny <a href="https://developer.relayr.io/documents/Python/Introduction">Python Section</a></p>
+
+<h3>Do you have anything for <em>Ruby</em> Developers?</h3>
+<p> We have not released any official Ruby library, but luckily we have a great community of developers who support us and one of them has created a Gist for Ruby <a href="https://gist.github.com/jShaf/4905ef199885afb691d5">available here</a>. </p>
+
 </div>
 
 <h2 class="collapseHeader"> Sensor Data </h2>
