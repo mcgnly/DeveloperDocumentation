@@ -133,7 +133,7 @@
                 {
                     "file": "Python Reference",
                     "title": "Full Reference",
-                    "external": "/rendered-doc/javadoc/index.html",
+                    "external": "https://readthedocs.org/projects/relayr/",
                     "newTab": true
                 }
             ]
