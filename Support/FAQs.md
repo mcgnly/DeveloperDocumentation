@@ -174,7 +174,7 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <h3> I am a Web developer. Can I still use the relayr platform?</h3>
 
-<p>Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WEB/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.</p>
+<p>Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WebDev/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.</p>
 
 <h3>Do you have anything for Python developers?</h3>
 
