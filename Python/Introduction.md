@@ -51,6 +51,6 @@ The full reference of the package could be obtained in one of the following meth
 1. The documentation may be found in the ***Docs*** sub directory in the Github repository and it can be rendered in various formats using a helper script named [`make_docs.sh`](https://github.com/relayr/python-sdk/blob/master/make_docs.sh).
 
 
-2. You may access the full reference on the [Read the Docs](https://readthedocs.org/projects/relayr/) website.
+2. You may access the full reference on the [Read the Docs](http://relayr.readthedocs.org/) website.
 
 

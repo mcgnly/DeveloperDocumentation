@@ -133,7 +133,7 @@
                 {
                     "file": "Python Reference",
                     "title": "Full Reference",
-                    "external": "https://readthedocs.org/projects/relayr/",
+                    "external": "http://relayr.readthedocs.org/",
                     "newTab": true
                 }
             ]
