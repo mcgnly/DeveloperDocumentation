@@ -159,8 +159,7 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 <h3> I am using the <em>iOS</em> relayr OnBoarding app but my sensors are not all detected</h3>
 
 <p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
-</div>
-</div>
+</div></div>
 
 <h2 class="collapseHeader"> Development Tools </h2>
 <div class="collapse">
@@ -183,6 +182,10 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <h3>Do you have anything for <em>Ruby</em> Developers?</h3>
 <p> We have not released any official Ruby library, but luckily we have a great community of developers who support us and one of them has created a Gist for Ruby <a href="https://gist.github.com/jShaf/4905ef199885afb691d5">available here</a>. </p>
+
+<h3>I am using the iOS SDK and I need to log in through relayr every time I compile - Is there a way to log in programmatically </h3>
+
+<p>You may want to look at the <a href="https://forum.relayr.io/t/auto-login-programmatically/259">this Forum post</a> to get a bit more insight about this issue</p>
 
 </div>
 
