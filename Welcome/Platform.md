@@ -10,7 +10,7 @@ We would like to introduce the benefits of using the cloud platform and help you
 
 As opposed to directly connecting an app  to the sensor modules over BLE (Bluetooth Low Energy), using the platform to connect to sensor modules and other devices can be achieved regardless of location and distance, it ensures that data is securely stored and is then available for further manipulation. 
 
-<img src="assets/image1.png" width=700px class="center"/>
+<img src="assets/image_1.png" width=700px class="center"/>
 
 The platform receives data from the devices, stores it and distributes it only to the applications which incorporate the relayr SDK and meet the authorization criteria established when first registering on the platform.
 
@@ -24,11 +24,11 @@ In case you are a device manufacturer you can also enjoy the simplicity enabled 
 
 <div class="column">
 <h3>Registration</h3>
-The first stage that enables you to step into the relayr world is the <em>registration</em>. In this stage all basic entities such as a User, an App and a Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. 
+<p>The first stage that enables you to step into the relayr world is the <em>registration</em>. In this stage all basic entities such as a User, an App and a Device are introduced to the platform. The registration is done via the relayr Developer Dashboard. </p>
 
 
 <h3>OnBoarding </h3>
-The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API. 
+<p>The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API.</p> 
 
 <img src="assets/image_2.png" width=700px />  
 
