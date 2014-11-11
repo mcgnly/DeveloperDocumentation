@@ -10,7 +10,7 @@ We would like to introduce the benefits of using the cloud platform and help you
 
 As opposed to directly connecting an app  to the sensor modules over BLE (Bluetooth Low Energy), using the platform to connect to sensor modules and other devices can be achieved regardless of location and distance, it ensures that data is securely stored and is then available for further manipulation. 
 
-<img src="assets/image_1.png" width=700px class="center"/>
+<img src="assets/Image_1.png" width=700px class="center"/>
 
 The platform receives data from the devices, stores it and distributes it only to the applications which incorporate the relayr SDK and meet the authorization criteria established when first registering on the platform.
 
