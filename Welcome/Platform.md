@@ -30,7 +30,7 @@ The first stage that enables you to step into the relayr world is the <em>regist
 <h3>OnBoarding </h3>
 The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API. 
 
-<img src="assets/image2.png" width=700px />  
+<img src="assets/image_2.png" width=700px />  
 
 </div>
 
