@@ -33,21 +33,6 @@ The OnBoarding process enables you to establish the pairing between your devices
 <img src="assets/image2.png" width=700px />  
 
 </div>
-### Flow
-
-To give you a small taste of the way the platform works, here's a high-level description of the **Device > Cloud Platform > App** data flow
-
-<img src="assets/image3.png" width=900px class="center"/>
-
-1. The Sensor Module delivers its readings over BLE to the Master Module which serves as a transmitter. The Master Module is the only module capable of communicating over WIFI. 
- 
-1. The Master Module delivers the data to the Device Integration Layer. The latter is essentially a Redis Cluster based PubSub server. The data is delivered over secure MQTT (MQTT/TLS). 
- 
-1. The data is distributed throughout the different cluster nodes and is either pushed to available subscribers or maintained in the cluster.
-
-1. The relayr Routing Component, which subscribes to the specific device channel during the onBoarding process, receives the data from the Device Integration Layer and encrypts it before sending it further.
- 
-1. The encrypted data is then delivered over WSS (Secure Web Sockets) to PubNub - an external service which serves as a distributor only. PubNub pushes the data received to the application subscribed to the specific device channel; 
 
 
 Now that we've raised your curiosity about the relayr platform, check out our [Android SDK](https://developer.relayr.io/documents/Android/Reference) and [iOS&OSX SDK](https://developer.relayr.io/documents/Apple/Reference) to learn how to make it work for you! 
