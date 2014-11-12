@@ -13,7 +13,7 @@ You can install the library using one of the following methods, using Pip:
 
     	pip install git+https://github.com/relayr/python-sdk
 
-2. You may use the following to install the package from the [Python Package Index](https://pypi.python.org/pypi) 
+2. You may use the following to install the package from the [Python Package Index](https://pypi.python.org/pypi/relayr/) 
 
     
 		pip install relayr
