@@ -28,7 +28,7 @@ In case you are a device manufacturer you can also enjoy the simplicity enabled 
 
 
 <h3>OnBoarding </h3>
-<p>The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr routing component, mediated by the relayr API.</p> 
+<p>The OnBoarding process enables you to establish the pairing between your devices and your user credentials. the specific pairing credentials- authorization and encryption keys - are generated and maintained by the relayr Core server, mediated by the relayr API.</p> 
 
 <img src="assets/image_2.png" width=700px />  
 
