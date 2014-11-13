@@ -33,6 +33,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
 
 <div class="floatBox center"> 
 <p>If you are a pythonist at heart, check out our <b>Python library</b> for everything you need to get started with your first relayr Python project</p>
+<br/><br/><br/><br/>
 <img src="assets/Python_logo.png" alt="" title="" width=400p" class="center">
 <br/>
 <a class="button center" href="https://developer.relayr.io/documents/Python/Introduction">View Python Documentation</a>
