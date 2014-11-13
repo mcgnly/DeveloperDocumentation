@@ -31,13 +31,6 @@ We've made it as easy as possible for you to start integrating your awesome apps
 <a class="button center" href="https://developer.relayr.io/documents/Apple/Reference">View iOS&OSX Documentation</a>
  </div>
 
-<div class="floatBox center"> 
-<p>If you are a pythonist at heart, check out our <b>Python library</b> for everything you need to get started with your first relayr Python project</p>
-<br/><br/><br/><br/><br/><br/><br/>
-<img src="assets/Python_logo.png" alt="" title="" width=400p" class="center">
-<br/>
-<a class="button center" href="https://developer.relayr.io/documents/Python/Introduction">View Python Documentation</a>
- </div>
 
 <div class="floatBox center"> 
 <p>Yes, we know not everyone is a mobile developer. This is why we offer our <b>Web Development Documentation</b> for those of you whose passion is Web Development.</p>
@@ -47,7 +40,13 @@ We've made it as easy as possible for you to start integrating your awesome apps
 <a class="button center" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 </div>
 
-
+<div class="floatBox center"> 
+<p>If you are a pythonist at heart, check out our <b>Python library</b> for everything you need to get started with your first relayr Python project</p>
+<br/><br/><br/><br/><br/><br/><br/>
+<img src="assets/Python_logo.png" alt="" title="" width=400p" class="center">
+<br/>
+<a class="button center" href="https://developer.relayr.io/documents/Python/Introduction">View Python Documentation</a>
+</div>
 ----------
 
 
