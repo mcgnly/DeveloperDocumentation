@@ -17,33 +17,33 @@ We've made it as easy as possible for you to start integrating your awesome apps
 ## Development Tools
 
 <div class="floatBox center">
-<p>If you are an Android developer, be sure to get inspired by our <b> Android SDK </b> which provides all the tools you need in order to integrate your Android projects with our platform. All available Endpoints and code samples just waiting to be implemented</p> 
 <img src="assets/Android_logo.png" alt="" title="" width=100px class="center">
+<p>If you are an Android developer, be sure to get inspired by our <b> Android SDK </b> which provides all the tools you need in order to integrate your Android projects with our platform. All available Endpoints and code samples just waiting to be implemented</p> 
 <br/>
 <a class="button center" href="https://developer.relayr.io/documents/Android/Reference">View Android Documentation</a>
 </div>
 
 
 <div class="floatBox center"> 
-<p>If your passion is iOS - don't worry, we have not forgotten you. You are more than welcome to check out our <b>iOS & OSX SDK</b> for available Endpoints, code samples and all you need to integrate your iOS project with the relayr platform.</p>
 <img src="assets/Apple_logo.png" alt="" title="" width=100px class="center">
+<p>If your passion is iOS - don't worry, we have not forgotten you. You are more than welcome to check out our <b>iOS & OSX SDK</b> for available Endpoints, code samples and all you need to integrate your iOS project with the relayr platform.</p>
 <br/>
 <a class="button center" href="https://developer.relayr.io/documents/Apple/Reference">View iOS&OSX Documentation</a>
  </div>
 
 
-<div class="floatBox center"> 
+<div class="floatBox center">
+<img src="assets/Web6e.png" alt="" title="" width=100px class="center">
 <p>Yes, we know not everyone is a mobile developer. This is why we offer our <b>Web Development Documentation</b> for those of you whose passion is Web Development.</p>
 <br/><br/>
-<img src="assets/Web6e.png" alt="" title="" width=100px class="center">
 <br/>
 <a class="button center" href="https://developer.relayr.io/documents/WebDev/Introduction">View Web Documentation</a>
 </div>
 
-<div class="floatBox center"> 
+<div class="floatBox center">
+<img src="assets/Python_logo.png" alt="" title="" width=200p" class="center"> 
 <p>If you are a pythonist at heart, check out our <b>Python library</b> for everything you need to get started with your first relayr Python project</p>
 <br/>
-<img src="assets/Python_logo.png" alt="" title="" width=200p" class="center">
 <br/>
 <a class="button center" href="https://developer.relayr.io/documents/Python/Introduction">View Python Documentation</a>
 </div>
