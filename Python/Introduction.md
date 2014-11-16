@@ -25,24 +25,24 @@ You can install the library using one of the following methods, using Pip:
 ### Switching on/off an LED light on a device:
 
 
-	from relayr import Client
-    	c = Client(token='<my_access_token>')
-    	d = c.get_device(id='<my_device_id>')
-    	d.switch_led_on(True)
+		from relayr import Client
+	    	c = Client(token='<my_access_token>')
+	    	d = c.get_device(id='<my_device_id>')
+	    	d.switch_led_on(True)
 
 ### Receiving data from a device:
 
-	import time
-	from relayr import Client
-	c = Client(token='<my_access_token>')
-	d = c.get_device(id='<my_device_id>').get_info()
-	def callback(message, channel):
-	    print(repr(message), type(message))
-	user = c.get_user()
-	conn = user.connect_device(d, callback)
-	conn.start()
-	time.sleep(10)
-	conn.stop()
+		import time
+		from relayr import Client
+		c = Client(token='<my_access_token>')
+		d = c.get_device(id='<my_device_id>').get_info()
+		def callback(message, channel):
+		    print(repr(message), type(message))
+		user = c.get_user()
+		conn = user.connect_device(d, callback)
+		conn.start()
+		time.sleep(10)
+		conn.stop()
 
 ## Full Documentation Reference
 
