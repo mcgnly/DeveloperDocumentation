@@ -26,9 +26,9 @@ You can install the library using one of the following methods, using Pip:
 
 
 		from relayr import Client
-	    	c = Client(token='<my_access_token>')
-	    	d = c.get_device(id='<my_device_id>')
-	    	d.switch_led_on(True)
+		c = Client(token='<my_access_token>')
+    	d = c.get_device(id='<my_device_id>')
+    	d.switch_led_on(True)
 
 ### Receiving data from a device:
 
