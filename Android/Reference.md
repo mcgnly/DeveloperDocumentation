@@ -11,9 +11,9 @@ We realize that you probably want to skip introductions and get down to building
 
 Click <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank">here</a> for a detailed list of the relayr SDK methods
 
-## Sample Project
+## Sample Projects
 
-We've built an easy to implement, quick and simple thermometer application to get you introduced to the relayr Android world. Have a look <a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer">here</a> to get inspired	
+We've built an easy to implement, quick and simple <a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer">Thermometer application</a> to get you introduced to the relayr Android world. We've also created a fun and simple Can'tTouchThis application to give you an idea of how you could utilize our Cloud platform and live sensor data. Have a look at the <a href="https://github.com/relayr/android-cant-touch-this">Can'tTouchThis app on GitHub</a> for additional information	
 
 
 

@@ -97,6 +97,12 @@
                     "newTab": true
                 },
                 {
+                    "file": "Sample Project",
+                    "title": "Sample Project - CantTouchThis",
+                    "external": "https://github.com/relayr/android-cant-touch-this",
+                    "newTab": true
+                },
+                {
                     "file": "SDK Documentation",
                     "title": "SDK Reference",
                     "external": "/rendered-doc/javadoc/index.html",
