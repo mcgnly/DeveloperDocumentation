@@ -43,6 +43,8 @@ The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2
 	
 <p>This module integrates the <a href="http://www.ams.com/eng/Products/Light-Sensors/Color-Sensor-Proximity-Detection/TCS37717"> TCS3771 IC </a>, manufactured by AMS AG. (formerly TAOS Inc.). This IC integrates RGB Color Sensing and Proximity Detection in a single device. In addition, the module has an Infrared LED, used for proximity detection and a white LED used to illuminate targets when the color sensor is measuring. </p>
 
+<br/><br/><br/><br/><br/><br/><br/>
+
 <div>
 <h3>The Proximity Sensor</h3>
 <p>
@@ -53,7 +55,7 @@ The number of proximity LED pulses can also be programmed. The power consumption
 The digital value, which is received from the sensor is then translated by the Android and iOS SDKs and the Developer Dashboard, to a percentage which denotes the level of proximity. The higher the percentage is, the closer the object is to the sensor.
 Since the parameter measured is essentially the amount of light reflected from the object, varying light conditions will affect the measurements of the sensor.
 </p></div>
-<br/><br/><br/><br/><br/><br/><br/><br/>
+
 <div>	
 <h3>The Light/Color Sensor</h3>
 <p>
@@ -63,7 +65,7 @@ In a similar manner, the color sensor produces a set of values which are then tr
 </p>
 </div>
 </div>
-<br/><br/><br/><br/><br/><br/><br/><br/>
+
 <div class="category">
 <h2>The Temperature/Humidity Module</h2> 
 <img src="assets/Temp.png" alt="" title="" style= width:400px></a>
@@ -71,6 +73,8 @@ In a similar manner, the color sensor produces a set of values which are then tr
 <p> This module integrates the <a href="http://www.meas-spec.com/product/humidity/HTU21D.aspx">HTU21D chip</a>, manufactured by Measurement Specialties™. The HTU21D is a digital Relative Humidity Sensor with Temperature Output.</p>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <div>
+
+<br/><br/><br/><br/><br/><br/>
 <h3>The Temperature Sensor</h3>
 <p>
 The Module utilizes a semiconductor-based temperature sensor. The obtained digital output is proportional to room temperature. 
