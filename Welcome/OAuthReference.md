@@ -91,12 +91,13 @@ Once the credentials are entered, the user is redirected back to the application
 with the parameter `access_token` in the URL. The application can then
 parse the URL to extract the token. **This token will only be valid for two weeks**.
 
+----------
 
 ## How does it all work?
 
 The initial call which sets both authorization flows in motion is:
 
-[GET] `https://api.relayr.io/oauth2/auth?redirect_uri={redirect_uri}&response_type={response_type}&client_id={clientId}&scope={scope}`
+`[GET] https://api.relayr.io/oauth2/auth?redirect_uri={redirect_uri}&response_type={response_type}&client_id={clientId}&scope={scope}`
 
 Where: 
 
@@ -110,13 +111,15 @@ Following this call, two scenarios are expected:
 ### Applications utilizing The *Authorization Code*:
 
 Once a user successfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
-This URL will also include the parameter `code` as a fragment, denoted by a `#`. For example:
+This URL will also include the parameter `code` as a fragment, denoted by a `#`. 
 
-`https://mycoolrelayrapp.com/hello#code=4papf.tjzRM2iLtaEaPm`
+**For Example**
+
+	`https://mycoolrelayrapp.com/hello#code=4papf.tjzRM2iLtaEaPm`
 
 The code value is only valid for 5 minuted during which, it would need to be sent to the relayr server along with the `client_id` and `client_secret`:
 
-[POST] `https://api.relayr.io/oauth2/token`
+	`[POST] https://api.relayr.io/oauth2/token`
 
 **For Example**
 
@@ -128,9 +131,9 @@ The code value is only valid for 5 minuted during which, it would need to be sen
       
 Another option of sending the `client_id` and `client_secret` parameters is as authorization header parameters rather than as form parameters.
 
-The response received is a JSON response. 
+The response received is a JSON response 
 
-**For example**
+**For Example**
 
       {
         "access_token": “your_shiny_access_token",
@@ -140,19 +143,23 @@ The response received is a JSON response.
 ### Applications utilizing The *Implicit Grant*:
 
 Once a user successfully enters their relayr credentials, they will be redirected to the URL specified under `redirect_uri`. 
-This URL will also include the parameters `access_token` and `token_type` as a fragment, denoted by a `#`. For example:
+This URL will also include the parameters `access_token` and `token_type` as a fragment, denoted by a `#`. 
 
-`https://mycoolrelayrapp.com/hello#access_token=KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj&token_type=Bearer`   
+**For Example**
 
-The access token could then be parsed from the URL and used in the header of further API requests. For example:
+	`https://mycoolrelayrapp.com/hello#access_token=KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj&token_type=Bearer`   
 
-`Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
+The access token could then be parsed from the URL and used in the header of further API requests. 
+
+**For Example**
+
+	`Bearer KyHH0r1a2Ll.uoX-m7go74FNKSNN0Svj`
 
 ### The *User Info* Call
 
-The first authorization call which you would probably want to initiate is the 
+The first authorization call initiated is the *User Info* call 
 
-`[GET].../oauth2/user-info` 
+	`[GET] https://api.relayr.io/oauth2/user-info` 
 
 The call returns information about the user initiating the request.
 The authentication header of the request must include the specific user access token otherwise the user information will not be returned.
