@@ -92,13 +92,13 @@
                 },
                 {
                     "file": "Sample Project",
-                    "title": "Sample Project - Thermometer",
+                    "title": "Sample App - Thermometer",
                     "external": "https://github.com/relayr/android-demo-apps/tree/master/thermometer",
                     "newTab": true
                 },
                 {
                     "file": "Sample Project",
-                    "title": "Sample Project - CantTouchThis",
+                    "title": "Sample App - CantTouchThis",
                     "external": "https://github.com/relayr/android-cant-touch-this",
                     "newTab": true
                 },
@@ -170,7 +170,7 @@
                 },
                 {
                     "file": "Sample Project",
-                    "title": "Sample Project - CantTouchThis",
+                    "title": "Sample App - CantTouchThis",
                     "external": "https://github.com/relayr/cantTouchThis",
                     "newTab": true
                 }
