@@ -9,7 +9,7 @@
 <p>
 This module incorporates the <a href="http://www.invensense.com/mems/gyro/mpu6500.html">MPU-6500 chip</a> manufactured by InvenSense, combining a 3-axis accelerometer with a 3-axis gyroscope.
 </p>
-
+<br/><br/><br/><br/><br/><br/><br/>
 <div>
 <h3>The Accelerometer</h3>
 <img src="assets/Axis.png" style= width:200px>
@@ -53,7 +53,7 @@ The number of proximity LED pulses can also be programmed. The power consumption
 The digital value, which is received from the sensor is then translated by the Android and iOS SDKs and the Developer Dashboard, to a percentage which denotes the level of proximity. The higher the percentage is, the closer the object is to the sensor.
 Since the parameter measured is essentially the amount of light reflected from the object, varying light conditions will affect the measurements of the sensor.
 </p></div>
-
+<br/><br/><br/><br/><br/><br/><br/><br/>
 <div>	
 <h3>The Light/Color Sensor</h3>
 <p>
@@ -63,13 +63,13 @@ In a similar manner, the color sensor produces a set of values which are then tr
 </p>
 </div>
 </div>
-
+<br/><br/><br/><br/><br/><br/><br/><br/>
 <div class="category">
 <h2>The Temperature/Humidity Module</h2> 
 <img src="assets/Temp.png" alt="" title="" style= width:400px></a>
 
 <p> This module integrates the <a href="http://www.meas-spec.com/product/humidity/HTU21D.aspx">HTU21D chip</a>, manufactured by Measurement Specialties™. The HTU21D is a digital Relative Humidity Sensor with Temperature Output.</p>
-
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <div>
 <h3>The Temperature Sensor</h3>
 <p>
