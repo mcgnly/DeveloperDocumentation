@@ -74,7 +74,7 @@ In a similar manner, the color sensor produces a set of values which are then tr
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <div>
 
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 <h3>The Temperature Sensor</h3>
 <p>
 The Module utilizes a semiconductor-based temperature sensor. The obtained digital output is proportional to room temperature. 
