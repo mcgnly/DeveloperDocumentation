@@ -196,7 +196,11 @@
                 {
                     "file": "Arduino",
                     "title": "Connecing the relayr Bridge to Arduino"
-                }
+                },
+                {
+                    "file": "WunderBarSchem",
+                    "title": "The WunderBar Layout and Schematics"
+                }    
             ]
         }
     ]
