@@ -127,6 +127,11 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 
 <p>When using the the Android OnBoarding App, a temporary local network is initiated by the Master Module, to facilitate the OnBoarding process. If the OnBoarding app is stopped (killed) mid process, without having successfully onboarded the WunderBar, your phone may stay connected to this local network. To resolve this, make sure to reconnect to your normal WiFi network. </p>
 
+<h3>
+I am using a Samsung S-series device and I cannot complete the OnBoarding process. What could be the cause?</h3>
+
+<p>We have identified a number of BLE related issues which are experienced on devices manufactured by Samsung, which prevent the Onboarding process from completing successfully. These issues have been fixed in version 1.0.22 of the Android Manage App. If you have a Samsung phone and you are experiencing such issues, please make sure to install the latest app version, currently available on the <a href="https://play.google.com/store/apps/details?id=io.relayr.wunderbar">Play store</a> </p>/div>
+
 </div>
 
 <h2 class="collapseHeader"> Device Specific Issues</h2>
@@ -142,7 +147,6 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <p>We have identified an issue which is related to BLE on the Nexus 7. What we recommend in order to secure a successful onboarding process, is to first reboot the device, turn Bluetooth on and make sure devices are being detected and only then attempt to onboard.</p>
 
-</div>
 
 <h2 class="collapseHeader">iOS</h2>
 
