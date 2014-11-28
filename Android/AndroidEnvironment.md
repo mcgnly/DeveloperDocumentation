@@ -43,7 +43,7 @@ We have made the relayr Android SDK available on Maven as to simplify the inclus
 #### Add the following to your dependencies:
 	    
 	    dependencies {
-	        compile 'io.relayr:android-sdk:0.0.3'
+	        compile 'io.relayr:android-sdk:0.0.5'
 	    }
 
 #### Click to save the file or compile to ensure that everything is in order.
