@@ -257,6 +257,10 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 
 <p>To upgrade your Sensor Modules' Firmware you can use the <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en" target="_blank"> nrf Master Control Panel</a>. We are planning on integrating the Firmware upgrade into the OnBoarding app in a future release.</p>
 
+<h3> Can I flash the Firmware on my Sensor Modules and install something else?</h3>
+
+<p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/HowTos/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/HowTos/iBeacons">instructions on this page</a>. </p>
+
 <h3> The Master Module comes with a battery - Does it have to be connected to a power supply at all times?</h3>
 
 <p>We've discovered that due to a bug in the firmware, the battery charger of the Master Module, which also serves as a voltage regulator, enters an erratic state every ~4 hours, when not connected to a power supply - which eventually results in it disconnecting the WunderBar and breaking off any data transmission. This is why we are currently shipping the Master Modules with a battery, which will prevent it from getting to this state.</p>
