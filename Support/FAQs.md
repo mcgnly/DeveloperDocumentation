@@ -147,6 +147,7 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <p>We have identified an issue which is related to BLE on the Nexus 7. What we recommend in order to secure a successful onboarding process, is to first reboot the device, turn Bluetooth on and make sure devices are being detected and only then attempt to onboard.</p>
 
+</div>
 
 <h2 class="collapseHeader">iOS</h2>
 
