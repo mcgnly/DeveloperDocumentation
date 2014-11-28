@@ -130,8 +130,7 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 <h3>
 I am using a Samsung S-series device and I cannot complete the OnBoarding process. What could be the cause?</h3>
 
-<p>We have identified a number of BLE related issues which are experienced on devices manufactured by Samsung, which prevent the Onboarding process from completing successfully. These issues have been fixed in version 1.0.22 of the Android Manage App. If you have a Samsung phone and you are experiencing such issues, please make sure to install the latest app version, currently available on the <a href="https://play.google.com/store/apps/details?id=io.relayr.wunderbar">Play store</a> </p></div>
-
+<p>We have identified a number of BLE related issues which are experienced on devices manufactured by Samsung, which prevent the Onboarding process from completing successfully. These issues have been fixed in version 1.0.22 of the Android Manage App. If you have a Samsung phone and you are experiencing such issues, please make sure to install the latest app version, currently available on the <a href="https://play.google.com/store/apps/details?id=io.relayr.wunderbar">Play store</a> </p>
 </div>
 
 <h2 class="collapseHeader"> Device Specific Issues</h2>
