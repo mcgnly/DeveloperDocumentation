@@ -105,17 +105,16 @@ Some of the scopes include others. For example the `admin-user-info` scope conta
 
 ### Scope Information in the Response Header
 
-Each API call is returned with two fields in its header:
+Each response to an API call includes two fields in its header:
 
-1. `x-accepted-oauth-scopes` - The expected permissions scope for the API call.
-2. `x-oauth-scopes`	- The existing permissions scope the initiator of the call has.
+1. **x-accepted-oauth-scopes** - The expected permissions scope for the API call.
+2. **x-oauth-scopes** - The existing permissions scope the initiator of the call has.
 
-**For Example: **
+**For Example:**
 
 	x-accepted-oauth-scopes →admin-device-info
 	x-oauth-scopes →compound scope access-own-user-info containing (read-user-info, write-user-info, admin-device-info, read-device-data)
 
-The header will list component-scopes as seen in the example above.
 
 ## HTTP Status Codes
 
