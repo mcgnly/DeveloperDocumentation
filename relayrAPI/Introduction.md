@@ -60,6 +60,63 @@ to a device does not gather data but is only used to relay the data from the dev
 to the relayr platform. The transmitter is also used to authenticate the different
 devices that transmit data via it.
 
+## API Permission Scopes
+
+Scopes define the set of permissions an application has access to once it is installed on a user's mobile device. The various relayr API calls each have a scope which is expected by our server so that data can be returned. In case an app initiates an API call for which it does not have the required scope, the relayr server will not return the data requested.
+
+### Defined Scopes
+
+relayr currently defines the following scopes: 
+
+
+	access-own-user-info
+
+Allows to access the information of the relayr user who has installed the app.
+
+	admin-user-info
+
+Allows to read (view) the user's information and write (modify it) to it.
+
+	read-user-info
+
+Allows to view user information.
+
+	write-user-info
+
+Allows to modify the user's information.
+
+	reset-password
+
+Allows the user to reset their password for the relayr cloud. 
+
+	admin-device-info
+
+Allows to read from and write to devices/transmitters on the relayr platform.
+
+	read-device-data
+
+Allows to read (view) device readings.
+
+	configure-devices
+
+Allows to modify the configuration of an existing Device.
+
+Some of the scopes include others. For example the `admin-user-info` scope contains the `write-user-info` and the `read-user-info` scopes.
+
+### Scope Information in the Response Header
+
+Each API call is returned with two fields in its header:
+
+1. `x-accepted-oauth-scopes` - The expected permissions scope for the API call.
+2. `x-oauth-scopes`	- The existing permissions scope the initiator of the call has.
+
+**For Example: **
+
+	x-accepted-oauth-scopes →admin-device-info
+	x-oauth-scopes →compound scope access-own-user-info containing (read-user-info, write-user-info, admin-device-info, read-device-data)
+
+The header will list component-scopes as seen in the example above.
+
 ## HTTP Status Codes
 
 For each request made to the relayr API an HTTP response code with either a JSON Body or without one is returned.
