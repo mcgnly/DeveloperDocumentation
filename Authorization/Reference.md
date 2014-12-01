@@ -50,7 +50,7 @@ used for obtaining authorization. The relayr platform has implemented two of the
 During the registration process, when registering as an Application Publisher (developer)
 you could choose which of these flows best fits your application type.
 As the final stage of the registration of an app, you will receive two unique identifiers
-for your app `client_id` and `client_secret`.
+for your app: app id (which doubles up as the OAuth `client_id`) and `client_secret`.
 
 
 ## Authorization Code 
@@ -96,13 +96,13 @@ parse the URL to extract the token. **This token will only be valid for two week
 
 The initial call which sets both authorization flows in motion is:
 
-[GET] `https://api.relayr.io/oauth2/auth?redirect_uri={redirect_uri}&response_type={response_type}&client_id={clientId}&scope={scope}`
+[GET] `https://api.relayr.io/oauth2/auth?redirect_uri={redirect_uri}&response_type={response_type}&client_id={appId}&scope={scope}`
 
 Where: 
 
    * `redirect_uri` (string): The URI of the page where the user is redirected upon successful login. The URI *must* include the protocol used e.g. 'http'. **The redirect URI is set when an application is registered on the relayr Platform.** 
    * `response_type` (string): The type of response to be returned according to the type of authorization initiated. The two available values are `code` and `token`. 
-   * `client_id` (string): The clientId assigned to the app upon registration.
+   * `client_id` (UUID): The app's id assigned to the app upon registration.
    * `scope` (string): A list of permissions the application is to be granted. List items should be separated by a space. The scope which is currently available for app developers is the _access-own-user-info_ scope. 
     
 Following this call, two scenarios are expected:
