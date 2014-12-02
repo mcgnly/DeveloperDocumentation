@@ -11,7 +11,7 @@ For debugging purposes, you would need to connect an external USB serial convert
 Boards such as the **[Arduino Mega](http://arduino.cc/en/Main/arduinoBoardMega)** have three extra hardware serial ports. four ports in total. You can therefore set your debug/bridge connection port to be any of the 4 ports. The same goes for the bridge module. You are able to see the data sent and received via the Arduino default serial monitor 
 when the debug port is set to 0, without the need for an external application. 
 
-![Picture of the example](./README/arduinoBridge.gif)
+![Picture of the example](assets/arduinoBridge.gif)
 
 ## Getting Started
 
