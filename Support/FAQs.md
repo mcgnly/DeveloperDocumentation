@@ -49,7 +49,7 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <h3> Can I onboard a WunderBar using a <em>WPA2-Enterprise</em> Network?</h3>
 
-The short answer is no. The Master Module can only connect to a <strong>WPA2-Personal</strong> network.
+<p>The short answer is no. The Master Module can only connect to a <strong>WPA2-Personal</strong> network.</p>
 
 <h3> I'm trying to onboard my WunderBar and I experience difficulties - what should I check?</h3>
 
@@ -67,6 +67,16 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 <li>When the above conditions are met the things that you should make sure is that the <em><strong>Master Module and all other sensors are in OnBoarding mode</strong></em> and that the Master Module is connected to the WiFi network. Please note that in case it is not connected, the WiFi LED (Located at the edge of the board, between the USB connector and the Inductor marked with a K) will be on.</li>
 
 </ul>    
+</p>
+
+<h3> How can I check whether my network is a 2.4 GHz one?</h3>
+
+<p>You could check this with a single command run from your PC's command-line interface.
+<br />
+For <strong>Windows</strong> use: <code>netsh wlan show all</code><br/>
+For <strong>Mac OS</strong> use: <code>/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I</code>
+<br />
+The output of the command includes a <strong>channel</strong> parameter. If the channel is below 15 (i.e. 1-14), the network the computer is connected to is a 2.4 GHz one.  
 </p>
 
 <h3> I've accidentally broken the board- can I still onboard?</h3>
