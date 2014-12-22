@@ -1,6 +1,6 @@
-# The relayr Python Library
+# relayr for Pythonists
 
-Welcome to the relayr Python Library. [The repository](https://github.com/relayr/python-sdk) provides Python developers with  programmatic access points to the relayr platform.
+Welcome to the relayr Python Library Documentation. [The repository](https://github.com/relayr/python-sdk) provides Python developers with  programmatic access points to the relayr platform.
 
 These include access to the relayr cloud via the [relayr API](https://developer.relayr.io/documents/relayrAPI/Introduction) as well as direct connection to the relayr WunderBar sensors, via Bluetooth Low Energy (using [BlueZ](http://www.bluez.org/) on Linux). 
 

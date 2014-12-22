@@ -1,9 +1,9 @@
-# Introduction
+# relayr for iOS and OSX Developers
 
-Welcome to the relayr iOS&OSX SDK (*Beta*).
+Welcome to the relayr iOS&OSX SDK (*Beta*) Documentation, we are genuinely excited to have you on board!
+The SDK is available for download from the [GitHub Apple repository](https://github.com/relayr/apple-sdk).
 
 The information in this section will assist you in building your first iOS/OSX relayr app,
-referencing our [GitHub Apple repository](https://github.com/relayr/apple-sdk).  
 
 The Relayr SDK requires:
 

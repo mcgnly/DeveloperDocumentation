@@ -1,4 +1,4 @@
-## I am a Web developer
+## Introduction
 
 We realize not everyone is an Android or an iOS developer. This is why this section is dedicated to you - front end developers who would like to use the relayr <a href="https://developer.relayr.io/documents/Welcome/Platform" target="_blank"> Cloud Platform </a> to bring things to life.  
 

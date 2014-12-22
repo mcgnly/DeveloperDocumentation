@@ -79,16 +79,8 @@
                     "title": "Introduction"
                 },
                 {
-                    "file": "GettingStarted",
-                    "title": "Getting Started"
-                },
-                {
-                    "file": "LoginSequence",
-                    "title": "Creating a Login Sequence"
-                },
-                {
-                    "file": "DeviceChannel",
-                    "title": "Subscribing to a Device Channel"
+                    "file": "BuildingApp",
+                    "title": "Building your first relayr Android App"
                 },
                 {
                     "file": "Sample Project",
@@ -100,6 +92,12 @@
                     "file": "Sample Project",
                     "title": "Sample App - CantTouchThis",
                     "external": "https://github.com/relayr/android-cant-touch-this",
+                    "newTab": true
+                },
+                {
+                    "file": "Sample Project",
+                    "title": "Sample App - TellMeWhen",
+                    "external": "https://github.com/relayr/android-tell-me-when",
                     "newTab": true
                 },
                 {

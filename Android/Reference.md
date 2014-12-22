@@ -1,11 +1,13 @@
-# The relayr Android SDK 
+# relayr for Android Developers 
 
-Welcome to the relayr Android SDK, we are genuinely excited to have you on board!
-All references in this section are to the [relayr Android SDK Repository](https://github.com/relayr/android-sdk)
+Welcome to the relayr Android Documentation, we are genuinely excited to have you on board!
+The Android SDK is available for download from the [relayr Android SDK Repository](https://github.com/relayr/android-sdk) on GitHub.
 
-The Android SDK provides you with programmatic access points to the relayr API, it allows you to use the relayr [Cloud Platform](https://developer.relayr.io/documents/Welcome/Platform) in your application and in the future - handle Bluetooth LE connection to your sensor modules. 
+The Android SDK provides you with programmatic access points to the relayr API, it allows you to use the relayr [Cloud Platform](https://developer.relayr.io/documents/Welcome/Platform) in your application and in the future - handle Bluetooth Low Energy connection to your sensor modules and other devices.
 
-We realize that you probably want to skip introductions and get down to building your app so here are the first steps to [get you started](https://developer.relayr.io/documents/Android/GettingStarted).
+## Building your First relayr Android App 
+
+We realize that you probably want to skip introductions and get down to building your app so we've created a [step by step tutorial](https://developer.relayr.io/documents/Android/BuildingApp) explaining how to create a simple thermometer application, using the Temperature sensor available on the WunderBar and the Android SDK.  
 
 ## SDK Reference 
 
@@ -13,7 +15,7 @@ Click <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" targ
 
 ## Sample Projects
 
-We've built an easy to implement, quick and simple <a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer">Thermometer application</a> to get you introduced to the relayr Android world. We've also created a fun and simple Can'tTouchThis application to give you an idea of how you could utilize our Cloud platform and live sensor data. Have a look at the <a href="https://github.com/relayr/android-cant-touch-this">Can'tTouchThis app on GitHub</a> for additional information	
+We've built an easy to implement, quick and simple <a href="https://github.com/relayr/android-demo-apps/tree/master/thermometer">Thermometer application</a> to get you introduced to the relayr Android world. We've also created a fun and simple Can'tTouchThis application to give you an idea of how you could utilize our Cloud platform and live sensor data. Have a look at the <a href="https://github.com/relayr/android-cant-touch-this">Can'tTouchThis app on GitHub</a> for additional information. In addition, check out our recently released app [TellMeWhen](https://github.com/relayr/android-tell-me-when) which is also open source and allows you to receive notifications based on rules you create concerning the different sensor measurements.	
 
 
 
