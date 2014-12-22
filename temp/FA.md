@@ -1,10 +1,9 @@
-
-<h1 fullpage>Building your First relayr Android App - A Step by Step Tutorial</h1>
+# Building your First relayr Android App - A Step by Step Tutorial
 
 
 We cannot all be Android Developers. What if we told you that you don't really have to be an Android developer in order to start building apps for relayr? 
 
-Have a look at this easy to use step by step thermometer app which will walk you through building your first Android relayr app. We've broken it down into 9 steps, including setting up Android Studio so you too would get an idea of what app development is all about.
+Have a look at this easy to use step by step thermometer app which will walk you through building your first Android relayr app. We've broken it down into 8 steps, including setting up Android Studio so you too would get an idea of what app development is all about.
 
 Ready to get started? Let's Go!
 
@@ -121,6 +120,7 @@ import statement which you can select by typing opt+Enter.
 <p>And add Internet permissions as shown below:</p>
 <pre><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
 </code></pre>
+
 
 </div>
 
@@ -338,6 +338,7 @@ public class ActivityThermometerDemo extends Activity implements LoginEventListe
 }
 </code></pre>
 
+<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/19bf3578de9fd2c20e2ebab50c5a280500d411c9">this step of the Thermometer Demo App </a> available on Github.</p>
 </div>
 
 
@@ -474,8 +475,8 @@ public void onSuccessUserLogIn() {
 }
 </code></pre>
 
-<p>To see the code modifications at this step, please have a look at the <a href="https://github.com/relayr/android-demo-apps/commit/bdf702c621ba3dce8ace777d421828da5ade7caf">Thermometer Demo App Step 6 branch</a> available on Github.</p>
 
+<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/bdf702c621ba3dce8ace777d421828da5ade7caf">this step of the Thermometer Demo App </a> available on Github.</p>
 </div>
 
 
@@ -560,7 +561,7 @@ public void onSuccessUserLogIn() {
 
 <p>This is it for this step. In the next step we will be defining the logic behind the method which allows us to subscribe to data updates coming from the temperature sensor as well as define the logic behind displaying the data to the user.</p>
 
-
+<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/5fe713431296f586a778c1c09093e21c5e1a1104">this step of the Thermometer Demo App </a> available on Github.</p>
 
 </div>
 
@@ -761,13 +762,34 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 </code></pre>
 
 <p>The main class which is used in this method is the <code>WebSocketClient</code> class, which incorporates all calls which handle device-channel subscription. This class is not accessible directly and is available only via the <code>RelayrSdk</code> class. </p>
-</div>
 
+
+<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/7d3523b312399e3b3c3e6c04cb92c4af11ceeba2">this step of the Thermometer Demo App </a> available on Github.</p>
+
+</div>
 
 
 
 <h2 class="collapseHeader">Step 8: Loading the App on Your Mobile Phone</h2>
 
 <div class="collapse">
+
+<p>These are the last and final steps you need to follow in order to get the application to run on your mobile phone. </p>
+<ol>
+<li>Connect your phone to your computer with a USB cable.</li>
+<li>Make sure that &quot;USB Debugging&quot; is enabled on your phone. This setting is normally located under <em>Settings&gt;Options&gt;Developer Options&gt;USB Debugging</em>, but this may vary from one mobile device to the next.</li>
+<li>Once your phone is connected to your computer, Navigate in Android Studio to <em>Run&gt;Run app</em></li>
+</ol>
+<p><img src="assets/Run.png" class="center" /></p>
+<ol>
+<li>Next, choose your device from the list of connected devices:</li>
+</ol>
+<p><img src="assets/Device.png" class="center" /></p>
+<ol>
+<li>The following will appear in the activity log at the bottom of the interface:</li>
+</ol>
+<p><img src="assets/Log.png" class="center" /></p>
+<p>The app will be launched on your mobile phone and you will be prompted with the relayr login screen: </p>
+<p><img src="assets/s0.png" width=400px/></p>
 
 </div>
