@@ -11,7 +11,7 @@ Ready to get started? Let's Go!
 
 <div class="collapse">
 
-<p>Here are a few preliminary steps you would need to follow in order to get your development environment all ready for building you first app. </p>
+<p>Here are a few preliminary steps you would need to follow in order to get your development environment all ready for building your first app. </p>
 <h3>Download <a href="https://developer.android.com/sdk/installing/studio.html">Android Studio</a></h3>
 <hr />
 <h3>Create an Android Project on Android Studio</h3>
@@ -46,11 +46,11 @@ Ready to get started? Let's Go!
 
 
 
-<h2 class="collapseHeader">Step 2: Creating a relayr App</h2>
+<h2 class="collapseHeader">Step 2: Getting your relayr App Key</h2>
 
 <div class="collapse">
 
-<p>Here are the first steps to get you started in the relayr world. Follow them and you'd be building your first app in no time!</p>
+<p>In this step we will walk you through creating an app on the relayr Developer Dashboard and obtaining your app key</p>
 <h3>Create a <a href="https://api.relayr.io/oauth2/auth?client_id=D-aSJGtuUeQPwIgos1Xt_xAhXzo9RpiR&amp;redirect_uri=https://developer.relayr.io/dashboard/scrape&amp;response_type=token&amp;scope=access-own-user-info+configure-devices">relayr User</a> in case you don't have one already</h3>
 <hr />
 <h3>Create a relayr app on the <a href="https://developer.relayr.io/dashboard/apps/myApps">app page</a>.</h3>
@@ -84,7 +84,7 @@ including everything which is in the Android Application class, and whatever you
 
 <div class="collapse">
 
-<h3>Add an onCreate Handler</h3>
+<h3>Adding an onCreate Handler</h3>
 <p>As we are interested in our app being launched, the next step will be to create a handler for the 'create' event. The create event is the one fired when the app is launched. We therefore create an <em>onCreate</em> handler. You can choose events already defined in the Application class by choosing 'Override methods' from the Code menu, or just copy and paste the following:</p>
 <pre><code>@Override
 public void onCreate() {
@@ -107,7 +107,7 @@ find the relevant class. The easiest way is to select the word, Studio suggests 
 import statement which you can select by typing opt+Enter.  
 </p>
 <hr />
-<h3>Include the app in the Android Manifest and add Internet permissions</h3>
+<h3>Including the app in the Android Manifest and adding Internet permissions</h3>
 <p>Inside <em>src/main/AndroidManifest.xml</em>: Reference your Application by adding the <strong>android:name</strong> to the application element: </p>
 <pre><code>&lt;application
     android:allowBackup=&quot;true&quot;
@@ -131,7 +131,7 @@ import statement which you can select by typing opt+Enter.
 <div class="collapse">
 
 <p>In order to enable your app to connect to your onboarded devices (or those of the
-user) you'll need to be able to login. 
+user) you'll need to allow the user to login. 
 Though we have wrapped a lot of complications away in the SDK, you'll still have to create the views that use this Login logic. </p>
 <h3>Adding String Names</h3>
 <p>In the Project panel open app/src/main/res/values/strings.xml</p>
@@ -168,7 +168,7 @@ It will create a file with the following code:</p>
 &lt;/menu&gt;
 </code></pre>
 
-<p>The first new attribute loads android tools, and in the second we indicate that it should run in &quot;the Context&quot; of the Activity we have defined.</p>
+<p>The first new attribute loads android tools, and in the second we indicate that it should run in &quot;the Context&quot; of the Activity we defined.</p>
 <p>Now we can add the content to the menu.</p>
 <pre><code>&lt;menu xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
     xmlns:tools=&quot;http://schemas.android.com/tools&quot;
@@ -198,7 +198,7 @@ one we defined earlier in the <em>strings.xml</em> file.</p>
 &quot;Log in&quot; menu item appear on the screen.</p>
 
 <h3>Adding Logic to the Activity</h3>
-<p>We've mentioned that an Activity is a an interactive screen within an App. 
+<p>We've mentioned that an Activity is an interactive screen within an App. 
 The following code is used to build the logic behind the activity and should be added to the <strong>ThermometerDemoActivity.java</strong> file. It's a bit long, but we've added code comments to walk you through it... See you on the other side</p>
 
 <pre><code>package io.relayr.demo.thermometer;
@@ -350,7 +350,7 @@ public class ActivityThermometerDemo extends Activity implements LoginEventListe
 
 <p>In this step we would like to add some text to greet a user upon logging in or launching the app.</p>
 <p>There are a number of files which need to be modified in order to accommodate this functionality.</p>
-<h3>Adding an 'Hello' String</h3>
+<h3>Adding a 'Hello' String</h3>
 <p>The first file is the <strong><em>strings.xml</em></strong> file, located as mentioned under <em>source/main/res/values</em></p>
 <p>This is where we define the text that a user - either logged in or not - will see when using the app. Add the following to your list of strings: </p>
 <pre><code>&lt;string name=&quot;hello&quot;&gt;Hello %s!&lt;/string&gt;
@@ -486,7 +486,7 @@ public void onSuccessUserLogIn() {
 
 <div class="collapse">
 
-<p>In this step we aim to select the Thermometer device associated with the user logged in to the application. </p>
+<p>In this step we want to select the Thermometer device associated with the user logged in to the application. </p>
 <p>We introduce the <code>loadTemperatureDevice(user)</code>as one of the methods to be called in our <code>onNext</code> method, defined in the previous step: </p>
 <pre><code>        @Override
         public void onNext(User user) {
@@ -497,8 +497,8 @@ public void onSuccessUserLogIn() {
 </code></pre>
 
 <p>And now we turn to define the logic behind the <code>loadTemperatureDevice(user)</code> method.</p>
-<p>In this method we first load the user and the transmitters associated with them, we do this by calling the <code>RelayrApi</code> class which incorporates a wrapped version of all relayr API calls. It is accessible only via the <code>RelayrSdk</code>. </p>
-<p>In case of an error loading the transmitter we return an error text (one which we will shortly define under the <em>strings.xml</em> file)</p>
+<p>In this method we first load the user and the transmitters associated with them, we do this by calling the <code>RelayrApi</code> class which incorporates a wrapped version of all relayr API calls. It is accessible only via the <code>RelayrSdk</code> class. </p>
+<p>In case of an error loading the transmitter we return an error text (one which we will shortly define in the <em>strings.xml</em> file)</p>
 <pre><code>private void loadTemperatureDevice(User user) {
     RelayrSdk.getRelayrApi()
             .getTransmitters(user.id)
@@ -540,11 +540,11 @@ public void onSuccessUserLogIn() {
 } 
 </code></pre>
 
-<p>After obtaining the first transmitter which is associated with devices, we check to see if one of the devices associated with the transmitter is a temperature sensor. When we find such a device, we initiate the <code>subscribeForTemperatureUpdates(device)</code> method. This method is not defined in the below snippet of code- you can see where it is called:</p>
+<p>After obtaining the first transmitter which is associated with devices, we check to see if one of the devices is a temperature sensor. When we find such a device, we initiate the <code>subscribeForTemperatureUpdates(device)</code> method. This method is not defined in the below snippet of code- you can see where it is called:</p>
 <pre><code>                            // TODO: subscribeForTemperatureUpdates(device);
 </code></pre>
 
-<p>This method which subscribes the user to the device channel and enables them to receive the readings from the device will be defined in the next stage.</p>
+<p>This method which subscribes the user to the device channel and enables them to receive the readings from the device will be defined in the next step.</p>
 <h3>Adding an Error Handling String</h3>
 <p>In the meantime and before moving to the next step we need to define a string which will be shown to the user in case of failure to execute any of the methods. We don't want the app to fail silently without letting the user know that something went wrong. </p>
 <p>So we access our strings.xml file and add the following to the list of strings:</p>
@@ -559,7 +559,7 @@ public void onSuccessUserLogIn() {
                     } 
 </code></pre>
 
-<p>This is it for this step. In the next step we will be defining the logic behind the method which allows us to subscribe to data updates coming from the temperature sensor as well as define the logic behind displaying the data to the user.</p>
+<p>This is it for this step.</p>
 
 <p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/5fe713431296f586a778c1c09093e21c5e1a1104">this step of the Thermometer Demo App </a> available on Github.</p>
 
@@ -572,13 +572,13 @@ public void onSuccessUserLogIn() {
 <div class="collapse">
 <p>In this last step of creating the <strong>Thermometer app</strong> we will define the logic behind subscribing to sensor updates as well as display the data in the view pane of the app.</p>
 <h3>Adding the Temperature String</h3>
-<p>We'll start by adding the <em>Temperature</em> value title to the list of strings used on the app. We access the <strong><em>strings.xml</em></strong> file under <em>src/main/res/values/</em> and add the following to the list of strings:</p>
+<p>We'll start by adding the <em>Temperature</em> value title to the list of strings used by the app. We access the <strong><em>strings.xml</em></strong> file under <em>src/main/res/values/</em> and add the following to the list of strings:</p>
 <pre><code>&lt;string name=&quot;title_temperature&quot;&gt;Temperature&lt;/string&gt;
 </code></pre>
 
 <h3>Accommodating the Layout of the View</h3>
 <p>As we've seen in Step 5, every item shown on the app has to be accommodated in the <strong>activitythermometerdemo.xml</strong> file, located under <em>src/main/res/layout</em> </p>
-<p>We add the following two text views to the file: </p>
+<p>We'll add the following two text views to the file: </p>
 <pre><code>&lt;TextView
     android:id=&quot;@+id/txt_temperature_value&quot;
     android:layout_width=&quot;wrap_content&quot;
@@ -634,7 +634,7 @@ protected void onResume() {
 }   
 </code></pre>
 
-<p>Our onCreate method would now look like this: </p>
+<p>Our onCreate method now looks like this: </p>
 <pre><code>@Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -676,7 +676,7 @@ private void updateUiForALoggedInUser() {
 }
 </code></pre>
 
-<p>and the<code>mTemperatureDeviceSubscription</code> variable to the <code>loadTemperatureDevice</code> method(we've only included a part of the method here): </p>
+<p>and the<code>mTemperatureDeviceSubscription</code> variable to the <code>loadTemperatureDevice</code> method (we've only included a part of the method here): </p>
 <pre><code>private void loadTemperatureDevice(User user) {
     mTemperatureDeviceSubscription = RelayrSdk.getRelayrApi()
             .getTransmitters(user.id)
@@ -689,8 +689,8 @@ private void updateUiForALoggedInUser() {
 
 <p>Both methods have been defined earlier. </p>
 <p>Once we have done all the preliminary work, we are now ready to define the main functionality in this step, which is how to subscribe to a device channel and receive readings from it and just as important, how to unsubscribe from receiving the data in case the app is turned off, paused etc. </p>
-<p>We will name the two methods: <code>subscribeForTemperatureUpdates</code> and <code>unSubscribeToUpdates</code> and start with calling them from other methods in the code: </p>
-<p>The <code>unSubscribeToUpdates</code> method will be called when the user logs out as well as when the application is paused: </p>
+<p>We will name the two methods: <code>subscribeForTemperatureUpdates()</code> and <code>unSubscribeToUpdates()</code> and start with calling them from other methods in the code: </p>
+<p>The <code>unSubscribeToUpdates()</code> method will be called when the user logs out as well as when the application is paused: </p>
 <pre><code>private void logOut() {
     unSubscribeToUpdates();
     RelayrSdk.logOut();
@@ -708,7 +708,7 @@ protected void onPause() {
 }
 </code></pre>
 
-<p>The <code>subscribeForTemperatureUpdates</code> method will be called by the <code>loadTemperatureDevice</code> method. 
+<p>The <code>subscribeForTemperatureUpdates()</code> method will be called by the <code>loadTemperatureDevice</code> method. 
 You might recall that in step 6 we added a placeholder for this method in the following manner: </p>
 <pre><code>                                // TODO: subscribeForTemperatureUpdates(device);
 </code></pre>
@@ -720,7 +720,7 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 } 
 </code></pre>
 
-<p>And define the logic behind the <code>unSubscribeToUpdates</code> method: </p>
+<p>And define the logic behind the <code>unSubscribeToUpdates()</code> method: </p>
 <pre><code>private void unSubscribeToUpdates() {
     if (isSubscribed(mUserInfoSubscription)) {
         mUserInfoSubscription.unsubscribe();
@@ -735,7 +735,7 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 }
 </code></pre>
 
-<p>The <code>subscribeForTemperatureUpdates</code> will be defined in the following manner: </p>
+<p>The <code>subscribeForTemperatureUpdates()</code> will be defined in the following manner: </p>
 <pre><code>private void subscribeForTemperatureUpdates(TransmitterDevice device) {
     mDevice = device;
     mWebSocketSubscription = RelayrSdk.getWebSocketClient()
@@ -764,7 +764,9 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 <p>The main class which is used in this method is the <code>WebSocketClient</code> class, which incorporates all calls which handle device-channel subscription. This class is not accessible directly and is available only via the <code>RelayrSdk</code> class. </p>
 
 
-<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/7d3523b312399e3b3c3e6c04cb92c4af11ceeba2">this step of the Thermometer Demo App </a> available on Github.</p>
+<p>To see the code modifications at this stage, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/7d3523b312399e3b3c3e6c04cb92c4af11ceeba2">this step of the Thermometer Demo App </a> available on Github.
+<br />
+PLEASE NOTE: The modification made in the above mentioned commit, line 135 is a mistake. Yup, even well versed developers such as our own make mistakes. please ignore the change.</p>
 
 </div>
 
@@ -774,7 +776,7 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 
 <div class="collapse">
 
-<p>These are the last and final steps you need to follow in order to get the application to run on your mobile phone. </p>
+<p>Congratulations! You are almost done! all that is left now is to get the application to run on your mobile phone. This step describes what you would need to do. </p>
 <ol>
 <li>Connect your phone to your computer with a USB cable.</li>
 <li>Make sure that &quot;USB Debugging&quot; is enabled on your phone. This setting is normally located under <em>Settings&gt;Options&gt;Developer Options&gt;USB Debugging</em>, but this may vary from one mobile device to the next.</li>
@@ -791,5 +793,7 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 <p><img src="assets/log.png" class="center" /></p>
 <p>The app will be launched on your mobile phone and you will be prompted with the relayr login screen: </p>
 <p><img src="assets/s0.png" width=400px/></p>
+
+<p>Now simply connect your WunderBar and see your very first Android app in action!</p>
 
 </div>
