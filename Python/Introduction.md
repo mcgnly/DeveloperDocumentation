@@ -13,7 +13,7 @@ You can install the library using one of the following methods, using Pip:
 
     	pip install git+https://github.com/relayr/python-sdk
 
-2. You may use the following to install the package from the [Python Package Index](https://pypi.python.org/pypi/relayr/) 
+2. You can use the following to install the package from the [Python Package Index](https://pypi.python.org/pypi/relayr/) 
 
     
 		pip install relayr
@@ -22,7 +22,7 @@ You can install the library using one of the following methods, using Pip:
 ## Usage Examples
 
 
-### Switching on/off an LED light on a device:
+### Switching a device's LED on/off:
 
 
 		from relayr import Client
@@ -30,16 +30,17 @@ You can install the library using one of the following methods, using Pip:
     	d = c.get_device(id='<my_device_id>')
     	d.switch_led_on(True)
 
-### Receiving data from a device:
+### Receiving a 10 second data stream from a device:
 
 		import time
 		from relayr import Client
 		c = Client(token='<my_access_token>')
-		d = c.get_device(id='<my_device_id>').get_info()
+		dev = c.get_device(id='<my_device_id>').get_info()
+		user = c.get_user()
+		app = c.get_app()
 		def callback(message, channel):
 		    print(repr(message), type(message))
-		user = c.get_user()
-		conn = user.connect_device(d, callback)
+		conn = user.connect_device(app, dev, callback)
 		conn.start()
 		time.sleep(10)
 		conn.stop()
@@ -48,9 +49,9 @@ You can install the library using one of the following methods, using Pip:
 
 The full reference of the package could be obtained in one of the following methods: 
 
-1. The documentation may be found in the ***Docs*** sub directory in the Github repository and it can be rendered in various formats using a helper script named [`make_docs.sh`](https://github.com/relayr/python-sdk/blob/master/make_docs.sh).
+1. The documentation can be found in the ***Docs*** sub directory in the Github repository and it can be rendered in various formats using a helper script named [`make_docs.sh`](https://github.com/relayr/python-sdk/blob/master/make_docs.sh).
 
 
-2. You may access the full reference on the [Read the Docs](http://relayr.readthedocs.org/) website.
+2. You can also access the full reference on the [Read the Docs](http://relayr.readthedocs.org/) website.
 
 
