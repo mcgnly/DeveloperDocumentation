@@ -81,3 +81,40 @@ Decide how you would like to display the data and start viewing the values.
         {
             // Do something with the data here. Data is contained inside args.
         }
+
+## Example: Sensor Channel Subscription Flow
+
+
+        // Set the OAuth token for the requests initiated
+        HttpManager.Manager.OauthToken = "YOUR OAUTH TOKEN HERE";
+        
+		// Obtain the userId
+        HttpResponseMessage userInfoResponse = await HttpManager.Manager.PerformHttpOperation(
+                                                    ApiCall.UserGetInfo, null, null);
+        dynamic userInfo = await HttpManager.Manager.ConvertResponseContentToObject(userInfoResponse);
+        string userId = (string) userInfo["id"];
+        
+		// Get a list of Transmitters
+        HttpResponseMessage transmittersResponse = await HttpManager.Manager.PerformHttpOperation(
+                                                        ApiCall.TransmittersListByUser,
+                                                        new string[] { userId }, null);
+        dynamic transmitters = await HttpManager.Manager.ConvertResponseContentToObject(transmittersResponse);
+
+
+		// Get the ID and Secret for the transmitter. These will be your credentials for the MQTT Broker
+        string transmitterId = (string) transmitters[0]["id"];
+        string transmitterSecret = (string) transmitters[0]["secret"];
+
+        // Connect to the broker
+        Transmitter transmitter = new Transmitter(transmitterId);
+        transmitter.ConnectToBroker("Identifier of your choice", transmitterSecret);
+
+        // Subscribe to a sensor. Add an event handler for incoming data
+        Device device = transmitter.SubscribeToDeviceData("SENSOR ID");
+        device.PublishedDataReceived += device_PublishedDataReceived;
+
+        // Event handler for incoming data
+        void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
+        {
+            // Do something with the data here. Data is contained inside args.
+        }
