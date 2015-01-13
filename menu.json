@@ -175,8 +175,26 @@
             ]
         },
         {
+            "directory": "CSharp",
+            "title": "C#",
+            "color": "yellow",
+            "icon" : "fa-apple",
+            "submenus": [
+                {
+                    "file": "Reference",
+                    "title": "relayr for C# Developers"
+                },
+                {
+                    "file": "The C# SDK",
+                    "title": "The C# SDK",
+                    "external": "https://github.com/relayr/csharp-sdk",
+                    "newTab": true
+                }
+            ]
+        },
+        {
             "directory": "HowTos",
-            "title": "Extras",
+            "title": "Firmware Extras",
             "color": "purple",
             "submenus": [
                 {
