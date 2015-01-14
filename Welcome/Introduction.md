@@ -33,7 +33,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
 
 
 <div class="floatBox">
-<img src="assets/Python_logo.png" alt="" title=""> 
+<img src="assets/Python_logo.png" alt="" title="" height=100px> 
 <p>If you are a pythonist at heart, check out our <b>Python library</b> for everything you need to get started with your first relayr Python project</p>
 
 <a class="center" href="https://developer.relayr.io/documents/Python/Introduction">View Python Documentation</a>
@@ -47,7 +47,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
 </div>
 
 <div class="floatBox">
-<img src="assets/Csharp.png" alt="" title="" height=100px>
+<img src="assets/Csharp.png" alt="" title="" height=110px>
 <p>Get all those great relayr perks, now available for apps built with C#. Check out our <b>C# Documentation</b> for those of you who just can't get enough of C#.</p>
 
 <a class="center" href="https://developer.relayr.io/documents/CSharp/Reference">View C# Documentation</a>
