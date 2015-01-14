@@ -33,7 +33,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
 
 
 <div class="floatBox">
-<img src="assets/Python_logo.png" alt="" title="" height=100px"> 
+<img src="assets/Python_logo.png" alt="" title=""> 
 <p>If you are a pythonist at heart, check out our <b>Python library</b> for everything you need to get started with your first relayr Python project</p>
 
 <a class="center" href="https://developer.relayr.io/documents/Python/Introduction">View Python Documentation</a>
