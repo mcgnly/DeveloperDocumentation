@@ -27,14 +27,18 @@ Before you can build a project including the C# SDK, you'll need to import two l
 
 The HttpManager requires an OAuth token to authorize your HTTP requests. You can obtain a token in two manners:
 
-1. Via an OAuth authentication flow: Due to the platform-specific nature of performing this task, the C# SDK does not have the ability to execute this process for you. If you choose to get a token using this method, you will need to implement it yourself. Documentation on how the relayr OAuth implementation can be found in [our documentation center](https://developer.relayr.io/documents/Welcome/OAuthReference).
+Via an OAuth authentication flow: Due to the platform-specific nature of performing this task, the C# SDK does not have the ability to execute this process for you. If you choose to get a token using this method, you will need to implement it yourself. Documentation on how the relayr OAuth implementation can be found on our [OAuth Reference page](https://developer.relayr.io/documents/Welcome/OAuthReference).
 
-2. By generating one through the relayr Dashboard. On the [API Keys](https://developer.relayr.io/dashboard/apps/myApps) page, create an app (or use an app previously created). 
-Clicking the "Generate Token" button will create the required OAuth token. This value can be hard-coded into your app, and allows you access to data from sensors and devices associated with your relayr account. This is extremely useful for prototyping and personal-use apps, however, it prevents you from being able to make your app widely available. You will need to use the first method of generating the token, if you wish to distribute your application.
+or
+
+By generating one through the relayr Dashboard. On the [API Keys](https://developer.relayr.io/dashboard/apps/myApps) page, create an app (or use an app previously created). 
+Clicking the "Generate Token" button will create the required OAuth token. You can find detailed instructions for this procedure [here](https://developer.relayr.io/documents/WebDev/OAuthToken). 
+
+This value can be hard-coded in your app, and allows you access to data from sensors and devices associated with your relayr account. This is extremely useful for prototyping and personal-use apps, however, it prevents you from being able to make your app widely available. You will need to use the first method of generating the token, if you wish to distribute your application.
 
 ## Using the SDK
 
-Subscribing to data published by a sensor is simple, and can be accomplished in just a few lines of code.
+Below you will find the basic functions of the SDK. These will allow you to fetch a user, fetch the transmitter entities associated with the user as well as subscribing to data arriving from the different sensors.
 
 ### Setting the Oauth Token
 
@@ -94,6 +98,7 @@ Decide how you would like to display the data and start viewing the values.
 
 ## Example: Sensor Channel Subscription Flow
 
+The example below is a typical use of the SDK, allowing you to subscribe to data arriving from a sensor.
 
         // Set the OAuth token for the requests initiated
         HttpManager.Manager.OauthToken = "YOUR OAUTH TOKEN HERE";
