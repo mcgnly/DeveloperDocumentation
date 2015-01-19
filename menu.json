@@ -115,6 +115,10 @@
             "icon" : "",
             "submenus": [
                 {
+                    "file": "Introduction",
+                    "title": "Introduction"
+                },
+                {
                     "file": "Reference",
                     "title": "Getting Started"
                 },
@@ -126,6 +130,12 @@
                     "file": "Sample Project",
                     "title": "Sample App - Thermometer",
                     "external": "https://github.com/relayr/apple-sample-apps/tree/thermometer",
+                    "newTab": true
+                },
+                {
+                    "file": "Sample Project",
+                    "title": "Sample App - TellMeWhen",
+                    "external": "https://github.com/relayr/apple-tell-me-when",
                     "newTab": true
                 },
                 {
