@@ -197,6 +197,11 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 <h3>Do you have anything for <em>Ruby</em> Developers?</h3>
 <p> We have not released any official Ruby library, but luckily we have a great community of developers who support us and one of them has created a Gist for Ruby <a href="https://gist.github.com/jShaf/4905ef199885afb691d5">available here</a>. </p>
 
+<h3>I would like to use Eclipse in order to create my Android project, is that possible? </h3>
+
+<p>Officially, the only supported IDE for Android development is Android Studio. However, you can use the hint on <a href="https://forum.relayr.io/t/automatic-sdk-inclusion-fails/423/3">this forum post</a> in order to use Eclipse as well</p>
+
+
 <h3>I am using the iOS SDK and I need to log in through relayr every time I compile - Is there a way to log in programmatically </h3>
 
 <p>You may want to look at the <a href="https://forum.relayr.io/t/auto-login-programmatically/259">this Forum post</a> to get a bit more insight about this issue</p>
