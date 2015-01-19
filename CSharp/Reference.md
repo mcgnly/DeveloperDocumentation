@@ -46,7 +46,7 @@ Once you've obtained your OAuth token using either of the methods described abov
 	// Set the OAuth token
 	Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
 
-### Retrieving Transmitters, and Connecting to the MQTT Broker
+### Retrieving Transmitters and Connecting to the MQTT Broker
 
 Next, you'll need to fetch a list of your transmitters (WunderBars) from the relayr API, using the `GetTransmitters()` function. 
 You will use the ID of the transmitter to connect to the MQTT broker. Connections to the broker are performed on a per-Transmitter basis. You can have multiple connections simultaneously, one for each WunderBar. If you have multiple transmitters (Multiple WunderBars) you can choose an Id for each in order to tell them apart. This Id will be passes as `CLIENT ID OF YOUR CHOICE` below.
