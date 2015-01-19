@@ -1,19 +1,17 @@
-# relayr for iOS and OSX Developers
+Getting Started
+---------------
 
-Welcome to the relayr iOS&OSX SDK (*Beta*) Documentation, we are genuinely excited to have you on board!
-The SDK is available for download from the [GitHub Apple repository](https://github.com/relayr/apple-sdk).
+Below are a few basic steps to help get you started, building your first relayr iOS/OSX application. 
 
-The information in this section will assist you in building your first iOS/OSX relayr app,
+### Prerequisites
 
-The Relayr SDK requires:
+The relayr SDK requires: 
 
 * For iOS applications: Xcode 6+ and iOS 8+ (since the framework is released in the *Cocoa Touch Framework* form).
 * For OSX applications: Xcode 5+ and OSX 10.9+.
 
 The *RelayrSDK* project generates a product called `Relayr.framework` which, depending on your use purpose, can be run on a mac or on an iOS device.
 
-Getting Started
----------------
 
 ### Obtaining the Framework
 
