@@ -40,96 +40,60 @@ This value can be hard-coded in your app, and allows you access to data from sen
 
 Below you will find the basic functions of the SDK. These will allow you to fetch a user, fetch the transmitter entities associated with the user as well as subscribing to data arriving from the different sensors.
 
-### Setting the Oauth Token
+### Setting the OAuth Token
+Once you've obtained your OAuth token using either of the methods described above, pass it to the relayr class in the following manner:
 
-You are able to hard-code the generated OAuth token in the following manner:
+	// Set the OAuth token
+	Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
 
-        // Set the OAuth token for the requests initiated
-        HttpManager.Manager.OauthToken = "YOUR OAUTH TOKEN HERE";
+### Retrieving Transmitters, and Connecting to the MQTT Broker
 
-### Obtaining the User ID
+Next, you'll need to fetch a list of your transmitters (WunderBars) from the relayr API, using the `GetTransmitters()` function. 
+You will use the ID of the transmitter to connect to the MQTT broker. Connections to the broker are performed on a per-Transmitter basis. You can have multiple connections simultaneously, one for each WunderBar. If you have multiple transmitters (Multiple WunderBars) you can choose an Id for each in order to tell them apart. This Id will be passes as `CLIENT ID OF YOUR CHOICE` below.
 
-This function returns the ID of the logged in user. It should be called after a successful login.
+	// Get a list of transmitters and connect to the MQTT broker with the first one in the list
+	List<dynamic> transmitters = await Relayr.GetTransmitters();
+	Transmitter transmitter = Relayr.ConnectToBroker(transmitters[0], "CLIENT ID OF YOUR CHOICE");
 
-        // Obtain the userId
-        HttpResponseMessage userInfoResponse = await HttpManager.Manager.PerformHttpOperation(
-                                                    ApiCall.UserGetInfo, null, null);
-        dynamic userInfo = await HttpManager.Manager.ConvertResponseContentToObject(userInfoResponse);
-        string userId = (string) userInfo["id"];
+### Retrieving a List of Sensors and Subscribing to Data
 
-### Retrieving a List of Transmitters associated with the User
+Finally, fetch a list of Devices (sensors) associated with a specific Transmitter by calling the `GetDevices()` function, in the Transmitter object instance. 
+Once you have a sensor, you'll subscribe to the data being published by that sensor and define an event handler where you can choose how to handle the data received.
 
+In the example below, we've subscribed to the first device on the list of associated devices.
 
-        // Get a list of Transmitters
-        HttpResponseMessage transmittersResponse = await HttpManager.Manager.PerformHttpOperation(
-                                                        ApiCall.TransmittersListByUser,
-                                                        new string[] { userId }, null);
-        dynamic transmitters = await HttpManager.Manager.ConvertResponseContentToObject(transmittersResponse);
+	// Get a list of devices associated with the transmitter, subscribe to data
+	// From the first device on the list
+	List<dynamic> devices = await transmitter.GetDevices();
+	Device device = await transmitter.SubscribeToDeviceDataAsync(devices[0]);
+	device.PublishedDataReceived += device_PublishedDataReceived;
 
-### Creating a Transmitter object for one of the transmitters retrieved 
-
-In this case, we're using the first transmitter returned, although there could be many in the JSON response of the previous call.
-
-        // Get the ID and Secret for the transmitter. These will be your credentials for the MQTT Broker
-        string transmitterId = (string) transmitters[0]["id"];
-        string transmitterSecret = (string) transmitters[0]["secret"];
-
-### Connecting to the relayr MQTT Broker
-        
-        // Connect to the broker
-        Transmitter transmitter = new Transmitter(transmitterId);
-        transmitter.ConnectToBroker("SOME ID FOR YOURSELF", transmitterSecret);
-
-### Subscribing to a Sensor's Data Stream
-
-        // Subscribe to a sensor. Add an event handler for incoming data
-        Device device = transmitter.SubscribeToDeviceData("SENSOR ID");
-        device.PublishedDataReceived += device_PublishedDataReceived;
-
-### Implementing an Event Handler for Newly Received Data
-
-Decide how you would like to display the data and start viewing the values.
-
-        // Event handler for incoming data
-        void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
-        {
-            // Do something with the data here. Data is contained inside args.
-        }
+	// Create Handler for the the sensor's data published event
+	void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
+	{
+	      // Do something with the data here. Data is contained inside args
+	}
 
 ## Example: Sensor Channel Subscription Flow
 
 The example below is a typical use of the SDK, allowing you to subscribe to data arriving from a sensor.
 
-        // Set the OAuth token for the requests initiated
-        HttpManager.Manager.OauthToken = "YOUR OAUTH TOKEN HERE";
         
-		// Obtain the userId
-        HttpResponseMessage userInfoResponse = await HttpManager.Manager.PerformHttpOperation(
-                                                    ApiCall.UserGetInfo, null, null);
-        dynamic userInfo = await HttpManager.Manager.ConvertResponseContentToObject(userInfoResponse);
-        string userId = (string) userInfo["id"];
-        
-		// Get a list of Transmitters
-        HttpResponseMessage transmittersResponse = await HttpManager.Manager.PerformHttpOperation(
-                                                        ApiCall.TransmittersListByUser,
-                                                        new string[] { userId }, null);
-        dynamic transmitters = await HttpManager.Manager.ConvertResponseContentToObject(transmittersResponse);
+	// Set the OAuth token
+	Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
+	
+	// Get a list of transmitters and connect to the MQTT broker with the first one in the list
+	List<dynamic> transmitters = await Relayr.GetTransmitters();
+	Transmitter transmitter = Relayr.ConnectToBroker(transmitters[0], "CLIENT ID OF YOUR CHOICE");
 
+	// Get a list of devices associated with the transmitter, subscribe to data
+	// From the first device on the list
+	List<dynamic> devices = await transmitter.GetDevices();
+	Device device = await transmitter.SubscribeToDeviceDataAsync(devices[0]);
+	device.PublishedDataReceived += device_PublishedDataReceived;
 
-		// Get the ID and Secret for the transmitter. These will be your credentials for the MQTT Broker
-        string transmitterId = (string) transmitters[0]["id"];
-        string transmitterSecret = (string) transmitters[0]["secret"];
-
-        // Connect to the broker
-        Transmitter transmitter = new Transmitter(transmitterId);
-        transmitter.ConnectToBroker("Identifier of your choice", transmitterSecret);
-
-        // Subscribe to a sensor. Add an event handler for incoming data
-        Device device = transmitter.SubscribeToDeviceData("SENSOR ID");
-        device.PublishedDataReceived += device_PublishedDataReceived;
-
-        // Event handler for incoming data
-        void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
-        {
-            // Do something with the data here. Data is contained inside args.
-        }
+	// Create Handler for the the sensor's data published event
+	void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
+	{
+	      // Do something with the data here. Data is contained inside args
+	}
