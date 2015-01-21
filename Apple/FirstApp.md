@@ -3,7 +3,7 @@
 
 Always wanted to start developing for iOS or OSX and never really knew how to go about it? What if we told you that you don't really have to be an iOS or an OSX developer in order to start building apps for relayr? 
 
-Have a look at this easy to use step by step thermometer app tutorial which will walk you through building your first iOS/OSX relayr app. We've broken it down into 5 steps, so you too would get an idea of what app development is all about.
+Have a look at this easy to use step by step thermometer app tutorial which will walk you through building your first iOS/OSX relayr app. We've broken it down into 5 steps, so you too could get an idea of what iOS/OSX app development is all about.
 
 Ready to rumble? Let's Go!
 
@@ -26,10 +26,10 @@ Ready to rumble? Let's Go!
 <p>In this screen you will be prompted to determine where to save your project. In the example below we've simply selected &quot;Desktop&quot;.</p>
 <p><img src="assets/XCode4.png" /></p>
 <h4>View your project summary</h4>
-<p>XCode will build the project and will display the following summary at the end of the build procedure </p>
+<p>XCode will build the project and will display the following summary at the end of the build process </p>
 <p><img src="assets/XCode5.png" /></p>
 <p><strong>NOTE</strong>: In order to run your project on an external device you may need to request an <a href="https://developer.apple.com/developer-id/">Apple Developer ID</a>. However, running it on a simulator could be done without this ID.</p>
-<p>You are all set to start coding! You can move on to the next step.</p>
+<p>You are all set to start coding! Move on to the next step.</p>
 
 
 </div>
@@ -57,8 +57,8 @@ Ready to rumble? Let's Go!
 <li>Download the repository from <a href="https://github.com/relayr/apple-sdk">GitHub</a></li>
 <li>Open the <code>Relayr.workspace</code> in Xcode.</li>
 <li>Select a specific target from the workspace's targets. If you are developing for iOS, select <code>Relayr_iOS</code>; if you are developing for the Mac, select <code>Relayr_OSX</code>.</li>
-<li>Select the platform for your target. For Mac, there is only one choice (Mac); but for iOS, you can generate a framework for the simulator or for an iOS physical device.</li>
-<li>Edit the schema to select the type of build you want: Debug, Release, Distribution.</li>
+<li>Select your target platform. For Mac, there is only one choice (Mac); for iOS, you can generate a framework for either the simulator or for an iOS physical device.</li>
+<li>Edit the schema to select the type of build of your choice: Debug, Release, Distribution.</li>
 <li>Select <code>Product &gt; Build</code> from the Xcode top menu (or press ⌘+B).</li>
 <li>Grab your <code>.framework</code> file from the created <code>/bin</code> folder on the workspace directory.</li>
 </ol>
@@ -111,23 +111,25 @@ Ready to rumble? Let's Go!
 <div class="collapse">
 
 <p>In this step we will walk you through creating an app on the relayr Developer Dashboard and obtaining your app key</p>
-<h3>Creating a </h3>
-<p> Access the relays Developer Dashboard and create a <a href="https://api.relayr.io/oauth2/auth?client_id=D-aSJGtuUeQPwIgos1Xt_xAhXzo9RpiR&amp;redirect_uri=https://developer.relayr.io/dashboard/scrape&amp;response_type=token&amp;scope=access-own-user-info+configure-devices">relayr User</a> in case you don't have one already</p>
+
+<h3>Creating a relayr User</h3>
+<p> Access the relayr Developer Dashboard and create a <a href="https://api.relayr.io/oauth2/auth?client_id=D-aSJGtuUeQPwIgos1Xt_xAhXzo9RpiR&amp;redirect_uri=https://developer.relayr.io/dashboard/scrape&amp;response_type=token&amp;scope=access-own-user-info+configure-devices">relayr User</a> in case you don't have one already</p>
 <hr />
-<h3>Creating a relayr app on the </h3>
+<h3>Creating a relayr app</h3>
 <p> access the <a href="https://developer.relayr.io/dashboard/apps/myApps">app page</a> and create a relayr app by clicking New API key</p>
 <hr />
 <h3>Referencing your App in your Code</h3>
-<h4>Download the <em>Key file</em> at the end of the app creation process</h4>
-<p>The key is used by the SDK to tell the relayr Platform which app you are.</p>
-<h4>Copy your app credentials into the code</h4>
-<p>Open the Key file and copy the values into the following parameters:</p>
+<p><strong>Download</strong> the <em>Key file</em> at the end of the app creation process
+The key is used by the SDK to tell the relayr Platform which app you are.</p>
+<p><strong>Copy</strong> your app credentials into the code:
+Open the Key file and copy the values into the following parameters:</p>
 <pre><code>#define RelayrAppID         @&quot;YOUR APP ID&quot;
 #define RelayrAppSecret     @&quot;YOUR APP SECRET&quot;
 #define RelayrRedirectURI   @&quot;YOUR REDIRECT RUI&quot;
 </code></pre>
 
-<p>The parameters should be placed right after the Import statements mentioned in step 2.</p>
+<p>The parameters should be placed right after the Import statements.</p>
+
 <h3>Retrieving the App</h3>
 <p>In your <em>ViewController.m</em> file add the following in order to retrieve the app with the above credentials:</p>
 <pre><code>[RelayrApp appWithID:RelayrAppID OAuthClientSecret:RelayrAppSecret redirectURI:RelayrRedirectURI completion:^(NSError* error, RelayrApp* app) {
@@ -158,11 +160,14 @@ We'd need to add the following right after the former lines: </p>
 
 <div class="collapse">
 
-<p>At this stage we will select the temperature sensor from the devices associated with the user retrieved in the former step and prepare it for data display which will be described in step 5.</p>
+<p>In this step we will select the temperature sensor from the devices associated with the user retrieved in the former step and prepare it for data display which will be described in step 5.</p>
+
+<h3>Adding an App Pointer</h3>
 <p><strong>We'll start</strong> by defining a pointer for the app retrieved in the former step, in order to prevent it from being deleted. We use the following line and insert it in  <code>- (void)viewDidLoad</code>, in the <em>ViewController.m</em> file </p>
 <pre><code>static RelayrApp* storedApp;
 </code></pre>
 
+<h3>Adding Error Handing Strings</h3>
 <p><strong>Next</strong>, we'll add the functionality behind error handling to the specific places where the app may fail:</p>
 <p>A. For the process of <em>retrieving the app</em>:</p>
 <pre><code>[RelayrApp appWithID:RelayrAppID OAuthClientSecret:RelayrAppSecret redirectURI:RelayrRedirectURI completion:^(NSError* error, RelayrApp* app) {
@@ -177,8 +182,10 @@ We'd need to add the following right after the former lines: </p>
 </code></pre>
 
 <p>The two error handling messages will be written to the console log - they will not be shown to the app user.</p>
+
+<h3>Retrieving a Device</h3>
 <p>We'll move on to defining the logic for retrieving, first the <a href="https://developer.relayr.io/documents/relayrAPI/Introduction">transmitters</a> associated with the user and then a Temperature sensor device. By transmitter in this case we refer to the WunderBar's <a href="https://developer.relayr.io/documents/Welcome/MM">master module</a>.</p>
-<p>It's a slightly larger block of code but we've added comments to explain what we've done:</p>
+<p>It's a slightly larger block of code but we've added comments to explain what we've done. See you on the other side</p>
 <pre><code>        // First, we retrieve the transmitters associated with the user 
         // In case of an error a message is written to the console.
         [user queryCloudForIoTs:^(NSError* error) {
@@ -208,14 +215,14 @@ We'd need to add the following right after the former lines: </p>
 
 <div class="collapse">
 
-<p>In this last and final step of building the application, we'll add the logic behind displaying the data and create the UI for displaying the data on the screen.</p>
-<p>We'll start by creating the logic. </p>
-<h3>Adding Value Parameter</h3>
+<p>In this last and final step of building the application, we'll add the logic behind displaying the data and create the UI for displaying it on the screen.</p>
+
+<h3>Adding A Value Parameter</h3>
 <p>In the <em>ViewController.m</em> file, add the <code>currentTempLabel</code> parameter which will later hold the reading value of the temperature sensor. This is how you could declare it:</p>
 <pre><code>@property (weak,nonatomic) IBOutlet UILabel* currentTempLabel;
 </code></pre>
 
-<p>Well... since we have one sensor which measures both temperature <em>and</em> humidity, we thought, why not have its value also display on the screen? so just to accommodate that we'll add a second variable to hold the humidity value:</p>
+<p>Well... since we have one sensor which measures both temperature <em>and</em> humidity, we thought, why not have the humidity value also display on the screen? To accommodate that we'll add a second variable to hold the humidity value:</p>
 <pre><code>@property (weak,nonatomic) IBOutlet UILabel* currentHumidLabel;
 </code></pre>
 
@@ -239,9 +246,9 @@ We'd need to add the following right after the former lines: </p>
 <p>We first subscribe to all type of readings the sensor (device) is capable of sending, we then perform a check to see which type the value it is and assign it into the respective parameter defined at the beginning of this step.</p>
 <h3>Displaying Data - UI</h3>
 <p>XCode allows us to use an actual story board in order to define the UI of the application we build. fields can easily be created and anchored to the logic responsible for their functionality.</p>
-<h4>Open the <em>Main.storyboard</em> file</h4>
-<p>Located in the main tree of your app. In our case the path is <em>My First relayr App &gt; My First relayr App &gt; Main.storyboard</em></p>
-<h4>Add &quot;Temperature&quot; and &quot;Humidity&quot; text labels</h4>
+<p><strong>Open</strong> the <em>Main.storyboard</em> file,
+located in the main tree of your app. In our case the path is <em>My First relayr App &gt; My First relayr App &gt; Main.storyboard</em>.</p>
+<h4>Adding &quot;Temperature&quot; and &quot;Humidity&quot; text labels</h4>
 <p>In the right hand bottom text field <strong>start typing Label</strong> - XCode will automatically complete the text and display a Label entity:</p>
 <p><img src="assets/UI1.png" /></p>
 <p><strong>Drag</strong> the label item onto the viewer and drop it at the location where you would like it to appear. You can drag and drop as many labels as you want </p>
@@ -251,10 +258,10 @@ We'd need to add the following right after the former lines: </p>
 <p><strong>A tip for positioning</strong>: In order to ensure that your labels are centralized both horizontally and vertically, place the mouse on the label name, click Ctrl and dag the mouse aside, the following menu will appear: </p>
 <p><img src="assets/UI3.png" /></p>
 <p>Make sure the two options <em>Center Horizontally in Container</em> and <em>Center Vertically in Container</em> are ticked. </p>
-<h4>Add placeholder labels for the measurement values</h4>
+<h4>Adding placeholder labels for the measurement values</h4>
 <p>Apart from the &quot;Humidity&quot; and &quot;Temperature&quot; labels, we need two additional labels, as placeholders for the values to be displayed. The two labels will be associated with the code and will reflect the change in <code>currentTempLabel</code> and <code>currentHumidLabel</code>. </p>
 <p>We've decided to place &quot;...&quot; as the name of these labels. This value will of course be displayed as long as no data is received. Once data is received the label will change reflecting the change in the values being sent.</p>
-<h4>Associate the labels with the code</h4>
+<h4>Associating the labels with the code</h4>
 <p>Adding the two placeholders is not enough. We need to tell our application that these labels should correspond to specific variables in the code and reflect the change in these variables. </p>
 <p>XCode allows us to easily do that. Simply hold the cmd key and physically link between the defined parameter and the placeholder label:</p>
 <p><img src="assets/UI5.png" /></p>
@@ -275,6 +282,11 @@ If you have chosen to include the iOS version of the framework, you would be abl
 <p>If you have a physical device connected it will appear at the top of the list. </p>
 <h3>Running the App on the Device</h3>
 <p>To run the app simply click the Play icon at the top menu. The project will first initiate a build action and then launch the app on the target device of your selection. </p>
-<p>You will first be prompted with the relayr Login screen and once you log in, your app will show the values of the temperature and humidity you have connected (Make sure your WunderBar is connected and sending data, you can make sure data is sent by looking at your <a href="https://developer.relayr.io/dashboard/devices">devices page on the Developer Dashboard</a>. </p>
+<p>You will first be prompted with the relayr Login screen and once you log in, your app will show the values of the temperature and humidity you have connected</p>
 
+<p><img src="assets/Final.png" width=300px /></p>
+
+<p>Make sure your WunderBar is connected and sending data, you can make sure data is sent by looking at your <a href="https://developer.relayr.io/dashboard/devices">devices page </a>on the Developer Dashboard. </p>
+
+<p>Congratulations! you've just completed your first relayr iOS App!</p>
 </div>
