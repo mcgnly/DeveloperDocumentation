@@ -22,7 +22,27 @@ The MPU-6500 integrates a 3-axis micro-electro-mechanical system (MEMS) accelero
 The accelerometer outputs a raw 16-bit figure which is then converted either by the Master Module or, in the future case of Bluetooth LE direct connection (a scenario in which an app is directly connected to the sensor, without the mediation of the relayr Cloud), by the SDK incorporated in the app.
 <br/>
 The sensor includes user-programmable ranges of -2g to +2g, -4g to +4g, ±8g, and ±16g. The default scale according to which the raw values are currently converted, by the Master Module, is the ±2g scale. <br/>  
-</p></div>
+</p>
+
+<h4>Sensor Attributes</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>acceleration</td>
+<td>g</td>
+<td>2</td>
+<td>-2</td>
+<td>0.01</td>
+</tr>
+</table>
+</div>
 
 <div>
 <h3>The Gyroscope</h3>
@@ -33,6 +53,25 @@ A <a href="http://en.wikipedia.org/wiki/Gyroscope">gyroscope</a> measures the an
 <br/>	 
 The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2000 °/sec. The default configured sensitivity is ±250 °/sec.
 </p>
+
+<h4>Sensor Attributes</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>angular_speed</td>
+<td>degrees_per_second (°/s)</td>
+<td>250</td>
+<td>-250</td>
+<td>0.01</td>
+</tr>
+</table>
 </div>
 </div>
 
@@ -54,7 +93,26 @@ An internal LED driver can be configured to provide a constant current of 12.5 m
 The number of proximity LED pulses can also be programmed. The power consumption of the entire module will be directly affected by these configurations. The higher the LED current. and the larger the number of pulses is, the higher the power consumption will be. <br/>
 The digital value, which is received from the sensor is then translated by the Android and iOS SDKs and the Developer Dashboard, to a percentage which denotes the level of proximity. The higher the percentage is, the closer the object is to the sensor.
 Since the parameter measured is essentially the amount of light reflected from the object, varying light conditions will affect the measurements of the sensor.
-</p></div>
+</p>
+<h4>Sensor Attributes</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>proximity</td>
+<td>none</td>
+<td>2047</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+</div>
 
 <div>	
 <h3>The Light/Color Sensor</h3>
@@ -63,6 +121,45 @@ When an object is placed in measurement distance from the light/color/proximity 
 Different objects reflect light in different wavelengths and in different amounts. That is how the <a href="http://en.wikipedia.org/wiki/Color_vision">human eye perceives color</a>. 
 In a similar manner, the color sensor produces a set of values which are then translated by the relayr Android and iOS SDKs and the Developer Dashboard into 'color' according to the <a href="http://en.wikipedia.org/wiki/RGB_color_model">RGB color model</a>  
 </p>
+
+<h4>Sensor Attributes - Light</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>luminosity</td>
+<td>none - raw data</td>
+<td>4096</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
+<h4>Sensor Attributes - Color</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun for each channel</td>
+<td>minimum for each channel</td>
+<td>resolution for each channel</td>
+</tr>
+
+<tr>
+<td>color</td>
+<td>rgb (3 channels)</td>
+<td>4096</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+
 </div>
 </div>
 
@@ -80,7 +177,28 @@ In a similar manner, the color sensor produces a set of values which are then tr
 The Module utilizes a semiconductor-based temperature sensor. The obtained digital output is proportional to room temperature. 
 The resolution of the sensor is configurable to an 11 - 14 bit representation. The resolution (the minimum change in temperature that would be reflected in the measurement) is 0.01 ºC for the 14 bits configuration and 0.04 ºC for the 12 bits one. The range of measurable temperature is -40 to +125 ºC. The typical accuracy is ±0.3 ºC. <br/>
 Please note that in case the module is still attached to the Master Module it will reflect a temperature about 2-3 degrees higher due to heat emitted by the WiFi module which is part of the Master Module.
-</p></div>
+</p>
+
+<h4>Sensor Attributes</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>temperature</td>
+<td>celsius (°)</td>
+<td>100</td>
+<td>-100</td>
+<td>1</td>
+</tr>
+</table>
+
+</div>
 
 <div>
 <h3>The Humidity Sensor</h3>
@@ -89,6 +207,25 @@ The sensor measures relative humidity (RH), which is the ratio of the pressure o
 Relative humidity depends on the temperature of the environment measured. 
 <be/>
 Much like the temperature sensor, the humidity resolution can be configured to a 8-12-bit resolution. The resolution of the measurement is 0.04% RH for the 12 bits configuration and 0.7% RH for 8 bits one. The relative humidity accuracy is ±2 %RH at 25°C (between 20% and 80 %RH).</p>
+
+<h4>Sensor Attributes</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>humidity</td>
+<td>precent(%)</td>
+<td>100</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
 </div>
 </div>
 
@@ -100,6 +237,25 @@ This sensor measures the average <a href="http://en.wikipedia.org/wiki/Ambient_n
 The MEMS microphone transforms air pressure variations into a low voltage analog signal, which is then amplified by about 100 times and conducted to a converter, which averages the analog signal and provides an RMS output value that can be measured with the ADC (analog-to-digital converter). <br/>
 The noise sensor was adjusted to be more sensitive to common noise sources such as human voices, music and traffic sounds. The obtained output value resolution is a number between 0-1024, which represents the average noise level over a short period of time. The sound level sensor module will provide one reading in every measurement interval (the default interval is one second). <br/>
 Note that the output provided by the sensor is <em>not</em> presented in decibels. A much more elaborate set of tools is required to supply that measurement. Our sensor essentially provides a reading representing the change in noise level over a period of time. The output number will increase as the noise level rises and vice versa.</p>
+
+<h4>Sensor Attributes</h4>
+<table>
+<tr>
+<td>meaning</td>
+<td>unit</td>
+<td>maximun</td>
+<td>minimum</td>
+<td>resolution</td>
+</tr>
+
+<tr>
+<td>noise_level</td>
+<td>none - raw data</td>
+<td>1023</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
 </div>
 
 
