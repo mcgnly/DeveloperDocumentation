@@ -5,6 +5,10 @@ The iOS/ OSX SDK is available for download from the [GitHub Apple repository](ht
 
 The iOS/OSX SDK provides you with programmatic access points to the relayr API, it allows you to use the relayr [Cloud Platform](https://developer.relayr.io/documents/Welcome/Platform) in your application and in the future - handle Bluetooth Low Energy connection to your sensor modules and other devices.
 
+## Building your First relayr Apple App 
+
+We realize that you probably want to get down to building your app so we've created a [step by step tutorial](https://developer.relayr.io/documents/Apple/FirstApp) explaining how to create a simple thermometer application, using the temperature sensor available on the WunderBar, showcasing a number of the basic functionalitiesof the iOS/OSX SDK.
+
 ## SDK Basic Classes 
 
 Click <a href="https://developer.relayr.io/documents/Apple/Classes" target="_blank">here</a> for a detailed list of the SDK's basic classes

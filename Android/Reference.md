@@ -7,7 +7,7 @@ The Android SDK provides you with programmatic access points to the relayr API, 
 
 ## Building your First relayr Android App 
 
-We realize that you probably want to skip introductions and get down to building your app so we've created a [step by step tutorial](https://developer.relayr.io/documents/Android/BuildingApp) explaining how to create a simple thermometer application, using the Temperature sensor available on the WunderBar and the Android SDK.  
+We realize that you probably want to skip introductions and get down to building your app so we've created a [step by step tutorial](https://developer.relayr.io/documents/Android/BuildingApp) explaining how to create a simple thermometer application, using the temperature sensor available on the WunderBar and the Android SDK.  
 
 ## SDK Reference 
 

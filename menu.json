@@ -119,8 +119,8 @@
                     "title": "Introduction"
                 },
                 {
-                    "file": "Reference",
-                    "title": "Getting Started"
+                    "file": "FirstApp",
+                    "title": "Building your first relayr iOS/OSX App"
                 },
                 {
                     "file": "Classes",
@@ -140,7 +140,7 @@
                 },
                 {
                     "file": "Sample Project",
-                    "title": "Code Samples",
+                    "title": "Executable Code Samples",
                     "external": "https://github.com/relayr/apple-sample-apps/tree/master/code-samples",
                     "newTab": true
                 }
