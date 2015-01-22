@@ -53,6 +53,7 @@ A <a href="http://en.wikipedia.org/wiki/Gyroscope">gyroscope</a> measures the an
 <br/>	 
 The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2000 °/sec. The default configured sensitivity is ±250 °/sec.
 </p>
+<br/>
 
 <h4>Sensor Data Attributes</h4>
 <table>
@@ -74,6 +75,9 @@ The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2
 </table>
 </div>
 </div>
+
+
+----------
 
 
 <div class="category">
@@ -163,6 +167,10 @@ In a similar manner, the color sensor produces a set of values which are then tr
 </div>
 </div>
 
+
+----------
+
+
 <div class="category">
 <h2>The Temperature/Humidity Module</h2> 
 <img src="assets/Temp.png" alt="" title="" style= width:400px></a>
@@ -229,6 +237,10 @@ Much like the temperature sensor, the humidity resolution can be configured to a
 </div>
 </div>
 
+
+----------
+
+
 <div class="category"> 
 <h2>The Sound Sensor Module </h2>
 <img src="assets/Mic.png" alt="" title="" style= width:400px></a>
@@ -259,6 +271,9 @@ Note that the output provided by the sensor is <em>not</em> presented in decibel
 </div>
 
 
+----------
+
+
 <div class="category"> 
 <h2>The InfraRed Module </h2>
 <img src="assets/IR.png" alt="" title="" style= width:500px></a>
@@ -273,6 +288,9 @@ In future releases we plan to implement additional IR protocols to be used by th
   </p>
 	
  </div>
+
+
+----------
 
 
 <div class="category"> 
