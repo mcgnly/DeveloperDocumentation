@@ -24,7 +24,7 @@ The accelerometer outputs a raw 16-bit figure which is then converted either by 
 The sensor includes user-programmable ranges of -2g to +2g, -4g to +4g, ±8g, and ±16g. The default scale according to which the raw values are currently converted, by the Master Module, is the ±2g scale. <br/>  
 </p>
 
-<h4>Sensor Attributes</h4>
+<h4>Sensor Data Attributes</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -54,7 +54,7 @@ A <a href="http://en.wikipedia.org/wiki/Gyroscope">gyroscope</a> measures the an
 The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2000 °/sec. The default configured sensitivity is ±250 °/sec.
 </p>
 
-<h4>Sensor Attributes</h4>
+<h4>Sensor Data Attributes</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -94,7 +94,7 @@ The number of proximity LED pulses can also be programmed. The power consumption
 The digital value, which is received from the sensor is then translated by the Android and iOS SDKs and the Developer Dashboard, to a percentage which denotes the level of proximity. The higher the percentage is, the closer the object is to the sensor.
 Since the parameter measured is essentially the amount of light reflected from the object, varying light conditions will affect the measurements of the sensor.
 </p>
-<h4>Sensor Attributes</h4>
+<h4>Sensor Data Attributes</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -122,7 +122,7 @@ Different objects reflect light in different wavelengths and in different amount
 In a similar manner, the color sensor produces a set of values which are then translated by the relayr Android and iOS SDKs and the Developer Dashboard into 'color' according to the <a href="http://en.wikipedia.org/wiki/RGB_color_model">RGB color model</a>  
 </p>
 
-<h4>Sensor Attributes - Light</h4>
+<h4>Sensor Data Attributes - Light</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -141,7 +141,7 @@ In a similar manner, the color sensor produces a set of values which are then tr
 </tr>
 </table>
 
-<h4>Sensor Attributes - Color</h4>
+<h4>Sensor Data Attributes - Color</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -179,7 +179,7 @@ The resolution of the sensor is configurable to an 11 - 14 bit representation. T
 Please note that in case the module is still attached to the Master Module it will reflect a temperature about 2-3 degrees higher due to heat emitted by the WiFi module which is part of the Master Module.
 </p>
 
-<h4>Sensor Attributes</h4>
+<h4>Sensor Data Attributes</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -208,7 +208,7 @@ Relative humidity depends on the temperature of the environment measured.
 <be/>
 Much like the temperature sensor, the humidity resolution can be configured to a 8-12-bit resolution. The resolution of the measurement is 0.04% RH for the 12 bits configuration and 0.7% RH for 8 bits one. The relative humidity accuracy is ±2 %RH at 25°C (between 20% and 80 %RH).</p>
 
-<h4>Sensor Attributes</h4>
+<h4>Sensor Data Attributes</h4>
 <table>
 <tr>
 <td>meaning</td>
@@ -238,7 +238,7 @@ The MEMS microphone transforms air pressure variations into a low voltage analog
 The noise sensor was adjusted to be more sensitive to common noise sources such as human voices, music and traffic sounds. The obtained output value resolution is a number between 0-1024, which represents the average noise level over a short period of time. The sound level sensor module will provide one reading in every measurement interval (the default interval is one second). <br/>
 Note that the output provided by the sensor is <em>not</em> presented in decibels. A much more elaborate set of tools is required to supply that measurement. Our sensor essentially provides a reading representing the change in noise level over a period of time. The output number will increase as the noise level rises and vice versa.</p>
 
-<h4>Sensor Attributes</h4>
+<h4>Sensor Data Attributes</h4>
 <table>
 <tr>
 <td>meaning</td>
