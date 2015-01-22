@@ -8,7 +8,7 @@
 
 <p>We are happy to hear that you are ready to bring some things to life!
 
-What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/Apple/Reference">iOS&OSX SDK</a> instructions in order to build your first App!</p>
+What you will need to do to get started, is first onboard your WunderBar using the <a href="https://developer.relayr.io/dashboard/onboarding"> relayr OnBoarding app </a>, create an app in the <a href="https://developer.relayr.io/dashboard/apps/myApps">App section</a> in order to receive your app key and then follow the <a href="https://developer.relayr.io/documents/Android/Reference">Android SDK</a> or the <a href="https://developer.relayr.io/documents/Apple/Introduction">iOS&OSX SDK</a> instructions in order to build your first App!</p>
 
 <h3> Where can I get my App Id? </h3> 
 
@@ -16,11 +16,11 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <h3> How do I generate an OAuth token for my App? </h3>
 
-<p>To generate a token for your app you can simply follow the instructions in our <a href="https://developer.relayr.io/documents/Authorization/Example">OAuth Example </a></p>
+<p>To generate a token for your app you can simply follow the instructions in our <a href="https://developer.relayr.io/documents/WebDev/OAuthToken">Generate OAuth Token </a>page.</p>
 
 <h3> Where can I get my User Id? </h3>
 
-<p> To get your user Id simply log in to the dashboard, hover over your user name in the header menu > Select Account > Other. You will find your user ID there.</p>
+<p> To get your user Id simply log in to the dashboard, hover over your user name in the header menu > Select Account > Settings. You will find your user ID there.</p>
 
 
 <h3> Where can I get some information about the relayr architecture? </h3>
@@ -34,9 +34,6 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> Where can I get my Device Id? </h3>
 <p>Once you've onboarded your WunderBar, to get your Devices Ids, go to the Devices section and click on the small 'settings' icon of any of your sensors to get its Id</p>
 
-<h3> Which service is relayr using for data distribution?</h3>
-
-<p>We are using PubNub as our data distribution service. You can learn more about our usage of PubNub <a href="https://developer.relayr.io/documents/PubNub/Reference" target="_blank">here</a>.</p>
 </div>
 
 <h2 class="collapseHeader"> The OnBoarding Process</h2>
@@ -54,9 +51,11 @@ What you will need to do to get started, is first onboard your WunderBar using t
 <h3> I'm trying to onboard my WunderBar and I experience difficulties - what should I check?</h3>
 
 <p>
-Before initiating the OnBoarding process please see our <a href="https://developer.relayr.io/documents/Welcome/DosAndDonts"><strong>OnBoarding Do's and Dont's </strong></a> page for valuable information which could save you a lot of frustration and ensure that your onboarding is successful .
+Before initiating the OnBoarding process have a look at our <a href="https://www.youtube.com/watch?v=SDG7qpYgoZc"><strong>OnBoarding Do's and Dont's video</strong></a>  for valuable information which could save you a lot of frustration and ensure that your onboarding is successful.</p>
 
-<br/>
+<iframe width="560" height="315" src="//www.youtube.com/embed/SDG7qpYgoZc" frameborder="0" allowfullscreen></iframe>
+
+<p>
 OnBoarding could be severely impacted by the environment in which you choose to onboard, more precisely by the state of the WiFi network you choose to use when onboarding.<br/>
 <ul>
 
@@ -170,9 +169,6 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <p>Since our Beta currently only includes very limited functionality, please see <a href="https://forum.relayr.io/t/problem-onboarding-ios/176/2?u=dana_relayr">this forum post</a> for instructions how to use the app in order to onboard.</p>
 
-<h3> I am using the <em>iOS</em> relayr OnBoarding app but my sensors are not all detected</h3>
-
-<p>This is also a result of the limitations of Bluetooth LE. Try logging out of the application, and then log back in again. If this does not resolve the issue, disconnect the WunderBar from the power supply and then plug it back in and start the OnBoarding process again.</p>
 </div></div>
 
 <h2 class="collapseHeader"> Development Tools </h2>
@@ -193,6 +189,10 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 <h3>Do you have anything for Python developers?</h3>
 
 <p>We sure do! Check out our shiny <a href="https://developer.relayr.io/documents/Python/Introduction">Python Section</a></p>
+
+<h3>Do you have anything for us C# developers?</h3>
+
+<p>We do! Check out our brand new <a href="https://developer.relayr.io/documents/CSharp/Reference">C# section</a></p>
 
 <h3>Do you have anything for <em>Ruby</em> Developers?</h3>
 <p> We have not released any official Ruby library, but luckily we have a great community of developers who support us and one of them has created a Gist for Ruby <a href="https://gist.github.com/jShaf/4905ef199885afb691d5">available here</a>. </p>

@@ -53,7 +53,7 @@ A <a href="http://en.wikipedia.org/wiki/Gyroscope">gyroscope</a> measures the an
 <br/>	 
 The gyroscope includes user-programmable ranges of ±250, ±500, ±1000, and ±2000 °/sec. The default configured sensitivity is ±250 °/sec.
 </p>
-<br/>
+<br/><br/>
 
 <h4>Sensor Data Attributes</h4>
 <table>
