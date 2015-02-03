@@ -91,7 +91,7 @@ In the case of the Relayr WunderBar, the transmitter is the Master Module in the
 	NSLog(@"This transmitter relays information of %lu devices", transmitter.devices.count);
 	for (RelayrDevice* device in transmitter.devices)
 	{
-	    NSLog(@"Device name: %@, capable of measuring %lu different values", device.name, device.inputs.count);
+	    NSLog(@"Device name: %@, capable of measuring %lu different values", device.name, device.readings.count);
 	}
 
 
@@ -104,55 +104,55 @@ Since a single relayr device can produce more than one reading at the same time,
 	RelayrDevice* device = transmitter.devices.anyObject;
 	NSLog(@"Device manufacturer: %@ and model name: %@", device.manufacturer, device.modelName);
 	
-	for (RelayrInput* reading in device.inputs)
+	for (RelayrReading* reading in device.readings)
 	{
 	    NSLog(@"This device can measure %@ in %@ units", reading.meaning, reading.unit);
-	    NSLog(@"Last value obtained by this device for this specific reading is %@ at %@", input.value, input.date);
+	    NSLog(@"Last value obtained by this device for this specific reading is %@ at %@", reading.value, reading.date);
 	}
 
 
-The most reliable way to obtain data is to subscribe to a reading/input of a relayr device:
+The most reliable way to obtain data is to subscribe to a reading of a relayr device:
 
 
 	// You can choose to subscribe with a block (it will be executed every time a new value is received):
-	[device.inputs.anyObject subscribeWithBlock:^(RelayrDevice* device, RelayrInput* input, BOOL* unsubscribe){
-	    NSLog(@"Value received: %@ from device: %@", input.value, device.name);
+	[device.readings.anyObject subscribeWithBlock:^(RelayrDevice* device, RelayrReading* reading, BOOL* unsubscribe){
+	    NSLog(@"Value received: %@ from device: %@", reading.value, device.name);
 	    if (/* Many values have been read */) { *unsubscribe = YES; }
 	} error:^(NSError* error){
 	    NSLog(@"An error occured while subscribing, please try again or blame someone else for everything...");
 	}];
 	
 	// Or you can choose to receive subscription values via the target-action mechanism:
-	[device.inputs.anyObject subscribeWithTarget:self action:@selector(dataReceivedFrom:) error:^(NSError* error){
+	[device.readings.anyObject subscribeWithTarget:self action:@selector(dataReceivedFrom:) error:^(NSError* error){
 	    NSLog(@"An error occurred while subscribing");
 	}];
 	
-	- (void)dataReceivedFrom:(RelayrInput*)input
+	- (void)dataReceivedFrom:(RelayrReading*)reading
 	{
-	    NSLog(@"Value received: %@", input.value);
+	    NSLog(@"Value received: %@", reading.value);
 	}
 
 
-### *RelayrInput*, *RelayrOutput*, and *RelayrConnection*
+### *RelayrReading*, *RelayrWriting*, and *RelayrConnection*
 
-These are object abstractions of a device's inputs and outputs, and a connection either to a transmitter or a different element on the platform.
+These are object abstractions of a device's readings and writings, and a connection either to a transmitter or a different element on the platform.
 
 You can query their properties for the following information:
 
-* `RelayrInput` ***for data received from the device***. The type of data received is listed as a `meaning` and is measured in `unit` units.
+* `RelayrReading` ***for data received from the device***. The type of data received is listed as a `meaning` and is measured in `unit` units.
 
 	
 		  RelayrDevice* device = ...;
-		  for (RelayrInput* input in device.inputs)
+		  for (RelayrReading* reading in device.readings)
 		  {
-		      NSLog(@"The measurement for %@ is: %@", input.meaning, input.value);
+		      NSLog(@"The measurement for %@ is: %@", reading.meaning, reading.value);
 		  }
 	  
 
-* `RelayrOutput` ***for signals that the device can receive***. It can be infrared, or Grove signals.
+* `RelayrWriting` ***for signals that the device can receive***. It can be infrared, or Grove signals.
 
 		  RelayrDevice* device = ...;
-		  for (RelayrOutput* output in device.outputs)
+		  for (RelayrWriting* writing in device.writings)
 		  {
 		      NSLog(@"");
 		  }
@@ -160,4 +160,4 @@ You can query their properties for the following information:
 
 * `RelayrConnection` to query the connection state (connected, disconnected, resetting, etc.), and the connection type (BLE, Wifi, etc.). You can even subscribe to changes in the connection channel (for example, be informed when you are in close proximity to a device or when the WiFi connection of your device is interrupted).
 
-The `RelayrConnection` and `RelayrOutput` have not yet been implemented. These are currently being implemented and will be availbled in an upcoming release.
+The `RelayrConnection` and `RelayrWriting` have not yet been implemented. These are currently being implemented and will be available in an upcoming release.
