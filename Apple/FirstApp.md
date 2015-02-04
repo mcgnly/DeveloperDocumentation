@@ -48,7 +48,7 @@ Ready to rumble? Let's Go!
 <p>The <em>RelayrSDK</em> project generates a product called <code>Relayr.framework</code> which, depending on your use purpose, can be run on a mac or on an iOS device.</p>
 <h3>Obtaining the relayr Framework</h3>
 <p>You can obtain the framework in one of the following manners:</p>
-<p>A. <strong>Download</strong> the <code>.framework</code> file for the platform you are developing for from the latest <a href="https://github.com/relayr/apple-sdk/releases/tag/v0.2.1">Github release page</a></p>
+<p>A. <strong>Download</strong> the <code>.framework</code> file for the platform you are developing for from the latest <a href="https://github.com/relayr/apple-sdk/releases">Github release page</a></p>
 <p><strong>NOTE</strong>: The page includes two versions of the compiled SDK - one for applications developed for iOS and for device simulators and another for apps developed for OSX. Make sure to download the version suited for your type of development.</p>
 <p><em>or</em> </p>
 <p>B. <strong>Generate</strong> the <code>.framework</code> file from the source code.</p>
