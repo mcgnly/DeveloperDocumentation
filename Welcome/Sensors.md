@@ -202,7 +202,7 @@ Please note that in case the module is still attached to the Master Module it wi
 <td>celsius (°)</td>
 <td>100</td>
 <td>-100</td>
-<td>1</td>
+<td>0.01</td>
 </tr>
 </table>
 
