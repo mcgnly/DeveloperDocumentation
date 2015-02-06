@@ -13,6 +13,8 @@ The C# SDK has two main functions:
 1. Programatically exposing the relayr API. This is achieved through the HttpManager class.
 2. Allowing applications to subscribe to the streams of data published by sensor modules and other connected devices. The Transmitter and Device classes handle this functionality. You will need security strings obtained through the HttpManager to subscribe to data topics.
 
+To include the C# library simply download it from our [C# Github repository ](https://github.com/relayr/csharp-sdk) and add it as a project to your own C# project.
+
 ### Importing NuGet Libraries
 
 Before you can build a project including the C# SDK, you'll need to import two libraries via the [NuGet](https://www.nuget.org/) package manager in Visual Studio.
@@ -43,17 +45,17 @@ Below you will find the basic functions of the SDK. These will allow you to fetc
 ### Setting the OAuth Token
 Once you've obtained your OAuth token using either of the methods described above, pass it to the relayr class in the following manner:
 
-	// Set the OAuth token
-	Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
+		// Set the OAuth token
+		Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
 
 ### Retrieving Transmitters and Connecting to the MQTT Broker
 
 Next, you'll need to fetch a list of your transmitters (WunderBars) from the relayr API, using the `GetTransmitters()` function. 
 You will use the ID of the transmitter to connect to the MQTT broker. Connections to the broker are performed on a per-Transmitter basis. You can have multiple connections simultaneously, one for each WunderBar. If you have multiple transmitters (Multiple WunderBars) you can choose an Id for each in order to tell them apart. This Id will be passes as `CLIENT ID OF YOUR CHOICE` below.
 
-	// Get a list of transmitters and connect to the MQTT broker with the first one in the list
-	List<dynamic> transmitters = await Relayr.GetTransmitters();
-	Transmitter transmitter = Relayr.ConnectToBroker(transmitters[0], "CLIENT ID OF YOUR CHOICE");
+		// Get a list of transmitters and connect to the MQTT broker with the first one in the list
+		List<dynamic> transmitters = await Relayr.GetTransmittersAsync();
+		Transmitter transmitter = Relayr.ConnectToBroker(transmitters[0], "CLIENT ID OF YOUR CHOICE");
 
 ### Retrieving a List of Sensors and Subscribing to Data
 
@@ -62,11 +64,11 @@ Once you have a sensor, you'll subscribe to the data being published by that sen
 
 In the example below, we've subscribed to the first device on the list of associated devices.
 
-	// Get a list of devices associated with the transmitter, subscribe to data
-	// From the first device on the list
-	List<dynamic> devices = await transmitter.GetDevices();
-	Device device = await transmitter.SubscribeToDeviceDataAsync(devices[0]);
-	device.PublishedDataReceived += device_PublishedDataReceived;
+		// Get a list of devices associated with the transmitter, subscribe to data
+		// From the first device on the list
+		List<dynamic> devices = await transmitter.GetDevicesAsync();
+		Device device = await transmitter.SubscribeToDeviceDataAsync(devices[0]);
+		device.PublishedDataReceived += device_PublishedDataReceived;
 
 	// Create Handler for the the sensor's data published event
 	void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
@@ -79,18 +81,18 @@ In the example below, we've subscribed to the first device on the list of associ
 The example below is a typical use of the SDK, allowing you to subscribe to data arriving from a sensor.
 
         
-	// Set the OAuth token
-	Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
+		// Set the OAuth token
+		Relayr.OauthToken = "YOUR OAUTH TOKEN HERE";
+		
+		// Get a list of transmitters and connect to the MQTT broker with the first one in the list
+		List<dynamic> transmitters = await Relayr.GetTransmittersAsync();
+		Transmitter transmitter = Relayr.ConnectToBroker(transmitters[0], "CLIENT ID OF YOUR CHOICE");
 	
-	// Get a list of transmitters and connect to the MQTT broker with the first one in the list
-	List<dynamic> transmitters = await Relayr.GetTransmitters();
-	Transmitter transmitter = Relayr.ConnectToBroker(transmitters[0], "CLIENT ID OF YOUR CHOICE");
-
-	// Get a list of devices associated with the transmitter, subscribe to data
-	// From the first device on the list
-	List<dynamic> devices = await transmitter.GetDevices();
-	Device device = await transmitter.SubscribeToDeviceDataAsync(devices[0]);
-	device.PublishedDataReceived += device_PublishedDataReceived;
+		// Get a list of devices associated with the transmitter, subscribe to data
+		// From the first device on the list
+		List<dynamic> devices = await transmitter.GetDevicesAsync();
+		Device device = await transmitter.SubscribeToDeviceDataAsync(devices[0]);
+		device.PublishedDataReceived += device_PublishedDataReceived;
 
 	// Create Handler for the the sensor's data published event
 	void device_PublishedDataReceived(object sender, PublishedDataReceivedEventArgs args)
