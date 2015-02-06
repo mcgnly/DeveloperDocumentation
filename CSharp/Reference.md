@@ -19,6 +19,7 @@ To include the C# library simply download it from our [C# Github repository ](ht
 
 Before you can build a project including the C# SDK, you'll need to import two libraries via the [NuGet](https://www.nuget.org/) package manager in Visual Studio.
 
+
 1. In Visual Studio, go to *Tools > NuGet Package Manager > Manage NuGet Packages for Solution.*
 
 2. Select *Online* in the left hand menu and then search for and install the following two packages:
