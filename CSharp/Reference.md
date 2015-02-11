@@ -13,18 +13,14 @@ The C# SDK has two main functions:
 1. Programatically exposing the relayr API. This is achieved through the HttpManager class.
 2. Allowing applications to subscribe to the streams of data published by sensor modules and other connected devices. The Transmitter and Device classes handle this functionality. You will need security strings obtained through the HttpManager to subscribe to data topics.
 
-To include the C# library simply download it from our [C# Github repository ](https://github.com/relayr/csharp-sdk) and add it as a project to your own C# project.
+To include the C# library simply download it from our [C# Github repository ](https://github.com/relayr/csharp-sdk) and add it as a reference to your own C# project.
 
-### Importing NuGet Libraries
+### Adding the *M2MQTT* and the *Newtonsoft.Json* references
 
-Before you can build a project including the C# SDK, you'll need to import two libraries via the [NuGet](https://www.nuget.org/) package manager in Visual Studio.
+Before you can build a project including the C# SDK, you'll need to add two references under {*Your project name*} > *References*
 
-
-1. In Visual Studio, go to *Tools > NuGet Package Manager > Manage NuGet Packages for Solution.*
-
-2. Select *Online* in the left hand menu and then search for and install the following two packages:
-
-	**Json.NET** and **M2Mqtt**
+Simply navigate to the above location, *right click > Add Reference > Browse*
+The two DLLs, ***M2MQTT*** and ***Newtonsoft.Json*** are actually included in the C# repository under *bin > Debug* so you can simply reference their location.
 
 ### Getting an OAuth token
 
