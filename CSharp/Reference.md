@@ -1,4 +1,4 @@
-# relayr for C# Developers
+# relayr for C# and .NET Developers
 
 We have some C# goodies just for you. We've created an easy to use [**C# SDK**](https://github.com/relayr/csharp-sdk) with the basic relayr related functionalities to get you started with your very first relayr C# Application. 
 
