@@ -204,7 +204,11 @@
             "submenus": [
                 {
                     "file": "Reference",
-                    "title": "Reference"
+                    "title": "Introduction"
+                },
+                {
+                    "file": "MyFirstApp",
+                    "title": "Building your first relayr C# App"
                 },
                 {
                     "file": "The C# SDK",
