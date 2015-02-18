@@ -68,6 +68,10 @@ OnBoarding could be severely impacted by the environment in which you choose to 
 </ul>    
 </p>
 
+<h3>I have a Fritzbox, my WiFi network is a 2.4 Ghz one- but I still cannot onboard - What could be the issue?</h3>
+
+<p>If you've verified that your network settings meet all the above requirements for onboarding, you may be experiencing a problem similar to what is described in <a href="https://forum.relayr.io/t/wunderbar-wont-connect-to-wifi/471/14">this forum post</a>. </p>
+
 <h3> How can I check whether my network is a 2.4 GHz one?</h3>
 
 <p>You could check this with a single command run from your PC's command-line interface.
