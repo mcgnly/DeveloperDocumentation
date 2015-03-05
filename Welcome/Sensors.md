@@ -2,7 +2,7 @@
 
 <p class="Large"> We keep on referring to our six Sensor Modules and we realize that we haven't taken the time to tell you what these are. So we are going to do just that in this next section. Lets make sense of some sensors. </p> 
 
-The six modules which make the WunderBar are: the **accelerometer/gyroscope** sensors, the **light/color/proximity** sensors, the **temperature/humidity** sensors, the **sound level** sensor, the **infrared transmitter** and the **grove (bridge) module**. Each of the modules has BLE connection capabilities, includes a coin battery holder and an LED. We'll get to the nitty gritty of each of the modules in a moment, but first we'd like to say a few words about the LED status - so you'd know what each blink means
+<p>The six modules which make the WunderBar are: the <strong>accelerometer/gyroscope</strong> sensors, the <strong>light/color/proximity</strong> sensors, the <strong>temperature/humidity</strong> sensors, the <strong>sound level</strong> sensor, the <strong> infrared</strong> transmitter and the <strong>grove (bridge)</strong> module. Each of the modules has BLE connection capabilities, includes a coin battery holder and an LED. We'll get to the nitty gritty of each of the modules in a moment, but first we'd like to say a few words about the LED status - so you'd know what each blink means</p>
 
 <p>All sensor modules have one led each, here's a quick explanation of the different LED statuses</p>
 
