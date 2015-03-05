@@ -1,7 +1,22 @@
 # Making Sense of Sensors 
 
-<p class="Large"> We keep on referring to our six Sensor Modules and we realize that we haven't taken the time to tell you what these are. So we are going to do just that in this next section. Lets make sense of some sensors. </p>  
+<p class="Large"> We keep on referring to our six Sensor Modules and we realize that we haven't taken the time to tell you what these are. So we are going to do just that in this next section. Lets make sense of some sensors. </p> 
 
+The six modules which make the WunderBar are: the **accelerometer/gyroscope** sensors, the **light/color/proximity** sensors, the **temperature/humidity** sensors, the **sound level** sensor, the **infrared transmitter** and the **grove (bridge) module**. Each of the modules has BLE connection capabilities, includes a coin battery holder and an LED. We'll get to the nitty gritty of each of the modules in a moment, but first we'd like to say a few words about the LED status - so you'd know what each blink means
+
+<p>All sensor modules have one led each, here's a quick explanation of the different LED statuses</p>
+
+<ul>
+<li><p><strong>LED Blinking once a second</strong>: During Onboarding Mode. The module is advertising the Onboarding service, to be written to by the Onboarding App.</p></li>
+
+<li><p><strong>LED ON</strong>: Indicating that the sensor is in Over The Air- Device Firmware Update (OTA-DFU) mode. The DeviceFirmwareUpdate application is running, waiting for the Android/iOS app to send new firwmare.</p></li>
+
+<li><p><strong>LED OFF</strong>: Normal operation.</p></li>
+ 
+<li><p><strong>Short Blink</strong>: The sensor module will blink once when to indicate that it is connected to the App or the Master Module.</p></li>
+</ul>
+
+Now that we've made sense of the LEDs lets make some sense of sensors...
 
 <div class="category"> 
 <h2>The Accelerometer/Gyroscope Module</h2>
