@@ -18,6 +18,10 @@
                     "title": "OnBoarding Explained"
                 },
                 {
+                    "file": "DevicesPage",
+                    "title": "Understanding the Devices Page"
+                },
+                {
                     "file": "Sensors",
                     "title": "Making Sense of Sensors"
                 },
