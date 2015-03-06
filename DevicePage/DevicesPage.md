@@ -103,6 +103,8 @@ You are able to delete a WunderBar as well as change view its settings
 
 You can rename it, view its Id and its secret, which is essentially its "user" on the relayr cloud.
 
-These options are also available via the icons on the right on the main page.
+These options are also available via the icons on the right hand side on the main page.
 
+
+So! Now you know everything there is to know about our devices page. Give it a try. We're sure you'll love it!
 
