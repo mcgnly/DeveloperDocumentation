@@ -211,7 +211,7 @@
                     "title": "Introduction"
                 },
                 {
-                    "file": "The Node.js Library",
+                    "file": "Library",
                     "title": "The Node.js Library",
                     "external": "https://github.com/relayr/node-relayr",
                     "newTab": true
