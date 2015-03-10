@@ -201,6 +201,24 @@
             ]
         },
         {
+            "directory": "Nodejs",
+            "title": "Node.js",
+            "color": "yellow",
+            "icon" : "fa-apple",
+            "submenus": [
+                {
+                    "file": "Reference",
+                    "title": "Introduction"
+                },
+                {
+                    "file": "The Node.js Library",
+                    "title": "The Node.js Library",
+                    "external": "https://github.com/relayr/node-relayr",
+                    "newTab": true
+                }
+            ]
+        },
+        {
             "directory": "CSharp",
             "title": "C#",
             "color": "yellow",

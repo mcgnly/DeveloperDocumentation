@@ -797,3 +797,7 @@ PLEASE NOTE: The modification made in the above mentioned commit, line 135 is a 
 <p>Now simply connect your WunderBar and see your very first Android app in action!</p>
 
 </div>
+
+## A Note on the SDK Version
+
+The above application has been built with an older version of the Android SDK. To see the version of the app which utilizes the latest version of the SDK please have a look at the different steps listed in the [Thermometer app demo repository on GitHub](https://github.com/relayr/android-demo-apps/tree/tutorial/step1). Toggle to the different branches in the repository - each representing a step in the tutorial application, to see the latest commits.
