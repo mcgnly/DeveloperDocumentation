@@ -33,7 +33,7 @@ Ready to get started? Let's Go!
 <p><img src="assets/SDKInclusion.png" class="center"></p>
 <h4>Add the following to your dependencies:</h4>
 <pre><code>    dependencies {
-        compile 'io.relayr:android-sdk:0.0.5'
+        compile 'io.relayr:android-sdk:0.0.12'
     }
 </code></pre>
 
@@ -97,7 +97,7 @@ which sets up the relayr SDK so we can use it:</p>
 <pre><code>@Override
 public void onCreate() {
     super.onCreate();
-    RelayrSdk.init(this);
+    new RelayrSdk.Builder(context).inMockMode(false).build();
 }
 </code></pre>
 
@@ -119,6 +119,10 @@ import statement which you can select by typing opt+Enter.
 
 <p>And add Internet permissions as shown below:</p>
 <pre><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+</code></pre>
+
+<p>The last entry to be added is the permission to access the network state:</p>
+<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
 </code></pre>
 
 
@@ -210,15 +214,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-
-//import the relayr LoginEventListener
-import io.relayr.LoginEventListener;
+import io.relayr.model.User;
+import rx.Observer;
+import rx.android.schedulers.AndroidSchedulers;
 
 //and the relayr SDK
 import io.relayr.RelayrSdk;
 
 
-public class ActivityThermometerDemo extends Activity implements LoginEventListener {
+public class ActivityThermometerDemo extends Activity {
 
 
     /**
@@ -237,7 +241,7 @@ public class ActivityThermometerDemo extends Activity implements LoginEventListe
         if (!RelayrSdk.isUserLoggedIn()) {
 
             //if the user isn't logged in, we call the logIn method
-            RelayrSdk.logIn(this, this);
+            logIn();
         }
     }
 
@@ -284,7 +288,7 @@ public class ActivityThermometerDemo extends Activity implements LoginEventListe
         if (item.getItemId() == R.id.action_log_in) {
 
             //we call the login method on the relayr SDK
-            RelayrSdk.logIn(this, this);
+            logIn();
             return true;
         } else if (item.getItemId() == R.id.action_log_out) {
 
@@ -295,6 +299,33 @@ public class ActivityThermometerDemo extends Activity implements LoginEventListe
         }
         return super.onOptionsItemSelected(item);
     }
+
+
+	 /**
+	 * The LogIn method definition
+	 */
+
+	private void logIn() {
+        RelayrSdk.logIn(this)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<User>() {
+                    @Override
+                    public void onCompleted() {
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Toast.makeText(ThermometerDemoActivity.this,
+                                R.string.unsuccessfully_logged_in, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onNext(User user) {
+                        Toast.makeText(ThermometerDemoActivity.this,
+                                R.string.unsuccessfully_logged_in, Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }	
 
     /**
      * Called when the user logs out
@@ -312,33 +343,11 @@ public class ActivityThermometerDemo extends Activity implements LoginEventListe
         Toast.makeText(this, R.string.successfully_logged_out, Toast.LENGTH_SHORT).show();
     }
 
-    /**
-      * When a user successfuly logs in, the SuccessUserLogin event is
-      * fired, and is handled here:
-      */
-    @Override
-    public void onSuccessUserLogIn() {
-
-        //use the Toast library to display a message to the user
-        Toast.makeText(this, R.string.successfully_logged_in, Toast.LENGTH_SHORT).show();
-        //call the invalidateOptionsMenu, which is defined in the
-        //Activity class and is used to reset the menu option
-        invalidateOptionsMenu();
-    }
-
-    /**
-      * if there is a problem logging in a user, the ErrorLogin evet
-      * is initiated and handled here.
-      */
-    @Override
-    public void onErrorLogin(Throwable e) {
-        //use the Toast library to display a message to the user
-        Toast.makeText(this, R.string.unsuccessfully_logged_in, Toast.LENGTH_SHORT).show();
-    }
+    
 }
 </code></pre>
 
-<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/19bf3578de9fd2c20e2ebab50c5a280500d411c9">this step of the Thermometer Demo App </a> available on Github.</p>
+<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/tree/tutorial/step5/thermometer/src/main">this step of the Thermometer Demo App </a> available on Github.</p>
 </div>
 
 
@@ -407,7 +416,7 @@ On our <strong>OnCreate</strong> method we make the following modifications: </p
         updateUiForALoggedInUser();
     } else {
         updateUiForANonLoggedInUser();  
-        RelayrSdk.logIn(this, this);
+        logIn();
     }
 </code></pre>
 
@@ -458,25 +467,8 @@ private void loadUserInfo() {
 }
 </code></pre>
 
-<p>as well as to: </p>
-<pre><code>@Override
-public void onErrorLogin(Throwable e) {
-    Toast.makeText(this, R.string.unsuccessfully_logged_in, Toast.LENGTH_SHORT).show();
-    updateUiForANonLoggedInUser();
-} 
-</code></pre>
 
-<p>And we add <code>updateUiForALoggedInUser()</code> to</p>
-<pre><code>@Override
-public void onSuccessUserLogIn() {
-    Toast.makeText(this, R.string.successfully_logged_in, Toast.LENGTH_SHORT).show();
-    invalidateOptionsMenu();
-    updateUiForALoggedInUser();
-}
-</code></pre>
-
-
-<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/bdf702c621ba3dce8ace777d421828da5ade7caf">this step of the Thermometer Demo App </a> available on Github.</p>
+<p>To see the code modifications, please have a look at <a href="https://github.com/relayr/android-demo-apps/tree/tutorial/step6/thermometer/src/main">this step of the Thermometer Demo App </a> available on Github.</p>
 </div>
 
 
@@ -643,8 +635,11 @@ protected void onCreate(Bundle savedInstanceState) {
     mTemperatureValueTextView = (TextView) view.findViewById(R.id.txt_temperature_value);
     mTemperatureNameTextView = (TextView) view.findViewById(R.id.txt_temperature_name);
     setContentView(view);
-    if (!RelayrSdk.isUserLoggedIn()) {
-        RelayrSdk.logIn(this, this);
+    if (RelayrSdk.isUserLoggedIn()) {
+         updateUiForALoggedInUser();
+    } else {
+         updateUiForANonLoggedInUser();
+         logIn();
     }
 }
 </code></pre>
@@ -739,7 +734,8 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 <pre><code>private void subscribeForTemperatureUpdates(TransmitterDevice device) {
     mDevice = device;
     mWebSocketSubscription = RelayrSdk.getWebSocketClient()
-            .subscribe(device, new Subscriber&lt;Object&gt;() {
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(new Subscriber<Reading>() {
 
                 @Override
                 public void onCompleted() {
@@ -753,9 +749,9 @@ You might recall that in step 6 we added a placeholder for this method in the fo
                 }
 
                 @Override
-                public void onNext(Object o) {
-                    Reading reading = new Gson().fromJson(o.toString(), Reading.class);
-                    mTemperatureValueTextView.setText(reading.temp + &quot;˚C&quot;);
+                public void onNext(Reading reading) {
+                    if (reading.meaning.equals("temperature"))
+                        mTemperatureValueTextView.setText(reading.value + "˚C");
                 }
             });
 }
@@ -764,9 +760,9 @@ You might recall that in step 6 we added a placeholder for this method in the fo
 <p>The main class which is used in this method is the <code>WebSocketClient</code> class, which incorporates all calls which handle device-channel subscription. This class is not accessible directly and is available only via the <code>RelayrSdk</code> class. </p>
 
 
-<p>To see the code modifications at this stage, please have a look at <a href="https://github.com/relayr/android-demo-apps/commit/7d3523b312399e3b3c3e6c04cb92c4af11ceeba2">this step of the Thermometer Demo App </a> available on Github.
+<p>To see the code modifications at this stage, please have a look at <a href="https://github.com/relayr/android-demo-apps/tree/tutorial/step8/thermometer/src/main">this step of the Thermometer Demo App </a> available on Github.
 <br />
-PLEASE NOTE: The modification made in the above mentioned commit, line 135 is a mistake. Yup, even well versed developers such as our own make mistakes. please ignore the change.</p>
+</p>
 
 </div>
 
@@ -798,6 +794,3 @@ PLEASE NOTE: The modification made in the above mentioned commit, line 135 is a 
 
 </div>
 
-## A Note on the SDK Version
-
-The above application has been built with an older version of the Android SDK. To see the version of the app which utilizes the latest version of the SDK please have a look at the different steps listed in the [Thermometer app demo repository on GitHub](https://github.com/relayr/android-demo-apps/tree/tutorial/step1). Toggle to the different branches in the repository - each representing a step in the tutorial application, to see the latest commits.
