@@ -89,7 +89,7 @@ Clicking the Settings icon will pop up a window containing the following informa
 
 ![](assets/settings.png)
 
-You can find the deviceId for usage in your code, you are able to make your device public, thus accessible to other users and you could also change the frequency of sampling. Please note that the current frequency value will not be shown, it will be updated though.
+You can find the deviceId for usage in your code, you are able to make your device public, thus accessible to other users and you could also change the frequency of sampling, i.e. the rate of data delivery from the device to the cloud. Please note that the current frequency value will not be shown, it will be updated though.
 
 ## WunderBar Options
 

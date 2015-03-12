@@ -276,6 +276,10 @@ For additional reading about the WunhderBar sensors and a review of the manner i
 
 <p>To upgrade your Sensor Modules' Firmware you can use the <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en" target="_blank"> nrf Master Control Panel</a>. We are planning on integrating the Firmware upgrade into the OnBoarding app in a future release.</p>
 
+<h3> What do we mean when we say Frequency?</h3>
+
+<p>One of the fields available under the Device Settings is Frequency. We'd like to take a moment and explain what we mean by it. The Frequency field in this case refers to how often values are being sent from the WunderBar sensor to the Master Module and then to the relayr cloud platform. Hence, we could say that in this sense frequency is the sampling rate or sampling interval and not the rate at which the sensor publishes values. </p>
+
 <h3> Can I flash the Firmware on my Sensor Modules and install something else?</h3>
 
 <p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/HowTos/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/HowTos/iBeacons">instructions on this page</a>. </p>
