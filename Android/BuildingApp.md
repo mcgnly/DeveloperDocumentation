@@ -97,7 +97,7 @@ which sets up the relayr SDK so we can use it:</p>
 <pre><code>@Override
 public void onCreate() {
     super.onCreate();
-    new RelayrSdk.Builder(context).inMockMode(false).build();
+    new RelayrSdk.Builder(this);
 }
 </code></pre>
 
