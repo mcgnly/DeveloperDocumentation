@@ -97,9 +97,12 @@ which sets up the relayr SDK so we can use it:</p>
 <pre><code>@Override
 public void onCreate() {
     super.onCreate();
-    new RelayrSdk.Builder(this);
+    RelayrSdkInitializer.initSdk(this);
 }
 </code></pre>
+
+<p>Following the addition of the initialization line, you would need to create two initialization files - one for Mock mode and the other for Production.
+The code in the files is shown <a href="https://github.com/relayr/android-demo-apps/blob/tutorial/step4/thermometer/src/debug/java/io/relayr/demo/thermometer/RelayrSdkInitializer.java">here for mock-mode</a> and <a href="https://github.com/relayr/android-demo-apps/blob/tutorial/step4/thermometer/src/release/java/io/relayr/demo/thermometer/RelayrSdkInitializer.java">here for release-mode</a>.</p>
 
 <p>At this point, the class doesn't recognize the RelayrSdk so it marks it
 in red, as an error. you will need to add another import statement, so that Studio can
