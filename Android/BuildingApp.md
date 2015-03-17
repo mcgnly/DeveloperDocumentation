@@ -101,8 +101,15 @@ public void onCreate() {
 }
 </code></pre>
 
-<p>Following the addition of the initialization line, you would need to create two initialization files - one for Mock mode and the other for Production.
-The code in the files is shown <a href="https://github.com/relayr/android-demo-apps/blob/tutorial/step4/thermometer/src/debug/java/io/relayr/demo/thermometer/RelayrSdkInitializer.java">here for mock-mode</a> and <a href="https://github.com/relayr/android-demo-apps/blob/tutorial/step4/thermometer/src/release/java/io/relayr/demo/thermometer/RelayrSdkInitializer.java">here for release-mode</a>.</p>
+<p>We have recently introduced two initialization methods for the SDK. One for the Mock mode and another for 'release' mode, i.e. production. Following the addition of the initialization line above, you would need to create two initialization files - one for Mock mode and the other for production, in order to enable the initialization.</p>
+
+<h3>Adding the RelayrSdkInitializer.java file</h3>
+
+<p><strong>In your Project tree</strong> navigate to <em>app>src</em>. Continue by creating the following directory path: <em>debug/java/io/relayr/demo/thermometer</em> for the mock mode and <em>/release/java/io/relayr/demo/thermometer</em> for the release/production mode.  </p>
+
+<p>Create the <strong>RelayrSdkInitializer.java</strong> file under the above paths</p>
+
+<p>The code which should be added to the files is shown <a href="https://github.com/relayr/android-demo-apps/blob/tutorial/step4/thermometer/src/debug/java/io/relayr/demo/thermometer/RelayrSdkInitializer.java">here for mock-mode</a> and <a href="https://github.com/relayr/android-demo-apps/blob/tutorial/step4/thermometer/src/release/java/io/relayr/demo/thermometer/RelayrSdkInitializer.java">here for release-mode</a>. You could simply copy and paste it into your project.</p>
 
 <p>At this point, the class doesn't recognize the RelayrSdk so it marks it
 in red, as an error. you will need to add another import statement, so that Studio can
