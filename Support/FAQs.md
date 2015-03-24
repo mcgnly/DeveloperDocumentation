@@ -168,6 +168,9 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <p>The earliest version you could use the iOS OnBoarding app is version 8. Please note: The <strong>Bluetooth version on the device must be 4.0</strong> (Bluetooth Smart). Onboarding is not possible with an earlier Bluetooth version.</strong></p>
 
+<h3> I am using the iOS Onboarding App. Where can I see my sensor data? </h3>
+
+<p>When using the iOS App you are able to see your sensor data either on the <a href="https://developer.relayr.io/dashboard/devices" >Developer Dashboard</a> or by downloading our <a href="https://itunes.apple.com/de/app/tell-me-when/id947289745?l=en&mt=8">TellMeWhen</a> application, which allows you to view your sensor data and get notifications about it based on rules you set. Currently the iOS app is not as feature complete as our Android app, which is why, at the moment viewing data in the app is not available. We are of course working on improving the iOS app so that it has the same capabilities as that of the Android app. </p>
 
 <h3> How do I use the iOS Onboarding App</h3>
 
