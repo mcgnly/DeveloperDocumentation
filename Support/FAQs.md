@@ -231,7 +231,16 @@ Our sensor essentially provides a reading representing the change in noise level
 <h3> Why does the percentage go up when I get close to the proximity sensor? </h3>
 <p>The proximity measurement is translated to a percentage in the OnBoarding apps and the Developer Dashboard. The closer an object is to the sensor the higher the percentage is.
 </p>
-For additional reading about the WunhderBar sensors and a review of the manner in which data is collected please see our <a href="https://developer.relayr.io/documents/Welcome/Sensors">Making Sense of Sensors page</a>
+<p>For additional reading about the WunhderBar sensors and a review of the manner in which data is collected please see our <a href="https://developer.relayr.io/documents/Welcome/Sensors">Making Sense of Sensors page</a></p>
+
+<h3> Is it possible to receive sensor values directly from the sensor without using the Master Module?</h3>
+<p>Yes! that is possible. Simply set the relevant sensor to BLE mode via the OnBoarding app and start receiving data directly to your phone over BLE.
+</p>
+
+<h3> I have successfully onboarded my WunderBar using my work network and was receiving data from it, I came home, connected it and nothing works - why? </h3>
+<p>In case you are using one network to onboard and then try and connect the WunderBar to a new network you would need to initiate the "Change WiFi" process on the Onboarding/Manager app prior to being able to see data. The Master module remains "connected" to the old network until the network settings have been changed. Once you initiate the process, follow the instructions on the app, which will guide in connecting to the new network.
+</p>
+
 </div>
 
 <h2 class="collapseHeader">Hardware and Firmware</h2>
