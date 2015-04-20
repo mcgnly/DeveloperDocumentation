@@ -243,6 +243,30 @@ Our sensor essentially provides a reading representing the change in noise level
 
 </div>
 
+<h2 class="collapseHeader"> BLE Direct Connection </h2>
+<div class="collapse">
+
+<h3> What is BLE Direct Connection?</h3>
+<p>BLE direct connection enables you to connect to each of the WunderBar sensor modules over BLE and receive data from them without the mediation of the relayr cloud platform.</p>
+
+
+<h3> Is BLE Direction Connection available on both Android and iOS apps?</h3>
+<p>At the moment the option to connect to the sensor module directly is only available from the <strong>Android Manager</strong> app.</p>
+
+<h3>How do I use BLE Direct Connection?</h3>
+<p>In order to use this option, place the relevant sensor in onboarding mode by shortly pressing its button, then from your Android Manager app, swipe to the right and turn on BLE Direct Connection, once the connection is established, you should be able to see the data on the main sensor screen.</p>
+
+
+<h3>Are there any known issues connecting to the sensor modules over BLE?</h3>
+<p>As this connection method is relatively new, we are still at the stages of perfecting it. The main issue which may arise while attempting to connect to the sensor via BLE, is in case the first attempt is unsuccessful, the connection may never be established and fail with a repeating request to place the sensor module in onboarding mode. In this case, we recommend to kill the app completely and disconnect the sensor from it's power supply. Once reconnected, the access via BLE should be successful.  
+</p>
+
+
+
+
+
+</div>
+
 <h2 class="collapseHeader">Hardware and Firmware</h2>
 <div class="collapse">
 <h3> Those blinking LEDs, what do they mean?</h3>
