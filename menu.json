@@ -264,6 +264,12 @@
                 {
                     "file": "WunderBarSchem",
                     "title": "The WunderBar Layout and Schematics"
+                },
+                {
+                    "file": "Sample",
+                    "title": "Sample-Apps",
+                    "external": "https://github.com/relayr/public-apps",
+                    "newTab": true
                 }    
             ]
         }
