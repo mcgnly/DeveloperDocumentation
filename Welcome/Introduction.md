@@ -55,6 +55,13 @@ We've made it as easy as possible for you to start integrating your awesome apps
 
 <a class="center" href="https://developer.relayr.io/documents/CSharp/Reference">View C# Documentation</a>
 </div>
+
+<div class="floatBox">
+<img src="assets/nodejs.png" alt="" title="" height=110px>
+<p>Our brand new Node.js mini SDK is now available. Check out our <b>Node.js Documentation</b>.</p>
+
+<a class="center" href="https://developer.relayr.io/documents/Nodejs/Reference">View Node.js Documentation</a>
+</div>
 ----------
 
 
