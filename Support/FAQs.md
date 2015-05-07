@@ -330,4 +330,25 @@ Our sensor essentially provides a reading representing the change in noise level
 
 </div>
 
+<h2 class="collapseHeader"> External Devices </h2>
+<div class="collapse">
+
+<h3> What are External Devices?</h3>
+<p>By 'External Device' we refer to any device, apart from the relayr WunderBar, which can be integrated with the relayr platform.</p>
+
+
+<h3> How do I add an external device?</h3>
+<p> In order to add a new device, follow the instructions below
+<list>
+<li>In the Developer Dashboard, access the Devices menu> Add Device</li>
+<li>Give your device a name and select the type of device you would like to add</li>
+<li>Once you click Next a popup will be prompted for you to authorize the relayr app to access the devices under the account you've chosen.</li>
+<li>Once the relayr deshboard is authorized to access your external account, you will be shown a list of your available devices.</li>
+<li>Select the device you would like to add</li>
+<li>The device selected will be added under 'My Devices'. You could now see live data from it and send commands to it.</li>
+<li>To disconnect the device from the relayr Developer Dashboard, simply click the delete button on the top menu of the device.</li>
+</p>
+
+</div>
+
  
