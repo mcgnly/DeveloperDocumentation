@@ -22,7 +22,7 @@ Now that we've made sense of the LEDs lets make some sense of sensors...
 <h2>The Accelerometer/Gyroscope Module</h2>
 <img src="assets/Gyro.png" alt="" title="" style= width:350px></a>
 <p>
-This module incorporates the <a href="http://www.invensense.com/mems/gyro/mpu6500.html">MPU-6500 chip</a> manufactured by InvenSense, combining a 3-axis accelerometer with a 3-axis gyroscope.
+This module incorporates the <a href="http://store.invensense.com/ProductDetail/MPU6500-InvenSense-Inc/474995/">MPU-6500 chip</a> manufactured by InvenSense, combining a 3-axis accelerometer with a 3-axis gyroscope.
 </p>
 <br/><br/><br/><br/><br/><br/><br/>
 <div>
