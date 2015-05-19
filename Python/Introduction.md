@@ -34,25 +34,6 @@ You can install the library using one of the following methods, using Pip:
 
 Receive a 10 second data stream, from one of your WunderBar sensors (device). In the example below the device does not have to be a public one in order to be used. You can obtain your device IDs from the relayr Dashboard [My Devices section](https://developer.relayr.io/dashboard/devices):
 
-There are two transport methods, via which you are able to receive data from your device:
-
-#### Using PubNub (Legacy)
-
-		import time
-		from relayr import Client
-		c = Client(token='<my_access_token>')
-		dev = c.get_device(id='<my_device_id>').get_info()
-		user = c.get_user()
-		app = c.get_app()
-		def pubnub_callback(message, channel):
-		    print(repr(message), type(message))
-		conn = user.connect_device(app, dev, pubnub_callback)
-		conn.start()
-		time.sleep(10)
-		conn.stop()
-
-#### Using MQTT 
-
 		import time
 	    from relayr import Client
 	    from relayr.dataconnection import MqttStream
@@ -65,7 +46,7 @@ There are two transport methods, via which you are able to receive data from you
 	    time.sleep(10)
 	    stream.stop()
 
-**PLEASE NOTE**: Receiving data via MQTT will work only for Python versions 2.7 and above due to limited support in `paho-mqtt` for TLS in Python 2.6.
+**PLEASE NOTE**: Receiving data via [MQTT](http://mqtt.org/) will work only for Python versions 2.7 and above due to limited support in `paho-mqtt` for TLS in Python 2.6.
 
 ## Full Documentation Reference
 
