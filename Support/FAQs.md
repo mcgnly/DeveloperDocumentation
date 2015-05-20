@@ -224,6 +224,10 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 </p><p>
 If you encounter this phenomenon, please supply us with the IDs of the sensors which have stopped publishing as well as the exact time this behavior was encountered. You can do so by posting to <a href="https://forum.relayr.io/t/sensors-randomly-stop-publishing-data/254">this Forum Topic</a></p>
 
+<h3>I notice that the temperature sensor is consistently showing values higher than the ones measured by other devices I own - why is that?</h3>
+
+<p>We are aware of a slight shift in temperature, especially when the temperature module is still connected to the rest of the board. This is due to the fact that the Gainspan chip, located on the master module emits heat which  in turn, raises the temperature measured by the temperature sensor.</p>
+
 <h3> In which units is Noise Level measured? </h3>
 <p>
 Our sensor essentially provides a reading representing the change in noise level over a period of time. The number is a representation of a level rather than a measurement of noise. The output number will increase as the noise level increases and vice versa. In order to provide a reading of the level of noise in decibels a much more elaborate set of tools is required.    
