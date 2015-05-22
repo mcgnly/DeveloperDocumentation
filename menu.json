@@ -266,6 +266,10 @@
                     "title": "The WunderBar Layout and Schematics"
                 },
                 {
+                    "file": "Photon",
+                    "title": "Connecing the Particles.io Photon to the relayr Platform"
+                },
+                {
                     "file": "Sample",
                     "title": "Sample-Apps",
                     "external": "https://github.com/relayr/public-apps",
