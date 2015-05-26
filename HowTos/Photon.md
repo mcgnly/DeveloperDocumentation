@@ -8,27 +8,27 @@ This library also contains a short sample app to help you get started with this 
 
 1. Open a curl terminal window and enter the following to register your photon: 
 
-`curl -H "Content-Type: application/json" -H "Authorization: Bearer <your access token>" -X POST -d '{"name":"<your device name> ", "owner":"<your user id>"}' https://api.relayr.io/devices/`
+		curl -H "Content-Type: application/json" -H "Authorization: Bearer <your access token>" -X POST -d '{"name":"<your device name> ", "owner":"<your user id>"}' https://api.relayr.io/devices/
 
 2. Next, use the following to receive credentials for publishing data:
 
-`curl -H "Content-Type: application/json" -H "Authorization: Bearer <your access token>" -X POST -d '{"transport":"mqtt"}' https://api.relayr.io/devices/<your device id retrieved from the previous step>/transmitter`
+		curl -H "Content-Type: application/json" -H "Authorization: Bearer <your access token>" -X POST -d '{"transport":"mqtt"}' https://api.relayr.io/devices/<your device id retrieved from the previous step>/transmitter
 
-The response received would look similar to this:
-
-    {
-    "id": "eabdb2ed-2375-4137-b006-da24c93c9507",
-    "secret": "na1R6Hn3dYg1",
-    "owner": "9210dce8-25da-4275-a73a-1383b9774255",
-    "name": "no transmitter  no model device",
-    "credentials": {
-    "user": "eabdb2ed-2375-4137-b006-da24c93c9507",
-    "password": "na1R6Hn3dYg1",
-    "clientId": "T6r2y7SN1QTewBtokyTyVBw",
-    "topic": "/v1/eabdb2ed-2375-4137-b006-da24c93c9507/"
-    },
-    "integrationType": "wunderbar1"
-    }  
+	The response received would look similar to this:
+	
+	    {
+	    "id": "eabdb2ed-2375-4137-b006-da24c93c9507",
+	    "secret": "na1R6Hn3dYg1",
+	    "owner": "9210dce8-25da-4275-a73a-1383b9774255",
+	    "name": "no transmitter  no model device",
+	    "credentials": {
+	    "user": "eabdb2ed-2375-4137-b006-da24c93c9507",
+	    "password": "na1R6Hn3dYg1",
+	    "clientId": "T6r2y7SN1QTewBtokyTyVBw",
+	    "topic": "/v1/eabdb2ed-2375-4137-b006-da24c93c9507/"
+	    },
+	    "integrationType": "wunderbar1"
+	    }  
 
 3. Add the credentials received to this part of the photon-relayr.ino code:
     
