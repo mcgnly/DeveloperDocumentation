@@ -320,6 +320,12 @@ Our sensor essentially provides a reading representing the change in noise level
 
 <p>One of the fields available under the Device Settings is Frequency. We'd like to take a moment and explain what we mean by it. The Frequency field in this case refers to how often values are being sent from the WunderBar sensor to the Master Module and then to the relayr cloud platform. Hence, we could say that in this sense frequency is the sampling rate or sampling interval and not the rate at which the sensor publishes values. </p>
 
+<h3>How do I power the Bridge Module once it is broken off the main board?</h3>
+<p>You have two options to connect the module to a power supply:
+<ol><li>You can use the connector pins marked with Vext and GND and connect them to a battery.</li>
+<li>You can solder two pins on the side of the module marked with Vin and GND and connect these to a battery.</li></ol>
+The voltage range is between 3.4V and 5V </p>
+
 <h3> Can I flash the Firmware on my Sensor Modules and install something else?</h3>
 
 <p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/HowTos/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/HowTos/iBeacons">instructions on this page</a>. </p>
