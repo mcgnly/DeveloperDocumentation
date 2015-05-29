@@ -29,4 +29,6 @@ Here's a quick way to add the relayr API calls to your Postman collections
 #### See Example:
 <img src="assets/PostmanEnvironment.png" class="center" width=700px>
 
+** Please note that the live sensor data stream cannot be viewed with Postman as the protocol which is used for data transferring is MQTT rather than HTTP. In order to view your live data stream you are able to use an MQTT client such as [Mosquitto](http://mosquitto.org/). Alternatively you are able to use [this web client](https://mqtt.relayr.io/) 
+
 You will find the information required  in your [Apps Page](https://developer.relayr.io/dashboard/apps/myApps), and your [Devices Page](https://developer.relayr.io/dashboard/devices). To Generate your OAuth token, please see instructions [here](https://developer.relayr.io/documents/WebDev/OAuthToken) 
