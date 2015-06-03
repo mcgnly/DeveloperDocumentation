@@ -8,9 +8,9 @@ We've made it as easy as possible for you to start integrating your awesome apps
 ----------
 ## Getting Started with Building your relayr App
 
-1. Start by OnBoarding your WunderBar. Make sure to go over our OnBoarding Do's and Dont's:
+1. Start by OnBoarding your WunderBar. Make sure to go over our OnBoarding video:
 
-	<iframe width="560" height="315" src="//www.youtube.com/embed/SDG7qpYgoZc" frameborder="0" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/YwNnMjVMMqQ" frameborder="0" allowfullscreen></iframe>
 
 2. Next, create an app on the <a href="https://developer.relayr.io/dashboard/apps/myApps">App Section</a>
 3. Use our Web/Android/iOS OSX development tools below to start building your app
