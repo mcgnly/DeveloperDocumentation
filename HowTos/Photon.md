@@ -4,6 +4,21 @@ We are proud to present our brand new [relayr-Photon library](https://github.com
 
 This library also contains a short sample app to help you get started with this integration.
 
+## Adding your Photon to the relayr cloud and receiving data-publishing credentials (Developer Dashboard)
+
+You are now able to add your prototype directly from the Developer Dashboard. 
+
+1. In the [My Devices](https://developer.relayr.io/dashboard/devices) page click the + sign on the bottom right part of the screen
+	
+	![](assets/AddDevice.png)
+
+2. Select 'Add Prototype'
+3. Give your prototype a name and hit Start Prototyping
+	
+	![](assets/NewDevice.png)
+4. Enter the credentials received in the respective places in your code
+	![](assets/Credentials.png)
+
 ## Adding your Photon to the relayr cloud and receiving data-publishing credentials (curl)
 
 1. Open a curl terminal window and enter the following to register your photon:
@@ -41,7 +56,7 @@ You can also enter the credentials received into [this web tool](https://mqtt.re
 3. Claim your photon through the mobile app or manually by following [these steps](http://docs.particle.io/connect/)
 4. Create your app on [build.particle.io](https://build.particle.io)
 5. Go to the libraries tab in the particle IDE and import two libraries, 'MQTT' and 'SparkJson'. (if it doesn't work, you can manually add the files using the “+” sign on the top right of your project then copy and paste their content)
-6. Copy and paste the example code under **mqtt-relayr.ino** in the [repository](https://www.github/relayr/relayr-photon).
+6. Copy and paste the example code under **mqtt-relayr.ino** in the [repository](https://www.github.com/relayr/relayr-photon).
 7. Update the following part of the code with the credentials received from the curl request.
     
 
