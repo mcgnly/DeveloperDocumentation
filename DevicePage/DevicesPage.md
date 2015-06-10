@@ -108,3 +108,38 @@ These options are also available via the icons on the right hand side on the mai
 
 So! Now you know everything there is to know about our devices page. Give it a try. We're sure you'll love it!
 
+## Adding External Devices and Prototypes
+
+### External Devices
+
+
+1. Click the + sign on the bottom right part of the screen
+	
+	![](assets/AddDevice.png)
+2. Give your device a name and select the type of device you would like to add
+
+	![](assets/Account.png)
+	
+3. Once you click Next a popup will be prompted for you to authorize the relayr app to access the devices under the account you've chosen.
+4. Once the relayr deshboard is authorized to access your external account, you will be shown a list of your available devices.
+
+	![](assets/Accounts3.png)
+5. Select the device you would like to add
+6. The device selected will be added to your list of devices. You could now see live data from it and send commands to it.
+7. To disconnect the device from the relayr Developer Dashboard, simply click the delete button on the top menu of the device. 
+
+### Prototypes
+
+
+1. Click the + sign on the bottom right part of the screen
+	
+	![](assets/AddDevice.png)
+
+2. Select 'Add Prototype'
+3. Give your prototype a name and hit Start Prototyping
+	
+	![](assets/NewDevice.png)
+4. Enter the credentials received in the respective places in your code
+	![](assets/Credentials.png)
+
+5. Click Ready to view your prototype.
