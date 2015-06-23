@@ -36,14 +36,14 @@ We've made it as easy as possible for you to start integrating your awesome apps
   <figure class="nodejs"><h1>NodeJs<br><i class="flaticon-js"></i></h1>
     <ul>
       <li><a href="/documents/Nodejs/Reference" target="_self">Documentation <i class="fa fa-angle-right"></i></a></li> 
-      <li><a href="https://developer.relayr.io/documents/Nodejs/nodejs" target="_self">SDK (GitHub)<i class="fa fa-angle-right"></i></a></li> 
+      <li><a href="https://developer.relayr.io/documents/Nodejs/nodejs" target="_self">SDK <i class="fa fa-angle-right"></i></a></li> 
     </ul>
   </figure>
   <figure class="browser"><h1>Browser<br><i class="flaticon-html"></i></h1>
     <ul>
       <li><a href="/documents/Browser/Introduction" target="_self">Documentation <i class="fa fa-angle-right"></i></a></li>
 	<li><a href="/documents/Browser/Examples" target="_self">Examples <i class="fa fa-angle-right"></i></a></li>  
-      <li><a href="/documents/Browser/JavaScriptSDK" target="_self>SDK<i class="fa fa-github"></i></a></li> 
+      <li><a href="/documents/Browser/JavaScriptSDK" target="_self">SDK <i class="fa fa-angle-right"></i></a></li> 
     </ul>
   </figure>  
   <figure class="csharp"><h1>Hardware<br><i class="flaticon-embedded"></i></h1>
