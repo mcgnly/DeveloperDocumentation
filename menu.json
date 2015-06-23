@@ -49,18 +49,18 @@
                     "title": "Introduction"
                 },
                 {
-                    "file": "relayrAPI", 
-                    "title": "The relayr API",
-                    "external": "http://docs.wunderbarregistration.apiary.io/",
-                    "newTab": true
-                },
-                {
                     "file": "OAuthReference",
                     "title": "OAuth Reference"
                 },
                 {
                     "file": "ImportAPI",
                     "title": "Importing the API into Postman"
+                },
+                {
+                    "file": "relayrAPI", 
+                    "title": "The relayr API",
+                    "external": "http://docs.wunderbarregistration.apiary.io/",
+                    "newTab": true
                 }
             ]
         },
@@ -79,7 +79,7 @@
                     "title": "Building your first relayr Android App"
                 },
                 {
-                    "file": "examples",
+                    "file": "Examples",
                     "title": "Examples",
                     "submenus":[
                         {
@@ -123,7 +123,7 @@
                     "title": "Basic Classes"
                 },
                 {
-                    "file": "examples",
+                    "file": "Examples",
                     "title": "Examples",
                     "submenus":[
                         {
@@ -168,8 +168,8 @@
             ]
         },
         {
-            "directory": "JavaScript",
-            "title": "JavaScript",
+            "directory": "Browser",
+            "title": "Browser",
             "color": "yellow",
             "icon" : "fa-apple",
             "submenus": [
@@ -190,7 +190,7 @@
                     "title": "Getting your OAuth App Token"
                 },
                 {
-                    "file": "examples",
+                    "file": "Examples",
                     "title": "Examples",
                     "submenus":[
                                            
@@ -245,7 +245,7 @@
                     "title": "Building your first relayr C# App"
                 },
                 {
-                    "file": "Csharp",
+                    "file": "CSharp",
                     "title": "The C# SDK"
                 }
             ]
@@ -277,7 +277,7 @@
                     "title": "Connecing the Particles.io Photon to the relayr Platform"
                 },
                 {
-                    "file": "examples",
+                    "file": "Examples",
                     "title": "Examples",
                     "submenus":[
                                            
