@@ -7,19 +7,22 @@
             "submenus": [
                 {
                     "file": "Introduction",
-                    "title": "Getting Started"
-                },
+                    "title": "Introduction"
+                }
+            ]
+        },
+        {
+            "directory": "WunderBar",
+            "title": "WunderBar",
+            "color": "orange",
+            "submenus": [
                 {
-                    "file": "Platform",
-                    "title": "The Cloud Platform"
+                    "file": "Introduction",
+                    "title": "Introduction"
                 },
                 {
                     "file": "OnBoarding",
                     "title": "OnBoarding Explained"
-                },
-                {
-                    "file": "DevicesPage",
-                    "title": "Understanding the Devices Page"
                 },
                 {
                     "file": "Sensors",
@@ -30,25 +33,10 @@
                     "title": "Mastering the Master (Module)"
                 },
                 {
-                    "file": "OAuthReference",
-                    "title": "OAuth Reference"
-                },
-                {
-                    "file": "Roadmap",
-                    "title": "What's ahead? - Roadmap"
+                    "file": "WunderBarSchem",
+                    "title": "The WunderBar Layout and Schematics"
                 }
-            ]
-        },
-        {
-            "directory": "Authorization",
-            "title": "Authorization",
-            "color": "purple",
-            "submenus": [
-                {
-                    "file": "Reference",
-                    "title": "Introduction"
-                }
-                                
+                
             ]
         },
         {
@@ -63,8 +51,12 @@
                 {
                     "file": "relayrAPI", 
                     "title": "The relayr API",
-                    "external": "/dashboard/api",
+                    "external": "http://docs.wunderbarregistration.apiary.io/",
                     "newTab": true
+                },
+                {
+                    "file": "OAuthReference",
+                    "title": "OAuth Reference"
                 },
                 {
                     "file": "ImportAPI",
@@ -87,22 +79,22 @@
                     "title": "Building your first relayr Android App"
                 },
                 {
-                    "file": "Sample Project",
-                    "title": "Sample App - Thermometer",
-                    "external": "https://github.com/relayr/android-demo-apps/tree/master/thermometer",
-                    "newTab": true
-                },
-                {
-                    "file": "Sample Project",
-                    "title": "Sample App - CantTouchThis",
-                    "external": "https://github.com/relayr/android-cant-touch-this",
-                    "newTab": true
-                },
-                {
-                    "file": "Sample Project",
-                    "title": "Sample App - TellMeWhen",
-                    "external": "https://github.com/relayr/android-tell-me-when",
-                    "newTab": true
+                    "file": "examples",
+                    "title": "Examples",
+                    "submenus":[
+                        {
+                            "file":"thermometer",
+                            "title":"Thermometer"
+                        },                   
+                        {
+                            "file":"canttouchthis",
+                            "title":"CantTouchThis"
+                        },
+                        {
+                            "file":"tellmewhen",
+                            "title":"TellMeWhen"
+                        }
+                    ]
                 },
                 {
                     "file": "SDK Documentation",
@@ -131,23 +123,30 @@
                     "title": "Basic Classes"
                 },
                 {
-                    "file": "Sample Project",
-                    "title": "Sample App - Thermometer",
-                    "external": "https://github.com/relayr/apple-sample-apps/tree/thermometer",
-                    "newTab": true
+                    "file": "examples",
+                    "title": "Examples",
+                    "submenus":[
+                        {
+                            "file":"thermometer",
+                            "title":"Thermometer"
+                        },                   
+                        {
+                            "file":"executablesamples",
+                            "title":"Executable Code Samples"
+                        },
+                        {
+                            "file":"tellmewhen",
+                            "title":"TellMeWhen"
+                        }
+                    ]
                 },
                 {
-                    "file": "Sample Project",
-                    "title": "Sample App - TellMeWhen",
-                    "external": "https://github.com/relayr/apple-tell-me-when",
-                    "newTab": true
-                },
-                {
-                    "file": "Sample Project",
-                    "title": "Executable Code Samples",
-                    "external": "https://github.com/relayr/apple-sample-apps/tree/master/code-samples",
+                    "file": "SDK Documentation",
+                    "title": "SDK Reference",
+                    "external": "/rendered-doc/javadoc/index.html",
                     "newTab": true
                 }
+                
             ]
         },
         {
@@ -169,8 +168,8 @@
             ]
         },
         {
-            "directory": "WebDev",
-            "title": "Web Development",
+            "directory": "JavaScript",
+            "title": "JavaScript",
             "color": "yellow",
             "icon" : "fa-apple",
             "submenus": [
@@ -183,20 +182,23 @@
                     "title": "Web Browser Development"
                 },
                 {
-                    "file": "The JavaScript SDK",
-                    "title": "The JavaScript SDK",
-                    "external": "https://github.com/relayr/browser-sdk",
-                    "newTab": true
+                    "file": "JavaScriptSDK",
+                    "title": "The JavaScript SDK"
                 },
                 {
                     "file": "OAuthToken",
                     "title": "Getting your OAuth App Token"
                 },
                 {
-                    "file": "Sample Project",
-                    "title": "Sample App - CantTouchThis",
-                    "external": "https://github.com/relayr/cantTouchThis",
-                    "newTab": true
+                    "file": "examples",
+                    "title": "Examples",
+                    "submenus":[
+                                           
+                        {
+                            "file":"canttouchthis",
+                            "title":"CantTouchThis"
+                        }
+                    ]
                 }
             ]
         },
@@ -211,10 +213,20 @@
                     "title": "Introduction"
                 },
                 {
-                    "file": "Library",
-                    "title": "The Node.js Library",
-                    "external": "https://github.com/relayr/node-relayr",
-                    "newTab": true
+                    "file": "nodejs",
+                    "title": "The Node.js Library"
+                }
+            ]
+        },
+        {
+            "directory": "Support",
+            "title": "FAQs",
+            "color": "yellow",
+            "icon" : "fa-apple",
+            "submenus": [
+                {
+                "file": "FAQs",
+                "title": "FAQs"
                 }
             ]
         },
@@ -233,19 +245,18 @@
                     "title": "Building your first relayr C# App"
                 },
                 {
-                    "file": "The C# SDK",
-                    "title": "The C# SDK",
-                    "external": "https://github.com/relayr/csharp-sdk",
-                    "newTab": true
+                    "file": "Csharp",
+                    "title": "The C# SDK"
                 }
             ]
         },
         {
-            "directory": "HowTos",
-            "title": "Firmware Extras",
+            "directory": "Hardware",
+            "title": "Hardware",
             "color": "purple",
             "submenus": [
                 {
+
                     "file": "Introduction",
                     "title": "Introduction"
                 },
@@ -262,18 +273,19 @@
                     "title": "Connecing the relayr Bridge to Arduino"
                 },
                 {
-                    "file": "WunderBarSchem",
-                    "title": "The WunderBar Layout and Schematics"
-                },
-                {
                     "file": "Photon",
                     "title": "Connecing the Particles.io Photon to the relayr Platform"
                 },
                 {
-                    "file": "Sample",
-                    "title": "Sample-Apps",
-                    "external": "https://github.com/relayr/public-apps",
-                    "newTab": true
+                    "file": "examples",
+                    "title": "Examples",
+                    "submenus":[
+                                           
+                        {
+                            "file":"sampleapps",
+                            "title":"The Sample Apps Repository"
+                        }
+                    ]
                 }    
             ]
         }
