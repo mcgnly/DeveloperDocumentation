@@ -3,7 +3,7 @@
 ## Why?
 
 The OnBoarding process is your way of telling the relayr platform - "I'm a relayr User and this is my WunderBar". 
-It allows you to connect the specific Sensors and Master Module you received in the mail with your relayr user and it pairs the specific Master Module with its respective sensor modules, so that when they start publishing data, only your Master module will be able to pick up that data and transmit it to the relayr <a href="https://developer.relayr.io/documents/Welcome/Platform" target="_blank">Cloud Platform</a>, making it  available for your app.
+It allows you to connect the specific Sensors and Master Module you received in the mail with your relayr user and it pairs the specific Master Module with its respective sensor modules, so that when they start publishing data, only your Master module will be able to pick up that data and transmit it to the relayr Cloud Platform, making it  available for your app.
  
 ## How?
 

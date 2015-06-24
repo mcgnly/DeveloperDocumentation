@@ -203,7 +203,7 @@ To get a bit more insight into using the library, have a look at the [Cloud Conn
 
 ## Testing the connection between the Bridge Module and the Master Module:
 
-1. The Bridge Module has to be onboarded again after a [firmware change](http://https://developer.relayr.io/documents/HowTos/Flashing).
+1. The Bridge Module has to be onboarded again after a [firmware change](https://developer.relayr.io/documents/Hardware/Flashing).
 2. To verify that the Bridge Module is connected to the Master Module, simply initiate the  "TURN ON LED" command in the module's 'Settings' panel on the Developer Dashboard. If the LED turns on for about 5 seconds, the module is listening for commands from the cloud and  will also be able to send data.
 3. Go to Device activity and paste the following command:
 ` {"path":"", "command":"down_ch_payload","value":[1,2,3]} `

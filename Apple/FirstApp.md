@@ -184,7 +184,7 @@ We'd need to add the following right after the former lines: </p>
 <p>The two error handling messages will be written to the console log - they will not be shown to the app user.</p>
 
 <h3>Retrieving a Device</h3>
-<p>We'll move on to defining the logic for retrieving, first the <a href="https://developer.relayr.io/documents/relayrAPI/Introduction">transmitters</a> associated with the user and then a Temperature sensor device. By transmitter in this case we refer to the WunderBar's <a href="https://developer.relayr.io/documents/Welcome/MM">master module</a>.</p>
+<p>We'll move on to defining the logic for retrieving, first the <a href="https://developer.relayr.io/documents/relayrAPI/Introduction">transmitters</a> associated with the user and then a Temperature sensor device. By transmitter in this case we refer to the WunderBar's <a href="https://developer.relayr.io/documents/WunderBar/MM">master module</a>.</p>
 <p>It's a slightly larger block of code but we've added comments to explain what we've done. See you on the other side</p>
 <pre><code>        // First, we retrieve the transmitters associated with the user 
         // In case of an error a message is written to the console.

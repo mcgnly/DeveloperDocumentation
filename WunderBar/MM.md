@@ -15,8 +15,8 @@ Incorporating the <a href="http://www.gainspan.com/gs1500m">GS1500m chip,</a> th
 ### The Kinetis module 
 
 Incorporating the <a href="http://www.arm.com/products/processors/cortex-m/cortex-m4-processor.php">ARM Cortex M4</a>, the <a href="http://www.freescale.com/webapp/sps/site/overview.jsp?code=KINETIS_K_SERIES" target="_blank"> Kinetis K Series </a>, manufactured by Freescale, is the core chip on the Master Module.
-It stores and maintains all the authorization keys are secrets for the communication with the <a href="https://developer.relayr.io/documents/Welcome/Platform">Cloud Platform </a> and the communication with the Sensor Modules. 
-It includes a calculating unit which converts the <a href="https://developer.relayr.io/documents/Welcome/Sensors">raw readings data arriving from the sensor modules </a> into meaningful readings. It also 'translates" BLE into JSON/MQTT - enabling both the SDKs and the Cloud Platform to communicate with the sensor modules.
+It stores and maintains all the authorization keys are secrets for the communication with the Cloud Platform and the communication with the Sensor Modules. 
+It includes a calculating unit which converts the <a href="https://developer.relayr.io/documents/WunderBar/Sensors">raw readings data arriving from the sensor modules </a> into meaningful readings. It also 'translates" BLE into JSON/MQTT - enabling both the SDKs and the Cloud Platform to communicate with the sensor modules.
 It communicates with the Gainspan module instructing it when to connect to WiFi and with which credentials. 
 Lastly, it runs the Bootloader application which manages the firmware upgrade. 
 

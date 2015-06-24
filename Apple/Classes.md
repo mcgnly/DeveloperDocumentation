@@ -24,7 +24,7 @@ Used as a static class to receive various statuses from the relayr servers.
 
 ### *RelayrApp*
 
-A representation of your iOS/OSX app on the relayr [Cloud Platform](https://developer.relayr.io/documents/Welcome/Platform). This object is required in order to interact with the Relayr services (it is worth noticing that this is not a singleton and theoretically, you can define as many relayr apps as you wish).
+A representation of your iOS/OSX app on the relayr Cloud Platform. This object is required in order to interact with the Relayr services (it is worth noticing that this is not a singleton and theoretically, you can define as many relayr apps as you wish).
 
 An instance of `RelayrApp` can be created by passing the credentials (*appID*, *OAuthClientSecret*, and *redirectURI*) obtained from the [Developer Dashboard](https://developer.relayr.io/dashboard/apps/myApps), when you define the application to use the relayr Cloud Platform.
 

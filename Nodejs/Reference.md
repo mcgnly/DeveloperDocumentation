@@ -1,7 +1,7 @@
 # The relayr Node.js Library
 
 We are proud to introduce our shiny new Noje.js library [available for download from GitHub](https://github.com/relayr/node-relayr)
-The library allows you to access your WunderBar sensor data and the [relayr Cloud Platform](https://developer.relayr.io/documents/Welcome/Platform) functionality from apps built in Node.js.
+The library allows you to access your WunderBar sensor data and the relayr Cloud Platform functionality from apps built in Node.js.
 
 This library isn't complete, but will grow to expose a lot more useful functionality.
 

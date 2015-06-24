@@ -22,14 +22,9 @@ What you will need to do to get started, is first onboard your WunderBar using t
 
 <p> To get your user Id simply log in to the dashboard, hover over your user name in the header menu > Select Account > Settings. You will find your user ID there.</p>
 
-
-<h3> Where can I get some information about the relayr architecture? </h3>
-
-<p>We are so glad you asked! check out our <a href="https://developer.relayr.io/documents/Welcome/Platform" target="_blank"> Cloud Platform introduction </a> for an overview of our architecture.</p>
-
 <h3> What is OnBoarding? why do I need it?</h3>
 
-<p>OnBoarding is your way of introducing your WunderBar to the relayr platform. Click <a href="https://developer.relayr.io/documents/Welcome/OnBoarding" target="_blank">here</a> to read more about the process.</p>
+<p>OnBoarding is your way of introducing your WunderBar to the relayr platform. Click <a href="https://developer.relayr.io/documents/WunderBar/OnBoarding" target="_blank">here</a> to read more about the process.</p>
 
 <h3> Where can I get my Device Id? </h3>
 <p>Once you've onboarded your WunderBar, to get your Devices Ids, go to the Devices section and click on the small 'settings' icon of any of your sensors to get its Id</p>
@@ -188,11 +183,11 @@ I am using the Samsung Galaxy S3 and I cannot complete the OnBoarding process. W
 
 <h3>Where can I get the iOS/OSX SDK from?</h3>
 
-<p> Please visit our <a href="https://developer.relayr.io/documents/Apple/Reference">iOS/OSX Section</a> to get started with iOS/OSX Development </p>
+<p> Please visit our <a href="https://developer.relayr.io/documents/Apple/Introduction">iOS/OSX Section</a> to get started with iOS/OSX Development </p>
 
 <h3> I am a Web developer. Can I still use the relayr platform?</h3>
 
-<p>Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/WebDev/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.</p>
+<p>Of course! Don't worry, we haven't forgotten you. Check out our <a href="https://developer.relayr.io/documents/Browser/WebDevelopers" target="_blank">Web section </a> for more information. Our code samples will help you get started.</p>
 
 <h3>Do you have anything for Python developers?</h3>
 
@@ -236,7 +231,7 @@ Our sensor essentially provides a reading representing the change in noise level
 <h3> Why does the percentage go up when I get close to the proximity sensor? </h3>
 <p>The proximity measurement is translated to a percentage in the OnBoarding apps and the Developer Dashboard. The closer an object is to the sensor the higher the percentage is.
 </p>
-<p>For additional reading about the WunhderBar sensors and a review of the manner in which data is collected please see our <a href="https://developer.relayr.io/documents/Welcome/Sensors">Making Sense of Sensors page</a></p>
+<p>For additional reading about the WunhderBar sensors and a review of the manner in which data is collected please see our <a href="https://developer.relayr.io/documents/WunderBar/Sensors">Making Sense of Sensors page</a></p>
 
 <h3> Is it possible to receive sensor values directly from the sensor without using the Master Module?</h3>
 <p>Yes! that is possible. Simply set the relevant sensor to BLE mode via the OnBoarding app and start receiving data directly to your phone over BLE.
@@ -329,7 +324,7 @@ The voltage range is between 3.4V and 5V </p>
 
 <h3> Can I flash the Firmware on my Sensor Modules and install something else?</h3>
 
-<p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/HowTos/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/HowTos/iBeacons">instructions on this page</a>. </p>
+<p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/Browser/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/Browser/iBeacons">instructions on this page</a>. </p>
 
 <h3> The Master Module comes with a battery - Does it have to be connected to a power supply at all times?</h3>
 
