@@ -1,4 +1,4 @@
-Introduction
+The Arduino-Bridge Library
 ------------
 Welcome to the **Bridge library for Arduino**.
 The components in this repository allow you to connect the Wunderbar Bridge/Grove module to the [Arduino UART](http://arduino.cc/) and in just 10 minutes have an easy gateway to the **relayr Cloud Platform**
