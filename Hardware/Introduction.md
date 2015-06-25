@@ -1,6 +1,6 @@
-<h1>How To's - A few extra things you can do with Sensor Modules</h1>
-<p>We would like to enable you to make the most of your WunderBar Sensor Modules. 
+<h1>relayr for Firmware Developers</h1>
+<p>We would like to enable you to make the most of your WunderBar Sensor Modules as well as give you an idea of how you could use various developer boards in order to connect to the relayr cloud platform. 
 This section includes a couple of extra cool things that you could do with your sensors besides using them as sensors. </p>
-<p>You now have the option of <a href="https://developer.relayr.io/documents/Browser/iBeacons" target="_self">using the modules as iBeacons</a>, <a href="https://developer.relayr.io/documents/Browser/Arduino" target="_self">connecting the Grove module to Arduino</a> and <a href="https://developer.relayr.io/documents/Browser/Flashing" target="_self">replacing the existing firmware</a> on the them.</p>
+<p>You now have the option of <a href="https://developer.relayr.io/documents/Hardware/iBeacons" target="_self">using the modules as iBeacons</a>, <a href="https://developer.relayr.io/documents/Hardware/Arduino" target="_self">connecting the Grove module to Arduino</a> and <a href="https://developer.relayr.io/documents/Hardware/Flashing" target="_self">replacing the existing firmware</a> on the them. You can also connect boards such as the <a href="https://developer.relayr.io/documents/Hardware/Photon" target="_self">Particle.io Photon </a> or a <a href="https://developer.relayr.io/documents/Hardware/RaspberryPi" target="_self">Raspberry Pi</a> to the relayr platform and create your very own prototypes...</p>
 <p>Check out a couple of our <a href="https://developer.relayr.io/documents/Hardware/Examples/sampleapps" target="_self">Sample Apps repository</a> incorporating the relayr SDKs and external integrated components. </p>
 <p>These are only the first extra features in place, stay tuned for additional amazing features!</p>

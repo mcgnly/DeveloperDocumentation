@@ -142,8 +142,8 @@
                 },
                 {
                     "file": "SDK Documentation",
-                    "title": "SDK Reference",
-                    "external": "/rendered-doc/javadoc/index.html",
+                    "title": "SDK (GitHub)",
+                    "external": "https://github.com/relayr/apple-sdk",
                     "newTab": true
                 }
                 
@@ -273,8 +273,16 @@
                     "title": "Connecing the relayr Bridge to Arduino"
                 },
                 {
+                    "file": "ArduinoPrototype",
+                    "title": "Connecing an Arduino Yun to the relayr Platform"
+                },
+                {
                     "file": "Photon",
-                    "title": "Connecing the Particles.io Photon to the relayr Platform"
+                    "title": "Connecing a Photon to the relayr Platform"
+                },
+                {
+                    "file": "RaspberryPi",
+                    "title": "Connecting a Raspberry Pi to the the relayr Platform "
                 },
                 {
                     "file": "Examples",
