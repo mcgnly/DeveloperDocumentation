@@ -215,8 +215,8 @@ Please note that in case the module is still attached to the Master Module it wi
 <tr>
 <td>temperature</td>
 <td>celsius (°)</td>
-<td>100</td>
-<td>-100</td>
+<td>125</td>
+<td>-40</td>
 <td>0.01</td>
 </tr>
 </table>
@@ -278,7 +278,7 @@ Note that the output provided by the sensor is <em>not</em> presented in decibel
 <tr>
 <td>noise_level</td>
 <td>none - raw data</td>
-<td>1023</td>
+<td>1024</td>
 <td>0</td>
 <td>1</td>
 </tr>
