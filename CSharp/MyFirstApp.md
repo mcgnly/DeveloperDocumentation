@@ -115,7 +115,7 @@
 
 <p>We start by setting the token - the one generated in step 5.
 We continue with getting a list of the transmitters registered under the user whose token has been entered. We select the first transmitter on the list.</p>
-<p>In the last part of the code we subscribe to the temperature sensor defined under the transmitter. In order to simplify matters as much as possible, we are transferring the actual <em>sensorId</em> parameter to the subscription method. You can obtain your sensor ID by following the instructions in <a href="https://developer.relayr.io/documents/Support/FAQs/Getting Started#6">this FAQ</a> </p>
+<p>In the last part of the code we subscribe to the temperature sensor defined under the transmitter. In order to simplify matters as much as possible, we are transferring the actual <em>sensorId</em> parameter to the subscription method. You can obtain your sensor ID by accessing your Devices page and clicking the settings icon of the device you are interested in</p>
 <p>Guess what? you are almost done! the last thing that needs to be done is to facilitate the data received and display it. We'll show you how to do precisely that in the next step.</p>
 
 </div>
