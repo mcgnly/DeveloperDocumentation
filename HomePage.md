@@ -15,7 +15,7 @@ Historical data retrieval, conditional messaging, integration with a variety of 
 ## Software
 
 **Android**, **iOS**, **Python**, **Node.js** are only some of the platforms available for development. Elaborate documentation and example apps will make your first steps in the relayr realm easy and more importantly - fun! 
-Check out our full documentation reference here. 
+Check out our full documentation reference [here](https://developer.relayr.io/documents/Welcome/Introduction). 
 
 
 ## Hardware
