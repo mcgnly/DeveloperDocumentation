@@ -224,6 +224,17 @@ If you encounter this phenomenon, please supply us with the IDs of the sensors w
 
 <p>We are aware of a slight shift in temperature, especially when the temperature module is still connected to the rest of the board. This is due to the fact that the Gainspan chip, located on the master module emits heat which  in turn, raises the temperature measured by the temperature sensor.</p>
 
+<h3>I can see that the Gyroscope readings are changing even while the sensor is static- why is that?</h3>
+
+<p>
+The angular speed showed in the dashboard is the one provided by the sensor, there is no extra conversion done except for the one from binary to float values.<br />
+It is expected to have some drift and offset in the output from the sensor. Part of this is due to noise and part is due to the integration errors which are inherent to any MEMS sensor, therefore the output of the gyroscope will drift even if the device is static.<br />
+The default range for the Wunderbar gyroscope is ± 250 degrees/second. 
+What usually is necessary to do in order to get useful values for the rotation rate and for the angle of the sensor, is to combine the output from the accelerometer and gyroscope and filter it. The necessary algorithm is  dependent on the final application. You can get a simple explanation of the filters as well as a simple example of application, in <a href="http://www.pieter-jan.com/node/11">this</a> article
+
+
+</p>
+
 <h3> In which units is Noise Level measured? </h3>
 <p>
 Our sensor essentially provides a reading representing the change in noise level over a period of time. The number is a representation of a level rather than a measurement of noise. The output number will increase as the noise level increases and vice versa. In order to provide a reading of the level of noise in decibels a much more elaborate set of tools is required.    
@@ -324,7 +335,7 @@ The voltage range is between 3.4V and 5V </p>
 
 <h3> Can I flash the Firmware on my Sensor Modules and install something else?</h3>
 
-<p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/Browser/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/Browser/iBeacons">instructions on this page</a>. </p>
+<p>You are able to flash your Sensors' firmware. Please have a look at <a href="https://developer.relayr.io/documents/Hardware/Flashing">instructions how to perform that</a>. You could install the iBeacon firmware on the sensor modules by following the <a href="https://developer.relayr.io/documents/Hardware/iBeacons">instructions on this page</a>. </p>
 
 <h3> The Master Module comes with a battery - Does it have to be connected to a power supply at all times?</h3>
 
@@ -336,24 +347,59 @@ The voltage range is between 3.4V and 5V </p>
 
 </div>
 
-<h2 class="collapseHeader"> External Devices </h2>
+<h2 class="collapseHeader"> External Devices and Prototypes </h2>
 <div class="collapse">
 
 <h3> What are External Devices?</h3>
-<p>By 'External Device' we refer to any device, apart from the relayr WunderBar, which can be integrated with the relayr platform.</p>
+<p>By 'External Device' we refer to any device, apart from the relayr WunderBar, which can be integrated with the relayr platform. 
+You are able to develop your own device, add it to the relayr platform as a prototype and turn it into a device model for others to use.</p>
 
 
-<h3> How do I add an external device?</h3>
+<h3> How do I add an external device or a prototype?</h3>
 <p> In order to add a new device, follow the instructions below
+<h3>External Devices</h3>
 <ol>
-<li>In the Developer Dashboard, access the Devices menu> Add Device</li>
-<li>Give your device a name and select the type of device you would like to add</li>
-<li>Once you click Next a popup will be prompted for you to authorize the relayr app to access the devices under the account you've chosen.</li>
-<li>Once the relayr deshboard is authorized to access your external account, you will be shown a list of your available devices.</li>
+<li>
+<p>Click the + sign on the bottom right part of the screen</p>
+<p><img src="assets/AddDevice.png" /></p>
+</li>
+<li>
+<p>Give your device a name and select the type of device you would like to add</p>
+<p><img src="assets/Account.png" /></p>
+</li>
+<li>
+<p>Once you click Next a popup will be prompted for you to authorize the relayr app to access the devices under the account you've chosen.</p>
+</li>
+<li>
+<p>Once the relayr deshboard is authorized to access your external account, you will be shown a list of your available devices.</p>
+<p><img src="assets/Accounts3.png" /></p>
+</li>
 <li>Select the device you would like to add</li>
-<li>The device selected will be added under 'My Devices'. You could now see live data from it and send commands to it.</li>
-<li>To disconnect the device from the relayr Developer Dashboard, simply click the delete button on the top menu of the device.</li></ol>
-</p>
+<li>The device selected will be added to your list of devices. You could now see live data from it and send commands to it.</li>
+<li>To disconnect the device from the relayr Developer Dashboard, simply click the delete button on the top menu of the device. </li>
+</ol>
+<h3>Prototypes</h3>
+<ol>
+<li>
+<p>Click the + sign on the bottom right part of the screen</p>
+<p><img src="assets/AddDevice.png" /></p>
+</li>
+<li>
+<p>Select 'Add Prototype'</p>
+</li>
+<li>
+<p>Give your prototype a name and hit Start Prototyping</p>
+<p><img src="assets/NewDevice.png" /></p>
+</li>
+<li>
+<p>Enter the credentials received in the respective places in your code
+<img src="assets/Credentials.png" /></p>
+</li>
+<li>
+<p>Click Ready to view your prototype.</p>
+</li>
+</ol>
+
 
 </div>
 
