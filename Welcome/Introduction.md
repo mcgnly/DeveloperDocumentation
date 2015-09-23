@@ -8,7 +8,8 @@ We've made it as easy as possible for you to start integrating your awesome apps
     <ul>
       <a href="/documents/Android/Reference" target="_self"><li>Documentation <i class="fa fa-angle-right"></i></li></a> 
       <a href="/documents/Android/Examples/thermometer" target="_self"><li>Examples <i class="fa fa-angle-right"></i></li></a> 
-      <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank"><li>SDK Reference <i class="fa fa-angle-right"></i></li></a> 
+      <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank"><li>SDK Reference <i class="fa fa-angle-right"></i></li></a>
+	<a href="https://github.com/relayr/java-sdk" target="_blank"><li>The JAVA SDK (GitHub) <i class="fa fa-github"></i></li></a>  
     </ul>
 
   </figure>
