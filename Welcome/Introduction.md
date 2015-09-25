@@ -9,7 +9,13 @@ We've made it as easy as possible for you to start integrating your awesome apps
       <a href="/documents/Android/Reference" target="_self"><li>Documentation <i class="fa fa-angle-right"></i></li></a> 
       <a href="/documents/Android/Examples/thermometer" target="_self"><li>Examples <i class="fa fa-angle-right"></i></li></a> 
       <a href="https://developer.relayr.io/rendered-doc/javadoc/index.html" target="_blank"><li>SDK Reference <i class="fa fa-angle-right"></i></li></a>
-	<a href="https://github.com/relayr/java-sdk" target="_blank"><li>The JAVA SDK (GitHub) <i class="fa fa-github"></i></li></a>  
+	</ul>
+</figure>
+<figure class="android"><h1>Java<i class="flaticon-cloud"></i></h1>
+    <ul>
+      <a href="/documents/Java/Introduction" target="_self"><li>Documentation <i class="fa fa-angle-right"></i></li></a> 
+      <a href="https://github.com/relayr/java-sdk-example" target="_blank"><li>Examples <i class="fa fa-github"></i></li></a> 
+      <a href="/documents/Java/Java" target="_self"><li>SDK<i class="fa fa-angle-right"></i></li></a>  
     </ul>
 
   </figure>
@@ -20,8 +26,7 @@ We've made it as easy as possible for you to start integrating your awesome apps
       <a href="https://github.com/relayr/apple-sdk" target="_blank"><li>SDK (GitHub) <i class="fa fa-github"></i></li></a> 
     </ul>
   </figure>
-  <figure class="csharp"><h1>C#<br><i class="flaticon-csharp
-  "></i></h1>
+  <figure class="csharp"><h1>C#<br><i class="flaticon-csharp"></i></h1>
     <ul>
       <a href="/documents/CSharp/Reference" target="_self"><li>Documentation <i class="fa fa-angle-right"></i></li></a> 
       <a href="/documents/CSharp/Csharp" target="_self" ><li>SDK <i class="fa fa-angle-right"></i></li></a> 
