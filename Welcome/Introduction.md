@@ -13,8 +13,9 @@ We've made it as easy as possible for you to start integrating your awesome apps
 </figure>
 <figure class="nodejs"><h1>Java<i class="flaticon-cloud"></i></h1>
     <ul>
-      <a href="https://github.com/relayr/java-sdk" target="_blank"><li>Documentation and SDK <i class="fa fa-angle-right"></i></li></a> 
-      <a href="https://github.com/relayr/java-sdk-example" target="_blank"><li>Example <i class="fa fa-github"></i></li></a> 
+      <a href="https://github.com/relayr/java-sdk" target="_blank"><li>Documentation<i class="fa fa-angle-right"></i></li></a> 
+      <a href="https://github.com/relayr/java-sdk-example" target="_blank"><li>Example <i class="fa fa-github"></i></li></a>
+	<a href="http://relayr.github.io/java-sdk/" target="_blank"><li>Full SDK Reference <i class="fa fa-angle-right"></i></li></a> 
      </ul>
 
   </figure>
