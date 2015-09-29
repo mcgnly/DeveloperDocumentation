@@ -105,6 +105,26 @@
             ]
         },
         {
+            "directory": "Java",
+            "title": "Java",
+            "color": "yellow",
+            "icon" : "fa-java",
+            "submenus": [
+                {
+                    "file": "Introduction",
+                    "title": "Introduction"
+                },
+                {
+                    "file": "Java",
+                    "title": "SDK"
+                },
+                {
+                    "file": "Example",
+                    "title": "Example"
+                }
+            ]
+        },
+        {
             "directory": "Apple",
             "title": "iOS/OSX",
             "color": "yellow",
