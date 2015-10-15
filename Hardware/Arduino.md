@@ -24,36 +24,34 @@ when the debug port is set to 0, without the need for an external application.
             <a href="https://github.com/relayr/Arduino-Bridge-Library">The Arduino-Bridge-Library</a></li>
         <li>The Manager app <a href="https://play.google.com/store/apps/details?id=io.relayr.wunderbar">either for android</a> or <a href="https://itunes.apple.com/de/app/wunderbar-onboarding/id909224330?mt=8">for iOS</a></li>
     </ol>
-</p>
-<p>
+
 
 Below is a step by step tutorial of how to install and use the repository as well as a sketch example to get you inspired before you start your own project.
 
-<p>
-    <h3>Installing the Library</h3>
-    <ol>
-        <li>Download the repository as a .zip file unzip it.</li>
-        <li>Copy the folder <i>WunderbarBridgeMega</i> to <i>Arduino</i> libraries folder (on Mac: Documents/Arduino/libraries) (this is the Manual installation)</li>
-    </ol>
-</p>
 
-----------
-
-<p>
-    <h3>Flashing the UART firmware on the Bridge Module</h3>
-    <span>In order to allow the Bridge Module to communicate with the Arduino over UART, it is necessary to flash the Bridge UART Firmware.</span>
-    <ol>
-        <li>Copy the "sensor_bridge_fw_UART.hex" form /Arduino/libraries/WunderbarBridgeMega onto your Phone</li>
-        <li>Start the Manager app, select the GroveConnector and activate the BLE direct Connection mode(To do so simply swipe to the left and activate BLE mode)</li>
-        <li>Select 'Update Firmware' and choose the option to 'select from folder'</li>
-        <li>Place the Bridge Modul in <i>firmware update mode</i>. You can do this by pressing the button on the module and holding it for 3 seconds. The LED will be constantly on when <i>firmware update mode</i>is activated.</li>
-        <li>Follow the instructions in the app to flash the firmware</li>
-    </ol>
-</p>
-<p>
+### Installing the Library</h3>
+    
+1. Download the repository as a .zip file unzip it.</li>
+2. Copy the folder <i>WunderbarBridgeMega</i> to <i>Arduino</i> libraries folder (on Mac: Documents/Arduino/libraries) (this is the Manual installation)</li>
+  
 
 
 ----------
+
+### Flashing the UART firmware on the Bridge Module</h3>
+    
+In order to allow the Bridge Module to communicate with the Arduino over UART, it is necessary to flash the Bridge UART Firmware.
+
+1. Copy the "sensor_bridge_fw_UART.hex" form /Arduino/libraries/WunderbarBridgeMega onto your Phone
+2. Start the Manager app, select the GroveConnector and activate the BLE direct Connection mode(To do so simply swipe to the left and activate BLE mode)
+3. Select 'Update Firmware' and choose the option to 'select from folder'
+4. Place the Bridge Modul in <i>firmware update mode</i>. You can do this by pressing the button on the module and holding it for 3 seconds. The LED will be constantly on when <i>firmware update mode</i>is activated.
+5. Follow the instructions in the app to flash the firmware
+    
+
+
+----------
+
 
 ### Connecting  the Bridge Module to Arduino
 
@@ -61,12 +59,11 @@ The easiest way of connecting the two is using the [*"Grove Servo cable"*](http:
 
 **Bridge:** --------- **Arduino:** 
 
-<strong><ol>
-        <li>Tx ----------> RX1 - Rx</li>
-        <li>Rx ----------> TX1 - Tx</li>
-        <li>VEXT ---------> 5 Volts</li>
-        <li>GND ---------> GND</li>
-</ol></strong>
+<li>Tx ----------> RX1 - Rx</li>
+<li>Rx ----------> TX1 - Tx</li>
+<li>VEXT ---------> 5 Volts</li>
+<li>GND ---------> GND</li>
+
 
 ----------
 
@@ -90,70 +87,65 @@ in order to view the output for the ArduinoMega you could use the Serial Monitor
 
 ## Using the library
 
-<p>
-    
-    <p>
-        <span><h4>Above the setup:</h4><br>Include the WunderbarBridge header and instantiate the Bridge class to use:
-        <br></span>
-        <code>#include &lt;WunderbarBridge.h&gt; <br>
-		Bridge bridge = Bridge(115200);
-		</code>
-    </p>
-    <p>
-        <span><h4>In the setup:</h4></span>
-        <br>
-        <code>
-        	bridge.setDebugPort(0); <br>
-  			bridge.setBridgePort(1); <br>
-  			bridge.begin();
-		</code>
-    </p>
-    <p>
-        <span><h4>In the loop:</h4></span>
-        <br>
-        <code>
-       		if (Serial1.available()) {<br>
-    		bridge.processSerial();<br>
-  			}<br>
- 			bridge_payload_t rxPayload = bridge.getData();<br>
-  <br>
-  			uint8_t dataOut[] = {1, 2, 3};<br>
-  			bridge.sendData(dataOut, sizeof(dataOut));
+#### 1. Above the setup:
 
-		</code>
-    </p>
-
-<h4>Your code should look something like this:</h4> <br />
+Include the WunderbarBridge header and instantiate the Bridge class to use: 
 
 <code>
-		#include &lt;WunderbarBridge.h&gt;<br>
-		Bridge bridge = Bridge(115200);<br>
-<br>
-		void setup() {<br>
-  			bridge.setDebugPort(0);<br>
-  			bridge.setBridgePort(1);<br>
-  			bridge.begin();<br>
-		}br
-<br>
-		void loop() { <br>
-  		if (Serial1.available()) {<br>
-   		 	bridge.processSerial();<br>
- 		}<br>
-  		bridge_payload_t rxPayload = bridge.getData();<br>
-  <br>
-  		uint8_t dataOut[] = {1, 2, 3};<br>
-  		bridge.sendData(dataOut, sizeof(dataOut));<br>
-		}br
-	</code> <br /><br />    
+	#include <WunderbarBridge.h> 
+	Bridge bridge = Bridge(115200);
+</code>
+
+#### 2. In the setup:
+<code>
+	bridge.setDebugPort(0); 
+	bridge.setBridgePort(1); 
+	bridge.begin();
+</code>
+
+#### 3. In the loop:
+<code>
+	if (Serial1.available()) {
+	bridge.processSerial();
+	}
+	bridge_payload_t rxPayload = bridge.getData();
+	
+	uint8_t dataOut[] = {1, 2, 3};
+	bridge.sendData(dataOut, sizeof(dataOut));
+</code>
+
+
+#### Your code should look something like this:
+
+<code>
+	#include <WunderbarBridge.h>
+	Bridge bridge = Bridge(115200);
+	
+	void setup() {
+	bridge.setDebugPort(0);
+	bridge.setBridgePort(1);
+	bridge.begin();
+	}br 
+	void loop() { 
+	if (Serial1.available()) {
+	bridge.processSerial();
+	}
+	bridge_payload_t rxPayload = bridge.getData();
+	
+	uint8_t dataOut[] = {1, 2, 3};
+	bridge.sendData(dataOut, sizeof(dataOut));
+	}
+</code>        
+        
 
 Next,	
 		    	
-		<ol>
-		    	<li>Under Tools select 'Board your Arduino MEGA'</li>
-		    	<li>Uplaod your code onto the Arduino</li>
-		    	<li>Open the <i>Serial Monitor</i> and change it to <i>115200 baud</i></li>
-		    	</ol>
-		    </p>
+		
+1. Under Tools select 'Board your Arduino MEGA'
+2. Uplaod your code onto the Arduino</li>
+3. Open the <i>Serial Monitor</i> and change it to 115200 baud
+
+	
 
 To get a bit more insight into using the library, have a look at the [Cloud Connection Example ](https://github.com/relayr/Arduino-Bridge-Library/blob/master/examples/BridgeCloudConnection/BridgeCloudConnection.ino)
 
