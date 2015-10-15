@@ -45,7 +45,7 @@ In order to allow the Bridge Module to communicate with the Arduino over UART, i
 1. Copy the "sensor_bridge_fw_UART.hex" form /Arduino/libraries/WunderbarBridgeMega onto your Phone
 2. Start the Manager app, select the GroveConnector and activate the BLE direct Connection mode(To do so simply swipe to the left and activate BLE mode)
 3. Select 'Update Firmware' and choose the option to 'select from folder'
-4. Place the Bridge Modul in <i>firmware update mode</i>. You can do this by pressing the button on the module and holding it for 3 seconds. The LED will be constantly on when <i>firmware update mode</i>is activated.
+4. Place the Bridge Module in <i>firmware update mode</i>. You can do this by pressing the button on the module and holding it for 3 seconds. The LED will be constantly on when <i>firmware update mode</i>is activated.
 5. Follow the instructions in the app to flash the firmware
     
 
