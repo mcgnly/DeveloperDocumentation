@@ -68,21 +68,50 @@
 <hr />
 <h2>Example: Receiving Data from your Sensors without logging in</h2>
 <p>We've made it possible for you to start viewing your sensors' data without having to provide an actual <code>redirectUri</code> and without having to log in to the platform.</p>
-<p>In this scenario you will need to perform the initialization of the SDK, with the <strong>AppID</strong> of your app.</p>
+
+<p>1. Start an HTML page and add the following:</p>
+
+
+	<!DOCTYPE html> 
+	<html> 
+	
+	<head> 
+	<script src="https://developer.relayr.io/relayr-browser-sdk.min.js"></script> 
+	</head> 
+	
+	<body> 
+
+
+
+
+<p>2. In this scenario you will need to perform the initialization of the SDK, with the <strong>AppID</strong> of your app. To obtain the AppId access the <a href="https://developer.relayr.io/dashboard/apps/myApps">API-Keys Section</a> </p>
 <pre><code>  var relayr = RELAYR.init({
     appId: &quot;{YourAppId}&quot;
   });
 </code></pre>
 
-<p>And provide your <strong>DeviceID</strong> and <strong>Token</strong> in order to start receiving data. See instructions for generating your token <a href="https://developer.relayr.io/documents/Browser/OAuthToken" target="_blank">here</a>. Your Device ID can be obtained from the <a href="https://developer.relayr.io/dashboard/devices" target="_blank">Devices section</a>, by clicking on the 'settings' icon on any of the devices. </p>
-<pre><code>  relayr.devices().getDeviceData({
-    deviceId: &quot;{YourDeviceId}&quot;, 
-    token: token,
-    incomingData: function(data){
-      console.log(&quot;sensor&quot;,data);
-    }
-  });    
-</code></pre>
+<p>3. Provide your <strong>DeviceID</strong> and <strong>Token</strong> in order to start receiving data. See instructions for generating your token <a href="https://developer.relayr.io/documents/Browser/OAuthToken" target="_blank">here</a>. Your Device ID can be obtained from the <a href="https://developer.relayr.io/dashboard/devices" target="_blank">Devices section</a>, by clicking on the 'settings' icon on any of the devices. </p>
 
-<hr />
+  
+	var adata; 
+	var dataa = []; 
+	
+	// create a new queue 
+	
+	relayr.devices().getDeviceData({  
+	token: "YOUR_TOKEN", 
+	deviceId: "YOUR_DEVICE_ID", 
+	incomingData: function(data) {  
+	console.log("data from device", data); 
+	adata = data;  
+	//dataa.push(adata.readings[0].value); 
+	
+	  
+	} 
+	}); 
+	</script> 
+	</body></html> 
+
+<p>Replace YOUR_TOKEN and YOUR_DEVICE_ID with the values received on the Developer Dashboard above.</p>
+
 <p>Now that you understand how to incorporate receiving data via the relayr platform. You can go ahead and create your first web project. Check out our simple and quick <a href="https://github.com/relayr/cantTouchThis" target="_blank">Can't Touch This sample project</a> to get inspired.</p>
