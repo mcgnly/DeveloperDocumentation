@@ -1,5 +1,6 @@
 
 
+
 <h1 fullpage>FAQs </h1>
 
 <h2 class="collapseHeader">Getting Started</h2>
@@ -223,6 +224,14 @@ If you encounter this phenomenon, please supply us with the IDs of the sensors w
 <h3>I notice that the temperature sensor is consistently showing values higher than the ones measured by other devices I own - why is that?</h3>
 
 <p>We are aware of a slight shift in temperature, especially when the temperature module is still connected to the rest of the board. This is due to the fact that the Gainspan chip, located on the master module emits heat which  in turn, raises the temperature measured by the temperature sensor.</p>
+
+<h3>Readings, Commands and Configurations. What is the difference between them?</h3>
+
+<p>
+<strong> Readings </strong> are the values which are gathered by the WunderBar sensors about humidity, luminosity, temperature etc. and are sent to the relayr cloud. These could be viewed in the Devices page on the Developer Dashboard.
+<strong>Commands</strong> are various inputs which could be sent to the sensor which make the sensor perform something- for example, turn the LED on.
+<strong>Configurations</strong> are a set of values which are unique to the specific sensor, which could be retrieved using the a simple API call. You can find additional information about Configurations and Commands in our <a href="http://docs.wunderbarregistration.apiary.io/#reference/device-commands-and-configurathion">API documentation</a> 
+</p>
 
 <h3>I can see that the Gyroscope readings are changing even while the sensor is static- why is that?</h3>
 
