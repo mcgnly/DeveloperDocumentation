@@ -12,7 +12,7 @@ Currently these  devices are deployed in the Cisco Open Berlin Innovation Center
 
 ## Creating your Bosch XDK on the relayr cloud
 
-Start by downloading [GCC ARM Embedded](https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update), [Python 2](https://www.python.org/downloads/), the text editor of your choice (I used [Atom](https://atom.io/docs/v0.191.0/getting-started-installing-atom)) and the [XDK Workbench](http://xdk.bosch-connectivity.com/en/web/bcdscommunitygb/forum/-/category/using-xdk-downloads/10796-c), which we will need for the Makefiles included in it. If you are working on a Mac or Linux, you will also need the [Segger JLink debugger](https://www.segger.com/jlink-software.html) and debugger board hardware (these are not needed if you are on Windows). 
+Start by downloading [GCC ARM Embedded](https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update), [Python 2](https://www.python.org/downloads/), the text editor of your choice (I used [Atom](https://atom.io/docs/v0.191.0/getting-started-installing-atom)) and the [XDK Workbench](http://xdk.bosch-connectivity.com/en/web/bcdscommunitygb/forum/-/category/using-xdk-downloads/10796-c). If you are working on a Mac or Linux, you will also need the [Segger JLink debugger](https://www.segger.com/jlink-software.html) and debugger board hardware (these are not needed if you are on Windows). 
 
 <img src="assets/BoschXDKtutorialImages/xdk18.png" class="center" width=1000px>
 
@@ -67,7 +67,7 @@ Now, head to xdk-mqtt/src/ and create a new file named “credentials.json”.  
 
 Make sure all of your changes in the text editor are saved, then in the terminal, navigate to the /xdk-mqtt/make directory if you aren’t there already. 
 
-Plug in your Bosch XDK hardware to your computer and make sure it is powered on -   green LED will be on. If yours isn’t, make sure the switch is on and both the cable for  flashing/programming/debugging (and if on a Linux or Mac, the JLink debugger) and the USB cable  are plugged in. 
+Plug in your Bosch XDK hardware to your computer and make sure it is powered on. If yours isn’t, make sure the switch is on and both the cable for  flashing/programming/debugging (and if on a Linux or Mac, the JLink debugger) and the USB cable  are plugged in. 
 
 Once everything is connected, execute ‘make’ and ‘make flash’  from the terminal, and you should see live readings from the sensors! 
 
